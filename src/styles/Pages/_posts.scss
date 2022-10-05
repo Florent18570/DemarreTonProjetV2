@@ -1,0 +1,225 @@
+.toggle {
+  position: absolute;
+  right: 0;
+  top: 55px;
+  background: white;
+  border-radius: 28px 28px 28px 28px;
+  padding: 10px;
+  border: #4e5166 solid 2px;
+  animation-name: cssAnimation;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  z-index: 2;
+  a {
+    text-decoration: none;
+    color: #4e5166; /*par exemple*/
+  }
+}
+
+.none {
+  display: none;
+}
+
+@keyframes cssAnimation {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.toggle::before {
+  content: "";
+  border-left: #4e5166 solid 2px;
+  border-right: #4e5166 solid 2px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #ffffff;
+  position: absolute;
+  top: -10px;
+}
+
+// Container Postuser TOP
+.containerTop {
+  color: $color-Tertiaire;
+  background-color: #f64d2b;
+  border-radius: 38px 36px 0px 0px;
+  display: flex;
+  height: 85px;
+  position: relative;
+  .IdentifiantPost {
+    font-size: 30px;
+    margin-top: 23px;
+    margin-left: 27px;
+  }
+  .imageProfil {
+    width: 60px;
+    height: 60px;
+    margin-left: 43px;
+    margin-top: 15px;
+  }
+}
+
+.troispoints {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 22px;
+  top: 25px;
+}
+
+// Container Postuser Bottom
+
+.headerBottom {
+  display: flex;
+  height: auto;
+  margin-top: 22px;
+  position: relative;
+  p {
+    margin-bottom: 20px;
+  }
+  nav h1 {
+    position: absolute;
+    right: 5px;
+    font-size: 13px;
+    color: $color-Tertiaire;
+  }
+}
+
+.div_bottom {
+  .post {
+    text-align: initial;
+    font-weight: 600;
+    margin-left: 35px;
+    margin-top: -5px;
+    font-size: 24px;
+  }
+
+  .imgPost {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .avis {
+    display: flex;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    .like {
+      display: flex;
+      margin-left: 28px;
+      p {
+        margin-top: 5px;
+        margin-left: 3px;
+      }
+    }
+    .dislike {
+      display: flex;
+      margin-left: 15px;
+      margin-top: 3px;
+      p {
+        margin-top: 2px;
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .deleteModify {
+    display: none;
+  }
+}
+
+//tablette
+
+@media screen and (max-width: 768px) {
+  .toggle {
+    position: absolute;
+    right: 0;
+    top: 55px;
+    background: white;
+    border-radius: 28px 28px 28px 28px;
+    padding: 10px;
+    border: #4e5166 solid 2px;
+    animation-name: cssAnimation;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    z-index: 2;
+    a {
+      text-decoration: none;
+      color: #4e5166; /*par exemple*/
+    }
+  }
+
+  .none {
+    display: none;
+  }
+
+  @keyframes cssAnimation {
+    0% {
+      transform: rotate(0deg) scale(0);
+    }
+    100% {
+      transform: rotate(0deg) scale(1);
+    }
+  }
+
+  .toggle::before {
+    content: "";
+    border-left: #4e5166 solid 2px;
+    border-right: #4e5166 solid 2px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+    position: absolute;
+    top: -10px;
+  }
+
+  // Container Postuser TOP
+  .containerTop {
+    .IdentifiantPost {
+    }
+    .imageProfil {
+    }
+  }
+
+  .troispoints {
+  }
+
+  // Container Postuser Bottom
+
+  .headerBottom {
+    p {
+    }
+    nav h1 {
+    }
+  }
+
+  .div_bottom {
+    .post {
+      font-size: 20px;
+    }
+
+    .imgPost {
+    }
+
+    .avis {
+      .like {
+        p {
+        }
+      }
+      .dislike {
+        p {
+        }
+      }
+    }
+
+    .deleteModify {
+    }
+  }
+}

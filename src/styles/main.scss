@@ -1,0 +1,13 @@
+$color-Primaire: #f64d2b;
+$color-Secondaire: #ffd7d7;
+$color-Tertiaire: #4e5166;
+
+@import "base/base";
+@import "Composants/modificationPost";
+@import "Composants/header";
+@import "Composants/mixin";
+@import "Composants/login";
+@import "Composants/input";
+@import "Pages/accueil";
+@import "Pages/newPost";
+@import "Pages/posts";

@@ -1,0 +1,172 @@
+section {
+  background: #eedada;
+  box-shadow: -9px 12px 20px 2px rgba(0, 0, 0, 0.46);
+  max-width: 1018px;
+  margin: 50px auto auto auto;
+  display: flex;
+  border-radius: 38px;
+}
+
+div {
+  &.enregistrer {
+    width: 34%;
+    height: 620px;
+    background: $color-Primaire;
+    border-radius: 36px 0 0 38px;
+    h1 {
+      margin-top: 202px;
+      color: white;
+    }
+    p {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 36px;
+      color: rgba(255, 255, 255, 0.77);
+      padding: 5px 20px;
+    }
+    .inscription {
+      @include Buttonblanc;
+      padding: 12px 20px;
+      font-size: 21px;
+      margin-top: 50px;
+    }
+  }
+  &.login {
+    width: 639px;
+    height: 537px;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      margin-top: 83px;
+      color: $color-Tertiaire;
+      margin-bottom: 50px;
+    }
+    .inscription_bottom {
+      margin-bottom: 20px;
+    }
+    input {
+      border-radius: 7px;
+      width: 415px;
+      height: 44px;
+      margin-top: 20px;
+      margin: 20px auto 10px auto;
+    }
+    .btcvalider {
+      @include ButtonOrange;
+      padding: 9px 23px;
+      margin-top: 20px;
+      width: 110px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 13px;
+      margin: 10px auto 0 auto;
+    }
+  }
+}
+
+// Tablette
+
+@media screen and (max-width: 768px) {
+  section {
+    margin: 50px 20px auto 20px;
+    height: 483px;
+  }
+
+  div {
+    &.enregistrer {
+      width: 33%;
+      height: 483px;
+      background: $color-Primaire;
+      border-radius: 36px 0 0 38px;
+
+      h1 {
+        margin-top: 130px;
+        color: white;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 23px;
+        color: rgba(255, 255, 255, 0.77);
+        padding: 5px 20px;
+      }
+      .inscription {
+        @include Buttonblanc;
+        padding: 12px 20px;
+        font-size: 21px;
+        margin-top: 50px;
+      }
+    }
+
+    &.login {
+      width: 499px;
+      padding: auto;
+      h1 {
+        margin-top: 67px;
+        color: $color-Tertiaire;
+        margin-bottom: 50px;
+      }
+      .inscription_bottom {
+        margin-bottom: 20px;
+        margin-top: 26px;
+      }
+      .btcvalider {
+        margin: 27px auto 0 auto;
+      }
+      input {
+        margin: 20px auto auto auto;
+        width: auto;
+        height: 38px;
+        min-width: 315px;
+      }
+    }
+  }
+}
+
+//mobile devices
+
+@media screen and (max-width: 425px) {
+  section {
+    flex-direction: column;
+    height: 580px;
+  }
+
+  div {
+    &.enregistrer {
+      width: 100%;
+      border-radius: 36px 36px 0 0;
+
+      h1 {
+        margin-top: 10px;
+      }
+      p {
+        font-size: 15px;
+      }
+      .inscription {
+        padding: 9px 13px;
+        font-size: 14px;
+        margin-top: 6px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &.login {
+      width: auto;
+
+      h1 {
+      }
+      .inscription_bottom {
+        margin-bottom: 0px;
+        margin-top: 13px;
+      }
+      input {
+        width: 90%;
+        max-width: 280px;
+        min-width: 234px;
+      }
+      .btcvalider {
+        margin: 15px auto 0 auto;
+      }
+    }
+  }
+}

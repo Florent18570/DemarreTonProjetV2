@@ -1,0 +1,87 @@
+@import "./mixin";
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 114px;
+  box-shadow: 0 1px 8px #ddd;
+  background-color: white;
+
+  img {
+    justify-content: flex-start;
+    width: 350px;
+    min-width: 200px;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    .connexion {
+      background-color: $color-Primaire;
+      color: white;
+      font-size: 1.5em;
+      border-radius: 13px;
+
+      padding: 12px 20px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .deconnexion {
+      background-color: $color-Primaire;
+      color: white;
+      margin-right: 50px;
+      font-size: 1.5em;
+      border-radius: 13px;
+      padding: 12px 20px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    img {
+      min-width: 251px;
+    }
+    nav {
+      .connexion {
+      }
+      .deconnexion {
+        font-size: 22px;
+        padding: 7px 20px;
+        width: 195px;
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    flex-direction: column;
+    margin: auto;
+    img {
+      width: 100%;
+      max-width: 332px;
+      min-width: 234px;
+      margin: auto;
+    }
+    nav {
+      justify-content: center;
+      padding: 5px;
+      .connexion {
+        font-size: 19px;
+        padding: 7px 20px;
+        width: 118px;
+      }
+      .login {
+        margin-right: 10px;
+      }
+      .deconnexion {
+        font-size: 22px;
+        padding: 7px 20px;
+        width: 195px;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Lato;
+  src: url("http://fonts.googleapis.com/css?family=Lato:400,700");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Helvetica, sans-serif;
+}
+
+body {
+  height: 500px;
+  background: $color-Tertiaire;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 39px;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.flex {
+  display: flex;
+}

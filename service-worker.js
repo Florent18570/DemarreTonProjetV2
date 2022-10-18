@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/DemarreTonProjetV2/precache-manifest.b401b3af2945417d5949b849595c49b2.js"
+  "/DemarreTonProjetV2/precache-manifest.a54fe30a71a04bf4c955efb93ea3989b.js"
 );
 
 workbox.clientsClaim();

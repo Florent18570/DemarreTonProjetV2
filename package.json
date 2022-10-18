@@ -1,6 +1,5 @@
 {
   "homepage": "https://Florent18570.github.io/DemarreTonProjetV2/",
-  "proxy": "http://localhost:5000",
   "name": "demarretonprojet",
   "version": "0.1.0",
   "private": true,

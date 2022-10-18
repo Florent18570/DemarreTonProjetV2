@@ -1,17 +1,13 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
-
+import React, { Fragment } from "react";
+import "./index.css";
+import { Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Home from "./components/home";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </div>
+    <Router>
+      <Home exact path="/" />
+    </Router>
   );
 }
-
-export default App;

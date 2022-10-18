@@ -7,8 +7,6 @@ import Home from "./components/home";
 function App() {
   return (
     <div className="App">
-      {/* <Auth /> */}
-
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

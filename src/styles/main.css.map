@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "base/_base.scss",
+        "Composants/_header.scss",
+        "Pages/_accueil.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

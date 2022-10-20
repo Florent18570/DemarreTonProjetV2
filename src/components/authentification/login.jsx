@@ -100,7 +100,7 @@ class register extends React.Component {
           } else {
             toast.error("Mauvais nom d'utilisateur ou mots de passe", {
               position: "bottom-right",
-              autoClose: 5000,
+              autoClose: false,
               hideProgressBar: false,
               closeOnClick: true,
               pauseOnHover: true,

@@ -4,6 +4,7 @@ import GetPost from "./accueil/postes";
 import { Link } from "react-router-dom";
 import appareilPhoto from "../Images/dislike.png";
 import fermer from "../../src/Images/fermer.png";
+import { toast } from "react-toastify";
 
 class NewPost extends React.Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class NewPost extends React.Component {
     this.state = {
       userId: UserName.userId,
       inputText: "",
-      imageURL: "",
+      imageURL: "null",
     };
     // this.handleChange = this.handleChange.bind(this);
     // this.send = this.send.bind(this);
@@ -23,65 +24,81 @@ class NewPost extends React.Component {
     this.setState({
       inputText: document.querySelector(".inputText").value,
     });
-    // console.log(this.state.inputText);
-
-    // const name = event.target.name;
-    // const value = event.target.value;
   };
 
   send = () => {
     let UserName = sessionStorage.getItem("user");
     let arrayUser = UserName.split(",");
-
-    // const imageURL = document.querySelector(".buttonImage").files[0];
-
+    console.log("formdata");
     const date = new Date();
-
     const inputText = this.state.inputText;
 
-    var formdata = new FormData();
-    formdata.append("image", document.getElementById("file").files[0]);
-    formdata.append("userId", arrayUser[2]);
-    formdata.append("nom", arrayUser[0]);
-    formdata.append("prenom", arrayUser[1]);
-    formdata.append("inputTextPost", inputText);
-    formdata.append("datePost", date);
+    if (inputText) {
+      var validRegex = /^[A-Za-z\é\è\ê\-]+$/;
 
-    console.log(document.getElementById("file").files[0]);
+      // if (!inputText.match(validRegex)) {
+      //   toast.error("Le texte du poste est incorrect ! ", {
+      //     position: "bottom-right",
+      //     autoClose: 5000,
+      //     hideProgressBar: false,
+      //     closeOnClick: true,
+      //     pauseOnHover: true,
+      //     draggable: true,
+      //     progress: undefined,
+      //   });
+      // } else {
 
-    if (sessionStorage.getItem("user") != null) {
-      var requestOptions = {
-        method: "POST",
-        body: formdata,
-        // Variable récupérer dans le LocalStorage
-        headers: { Authorization: arrayUser[3] },
-      };
-    } else {
-      window.location = "./login#connexion";
-      requestOptions = null;
-    }
+      var formdata = new FormData();
+      formdata.append("userId", arrayUser[2]);
+      formdata.append("nom", arrayUser[0]);
+      formdata.append("prenom", arrayUser[1]);
+      formdata.append("inputTextPost", inputText);
+      formdata.append("datePost", date);
+      if (document.getElementById("file").files[0]) {
+        formdata.append("image", document.getElementById("file").files[0]);
+        console.log("coucouuu");
+      } else {
+        formdata.append("image", "undefined");
+      }
 
-    try {
-      fetch("http://localhost:3001/api/poste/newpost", requestOptions)
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          console.log(data);
+      if (sessionStorage.getItem("user") != null) {
+        var requestOptions = {
+          method: "POST",
+          body: formdata,
+          // Variable récupérer dans le LocalStorage
+          headers: { Authorization: arrayUser[3] },
+        };
+      } else {
+        window.location = "./login#connexion";
+        requestOptions = null;
+      }
 
-          window.location = "./accueil";
-        })
-        .catch((error) => {
-          window.location = "./accueil";
+      try {
+        const response = fetch(
+          "http://localhost:3001/api/poste/newpost",
+          requestOptions
+        )
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            console.log(data);
 
-          console.log("Error:", error);
-        });
-    } catch (error) {
-      window.location = "/accueil";
-      console.log("Error:", error);
-      // console.error(error);
+            window.location = "./accueil";
+          })
+          .catch((error) => {
+            window.location = "./accueil";
+
+            console.log("Error:", error);
+          });
+      } catch (error) {
+        window.location = "/accueil";
+        console.log("Error:", error);
+        // console.error(error);
+      }
     }
   };
+  // };
 
   render() {
     return (
@@ -100,13 +117,14 @@ class NewPost extends React.Component {
               <p>Qu'avez vous à partager ?</p>
             </div>
 
-            <form action="">
+            <form>
               <div className="input-block">
                 <input
                   onBlur={this.handleChange}
                   className="inputText"
                   type="text"
                   value={this.state.content}
+                  required
                 />
               </div>
 
@@ -118,7 +136,7 @@ class NewPost extends React.Component {
                   name="imageURL"
                 />
 
-                <button onClick={this.send} className="publier" type="submit">
+                <button onClick={this.send} className="publier">
                   Publier
                 </button>
               </div>

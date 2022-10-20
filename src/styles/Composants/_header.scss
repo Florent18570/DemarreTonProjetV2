@@ -6,17 +6,26 @@ header {
   width: 100%;
   height: 114px;
   box-shadow: 0 1px 8px #ddd;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 10px;
 
   img {
     justify-content: flex-start;
     width: 350px;
     min-width: 200px;
+    margin-left: 30px;
   }
   nav {
     display: flex;
     justify-content: flex-end;
-    width: auto;
+    width: 100%;
+    margin-right: 31px;
+    .login {
+      margin-right: 20px;
+    }
+    .inscription {
+      margin-right: 22px;
+    }
     .connexion {
       background-color: $color-Primaire;
       color: white;
@@ -44,7 +53,10 @@ header {
       min-width: 251px;
     }
     nav {
+      margin-right: 15px;
       .connexion {
+        padding: 7px 14px;
+        font-size: 20px;
       }
       .deconnexion {
         font-size: 22px;
@@ -56,7 +68,29 @@ header {
   }
 }
 
-@media screen and (max-width: 425px) {
+//between tablette and phone
+@media screen and (max-width: 768px) {
+  header {
+    img {
+      min-width: 251px;
+    }
+    nav {
+      margin-right: 15px;
+      .connexion {
+        padding: 7px 14px;
+        font-size: 20px;
+      }
+      .deconnexion {
+        font-size: 22px;
+        padding: 7px 20px;
+        width: 195px;
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 629px) {
   header {
     flex-direction: column;
     margin: auto;
@@ -67,20 +101,22 @@ header {
       margin: auto;
     }
     nav {
-      justify-content: center;
       padding: 5px;
+      justify-content: center;
+      .inscription {
+        margin-right: 0px;
+      }
       .connexion {
         font-size: 19px;
         padding: 7px 20px;
         width: 118px;
       }
-      .login {
-        margin-right: 10px;
-      }
+
       .deconnexion {
         font-size: 22px;
         padding: 7px 20px;
-        width: 195px;
+        margin: auto -25px auto auto;
+        width: auto;
       }
     }
   }

@@ -4,21 +4,19 @@
   flex-direction: column;
   box-shadow: -9px 12px 20px 2px rgba(0, 0, 0, 0.46);
   border-radius: 38px;
-  justify-content: flex-end;
+
   .containerBienvenue {
-    margin: 0px -30px 0 -28px;
-    height: 91px;
+    margin: 0px -30px 20px -28px;
     background: $color-Primaire;
     border-radius: 36px 36px 22px 22px;
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
+    padding: 12px 0;
 
     .bienvenue {
       margin: auto;
-      padding-left: 239px;
-      align-items: center;
     }
     a {
       text-decoration: none;
@@ -27,7 +25,6 @@
         border: 4px solid $color-Tertiaire;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 13px;
-        height: 50px;
 
         cursor: pointer;
         font-size: 20px;
@@ -76,5 +73,26 @@
   .containerPost {
     margin-top: 20px;
     width: 90%;
+  }
+}
+
+//mobile devices
+
+@media screen and (max-width: 629px) {
+  .bigContainer {
+    .containerBienvenue {
+      margin: 0px -20px 20px -19px;
+      h1 {
+        font-size: 19px;
+      }
+      .bienvenue {
+      }
+      a {
+        .nouvellePublication {
+          padding: 9px 9px 10px 9px;
+          font-size: 11px;
+        }
+      }
+    }
   }
 }

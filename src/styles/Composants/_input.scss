@@ -3,6 +3,12 @@
   margin-top: 15px;
 }
 
+@media screen and (max-width: 629px) {
+  .input-block {
+    margin-top: 5px;
+  }
+}
+
 input {
   background-color: rgba(rgb(233, 154, 154), 0.8);
 

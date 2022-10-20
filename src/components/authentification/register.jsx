@@ -8,9 +8,13 @@ class register extends React.Component {
     super(props);
     this.state = {
       nom: "",
+      erreurNom: "",
       prenom: "",
+      erreurPrenom: "",
       email: "",
+      erreurEmail: "",
       password: "",
+      erreurPassword: "",
     };
     sessionStorage.removeItem("deconnexionMessage");
   }
@@ -34,36 +38,79 @@ class register extends React.Component {
         password: password,
       };
 
-      var requestOptions = {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      };
+      var validRegex =
+        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-      const response = await fetch(
-        `http://localhost:3001/api/auth/signup`,
-        requestOptions
-      );
+      var validRegex2 = /^[A-Za-z\é\è\ê\-]+$/;
 
-      let numberLike = await response.json();
-      console.log(numberLike);
+      var validePrenom, valideNom, valideEmail;
 
-      if (numberLike.message === "Utilisateur créé !") {
-        var inscription = "inscription";
-        sessionStorage.setItem("inscription", inscription);
-        window.location = "/login";
-      } else {
-        toast.error("Erreur: L'adresse mail ou le mot de passe existe déjà !", {
-          position: "bottom-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
+      if (!nom.match(validRegex2)) {
+        this.setState({
+          erreurNom: "Nom incorrect",
         });
+      } else {
+        this.setState({
+          erreurNom: "",
+        });
+        valideNom = "ok";
+        if (!prenom.match(validRegex2)) {
+          this.setState({
+            erreurPrenom: "Prénom incorrect",
+          });
+        } else {
+          this.setState({
+            erreurPrenom: "",
+          });
+          validePrenom = "ok";
+          if (!email.match(validRegex)) {
+            this.setState({
+              erreurEmail: "Email incorrect",
+            });
+          } else {
+            this.setState({
+              erreurEmail: "",
+            });
+            valideEmail = "ok";
+          }
+        }
+      }
+
+      if (valideEmail === "ok" && validePrenom === "ok" && valideNom === "ok") {
+        var requestOptions = {
+          method: "POST",
+          body: JSON.stringify(data),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        };
+
+        const response = await fetch(
+          `http://localhost:3001/api/auth/signup`,
+          requestOptions
+        );
+
+        let numberLike = await response.json();
+        console.log(numberLike);
+
+        if (numberLike.message === "Utilisateur créé !") {
+          var inscription = "inscription";
+          sessionStorage.setItem("inscription", inscription);
+          window.location = "/login";
+        } else {
+          toast.error(
+            "Erreur: L'adresse mail ou le mot de passe existe déjà !",
+            {
+              position: "bottom-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            }
+          );
+        }
       }
     } catch (error) {
       toast.error(
@@ -105,7 +152,9 @@ class register extends React.Component {
                   name="nom"
                   onChange={this.handleChange}
                   value={this.Nom}
+                  required
                 />
+                <p>{this.state.erreurNom}</p>
               </div>
 
               <div class="input-block">
@@ -114,7 +163,9 @@ class register extends React.Component {
                   name="prenom"
                   onChange={this.handleChange}
                   value={this.prenom}
+                  required
                 />
+                <p>{this.state.erreurPrenom}</p>
               </div>
 
               <div class="input-block">
@@ -124,7 +175,9 @@ class register extends React.Component {
                   className="email"
                   value={this.email}
                   onChange={this.handleChange}
+                  required
                 />
+                <p>{this.state.erreurEmail}</p>
               </div>
 
               <div class="input-block">
@@ -135,10 +188,11 @@ class register extends React.Component {
                   className="password"
                   value={this.password}
                   onChange={this.handleChange}
+                  required
                 />
               </div>
 
-              <button type="button" className="btcvalider" onClick={this.send}>
+              <button type="submit" className="btcvalider" onClick={this.send}>
                 Valider
               </button>
             </div>

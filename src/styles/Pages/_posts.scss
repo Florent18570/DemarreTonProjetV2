@@ -78,8 +78,11 @@
   height: auto;
   margin-top: 22px;
   position: relative;
+
   p {
     margin-bottom: 20px;
+    margin-right: auto;
+    padding-right: 10px;
   }
   nav h1 {
     position: absolute;
@@ -133,8 +136,75 @@
   }
 }
 
-//tablette
+.btc-commentaire {
+  background: white;
+  color: inherit;
+  border-radius: 36px;
+  padding: 5px 10px;
+  font: inherit;
+  cursor: pointer;
 
+  margin-left: 20%;
+}
+
+.envoie {
+  position: relative;
+  div {
+    .comment {
+      width: 86%;
+      height: auto;
+      min-height: 20px;
+      border-radius: 17px;
+      margin-top: 15px;
+      padding: 10px;
+      position: relative;
+    }
+    .envoyerComment {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      background-color: transparent !important;
+      border: 0px transparent;
+      right: 31px;
+      top: 22px;
+      position: absolute;
+      // background: url("../../Images/envoyer.png");
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.commentaire {
+  background-color: white;
+  padding: 10px;
+  width: 85%;
+  margin: 8px auto 11px auto;
+  position: relative;
+  border-radius: 17px;
+  p {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .auteur {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .commentaireAuteur {
+    margin-top: 5px;
+    position: relative;
+    img {
+      right: 0px;
+      top: -20px;
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+}
+
+//tablette
 @media screen and (max-width: 768px) {
   .toggle {
     position: absolute;
@@ -168,7 +238,6 @@
       transform: rotate(0deg) scale(1);
     }
   }
-
   .toggle::before {
     content: "";
     border-left: #4e5166 solid 2px;
@@ -179,47 +248,55 @@
     position: absolute;
     top: -10px;
   }
+  .div_bottom {
+    .post {
+      font-size: 20px;
+    }
+  }
 
+  .envoie {
+    div {
+      .comment {
+      }
+      .envoyerComment {
+        right: 23px;
+      }
+    }
+  }
+}
+
+//mobile phone
+@media screen and (max-width: 425px) {
   // Container Postuser TOP
   .containerTop {
     .IdentifiantPost {
+      font-size: 23px;
+      margin-top: 30px;
+      margin-left: 11px;
     }
     .imageProfil {
+      width: 45px;
+      height: 45px;
+      margin-left: 22px;
+      margin-top: 23px;
     }
-  }
-
-  .troispoints {
   }
 
   // Container Postuser Bottom
-
-  .headerBottom {
-    p {
-    }
-    nav h1 {
-    }
-  }
 
   .div_bottom {
     .post {
       font-size: 20px;
     }
+  }
 
-    .imgPost {
-    }
-
-    .avis {
-      .like {
-        p {
-        }
+  .envoie {
+    div {
+      .comment {
       }
-      .dislike {
-        p {
-        }
+      .envoyerComment {
+        right: 11px;
       }
-    }
-
-    .deleteModify {
     }
   }
 }

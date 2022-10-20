@@ -3,14 +3,24 @@ import troispoints from "../../Images/troispoints.png";
 import coeur from "../../Images/coeur.png";
 import down from "../../Images/dislike.png";
 import imageProfil from "../../Images/iconeProfil.png";
+import envoyer from "../../Images/envoyer.png";
+import supprimer from "../../Images/delete.png";
+
 var moment = require("moment"); // require
 
 const GetPost = () => {
   const [arrayPost, setData] = useState([]);
   const [detailsShown, setDetailShown] = useState([]);
   const [toggle, settoggle] = useState([]);
-  // const [like, setlike] = useState([]);
+  const [comment, setComment] = useState();
+  const [dropdown, setDropdown] = useState(null);
+  const [dropdowntroispoint, setDropdownTroisPoint] = useState(null);
 
+  // const [like, setlike] = useState([]);
+  let UserName = sessionStorage.getItem("user");
+  var arrayUser = UserName.split(",");
+  const [infoUser, setinfoUser] = useState(arrayUser);
+  console.log(infoUser);
   useEffect(() => {
     getData();
   }, []);
@@ -19,7 +29,7 @@ const GetPost = () => {
     if (sessionStorage.getItem("user") != null) {
       let UserName = sessionStorage.getItem("user");
       var arrayUser = UserName.split(",");
-
+      console.log(arrayUser);
       var requestOptions = {
         method: "GET",
         // Variable récupérer dans le LocalStorage
@@ -156,6 +166,110 @@ const GetPost = () => {
     }
   };
 
+  async function updateComment(id) {
+    if (comment != null) {
+      let UserName = sessionStorage.getItem("user");
+      var arrayUser = UserName.split(",");
+
+      var commentUpdate = {
+        userCommentaire: arrayUser[0] + " " + arrayUser[1],
+        commentaire: comment,
+      };
+
+      console.log(commentUpdate);
+      var requestOptions = {
+        method: "post",
+        body: JSON.stringify(commentUpdate),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+      try {
+        const response = await fetch(
+          `http://localhost:3001/api/poste/updateComment/${id}`,
+          requestOptions
+        );
+
+        let etatCommentaire = await response.json();
+        console.log(etatCommentaire);
+      } catch (error) {
+        console.log("Error:", error);
+      }
+    }
+  }
+
+  const displayComment = (idPost, commentaire, usercommentaire) => {
+    console.log(usercommentaire, commentaire);
+    var p = 0;
+    return (
+      <div className="allCommentaire">
+        {commentaire.map((item, index) => {
+          return (
+            <div className="commentaire">
+              <p className="auteur">{usercommentaire[index]}</p>
+              <p className="commentaireAuteur">
+                {commentaire[index]}
+                <img
+                  className="supprimer"
+                  src={supprimer}
+                  alt="supprimer commentaire"
+                  onClick={() =>
+                    deletecomment(idPost, commentaire, usercommentaire, index)
+                  }
+                />
+              </p>
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+
+  const clickHandler = (index) => {
+    setDropdown((prev) => {
+      return prev === index ? null : index;
+    });
+  };
+
+  const clickHandleryTroisPoint = (index) => {
+    console.log("clicked", index);
+    setDropdownTroisPoint((prev) => {
+      return prev === index ? null : index;
+    });
+    console.log("clicked", index);
+  };
+
+  async function deletecomment(idPost, commentaire, usercommentaire, index) {
+    var deletecomment = {
+      userCommentaire: usercommentaire,
+      commentaire: commentaire,
+      index: index,
+    };
+
+    console.log(deletecomment);
+
+    var requestOptions = {
+      method: "delete",
+      body: JSON.stringify(deletecomment),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+    try {
+      const response = await fetch(
+        `http://localhost:3001/api/poste/deleteComment/${idPost}`,
+        requestOptions
+      );
+
+      let deletecom = await response.json();
+      if (deletecom) {
+        window.location.reload();
+      }
+    } catch (error) {
+      console.log("Error:", error);
+    }
+  }
+
   function renderTable() {
     return (
       <>
@@ -169,31 +283,48 @@ const GetPost = () => {
                     {item.nom + " " + item.prenom}
                   </h2>
 
-                  <img
-                    src={troispoints}
-                    alt="imagetroispoints"
-                    id={"imagetroispoints" + item._id}
-                    className="troispoints"
-                    onClick={() => toggleShown(item._id)}
-                  />
+                  {(() => {
+                    if (infoUser[2] === item.userId) {
+                      return (
+                        <img
+                          src={troispoints}
+                          alt="imagetroispoints"
+                          id={"imagetroispoints" + item._id}
+                          className="troispoints"
+                          onClick={() => clickHandleryTroisPoint(item._id)}
+                        />
+                      );
+                    }
+                    if (infoUser[4] == "true") {
+                      return (
+                        <button
+                          className="btc-commentaire"
+                          onClick={() => clickHandleryTroisPoint(item._id)}
+                        >
+                          Commentaire
+                        </button>
+                      );
+                    }
+                  })()}
 
-                  <div className={toggle}>
-                    {detailsShown.includes(item._id) && (
-                      <a
-                        id={"modifier" + item._id}
-                        href={`/modifier_post/?id_postupdate=${item._id}`}
-                      >
-                        <p className="user">Modifier</p>
-                      </a>
-                    )}
-                    {detailsShown.includes(item._id) && (
-                      <a
-                        id={"suprimer" + item._id}
-                        href={`/delete_post/?id=${item._id}`}
-                      >
-                        <p className="user">Supprimer</p>
-                      </a>
-                    )}
+                  <div
+                    className={
+                      dropdowntroispoint === item._id ? "toggle" : "hidden"
+                    }
+                  >
+                    <a
+                      id={"modifier" + item._id}
+                      href={`/modifier_post/?id_postupdate=${item._id}`}
+                    >
+                      <p className="user">Modifier</p>
+                    </a>
+
+                    <a
+                      id={"suprimer" + item._id}
+                      href={`/delete_post/?id=${item._id}`}
+                    >
+                      <p className="user">Supprimer</p>
+                    </a>
                   </div>
                 </div>
 
@@ -205,14 +336,21 @@ const GetPost = () => {
                     <nav>{datePost(item.datePost)}</nav>
                   </div>
 
-                  <img
-                    id={"img" + item._id}
-                    className="imgPost"
-                    src={
-                      "http://localhost/projet7/backend/images/" + item.image
+                  {(() => {
+                    if (item.image) {
+                      return (
+                        <img
+                          id={"img" + item._id}
+                          className="imgPost"
+                          src={
+                            "http://localhost/projet7/backend/images/" +
+                            item.image
+                          }
+                          alt="imagePost"
+                        />
+                      );
                     }
-                    alt="imagePost"
-                  />
+                  })()}
 
                   <div className="avis">
                     <div
@@ -232,7 +370,49 @@ const GetPost = () => {
                       <img src={down} alt="dislike" id={"dislike" + item._id} />
                       <p id={"pdislike" + item._id}>{item.dislike}</p>
                     </div>
+                    <div id={"commentaire" + item._id}>
+                      <button
+                        className="btc-commentaire"
+                        onClick={() => clickHandler(item._id)}
+                      >
+                        Commentaire
+                      </button>
+                    </div>
                   </div>
+
+                  <form
+                    className={dropdown === item._id ? "envoie" : "hidden"}
+                    action={window.location.reload}
+                  >
+                    <div>
+                      <input
+                        type="text"
+                        className="comment"
+                        onChange={(e) => setComment(e.target.value)}
+                        required
+                      />
+
+                      <img
+                        className="envoyerComment"
+                        src={envoyer}
+                        type="submit"
+                      />
+
+                      <input
+                        type="submit"
+                        value=""
+                        id="image"
+                        alt="envoyer"
+                        className="envoyerComment"
+                        onClick={() => updateComment(item._id)}
+                      />
+                      {displayComment(
+                        item._id,
+                        item.commentaire,
+                        item.userCommentaire
+                      )}
+                    </div>
+                  </form>
                 </div>
               </div>
             </>

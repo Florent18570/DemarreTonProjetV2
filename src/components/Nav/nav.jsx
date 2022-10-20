@@ -15,7 +15,7 @@ function register() {
             </button>
           </Link>
           <Link to="/register">
-            <button href="inscription.html" class="connexion">
+            <button href="inscription.html" class="connexion inscription">
               S'inscrire
             </button>
           </Link>

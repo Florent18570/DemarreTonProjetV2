@@ -3,6 +3,7 @@ import Bienvenue from "./accueil/bienvenue";
 import { Link } from "react-router-dom";
 import appareilPhoto from "../Images/dislike.png";
 import fermer from "../../src/Images/fermer.png";
+import { toast } from "react-toastify";
 
 class NewPost extends React.Component {
   constructor(props) {
@@ -117,55 +118,57 @@ class NewPost extends React.Component {
     const date = new Date();
     const { inputTextPost, image } = this.state;
 
-    const dataUpdate = {
-      userId: arrayUser[2],
-      nom: arrayUser[0],
-      prenom: arrayUser[1],
-      inputTextPost: inputTextPost,
-      datePost: date,
-      image: image,
-    };
+    var validRegex = /^[A-Za-z\é\è\ê\-]+$/;
 
-    // if (sessionStorage.getItem("user") != null) {
-    //   var requestOptions = {
-    //     method: "POST",
-    //     body: JSON.stringify(dataUpdate),
-    //     // Variable récupérer dans le LocalStorage
-    //     headers: { Authorization: arrayUser[3] },
-    //   };
-    // } else {
-    //   window.location = "./login#connexion";
-    //   var requestOptions = null;
-    // }
+    if (!inputTextPost.match(validRegex)) {
+      toast.error("Le texte du poste est incorrect !", {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    } else {
+      const dataUpdate = {
+        userId: arrayUser[2],
+        nom: arrayUser[0],
+        prenom: arrayUser[1],
+        inputTextPost: inputTextPost,
+        datePost: date,
+        image: image,
+      };
 
-    var requestOptions = {
-      method: "PUT",
-      body: JSON.stringify(dataUpdate),
-      // Variable récupérer dans le LocalStorage
-      headers: {
-        "Content-Type": "application/json",
-      },
-    };
+      var requestOptions = {
+        method: "PUT",
+        body: JSON.stringify(dataUpdate),
+        // Variable récupérer dans le LocalStorage
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
 
-    try {
-      fetch(
-        `http://localhost:3001/api/poste/modifier_post/${idPostValue}`,
-        requestOptions
-      )
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          window.location = "/accueil";
-        })
-        .catch((error) => {
-          window.location = "/accueil";
-          console.log("Error:", error);
-        });
-    } catch (error) {
-      window.location = "/accueil";
-      console.log("Error:", error);
-      // console.error(error);
+      try {
+        fetch(
+          `http://localhost:3001/api/poste/modifier_post/${idPostValue}`,
+          requestOptions
+        )
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            window.location = "/accueil";
+          })
+          .catch((error) => {
+            window.location = "/accueil";
+            console.log("Error:", error);
+          });
+      } catch (error) {
+        window.location = "/accueil";
+        console.log("Error:", error);
+        // console.error(error);
+      }
     }
   };
 

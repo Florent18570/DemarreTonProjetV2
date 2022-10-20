@@ -55,6 +55,7 @@ h1 {
 }
 
 .modificationPost .addPostTop h2 {
+  width: 89%;
   color: #c22626;
   font-weight: 700;
   font-size: 28px;
@@ -77,6 +78,7 @@ form h2 {
 }
 
 form .button_bottom_modifier {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,13 +91,13 @@ form .button_bottom_modifier {
 }
 
 form .button_bottom_modifier .buttonImage {
+  min-width: 158px;
   background: #ffffff;
   border: 4px solid #f25132;
   border-radius: 13px;
   cursor: pointer;
   margin-top: 30px;
   height: 50px;
-  min-width: 50px;
   margin-left: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,8 +110,8 @@ form .button_bottom_modifier h2 {
 }
 
 form .button_bottom_modifier img {
-  width: auto;
-  min-width: 200px;
+  width: 111%;
+  min-width: 180px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -132,6 +134,34 @@ form .button_bottom_modifier img {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 629px) {
+  form .button_bottom_modifier {
+    margin-top: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form .button_bottom_modifier img {
+    min-width: 155px;
+  }
+}
+
+@media screen and (max-width: 629px) {
+  form h2 {
+    margin-left: 0px;
+  }
+  form .button_bottom_modifier .buttonImage {
+    width: 110%;
+    height: 40px;
+    margin-left: 0px;
+  }
+  form .button_bottom_modifier img {
+    min-width: 155px;
+    margin-left: 0px;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,6 +174,7 @@ header {
   -webkit-box-shadow: 0 1px 8px #ddd;
           box-shadow: 0 1px 8px #ddd;
   background-color: white;
+  padding-bottom: 10px;
 }
 
 header img {
@@ -152,6 +183,7 @@ header img {
           justify-content: flex-start;
   width: 350px;
   min-width: 200px;
+  margin-left: 30px;
 }
 
 header nav {
@@ -161,7 +193,16 @@ header nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: auto;
+  width: 100%;
+  margin-right: 31px;
+}
+
+header nav .login {
+  margin-right: 20px;
+}
+
+header nav .inscription {
+  margin-right: 22px;
 }
 
 header nav .connexion {
@@ -189,6 +230,13 @@ header nav .deconnexion {
   header img {
     min-width: 251px;
   }
+  header nav {
+    margin-right: 15px;
+  }
+  header nav .connexion {
+    padding: 7px 14px;
+    font-size: 20px;
+  }
   header nav .deconnexion {
     font-size: 22px;
     padding: 7px 20px;
@@ -197,7 +245,26 @@ header nav .deconnexion {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
+  header img {
+    min-width: 251px;
+  }
+  header nav {
+    margin-right: 15px;
+  }
+  header nav .connexion {
+    padding: 7px 14px;
+    font-size: 20px;
+  }
+  header nav .deconnexion {
+    font-size: 22px;
+    padding: 7px 20px;
+    width: 195px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 629px) {
   header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -212,23 +279,24 @@ header nav .deconnexion {
     margin: auto;
   }
   header nav {
+    padding: 5px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 5px;
+  }
+  header nav .inscription {
+    margin-right: 0px;
   }
   header nav .connexion {
     font-size: 19px;
     padding: 7px 20px;
     width: 118px;
   }
-  header nav .login {
-    margin-right: 10px;
-  }
   header nav .deconnexion {
     font-size: 22px;
     padding: 7px 20px;
-    width: 195px;
+    margin: auto -25px auto auto;
+    width: auto;
   }
 }
 
@@ -242,11 +310,18 @@ section {
   display: -ms-flexbox;
   display: flex;
   border-radius: 38px;
+  position: relative;
+}
+
+section form {
+  margin: auto;
+  width: 61%;
 }
 
 div.enregistrer {
-  width: 34%;
-  height: 620px;
+  width: 331px;
+  min-width: 303px;
+  height: 580px;
   background: #f64d2b;
   border-radius: 36px 0 0 38px;
 }
@@ -276,8 +351,7 @@ div.enregistrer .inscription {
 }
 
 div.login {
-  width: 639px;
-  height: 537px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,10 +359,11 @@ div.login {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 div.login h1 {
-  margin-top: 83px;
+  margin-top: 20px;
   color: #4e5166;
   margin-bottom: 50px;
 }
@@ -299,7 +374,7 @@ div.login .inscription_bottom {
 
 div.login input {
   border-radius: 7px;
-  width: 415px;
+  width: 71%;
   height: 44px;
   margin-top: 20px;
   margin: 20px auto 10px auto;
@@ -324,8 +399,12 @@ div.login .btcvalider {
     margin: 50px 20px auto 20px;
     height: 483px;
   }
+  section form {
+    width: auto;
+  }
   div.enregistrer {
     width: 33%;
+    min-width: 184px;
     height: 483px;
     background: #f64d2b;
     border-radius: 36px 0 0 38px;
@@ -352,8 +431,7 @@ div.login .btcvalider {
     margin-top: 50px;
   }
   div.login {
-    width: 499px;
-    padding: auto;
+    width: 100%;
   }
   div.login h1 {
     margin-top: 67px;
@@ -365,17 +443,14 @@ div.login .btcvalider {
     margin-top: 26px;
   }
   div.login .btcvalider {
-    margin: 27px auto 0 auto;
+    margin: 12px auto 21px auto;
   }
   div.login input {
-    margin: 20px auto auto auto;
-    width: auto;
-    height: 38px;
-    min-width: 315px;
+    height: 34px;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 629px) {
   section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -383,9 +458,15 @@ div.login .btcvalider {
             flex-direction: column;
     height: 580px;
   }
+  section form {
+    margin: auto;
+    width: 61%;
+  }
   div.enregistrer {
     width: 100%;
     border-radius: 36px 36px 0 0;
+    height: 147px;
+    padding-bottom: 19px;
   }
   div.enregistrer h1 {
     margin-top: 10px;
@@ -400,25 +481,35 @@ div.login .btcvalider {
     margin-bottom: 10px;
   }
   div.login {
-    width: auto;
+    width: 100%;
+    margin: auto;
+  }
+  div.login h1 {
+    margin-top: -53px;
+    margin-bottom: 13px;
+    font-size: 27px;
   }
   div.login .inscription_bottom {
-    margin-bottom: 0px;
+    margin-bottom: 17px;
     margin-top: 13px;
   }
   div.login input {
-    width: 90%;
-    max-width: 280px;
-    min-width: 234px;
+    width: 91%;
   }
   div.login .btcvalider {
-    margin: 15px auto 0 auto;
+    margin: 12px auto 21px auto;
   }
 }
 
 .input-block {
   position: relative;
   margin-top: 15px;
+}
+
+@media screen and (max-width: 629px) {
+  .input-block {
+    margin-top: 5px;
+  }
 }
 
 input {
@@ -451,14 +542,10 @@ label {
   -webkit-box-shadow: -9px 12px 20px 2px rgba(0, 0, 0, 0.46);
           box-shadow: -9px 12px 20px 2px rgba(0, 0, 0, 0.46);
   border-radius: 38px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .bigContainer .containerBienvenue {
-  margin: 0px -30px 0 -28px;
-  height: 91px;
+  margin: 0px -30px 20px -28px;
   background: #f64d2b;
   border-radius: 36px 36px 22px 22px;
   display: -webkit-box;
@@ -472,14 +559,11 @@ label {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding: 12px 0;
 }
 
 .bigContainer .containerBienvenue .bienvenue {
   margin: auto;
-  padding-left: 239px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .bigContainer .containerBienvenue a {
@@ -492,7 +576,6 @@ label {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 13px;
-  height: 50px;
   cursor: pointer;
   font-size: 20px;
   display: -webkit-box;
@@ -541,15 +624,27 @@ label {
   }
 }
 
+@media screen and (max-width: 629px) {
+  .bigContainer .containerBienvenue {
+    margin: 0px -20px 20px -19px;
+  }
+  .bigContainer .containerBienvenue h1 {
+    font-size: 19px;
+  }
+  .bigContainer .containerBienvenue a .nouvellePublication {
+    padding: 9px 9px 10px 9px;
+    font-size: 11px;
+  }
+}
+
 .newPostContainer {
   background: rgba(238, 218, 218, 0.94);
   -webkit-box-shadow: -9px 12px 20px 2px rgba(0, 0, 0, 0.46);
           box-shadow: -9px 12px 20px 2px rgba(0, 0, 0, 0.46);
   border-radius: 38px;
   width: 80%;
-  height: 304px;
+  padding: 7px 25px 112px 25px;
   margin: 20px auto 20px auto;
-  padding: 7px 25px 15px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,8 +696,8 @@ label {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  right: 38px;
-  bottom: -92px;
+  right: -109px;
+  bottom: -106px;
 }
 
 .newPostContainer .button_bottom input {
@@ -623,6 +718,11 @@ label {
   width: 100px;
   height: 40px;
   cursor: pointer;
+}
+
+section form {
+  margin: auto;
+  width: 76%;
 }
 
 .toggle {
@@ -732,6 +832,8 @@ label {
 
 .headerBottom p {
   margin-bottom: 20px;
+  margin-right: auto;
+  padding-right: 10px;
 }
 
 .headerBottom nav h1 {
@@ -792,6 +894,76 @@ label {
 
 .div_bottom .deleteModify {
   display: none;
+}
+
+.btc-commentaire {
+  background: white;
+  color: inherit;
+  border-radius: 36px;
+  padding: 5px 10px;
+  font: inherit;
+  cursor: pointer;
+  margin-left: 20%;
+}
+
+.envoie {
+  position: relative;
+}
+
+.envoie div .comment {
+  width: 86%;
+  height: auto;
+  min-height: 20px;
+  border-radius: 17px;
+  margin-top: 15px;
+  padding: 10px;
+  position: relative;
+}
+
+.envoie div .envoyerComment {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: transparent !important;
+  border: 0px transparent;
+  right: 31px;
+  top: 22px;
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
+
+.commentaire {
+  background-color: white;
+  padding: 10px;
+  width: 85%;
+  margin: 8px auto 11px auto;
+  position: relative;
+  border-radius: 17px;
+}
+
+.commentaire p {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.commentaire .auteur {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.commentaire .commentaireAuteur {
+  margin-top: 5px;
+  position: relative;
+}
+
+.commentaire .commentaireAuteur img {
+  right: 0px;
+  top: -20px;
+  position: absolute;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -855,6 +1027,29 @@ label {
   }
   .div_bottom .post {
     font-size: 20px;
+  }
+  .envoie div .envoyerComment {
+    right: 23px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .containerTop .IdentifiantPost {
+    font-size: 23px;
+    margin-top: 30px;
+    margin-left: 11px;
+  }
+  .containerTop .imageProfil {
+    width: 45px;
+    height: 45px;
+    margin-left: 22px;
+    margin-top: 23px;
+  }
+  .div_bottom .post {
+    font-size: 20px;
+  }
+  .envoie div .envoyerComment {
+    right: 11px;
   }
 }
 /*# sourceMappingURL=main.css.map */

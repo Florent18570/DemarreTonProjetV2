@@ -41,9 +41,24 @@ function App() {
     );
   };
 
+  const GridCreation = () => {
+    return (
+      <div className="creation">
+        <h1> Nos Récentes Créations</h1>
+        <section className="GridCreation">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </section>
+      </div>
+    );
+  };
+
   return (
     <>
       <Section />
+      <GridCreation />
     </>
   );
 }

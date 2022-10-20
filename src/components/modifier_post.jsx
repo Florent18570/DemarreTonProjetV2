@@ -138,6 +138,7 @@ class NewPost extends React.Component {
         inputTextPost: inputTextPost,
         datePost: date,
         image: image,
+        modifierle: true,
       };
 
       var requestOptions = {

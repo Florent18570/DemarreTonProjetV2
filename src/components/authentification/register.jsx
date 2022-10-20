@@ -154,7 +154,7 @@ class register extends React.Component {
                   value={this.Nom}
                   required
                 />
-                <p>{this.state.erreurNom}</p>
+                <p className="erreur">{this.state.erreurNom}</p>
               </div>
 
               <div class="input-block">
@@ -165,7 +165,7 @@ class register extends React.Component {
                   value={this.prenom}
                   required
                 />
-                <p>{this.state.erreurPrenom}</p>
+                <p className="erreur">{this.state.erreurPrenom}</p>
               </div>
 
               <div class="input-block">
@@ -177,7 +177,7 @@ class register extends React.Component {
                   onChange={this.handleChange}
                   required
                 />
-                <p>{this.state.erreurEmail}</p>
+                <p className="erreur">{this.state.erreurEmail}</p>
               </div>
 
               <div class="input-block">

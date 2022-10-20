@@ -48,7 +48,6 @@ const GetPost = () => {
       let data = await response.json();
 
       var arraydata = Object.values(data.reverse());
-      console.log(data);
 
       setData(arraydata);
 
@@ -67,8 +66,8 @@ const GetPost = () => {
   //   }
   // }
 
-  function datePost(arrayPost) {
-    let datepost = new Date(arrayPost);
+  function datePost(arrayTime, modifierle) {
+    let datepost = new Date(arrayTime);
     let dateNow = Date.now();
     let dateDuPost = dateNow - datepost;
 
@@ -85,17 +84,25 @@ const GetPost = () => {
 
     switch (postday) {
       case 0:
-        if (postHour === 0) {
-          return <h1 key="uniqueId1">Il y a {postMinute} minutes </h1>;
+        if (modifierle == true) {
+          return (
+            <p>
+              Modifier Il y a {postday} jours et {postHour}h{postMinute}
+            </p>
+          );
         } else {
-          if (postMinute === 0) {
-            return <h1 key="uniqueId2"> Il y a {postHour} h</h1>;
+          if (postHour === 0) {
+            return <h1 key="uniqueId1">Il y a {postMinute} minutes </h1>;
           } else {
-            return (
-              <h1 key="uniqueId2">
-                Il y a {postHour} h {postMinute} minutes
-              </h1>
-            );
+            if (postMinute === 0) {
+              return <h1 key="uniqueId2"> Il y a {postHour} h</h1>;
+            } else {
+              return (
+                <h1 key="uniqueId2">
+                  Il y a {postHour} h {postMinute} minutes
+                </h1>
+              );
+            }
           }
         }
 
@@ -333,7 +340,7 @@ const GetPost = () => {
                     <p id={"p" + item._id} className="post">
                       {item.inputTextPost}
                     </p>
-                    <nav>{datePost(item.datePost)}</nav>
+                    <nav>{datePost(item.datePost, item.modifierle)}</nav>
                   </div>
 
                   {(() => {

@@ -31,7 +31,7 @@ function deletePostId(id) {
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-      window.location = "/accueil";
+      window.location = "/P7_Openclassroom/accueil";
     })
     .catch((error) => {
       console.error("Error:", error);

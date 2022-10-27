@@ -92,7 +92,7 @@ class register extends React.Component {
 
             var loginMessage = "deconnexion";
             sessionStorage.setItem("messageLogin", loginMessage);
-            window.location = "/accueil";
+            window.location = "/P7_Openclassroom/accueil";
 
             // Envoie du token
           } else {
@@ -129,7 +129,7 @@ class register extends React.Component {
           <div className="enregistrer">
             <h1> Bienvenue ! </h1>
             <p>Tu es nouveau ? S’inscrire, c’est rapide et facile.</p>
-            <Link to="/register">
+            <Link to="/P7_Openclassroom/register">
               <button type="button" className="inscription">
                 S'inscrire
               </button>

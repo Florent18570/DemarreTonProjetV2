@@ -97,7 +97,7 @@ class register extends React.Component {
         if (numberLike.message === "Utilisateur créé !") {
           var inscription = "inscription";
           sessionStorage.setItem("inscription", inscription);
-          window.location = "/login";
+          window.location = "/P7_Openclassroom/login";
         } else {
           toast.error(
             "Erreur: L'adresse mail ou le mot de passe existe déjà !",
@@ -136,7 +136,7 @@ class register extends React.Component {
           <div className="enregistrer">
             <h1> Bienvenue ! </h1>
             <p>Tu es nouveau ? S’inscrire, c’est rapide et facile.</p>
-            <Link to="/login">
+            <Link to="/P7_Openclassroom/login">
               <button type="button" className="inscription">
                 Connexion
               </button>

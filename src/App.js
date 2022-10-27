@@ -31,12 +31,15 @@ function App() {
         pauseOnHover
       />
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/accueil" element={<Home />} />
-        <Route path="/new_Post" element={<NewPost />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register/*" element={<Register />} />
-        <Route path="/modifier_post" element={<Modifier_post />} />
+        <Route path="P7_Openclassroom/" element={<Login />} />
+        <Route path="P7_Openclassroom/accueil" element={<Home />} />
+        <Route path="P7_Openclassroom/new_Post" element={<NewPost />} />
+        <Route path="P7_Openclassroom/login" element={<Login />} />
+        <Route path="P7_Openclassroom/register/*" element={<Register />} />
+        <Route
+          path="P7_Openclassroom/modifier_post"
+          element={<Modifier_post />}
+        />
         {/* <Route path="/delete_post" element={<Delete_post />} /> */}
       </Routes>
     </div>

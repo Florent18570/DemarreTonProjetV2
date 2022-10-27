@@ -157,14 +157,14 @@ class NewPost extends React.Component {
             return response.json();
           })
           .then((data) => {
-            window.location = "/accueil";
+            window.location = "/P7_Openclassroom/accueil";
           })
           .catch((error) => {
-            window.location = "/accueil";
+            window.location = "/P7_Openclassroom/accueil";
             console.log("Error:", error);
           });
       } catch (error) {
-        window.location = "/accueil";
+        window.location = "/P7_Openclassroom/accueil";
         console.log("Error:", error);
       }
     }
@@ -179,7 +179,7 @@ class NewPost extends React.Component {
             <div class="addPostTop">
               <div className="flex">
                 <h2>Modification d'un poste</h2>
-                <Link to="/accueil">
+                <Link to="/P7_Openclassroom/accueil">
                   <img
                     src={fermer}
                     alt="fermer nouveau post"

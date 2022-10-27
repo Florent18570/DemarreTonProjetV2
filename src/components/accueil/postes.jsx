@@ -301,14 +301,14 @@ const GetPost = () => {
                   >
                     <a
                       id={"modifier" + item._id}
-                      href={`/modifier_post/?id_postupdate=${item._id}`}
+                      href={`/P7_Openclassroom/modifier_post/?id_postupdate=${item._id}`}
                     >
                       <p className="user">Modifier</p>
                     </a>
 
                     <a
                       id={"suprimer" + item._id}
-                      href={`/delete_post/?id=${item._id}`}
+                      href={`/P7_Openclassroom/delete_post/?id=${item._id}`}
                     >
                       <p className="user">Supprimer</p>
                     </a>

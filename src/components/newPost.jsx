@@ -50,7 +50,7 @@ const NewPost = () => {
           <div class="addPostTop">
             <div className="flex">
               <h2>Nouveau Post</h2>
-              <Link to="/accueil">
+              <Link to="/P7_Openclassroom/accueil">
                 <img src={fermer} alt="fermer nouveau post" />
               </Link>
             </div>

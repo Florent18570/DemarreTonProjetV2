@@ -16,6 +16,7 @@ class register extends React.Component {
       password: "",
       erreurPassword: "",
     };
+    sessionStorage.removeItem("inscription");
     sessionStorage.removeItem("deconnexionMessage");
   }
 
@@ -86,7 +87,7 @@ class register extends React.Component {
         };
 
         const response = await fetch(
-          `http://localhost:3001/api/auth/signup`,
+          `https://projetopenclassroom.herokuapp.com/api/auth/signup`,
           requestOptions
         );
 
@@ -142,7 +143,7 @@ class register extends React.Component {
             </Link>
           </div>
 
-          <form action="accueil.php" id="formlogin">
+          <div id="formlogin">
             <div className="login">
               <h1 class="inscription_bottom">Inscription</h1>
 
@@ -196,7 +197,7 @@ class register extends React.Component {
                 Valider
               </button>
             </div>
-          </form>
+          </div>
         </section>
       </div>
     );

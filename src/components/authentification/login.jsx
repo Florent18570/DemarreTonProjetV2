@@ -43,14 +43,12 @@ class register extends React.Component {
         });
       }
     }
-    // sessionStorage.removeItem("inscription");
   }
 
   handleChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value,
     });
-    // console.log(this.state);
   };
 
   send = async () => {
@@ -68,7 +66,7 @@ class register extends React.Component {
     }
 
     try {
-      fetch("http://localhost:3001/api/auth/login", {
+      fetch("https://projetopenclassroom.herokuapp.com/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

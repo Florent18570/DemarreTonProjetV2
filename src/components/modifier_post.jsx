@@ -13,6 +13,7 @@ class NewPost extends React.Component {
     this.state = {
       inputTextPost: "toto",
       image: "",
+      errorinput: "",
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -26,8 +27,6 @@ class NewPost extends React.Component {
       idPost: idPostValue,
     };
 
-    console.log(JSON.stringify(data));
-
     try {
       const datasearch = async () => {
         var requestOptions2 = {
@@ -38,7 +37,7 @@ class NewPost extends React.Component {
           },
         };
         const response = await fetch(
-          `http://localhost:3001/api/poste/getPostSelected`,
+          `https://projetopenclassroom.herokuapp.com/api/poste/getPostSelected`,
           requestOptions2
         );
         const dataSearch = await response.json();
@@ -63,14 +62,21 @@ class NewPost extends React.Component {
     this.setState({
       inputTextPost: e.target.value,
     });
+
+    var reg = /^[^@&"()!_$*€£`+=\/;?#]+$/;
+    console.log(e.target.value);
+    if (!e.target.value.match(reg)) {
+      this.setState({
+        errorinput: "Les caractères spéciaux ne sont pas accepté",
+      });
+    } else {
+      this.setState({
+        errorinput: "",
+      });
+    }
   };
 
   handleChangeImage = (e) => {
-    // const file = document.getElementById("file").files[0].name;
-    // this.setState({
-    //   image: file,
-    // });
-
     const oldImage = this.state.oldImage;
 
     var imageNew = document.querySelector("#file").files[0];
@@ -83,7 +89,10 @@ class NewPost extends React.Component {
       body: formData,
     };
 
-    fetch("http://localhost:3001/api/poste/upload", requestOptions)
+    fetch(
+      "https://projetopenclassroom.herokuapp.com/api/poste/upload",
+      requestOptions
+    )
       .then((response) => {
         return response.json();
       })
@@ -115,28 +124,17 @@ class NewPost extends React.Component {
     var idPostValue = url.searchParams.get("id_postupdate");
     console.log(idPostValue);
 
-    const date = new Date();
     const { inputTextPost, image } = this.state;
 
     var validRegex = /^[A-Za-z\é\è\ê\-]+$/;
-
+    console.log("ça marcherrrrrrrrr");
     if (!inputTextPost.match(validRegex)) {
-      toast.error("Le texte du poste est incorrect !", {
-        position: "bottom-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-    } else {
+      console.log("ça marche");
       const dataUpdate = {
         userId: arrayUser[2],
         nom: arrayUser[0],
         prenom: arrayUser[1],
         inputTextPost: inputTextPost,
-        datePost: date,
         image: image,
         modifierle: true,
       };
@@ -152,7 +150,7 @@ class NewPost extends React.Component {
 
       try {
         fetch(
-          `http://localhost:3001/api/poste/modifier_post/${idPostValue}`,
+          `https://projetopenclassroom.herokuapp.com/api/poste/modifier_post/${idPostValue}`,
           requestOptions
         )
           .then((response) => {
@@ -168,7 +166,6 @@ class NewPost extends React.Component {
       } catch (error) {
         window.location = "/accueil";
         console.log("Error:", error);
-        // console.error(error);
       }
     }
   };
@@ -199,20 +196,23 @@ class NewPost extends React.Component {
                 type="text"
                 value={this.state.inputTextPost}
               />
+              <br />
+              <h9 className="erreur">{this.state.errorinput}</h9>
 
               <h2>Image du Post : </h2>
-
+              <p>(Seul les fichiers png sont accepté)</p>
               <div className="button_bottom_modifier">
                 <input
                   className="buttonImage"
                   type="file"
                   id="file"
                   name="image"
+                  accept="image/png"
                   onChange={this.handleChangeImage}
                 />
                 <img
                   src={`http://localhost/projet7/backend/images/${this.state.image}`}
-                  alt="fermer"
+                  alt=""
                 />
               </div>
               <button

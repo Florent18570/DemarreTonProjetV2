@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import troispoints from "../../Images/troispoints.png";
 import coeur from "../../Images/coeur.png";
-import down from "../../Images/dislike.png";
 import imageProfil from "../../Images/iconeProfil.png";
 import envoyer from "../../Images/envoyer.png";
 import supprimer from "../../Images/delete.png";
@@ -10,17 +9,14 @@ var moment = require("moment"); // require
 
 const GetPost = () => {
   const [arrayPost, setData] = useState([]);
-  const [detailsShown, setDetailShown] = useState([]);
-  const [toggle, settoggle] = useState([]);
   const [comment, setComment] = useState();
   const [dropdown, setDropdown] = useState(null);
   const [dropdowntroispoint, setDropdownTroisPoint] = useState(null);
+  const [like, setlike] = useState();
 
-  // const [like, setlike] = useState([]);
   let UserName = sessionStorage.getItem("user");
   var arrayUser = UserName.split(",");
   const [infoUser, setinfoUser] = useState(arrayUser);
-  console.log(infoUser);
   useEffect(() => {
     getData();
   }, []);
@@ -29,7 +25,6 @@ const GetPost = () => {
     if (sessionStorage.getItem("user") != null) {
       let UserName = sessionStorage.getItem("user");
       var arrayUser = UserName.split(",");
-      console.log(arrayUser);
       var requestOptions = {
         method: "GET",
         // Variable récupérer dans le LocalStorage
@@ -42,18 +37,12 @@ const GetPost = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:3001/api/poste/getpost",
+        "https://projetopenclassroom.herokuapp.com/api/poste/getpost",
         requestOptions
       );
       let data = await response.json();
-
       var arraydata = Object.values(data.reverse());
-
       setData(arraydata);
-
-      // window.setInterval(() => {
-      //   interval(data, i);
-      // }, 60000);
     } catch (error) {
       console.log("Error:", error);
     }
@@ -133,43 +122,33 @@ const GetPost = () => {
       };
     }
 
-    console.log(dataUpdate);
-
     var requestOptions = {
       method: "PUT",
       body: JSON.stringify(dataUpdate),
       headers: {
         "Content-Type": "application/json",
+        Accept: "application/json",
       },
     };
 
     try {
       const response = await fetch(
-        `http://localhost:3001/api/poste/like/${id}`,
+        `https://projetopenclassroom.herokuapp.com/api/poste/like/${id}`,
         requestOptions
       );
 
-      let numberLike = await response.json();
-      console.log(numberLike.likes);
-      // setlike(numberLike.likes);
-      window.location.reload();
+      var numberLike = await response.json();
+
+      const newData = arrayPost.map((item) => {
+        if (item._id == numberLike.Newpost._id) {
+          return numberLike.Newpost;
+        } else {
+          return item;
+        }
+      });
+      setData(newData);
     } catch (error) {
       console.log("Error:", error);
-    }
-  };
-
-  const toggleShown = (id) => {
-    const shownState = detailsShown.slice();
-    const index = shownState.indexOf(id);
-
-    if (index >= 0) {
-      shownState.splice(index, 1);
-      setDetailShown(shownState);
-      settoggle("none");
-    } else {
-      shownState.push(id);
-      setDetailShown(shownState);
-      settoggle("toggle");
     }
   };
 
@@ -183,7 +162,6 @@ const GetPost = () => {
         commentaire: comment,
       };
 
-      console.log(commentUpdate);
       var requestOptions = {
         method: "post",
         body: JSON.stringify(commentUpdate),
@@ -193,12 +171,11 @@ const GetPost = () => {
       };
       try {
         const response = await fetch(
-          `http://localhost:3001/api/poste/updateComment/${id}`,
+          `https://projetopenclassroom.herokuapp.com/api/poste/updateComment/${id}`,
           requestOptions
         );
 
         let etatCommentaire = await response.json();
-        console.log(etatCommentaire);
       } catch (error) {
         console.log("Error:", error);
       }
@@ -206,8 +183,6 @@ const GetPost = () => {
   }
 
   const displayComment = (idPost, commentaire, usercommentaire) => {
-    console.log(usercommentaire, commentaire);
-    var p = 0;
     return (
       <div className="allCommentaire">
         {commentaire.map((item, index) => {
@@ -264,7 +239,7 @@ const GetPost = () => {
     };
     try {
       const response = await fetch(
-        `http://localhost:3001/api/poste/deleteComment/${idPost}`,
+        `https://projetopenclassroom.herokuapp.com/api/poste/deleteComment/${idPost}`,
         requestOptions
       );
 
@@ -283,7 +258,11 @@ const GetPost = () => {
         {arrayPost.map((item) => {
           return (
             <>
-              <div className="containerPost" id={"containerPost" + item._id}>
+              <div
+                className="containerPost"
+                id={"containerPost" + item._id}
+                key={item._id}
+              >
                 <div className="containerTop" id={"containerTop" + item._id}>
                   <img src={imageProfil} className="imageProfil" />
                   <h2 className="IdentifiantPost">
@@ -304,12 +283,13 @@ const GetPost = () => {
                     }
                     if (infoUser[4] == "true") {
                       return (
-                        <button
-                          className="btc-commentaire"
+                        <img
+                          src={troispoints}
+                          alt="imagetroispoints"
+                          id={"imagetroispoints" + item._id}
+                          className="troispoints"
                           onClick={() => clickHandleryTroisPoint(item._id)}
-                        >
-                          Commentaire
-                        </button>
+                        />
                       );
                     }
                   })()}
@@ -369,14 +349,6 @@ const GetPost = () => {
                       <p id={"plike" + item._id}>{item.like}</p>
                     </div>
 
-                    <div
-                      className="dislike"
-                      id={"like_dislike" + item._id}
-                      onClick={() => likeDislikeFunction(item._id, -1)}
-                    >
-                      <img src={down} alt="dislike" id={"dislike" + item._id} />
-                      <p id={"pdislike" + item._id}>{item.dislike}</p>
-                    </div>
                     <div id={"commentaire" + item._id}>
                       <button
                         className="btc-commentaire"

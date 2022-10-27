@@ -24,7 +24,10 @@ function deletePostId(id) {
     requestOptions = null;
   }
 
-  fetch(`http://localhost:3001/api/poste/deletepost${id}`, requestOptions)
+  fetch(
+    `https://projetopenclassroom.herokuapp.com/api/poste/deletepost${id}`,
+    requestOptions
+  )
     .then((response) => response.json())
     .then((data) => {
       console.log(data);

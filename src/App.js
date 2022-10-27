@@ -34,7 +34,7 @@ function App() {
         <Route path="P7_Openclassroom/" element={<Login />} />
         <Route path="P7_Openclassroom/accueil" element={<Home />} />
         <Route path="P7_Openclassroom/new_Post" element={<NewPost />} />
-        <Route path="P7_Openclassroom/login" element={<Login />} />
+        <Route path="P7_Openclassroom/login/*" element={<Login />} />
         <Route path="P7_Openclassroom/register/*" element={<Register />} />
         <Route
           path="P7_Openclassroom/modifier_post"

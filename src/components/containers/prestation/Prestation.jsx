@@ -5,9 +5,9 @@ import Refonte from "../../../Images/refonte.png";
 const Prestation = () => {
   return (
     <section className="Prestation">
-      <h1 className="titlePrestation">Confiez-nous votre projet</h1>
-      <div className="bigbloc">
-        <div className="containerSectionPrestation bloc1">
+      <h1 className="Prestation__titlePrestation">Confiez-nous votre projet</h1>
+      <div className="Prestation__container">
+        <div className="Prestation__container__bloc bloc1">
           <div>
             <h2 className="colorsaumongris bold800">
               Création de votre site Internet
@@ -21,7 +21,7 @@ const Prestation = () => {
           <img src={Creation} alt="Création de votre site Internet" />
         </div>
 
-        <div className="containerSectionPrestation bloc2">
+        <div className="Prestation__container__bloc bloc2">
           <div>
             <h2 className="colorsaumon">Refonte de votre site existant</h2>
             <p>

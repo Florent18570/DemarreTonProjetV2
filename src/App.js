@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import "./styles/main.css";
 import "./styles/normalise.css";
 import { BrowserRouter as Router } from "react-router-dom";
-import Home from "./components/home";
+import Home from "./pages/home";
 
 export default function App() {
   return (

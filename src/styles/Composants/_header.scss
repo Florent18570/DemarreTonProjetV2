@@ -1,0 +1,52 @@
+.navbar {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    #0f3d6e;
+  padding-left: 400px;
+  display: flex;
+
+  &__links {
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    line-height: 110px;
+
+    &__logo {
+      position: absolute;
+      width: 282.61px;
+      height: auto;
+      left: 80px;
+      top: 40px;
+    }
+    &__a {
+      width: auto;
+      font-weight: 700;
+      font-size: 18px;
+      margin: 0 2rem;
+      display: flex;
+    }
+    &__end {
+      width: 100%;
+      font-weight: 700;
+      font-size: 18px;
+      display: flex;
+      justify-content: flex-end;
+      line-height: 110px;
+      margin: 0 20px;
+      a {
+        margin: 0 20px;
+      }
+
+      &__button {
+        background-color: #0693e3;
+        border-radius: 19px;
+        margin: 34px 0 34px 0px;
+        color: white;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.devis {
+  width: 125px;
+}

@@ -207,6 +207,12 @@ body {
     margin-top: -20px;
     height: 100px;
   }
+
+
+  /* Footer */
+  .Footer_H3{
+    font-size: 23px;
+  }
 }
 
 .creation {
@@ -251,6 +257,11 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
+
+
+
+
+
 /*# sourceMappingURL=main.css.map */
 
 
@@ -283,7 +294,7 @@ background-clip: text;
 
 .Footer_presta{
   padding : 5%;
-  padding-top: -1%;
+  padding-top: 0%;
 }
 
 .Footer_Bloc_devis{
@@ -370,4 +381,29 @@ line-height: 29px;
 text-align: justify;
 color: #362828;
 }
+
+.Footer_li_SiteInternet{
+  list-style-image: url("../Images/logoSiteInternet.png");
+}
+
+.Footer_li_Refonte{
+  list-style-image: url("../Images/refontesite.png");
+}
+
+.Footer_li_Agence{
+  list-style-image: url("../Images/agence.png");
+}
+
+.Footer_li_Devis{
+  list-style-image: url("../Images/devi.png");
+}
+
+.Footer_li_Enveloppe{
+  list-style-image: url("../Images/enveloppe.png");
+}
+
+
+
+
+
 

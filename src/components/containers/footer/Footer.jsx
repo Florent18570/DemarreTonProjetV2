@@ -11,17 +11,17 @@ const Footer = () => {
     <div className="Footer_Bloc_presta">
       <div className="Footer_presta">
         <h3 className="Footer_H3">Prestations :</h3>
-        <li className="Footer_li">Refonte de site</li>
-        <li className="Footer_li">Site Internet</li>
+        <li className="Footer_li Footer_li_SiteInternet ">Refonte de site</li>
+        <li className="Footer_li Footer_li_Refonte">Site Internet</li>
       </div>
       <div className="Footer_presta">
         <h3 className="Footer_H3">Informations :</h3>
-        <li className="Footer_li">L'agence</li>
-        <li className="Footer_li">Devis</li>
+        <li className="Footer_li Footer_li_Agence">L'agence</li>
+        <li className="Footer_li Footer_li_Devis  ">Devis</li>
       </div>
       <div className="Footer_presta">
         <h3 className="Footer_H3">Nous contacter :</h3>
-        <li className="Footer_li">Contactez-nous</li>
+        <li className="Footer_li Footer_li_Enveloppe">Contactez-nous</li>
         <li className="Footer_li">Insta / Tweeter / Fb</li>
       </div>
     </div>

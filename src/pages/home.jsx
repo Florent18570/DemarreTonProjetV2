@@ -7,18 +7,19 @@ import {
   Presentation,
   Prestation,
   Realisation,
-} from "../components";
+} from "../components/containers";
 
 const home = () => {
-  return;
-  <div>
-    <Header />
-    <Presentation />
-    <Prestation />
-    <Realisation />
-    <Nous />
-    <Footer />
-  </div>;
+  return (
+    <div>
+      <Header />
+      <Presentation />
+      <Prestation />
+      <Realisation />
+      <Nous />
+      <Footer />
+    </div>
+  );
 };
 
 export default home;

@@ -8,29 +8,35 @@ const Prestation = () => {
       <h1 className="Prestation__titlePrestation">Confiez-nous votre projet</h1>
       <div className="Prestation__container">
         <div className="Prestation__container__bloc bloc1">
-          <div>
-            <h2 className="colorsaumongris bold800">
-              Création de votre site Internet
-            </h2>
-            <p className="bold400">
-              Développez votre visibilité local et boostez votre croissance avec
-              un site internet design, responsive et performant.
-            </p>
-            <button> En savoir plus</button>
+          <h2 className="colorsaumongris bold800">
+            Création de votre site Internet
+          </h2>
+          <div className="Prestation__container__bloc__inside">
+            <div>
+              <p className="bold400">
+                Développez votre visibilité local et boostez votre croissance
+                avec un site internet design, responsive et performant.
+              </p>
+              <button> En savoir plus</button>
+            </div>
+            <img src={Creation} alt="Création de votre site Internet" />
           </div>
-          <img src={Creation} alt="Création de votre site Internet" />
         </div>
 
         <div className="Prestation__container__bloc bloc2">
-          <div>
-            <h2 className="colorsaumon">Refonte de votre site existant</h2>
-            <p>
-              Les tendances évoluent régulièrement et un site comportant des
-              aspects graphiques datés peuvent faire fuir l’utilisateur.
-            </p>
-            <button> En savoir plus</button>
+          <h2 className="colorsaumon">Refonte de votre site existant</h2>
+          <div className="Prestation__container__bloc__inside">
+            <div>
+              <p>
+                Les tendances évoluent régulièrement et un site comportant des
+                aspects graphiques datés peuvent faire fuir l’utilisateur.
+              </p>
+              <button> En savoir plus</button>
+            </div>
+            <div>
+              <img src={Refonte} alt="Refonte de votre site existant" />
+            </div>
           </div>
-          <img src={Refonte} alt="Refonte de votre site existant" />
         </div>
       </div>
     </section>

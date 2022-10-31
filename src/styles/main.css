@@ -40,7 +40,6 @@ body {
 }
 
 .Prestation {
-  background: #1277ba;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,34 +47,38 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #1277ba;
   padding-bottom: 40px;
 }
 
 .Prestation__titlePrestation {
   color: #ffffff;
   font-family: "Open Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 71px;
   line-height: 97px;
   margin: 45px auto;
 }
 
-.Prestation__bloc {
+.Prestation__container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
-  margin: 0px 30px 30px 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .Prestation__container__bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 30px 30px 30px;
+}
+
+.Prestation__container__bloc {
   padding: 10px 17px 0 38px;
-  width: 644px;
-  height: auto;
   padding-bottom: 20px;
   border: 3px solid rgba(255, 255, 255, 0.47);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -84,23 +87,31 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
 }
 
 .Prestation__container__bloc h2 {
-  width: 256px;
+  display: block;
+  width: 266px;
 }
 
-.Prestation__container__bloc p {
+.Prestation__container__bloc__inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Prestation__container__bloc__inside p {
   line-height: 17px;
-  width: 310px;
   text-align: justify;
   color: #000000;
 }
 
-.Prestation__container__bloc button {
+.Prestation__container__bloc__inside button {
   margin-top: 30px;
   background-color: #0075ff;
   /* Green */
@@ -114,11 +125,11 @@ body {
   border-radius: 8px;
 }
 
-.Prestation__container__bloc img {
+.Prestation__container__bloc__inside img {
   margin-left: auto;
   padding-left: 20px;
   width: auto;
-  height: 170px;
+  height: 148px;
 }
 
 .bloc1 {
@@ -129,6 +140,75 @@ body {
   background: #ffdadb;
 }
 
+@media screen and (max-width: 1130px) {
+  .Prestation__titlePrestation {
+    font-size: 54px;
+  }
+  .Prestation__container__bloc {
+    margin: 0px 15px 26px 15px;
+  }
+  .Prestation__container__bloc__inside img {
+    height: 124px;
+  }
+  .Prestation__container__bloc__inside p {
+    font-size: 14px;
+  }
+  .Prestation__container__bloc__inside button {
+    font-size: 13px;
+  }
+  .Prestation__container__bloc h2 {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Prestation__titlePrestation {
+    font-size: 44px;
+  }
+  .Prestation__container__bloc {
+    padding: 10px 12px 0px 18px;
+  }
+  .Prestation__container__bloc__inside p {
+    line-height: 14px;
+    font-size: 12px;
+  }
+  .Prestation__container__bloc__inside button {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+  .Prestation__container__bloc__inside img {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Prestation__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Prestation__container__bloc {
+    padding: 10px 12px 0px 18px;
+    width: auto;
+  }
+  .Prestation__container__bloc__inside p {
+    line-height: 14px;
+    font-size: 12px;
+  }
+  .Prestation__container__bloc__inside button {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+  .Prestation__container__bloc__inside img {
+    margin-top: -20px;
+    height: 100px;
+  }
+}
+
 .creation {
   background-color: #d7dfe4;
   padding-bottom: 50px;
@@ -136,7 +216,6 @@ body {
 }
 
 .creation h1 {
-  width: 200px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;

@@ -270,8 +270,7 @@ font-size: 39px;
 line-height: 53px;
 text-align: justify;
 
-background: linear-gradient(84.82deg, #184F6F -75.95%, rgba(255, 101, 0, 0.99) 101.45%);
--webkit-background-clip: text;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90deg, #184F6F 0%, rgba(255, 101, 0, 0.99) 101.58%);-webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;
 }
@@ -284,6 +283,7 @@ background-clip: text;
 
 .Footer_presta{
   padding : 5%;
+  padding-top: -1%;
 }
 
 .Footer_Bloc_devis{
@@ -295,14 +295,16 @@ background-clip: text;
   display: flex;
   -o-object-fit: cover;
      object-fit: cover;
-  /*background-image: url("../images/fond (2).jpg");*/
-  width: 1241px;
+  background-image: url("../Images/fondFooter.jpg");
+  background-repeat: round;
+  width: 80%;
   border-radius: 0.66667rem;
-  padding: 26px 44px;
   margin: auto;
+  top:-75px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 44px;
 }
 
 .Footer_confier{
@@ -336,11 +338,26 @@ background-clip: text;
     transition: all 400ms;
     padding: -1px 3.33333rem 0 1.66667rem;
     overflow: hidden;
+    color: #485fc7;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 
 .Footer_Bloc_footer{
   display: flex;
+  background: #1E1E1E;
+  color: white;
+  margin: auto;
+  justify-content: center;
+}
+
+.Footer_Bloc_Footer_p{
+  margin-inline-end:10%;
+  text-align: center;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .Footer_li{
@@ -350,9 +367,7 @@ font-weight: 600;
 font-size: 21px;
 line-height: 29px;
 /* identical to box height */
-
 text-align: justify;
-
 color: #362828;
 }
 

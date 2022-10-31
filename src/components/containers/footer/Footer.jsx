@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Footer = () => {
   return <div className="Footer">
     <div className="Footer_Bloc_devis">
@@ -26,11 +27,9 @@ const Footer = () => {
     </div>
 
     <div className="Footer_Bloc_footer">
-      <p>@ 2022 - DemarreTonProjet</p>
-      <div>
-        <a>Mentions légales</a>
-        <a>Politique de confidientialité</a>
-      </div>
+      <p className="Footer_Bloc_Footer_p">Mentions légales</p>
+      <p className="Footer_Bloc_Footer_p">@ 2022 - DemarreTonProjet</p>
+      <p className="Footer_Bloc_Footer_p">Politique de confidientialité</p>
     </div>
 
 

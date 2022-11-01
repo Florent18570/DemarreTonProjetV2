@@ -426,4 +426,102 @@ button:hover {
   .Footer_confier {
     font-size: 24px;
   }
+}
+/* Nous */
+.Nous {
+  background-color: rgb(84, 84, 243);
+  color: white;
+}
+
+.Nous_titre {
+  margin: auto;
+  text-align: center;
+  font-size: 45px;
+}
+
+.Nous_developpeur {
+  margin-left: 47.5%;
+  margin-top: 30px;
+}
+
+.Nous_colonne {
+  display: flex;
+  margin-top: 30px;
+  padding-bottom: 140px;
+}
+
+.Nous_image {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.large {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.Nous_Image_1 {
+  width: 45%;
+  margin: 5%;
+  height: 90%;
+  background-color: blue;
+}
+
+.Nous_Image_23 {
+  width: 45%;
+  height: 45%;
+  margin: 5%;
+}
+
+.Nous_Image_2 {
+  width: 100%;
+  background-color: green;
+  height: 90%;
+}
+
+.Nous_Image_3 {
+  width: 100%;
+  background-color: gray;
+  height: 90%;
+  margin-top: 10%;
+}
+
+.Nous_Image_4 {
+  width: 55%;
+  background-color: black;
+  margin: 5%;
+  height: 100%;
+}
+
+.Nous_Image_5 {
+  width: 35%;
+  background-color: red;
+  margin: 5%;
+  height: 100%;
+}
+
+.Nous_partenaire {
+  width: 45%;
+  margin-left: 2.5%;
+}
+
+.Nous_parfaitpartenaire {
+  font-size: 30px;
+}
+
+.Nous_partenaire_text {
+  margin-top: 15px;
+  font-size: 17px;
+  height: 300px;
+}
+
+.Nous_julien {
+  display: flex;
+}
+
+.Nous_florent {
+  display: flex;
+  margin-top: 5px;
 }/*# sourceMappingURL=main.css.map */

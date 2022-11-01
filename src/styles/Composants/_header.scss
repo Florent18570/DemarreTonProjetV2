@@ -8,7 +8,7 @@
     display: flex;
     justify-content: flex-start;
     cursor: pointer;
-    line-height: 110px;
+    width: 100px;
 
     &__logo {
       position: absolute;
@@ -30,18 +30,10 @@
       font-size: 18px;
       display: flex;
       justify-content: flex-end;
-      line-height: 110px;
+
       margin: 0 20px;
       a {
-        margin: 0 20px;
-      }
-
-      &__button {
-        background-color: #0693e3;
-        border-radius: 19px;
-        margin: 34px 0 34px 0px;
-        color: white;
-        font-weight: 500;
+        background-color: #1277ba;
       }
     }
   }
@@ -68,44 +60,9 @@
         justify-content: flex-end;
         font-size: 14px;
         a {
-          margin: 0 0px;
-        }
-
-        &__button {
-          font-size: 10px;
         }
       }
     }
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .navbar {
-    padding-left: 196px; // flex-wrap: wrap;
-    &__links {
-      &__logo {
-        width: 130.61px;
-        left: 37px;
-      }
-      &__a {
-        font-size: 13px;
-        margin: 0 7px;
-      }
-      &__end {
-        justify-content: flex-end;
-        font-size: 14px;
-        a {
-          margin: 0 0px;
-        }
-
-        &__button {
-          font-size: 10px;
-        }
-      }
-    }
-  }
-  .devis {
-    width: 125px;
   }
 }
 

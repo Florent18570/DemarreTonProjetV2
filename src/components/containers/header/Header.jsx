@@ -10,23 +10,22 @@ const Header = () => {
           Accueil
         </a>
         <a className="navbar__links__a" href="#Prestations">
-          Prestations
+          <p>Prestations</p>
         </a>
         <a className="navbar__links__a " href="#Réalisations">
-          Réalisations
+          <p>Réalisations</p>
         </a>
         <a className="navbar__links__a devis" href="#Tarifs">
-          Faire un devis
+          <p>Faire un devis</p>
         </a>
         <a className="navbar__links__a " href="#L'agence">
-          L'agence
+          <p>L'agence</p>
         </a>
       </div>
       <div className="navbar__links__end">
-        <a href="#contact">Contact</a>
-        <button className="navbar__links__end__button" type="button">
-          <a href="tel:0762068830">07 62 06 88 30</a>
-        </button>
+        <a href="#contact">
+          <p>Contact </p>
+        </a>
       </div>
     </div>
   );

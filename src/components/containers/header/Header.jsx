@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../../Images/Logo.png";
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
-const Header = () => {
+const Menu = () => {
   return (
-    <header className="navbar">
-      <img className="navbar__logo" src={logo} alt="logo" />
-
+    <>
       <nav>
         <ul className="navbar__links">
           <li>
@@ -28,6 +27,43 @@ const Header = () => {
       <a class="cta" href="#Contact">
         <button>Contact</button>
       </a>
+    </>
+  );
+};
+
+const Header = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  return (
+    <header className="navbar">
+      <img className="navbar__logo" src={logo} alt="logo" />
+
+      <div className="pc">
+        <Menu />
+      </div>
+      <div className="navbar-menu">
+        {toggleMenu ? (
+          <RiCloseLine
+            color="#fff"
+            size={27}
+            onClick={() => setToggleMenu(false)}
+          />
+        ) : (
+          <RiMenu3Line
+            color="#fff"
+            size={27}
+            onClick={() => setToggleMenu(true)}
+          />
+        )}
+        {console.log(toggleMenu)}
+        {toggleMenu && (
+          <div className="navbar-menu__container scale-up-center">
+            <div className="navbar-menu__container__links">
+              <Menu />
+            </div>
+          </div>
+        )}
+      </div>
     </header>
   );
 };

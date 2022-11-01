@@ -144,4 +144,48 @@
   .Footer_li_Enveloppe{
     list-style-image: url("../Images/enveloppe.png");
   }
+
+  @media only screen and (max-width: 600px) {
+    .Footer_Bloc_presta{
+      flex-direction: column;
+      margin:auto;
+      text-align: center;
+      align-items: center;
+    
+    }
+    .Footer_confier{
+      font-size: 14px;
+    }
+    .Footer_Button_devis{
+      font-size: 10px;
+      width: 200px;
+    }
+  
+  }
+
+  @media only screen and (max-width: 770px) and (min-width:601px) {
+    .Footer_H3{
+      font-size: 24px;   
+    }
+    .Footer_li{
+      font-size:12px;
+    }
+    .Footer_confier{
+      font-size: 16px;
+    }
+    
+  
+  }
+  @media only screen and (max-width: 1025px) and (min-width:771px) {
+    .Footer_H3{
+      font-size: 30px;   
+    }
+    .Footer_li{
+      font-size:17px;
+    }
+    .Footer_confier{
+      font-size: 24px;
+    }
+  
+  }
   

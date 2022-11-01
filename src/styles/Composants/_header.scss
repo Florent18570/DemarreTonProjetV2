@@ -1,69 +1,48 @@
 .navbar {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     #0f3d6e;
-  padding-left: 400px;
+  height: 64px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
 
-  &__links {
-    display: flex;
-    justify-content: flex-start;
-    cursor: pointer;
-    width: 100px;
-
-    &__logo {
-      position: absolute;
-      width: 282.61px;
-      height: auto;
-      left: 80px;
-      top: 40px;
-    }
-    &__a {
-      width: auto;
-      font-weight: 700;
-      font-size: 18px;
-      margin: 0 1rem;
-      display: flex;
-    }
-    &__end {
-      width: 100%;
-      font-weight: 700;
-      font-size: 18px;
-      display: flex;
-      justify-content: flex-end;
-
-      margin: 0 20px;
-      a {
-        background-color: #1277ba;
-      }
-    }
+  position: relative;
+  &__logo {
+    width: 188px;
+    margin-top: 118px;
   }
 }
 
-.devis {
-  width: 125px;
+.navbar__links {
+  list-style: none;
+  li {
+    display: inline-block;
+    padding: 0 15px;
+    color: white;
+    a {
+      transition: all 0.3s ease 0s;
+      margin-right: auto;
+      color: white;
+    }
+    a:hover {
+      color: red;
+    }
+  }
+}
+button {
+  padding: 9px 25px;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: aqua;
+  }
 }
 
 @media screen and (max-width: 1388px) {
-  .navbar {
-    padding-left: 234px;
-    // flex-wrap: wrap;
-    &__links {
-      &__logo {
-        width: 182.61px;
-        left: 37px;
-      }
-      &__a {
-        font-size: 15px;
-        margin: 0 7px;
-      }
-      &__end {
-        justify-content: flex-end;
-        font-size: 14px;
-        a {
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 767px) {

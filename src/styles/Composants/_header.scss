@@ -21,7 +21,7 @@
       width: auto;
       font-weight: 700;
       font-size: 18px;
-      margin: 0 2rem;
+      margin: 0 1rem;
       display: flex;
     }
     &__end {
@@ -49,4 +49,65 @@
 
 .devis {
   width: 125px;
+}
+
+@media screen and (max-width: 1388px) {
+  .navbar {
+    padding-left: 234px;
+    // flex-wrap: wrap;
+    &__links {
+      &__logo {
+        width: 182.61px;
+        left: 37px;
+      }
+      &__a {
+        font-size: 15px;
+        margin: 0 7px;
+      }
+      &__end {
+        justify-content: flex-end;
+        font-size: 14px;
+        a {
+          margin: 0 0px;
+        }
+
+        &__button {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar {
+    padding-left: 196px; // flex-wrap: wrap;
+    &__links {
+      &__logo {
+        width: 130.61px;
+        left: 37px;
+      }
+      &__a {
+        font-size: 13px;
+        margin: 0 7px;
+      }
+      &__end {
+        justify-content: flex-end;
+        font-size: 14px;
+        a {
+          margin: 0 0px;
+        }
+
+        &__button {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .devis {
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 767px) {
 }

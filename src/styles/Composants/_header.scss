@@ -9,8 +9,8 @@
 
   position: relative;
   &__logo {
-    width: 188px;
-    margin-top: 118px;
+    width: 170px;
+    margin-top: 100px;
   }
 }
 
@@ -30,6 +30,10 @@
     }
   }
 }
+
+.cta {
+  margin-right: -41px;
+}
 button {
   padding: 9px 25px;
   background-color: red;
@@ -37,13 +41,44 @@ button {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+
   &:hover {
     background-color: aqua;
   }
 }
 
-@media screen and (max-width: 1388px) {
+.navbar-menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+
+  svg {
+    cursor: pointer;
+  }
+  &__container {
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 black;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+  .navbar-menu {
+    display: flex;
+  }
 }

@@ -79,11 +79,17 @@
       background: #fff;
       -webkit-transition: all 400ms;
       transition: all 400ms;
-      padding: -1px 3.33333rem 0 1.66667rem;
       overflow: hidden;
       color: #485fc7;
       cursor: pointer;
       text-decoration: none;
+      
+  }
+
+  .Footer_Button_devis:hover{
+    transform: scale(1.1);
+    background-color:#485fc7;
+    color:rgb(255, 217, 119);
   }
   
   
@@ -112,7 +118,12 @@
   /* identical to box height */
   text-align: justify;
   color: #362828;
+  cursor: pointer;
   }
+  .Footer_li:hover{
+    color:#485fc7 ;
+  }
+  
   
   .Footer_li_SiteInternet{
     list-style-image: url("../Images/logoSiteInternet.png");

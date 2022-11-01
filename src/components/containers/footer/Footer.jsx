@@ -5,7 +5,7 @@ const Footer = () => {
   return <div className="Footer">
     <div className="Footer_Bloc_devis">
       <p className="Footer_confier">Confiez-nous vos besoins, laissez-vous guider par nos experts et travaillons ensemble sur la réussite de vos projets </p>
-      <button className="Footer_Button_devis">Demander un devis ></button>
+      <button className="Footer_Button_devis">Demander un devis</button>
     </div>
 
     <div className="Footer_Bloc_presta">

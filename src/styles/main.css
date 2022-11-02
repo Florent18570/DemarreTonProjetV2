@@ -432,7 +432,7 @@ button:hover {
     flex-direction: column;
     margin: auto;
     text-align: center;
-    align-items: center;
+    align-items: left;
   }
   .Footer_confier {
     font-size: 14px;
@@ -440,6 +440,12 @@ button:hover {
   .Footer_Button_devis {
     font-size: 10px;
     width: 200px;
+  }
+  .Footer_H3 {
+    font-size: 23px;
+  }
+  .Footer_li {
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 770px) and (min-width: 601px) {
@@ -552,7 +558,7 @@ button:hover {
 .Nous_partenaire_text {
   margin-top: 35px;
   font-size: 17px;
-  height: 250px;
+  min-height: 250px;
 }
 
 .Nous_julien {

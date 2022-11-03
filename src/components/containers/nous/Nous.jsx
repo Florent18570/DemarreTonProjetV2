@@ -6,7 +6,7 @@ import Bg from "../../../Images/Bg_realisation.png"
 const Nous = () => {
   return <div className="Nous">
     <div className="Nous_titre">
-      Nous deux, best dev ever
+      A PROPOS DE NOUS
     </div>
     <div className="Nous_developpeur">
       Développeur
@@ -27,7 +27,7 @@ const Nous = () => {
       </div>
       <div className="Nous_partenaire">
         <h3 className="Nous_parfaitpartenaire">Votre parfait partenaire</h3>
-        <p className="Nous_partenaire_text">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+        <p className="Nous_partenaire_text">C'est après la satisfaction de plusieurs clients qu'est nait "DemarreTonProjet". Un groupe réunissant deux frères dans le but de répondre à la demande grandissant de la mise en ligne d'entreprises. DemarreTonProjet, c'est la chance de mettre toutes les chances de vos côtés pour augmenter vos visites, de permettre d'étandre votre rayon de prospection et donc de générer plus de ventes ou de chantiers.</p>
         <div className="Nous_julien">
           
           <img src={Julien}></img>

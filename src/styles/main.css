@@ -472,7 +472,7 @@ button:hover {
 }
 /* Nous */
 .Nous {
-  background-color: rgb(84, 84, 243);
+  background-color: #0365D0;
   color: white;
   min-height: 1000px;
 }
@@ -710,9 +710,28 @@ button:hover {
     padding-bottom: 65px;
   }
 }
+.eror {
+  background-color: #0365D0;
+  padding-bottom: 100px;
+  transition: all 500ms;
+}
+
+.eror:hover {
+  background-color: #0E3C6E;
+}
+
 .error {
   font-size: 600px;
   margin: auto;
   display: flex;
   justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+
+.oups {
+  display: flex;
+  justify-content: end;
+  margin-right: 10%;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

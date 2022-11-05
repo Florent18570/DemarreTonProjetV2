@@ -2,10 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+  
+  
 }
 
 body {
   margin: 0;
+  
 }
 
 a {
@@ -35,4 +39,65 @@ a {
 
 .bold {
   font-weight: bold;
+}
+
+
+
+//taille texte
+H1{
+  font-size: 100px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+H2{
+  font-size: 92px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+p{
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+}
+
+
+@media screen and (max-width:1300px) and (min-width:1025px){
+
+  H1{
+    
+  }
+  H2{
+    font-size: 73px;
+  }
+  p{
+
+  }
+  
+}
+
+@media screen and (max-width:1024px) and (min-width:768px){
+
+  H1{
+    font-size: 64px;
+  }
+  H2{
+    font-size: 65px;
+  }
+  p{
+    font-size: 14px;
+  }
+  
+}
+
+@media screen and (max-width:767px) {
+
+  H1{
+    font-size: 38px;
+  }
+  H2{
+    font-size: 39px;
+  }
+  
 }

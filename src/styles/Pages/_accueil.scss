@@ -13,10 +13,6 @@
 
   &__titlePrestation {
     color: #ffffff;
-    font-family: "Open Sans";
-    font-weight: 700;
-    font-size: 71px;
-    line-height: 97px;
     margin: 45px auto;
   }
   &__container {
@@ -48,7 +44,6 @@
   &__inside {
     display: flex;
     p {
-      line-height: 17px;
       text-align: justify;
       color: #000000;
     }
@@ -88,31 +83,24 @@
     margin: 0px 15px 26px 15px;
     &__inside {
       img {
-        height: 124px;
       }
       p {
-        font-size: 14px;
       }
       button {
-        font-size: 13px;
       }
     }
     h2 {
-      font-size: 19px;
     }
   }
 }
 
 @media screen and (max-width: 950px) {
   .Prestation__titlePrestation {
-    font-size: 44px;
   }
   .Prestation__container__bloc {
     padding: 10px 12px 0px 18px;
     &__inside {
       p {
-        line-height: 14px;
-        font-size: 12px;
       }
       button {
         margin-top: 13px;
@@ -134,7 +122,6 @@
       width: auto;
       &__inside {
         p {
-          line-height: 14px;
           font-size: 12px;
         }
         button {
@@ -158,12 +145,6 @@
   padding-bottom: 50px;
   margin: -20px auto auto auto;
   h1 {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 71px;
-    line-height: 97px;
-
     /* linear */
     background: linear-gradient(
       90deg,

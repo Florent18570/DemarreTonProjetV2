@@ -2,17 +2,15 @@ import React from "react";
 import Creation from "../../../Images/creation.png";
 import Refonte from "../../../Images/refonte.png";
 
-
-
 const Prestation = () => {
   return (
     <section className="Prestation">
       <h1 className="Prestation__titlePrestation">Confiez-nous votre projet</h1>
       <div className="Prestation__container">
         <div className="Prestation__container__bloc bloc1">
-          <h2 className="colorsaumongris bold800">
+          <h3 className="colorsaumongris bold800">
             Création de votre site Internet
-          </h2>
+          </h3>
           <div className="Prestation__container__bloc__inside">
             <div>
               <p className="bold400">
@@ -26,7 +24,7 @@ const Prestation = () => {
         </div>
 
         <div className="Prestation__container__bloc bloc2">
-          <h2 className="colorsaumon">Refonte de votre site existant</h2>
+          <h3 className="colorsaumon">Refonte de votre site existant</h3>
           <div className="Prestation__container__bloc__inside">
             <div>
               <p>

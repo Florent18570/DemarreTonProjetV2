@@ -9,8 +9,11 @@
 
   position: relative;
   &__logo {
-    width: 170px;
-    margin-top: 100px;
+    width: 280px;
+    margin-top: 160px;
+  }
+  .pc {
+    display: flex;
   }
 }
 
@@ -21,6 +24,7 @@
     padding: 0 15px;
     color: white;
     a {
+      font-size: 22px;
       transition: all 0.3s ease 0s;
       margin-right: auto;
       color: white;
@@ -34,6 +38,7 @@
 .cta {
   margin-right: -41px;
 }
+
 button {
   padding: 9px 25px;
   background-color: red;
@@ -56,13 +61,13 @@ button {
     cursor: pointer;
   }
   &__container {
-    background-color: red;
+    background-color: #0c3158;
     display: flex;
-    justify-content: flex-end;
+
     align-items: flex-end;
     flex-direction: column;
 
-    text-align: end;
+    // text-align: end;
     padding: 2rem;
     position: absolute;
     top: 40px;
@@ -71,14 +76,76 @@ button {
     min-width: 210px;
     border-radius: 5px;
     box-shadow: 0 0 5 black;
+    &__links nav {
+      margin-bottom: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1204px) {
+  .navbar {
+    &__logo {
+      width: 173px;
+      margin-top: 91px;
+    }
+  }
+
+  .navbar__links {
+    li {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 988px) {
+  .navbar {
+    &__logo {
+      width: 80px;
+      margin-top: 10px;
+    }
+  }
+
+  .navbar__links {
+    li {
+      a {
+        font-size: 16px;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 767px) {
-  .pc {
+  .navbar .pc {
     display: none;
   }
   .navbar-menu {
     display: flex;
+  }
+
+  .navbar {
+    justify-content: flex-end;
+
+    position: relative;
+    &__logo {
+    }
+  }
+
+  .navbar-menu {
+    svg {
+      margin-left: 20px;
+    }
+    &__container {
+      margin: 23px 14px 23px 23px;
+      padding: 23px;
+      top: 19px;
+      right: 0px;
+      background-color: #e411d6;
+      &__links nav {
+        line-height: 30px;
+      }
+    }
   }
 }

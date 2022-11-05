@@ -25,7 +25,7 @@ const Menu = () => {
         </ul>
       </nav>
       <a class="cta" href="#Contact">
-        <button>Contact</button>
+        <button>Con</button>
       </a>
     </>
   );
@@ -36,11 +36,11 @@ const Header = () => {
 
   return (
     <header className="navbar">
-      <img className="navbar__logo" src={logo} alt="logo" />
-
       <div className="pc">
+        <img className="navbar__logo" src={logo} alt="logo" />
         <Menu />
       </div>
+
       <div className="navbar-menu">
         {toggleMenu ? (
           <RiCloseLine
@@ -55,7 +55,9 @@ const Header = () => {
             onClick={() => setToggleMenu(true)}
           />
         )}
+
         {console.log(toggleMenu)}
+        <img className="navbar-menu_logo" src={logo} alt="logo" />
         {toggleMenu && (
           <div className="navbar-menu__container scale-up-center">
             <div className="navbar-menu__container__links">

@@ -1,0 +1,40 @@
+.presentation {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  &__degrade {
+    z-index: 2;
+  }
+  &__vague {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 722px;
+    border-top: 2px solid white;
+    width: 100%;
+    padding: 0px 200px;
+    border: 2px solid red;
+    background-image: url("../Images/dégradé.png");
+    p {
+      padding: 0 30px 0 30px;
+      width: 300px;
+      flex-grow: 1;
+      background-color: rgb(19, 113, 113);
+    }
+    img {
+      height: auto;
+      width: auto\9;
+      max-width: 481px;
+      z-index: 2;
+      flex-grow: 0;
+      background-color: rgb(193, 193, 24);
+    }
+  }
+}

@@ -7,10 +7,6 @@
   }
   .Footer_H3{
   
-  font-style: normal;
-  font-weight: 700;
-  font-size: 39px;
-  line-height: 53px;
   text-align: justify;
   
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90deg, #184F6F 0%, rgba(255, 101, 0, 0.99) 101.58%);-webkit-background-clip: text;
@@ -159,7 +155,6 @@
       width: 200px;
     }
     .Footer_H3{
-      font-size: 23px;
     }
     .Footer_li{
       font-size: 18px;
@@ -169,7 +164,6 @@
 
   @media only screen and (max-width: 770px) and (min-width:601px) {
     .Footer_H3{
-      font-size: 24px;   
     }
     .Footer_li{
       font-size:12px;
@@ -182,7 +176,6 @@
   }
   @media only screen and (max-width: 1025px) and (min-width:771px) {
     .Footer_H3{
-      font-size: 30px;   
     }
     .Footer_li{
       font-size:17px;

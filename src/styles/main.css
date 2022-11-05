@@ -64,12 +64,20 @@ p {
   letter-spacing: 0.4px;
 }
 
+.sectionbox {
+  max-width: 1937px;
+  margin: 0 auto 0 auto;
+}
+
 @media screen and (max-width: 1300px) and (min-width: 1025px) {
   H2 {
     font-size: 73px;
   }
   H3 {
     font-size: 33px;
+  }
+  .sectionbox {
+    max-width: 1140px;
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -85,6 +93,9 @@ p {
   p {
     font-size: 14px;
   }
+  .sectionbox {
+    max-width: 1024px;
+  }
 }
 @media screen and (max-width: 767px) {
   H1 {
@@ -95,6 +106,12 @@ p {
   }
   H3 {
     font-size: 23px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .sectionbox {
+    max-width: 767px;
   }
 }
 .navbar {
@@ -266,7 +283,7 @@ button:hover {
 .Prestation {
   display: flex;
   flex-direction: column;
-  background: #1277ba;
+  background: #1681F5;
   padding-bottom: 40px;
 }
 .Prestation__titlePrestation {
@@ -372,7 +389,7 @@ button:hover {
   }
 }
 .creation {
-  background-color: #d7dfe4;
+  background-color: #0E3C6E;
   padding-bottom: 50px;
   margin: -20px auto auto auto;
 }
@@ -408,10 +425,6 @@ button:hover {
 }
 
 .Footer_H3 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 39px;
-  line-height: 53px;
   text-align: justify;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90deg, #184F6F 0%, rgba(255, 101, 0, 0.99) 101.58%);
   -webkit-background-clip: text;
@@ -544,17 +557,11 @@ button:hover {
     font-size: 10px;
     width: 200px;
   }
-  .Footer_H3 {
-    font-size: 23px;
-  }
   .Footer_li {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 770px) and (min-width: 601px) {
-  .Footer_H3 {
-    font-size: 24px;
-  }
   .Footer_li {
     font-size: 12px;
   }
@@ -563,9 +570,6 @@ button:hover {
   }
 }
 @media only screen and (max-width: 1025px) and (min-width: 771px) {
-  .Footer_H3 {
-    font-size: 30px;
-  }
   .Footer_li {
     font-size: 17px;
   }
@@ -683,10 +687,6 @@ button:hover {
 .Nous_partenaire {
   width: 45%;
   margin-left: 4%;
-}
-
-.Nous_parfaitpartenaire {
-  font-size: 30px;
 }
 
 .Nous_partenaire_text {

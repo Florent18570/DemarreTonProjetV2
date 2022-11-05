@@ -6,6 +6,7 @@ import vague from "../../../Images/vague.png";
 const Presentation = () => {
   return (
     <div className="presentation">
+      <div className="sectionbox">
       <img className="presentation__vague" src={vague} alt="fond_dégradé" />
 
       <div className="presentation__header">
@@ -21,6 +22,7 @@ const Presentation = () => {
           alt="fond_dégradé"
         />
       </div>
+    </div>
     </div>
   );
 };

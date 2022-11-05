@@ -8,7 +8,7 @@
 .Prestation {
   display: flex;
   flex-direction: column;
-  background: #1277ba;
+  background: $bleuclair;
   padding-bottom: 40px;
 
   &__titlePrestation {
@@ -141,7 +141,7 @@
 /// /////////////////////////////////////////////
 
 .creation {
-  background-color: #d7dfe4;
+  background-color: $bleumifonce;
   padding-bottom: 50px;
   margin: -20px auto auto auto;
   h1 {

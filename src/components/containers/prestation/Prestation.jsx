@@ -5,6 +5,7 @@ import Refonte from "../../../Images/refonte.png";
 const Prestation = () => {
   return (
     <section className="Prestation">
+      <div className="sectionbox">
       <h1 className="Prestation__titlePrestation">Confiez-nous votre projet</h1>
       <div className="Prestation__container">
         <div className="Prestation__container__bloc bloc1">
@@ -38,6 +39,7 @@ const Prestation = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

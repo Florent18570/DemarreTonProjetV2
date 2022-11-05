@@ -4,7 +4,8 @@ import Florent from "../../../Images/florent.png"
 import Bg from "../../../Images/Bg_realisation.png"
 
 const Nous = () => {
-  return <div className="Nous">
+  return <div className="Nous ">
+    <div className="sectionbox">
     <h2 className="Nous_titre">
       A PROPOS DE NOUS
     </h2>
@@ -46,7 +47,7 @@ const Nous = () => {
         </div>
       </div>
     </div>
-
+    </div>
   </div>;
 };
 

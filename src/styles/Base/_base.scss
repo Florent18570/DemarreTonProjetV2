@@ -66,6 +66,13 @@ p{
   letter-spacing: 0.4px;
 }
 
+//section box
+.sectionbox{
+  max-width: 1937px;
+  margin : 0 auto 0 auto;
+
+}
+
 
 @media screen and (max-width:1300px) and (min-width:1025px){
 
@@ -81,7 +88,9 @@ p{
   p{
 
   }
-  
+  .sectionbox{
+    max-width: 1140px;
+  }
 }
 
 @media screen and (max-width:1024px) and (min-width:768px){
@@ -98,6 +107,9 @@ p{
   p{
     font-size: 14px;
   }
+  .sectionbox{
+    max-width: 1024px;
+  }
   
 }
 
@@ -111,6 +123,12 @@ p{
   }
   H3{
     font-size: 23px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .sectionbox{
+    max-width: 767px;
   }
   
 }

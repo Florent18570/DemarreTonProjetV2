@@ -52,16 +52,24 @@ H2 {
   letter-spacing: 1.4px;
 }
 
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
 p {
   font-size: 22px;
   font-weight: 300;
-  line-height: 22px;
   letter-spacing: 0.4px;
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1025px) {
   H2 {
     font-size: 73px;
+  }
+  H3 {
+    font-size: 33px;
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -70,6 +78,9 @@ p {
   }
   H2 {
     font-size: 65px;
+  }
+  H3 {
+    font-size: 23px;
   }
   p {
     font-size: 14px;
@@ -81,6 +92,9 @@ p {
   }
   H2 {
     font-size: 39px;
+  }
+  H3 {
+    font-size: 23px;
   }
 }
 .navbar {

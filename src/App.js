@@ -12,7 +12,7 @@ export default function App() {
       <Routes>
         
         <Route exact path="/" element={<Home/>}/>
-        <Route path="/devis" element={<Devis/>}/>
+        <Route exact path="/devis" element={<Devis/>}/>
         <Route path='*' element={<NotFound/>} />
       </Routes>
     </Router>

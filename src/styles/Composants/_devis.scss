@@ -1,0 +1,31 @@
+.devis{
+    display: flex;
+    height: 500px;
+    background-color: $bleumiclair;
+}
+
+.Devis_bloc{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    width: 85%;
+    background-color: $bleumifonce;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+}
+
+.Devis_bloc_2{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    width: 85%;
+    background-color: $bleumifonce;
+    visibility: hidden;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+}
+
+.Devis_Bloc_choix{
+    display: flex;
+    justify-content: space-around
+}

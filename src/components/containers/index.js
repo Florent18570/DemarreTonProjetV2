@@ -4,3 +4,5 @@ export { default as Nous } from "./nous/Nous";
 export { default as Presentation } from "./presentation/Presentation";
 export { default as Prestation } from "./prestation/Prestation";
 export { default as Realisation } from "./réalisation/Realisation";
+export { default as NotFound } from "./notfound/NotFound";
+export { default as Devis } from "./devis/Devis";

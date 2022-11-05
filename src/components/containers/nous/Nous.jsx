@@ -1,11 +1,12 @@
 import React from "react";
 import Julien from "../../../Images/julien.png"
 import Florent from "../../../Images/florent.png"
+import Bg from "../../../Images/Bg_realisation.png"
 
 const Nous = () => {
   return <div className="Nous">
     <div className="Nous_titre">
-      Nous deux, best dev ever
+      A PROPOS DE NOUS
     </div>
     <div className="Nous_developpeur">
       Développeur
@@ -13,44 +14,34 @@ const Nous = () => {
     <div className="Nous_colonne">
       <div className="Nous_image">
         <div className="large">
-        <div className="Nous_Image_1">
-          1
-        </div>
-        <div className="Nous_Image_23">
-          <div className="Nous_Image_2">
-            2
+          <img src={Bg} className="Nous_Image_1"/>
+          <div className="Nous_Image_23">
+            <img src={Bg} className="Nous_Image_2"/>
+            <img src={Bg} className="Nous_Image_3"/>
           </div>
-          <div className="Nous_Image_3">
-            3
-          </div>
-        </div>
         </div>
         <div className="large">
-        <div className="Nous_Image_4">
-          4
-        </div>
-        <div className="Nous_Image_5">
-          5
-        </div>
+          <img src={Bg} className="Nous_Image_4"/>
+          <img src={Bg} className="Nous_Image_5"/>
         </div>
       </div>
       <div className="Nous_partenaire">
         <h3 className="Nous_parfaitpartenaire">Votre parfait partenaire</h3>
-        <p className="Nous_partenaire_text">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+        <p className="Nous_partenaire_text">C'est après la satisfaction de plusieurs clients qu'est nait "DemarreTonProjet". Un groupe réunissant deux frères dans le but de répondre à la demande grandissant de la mise en ligne d'entreprises. DemarreTonProjet, c'est la chance de mettre toutes les chances de vos côtés pour augmenter vos visites, de permettre d'étandre votre rayon de prospection et donc de générer plus de ventes ou de chantiers.</p>
         <div className="Nous_julien">
           
           <img src={Julien}></img>
-          <div>
+          <div className="Nous_Julien_titre">
             <h4>Julien Escots</h4>
-            <p>Développeur Backend</p>
+            <p className="Nous_Julien_dev">Développeur Backend</p>
           </div>
         </div>
         <div className="Nous_florent">
           
         <img src={Florent}></img>
-          <div>
+          <div className="Nous_Julien_titre">
             <h4>Florent Escots</h4>
-            <p>Développeur Frontend</p>
+            <p className="Nous_Julien_dev">Développeur Frontend</p>
           </div>
         </div>
       </div>

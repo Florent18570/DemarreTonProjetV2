@@ -1,9 +1,10 @@
 @charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
 body {
@@ -39,19 +40,71 @@ a {
   font-weight: bold;
 }
 
+H1 {
+  font-size: 100px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+H2 {
+  font-size: 92px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+
+p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1025px) {
+  H2 {
+    font-size: 73px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  H1 {
+    font-size: 64px;
+  }
+  H2 {
+    font-size: 65px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  H1 {
+    font-size: 38px;
+  }
+  H2 {
+    font-size: 39px;
+  }
+}
 .navbar {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), #0f3d6e;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #0f3d6e;
+  background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 0.2)),
+      to(rgba(0, 0, 0, 0.2))
+    ),
+    #0f3d6e;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    #0f3d6e;
   height: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 30px 70px;
   position: relative;
 }
@@ -123,12 +176,12 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 2rem;
   position: absolute;
   top: 40px;
@@ -137,7 +190,7 @@ button:hover {
   min-width: 210px;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 5 black;
-          box-shadow: 0 0 5 black;
+  box-shadow: 0 0 5 black;
 }
 
 .navbar-menu__container__links nav {
@@ -176,8 +229,8 @@ button:hover {
   }
   .navbar {
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     position: relative;
   }
   .navbar-menu svg {
@@ -218,14 +271,14 @@ button:hover {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 722px;
   border-top: 2px solid white;
   width: 100%;
@@ -238,8 +291,8 @@ button:hover {
   padding: 0 30px 0 30px;
   width: 300px;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   background-color: #137171;
 }
 
@@ -249,8 +302,8 @@ button:hover {
   max-width: 481px;
   z-index: 2;
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   background-color: #c1c118;
 }
 
@@ -268,8 +321,8 @@ button:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background: #1277ba;
   padding-bottom: 40px;
 }
@@ -289,8 +342,8 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .Prestation__container__bloc {
@@ -305,15 +358,15 @@ button:hover {
   padding-bottom: 20px;
   border: 3px solid rgba(255, 255, 255, 0.47);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 600px;
 }
 
@@ -344,7 +397,7 @@ button:hover {
   text-align: center;
   font-size: 16px;
   -webkit-box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.47);
-          box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.47);
   border-radius: 8px;
 }
 
@@ -408,11 +461,11 @@ button:hover {
   .Prestation__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .Prestation__container__bloc {
     padding: 10px 12px 0px 18px;
@@ -445,7 +498,13 @@ button:hover {
   font-size: 71px;
   line-height: 97px;
   /* linear */
-  background: -webkit-gradient(linear, left top, right top, from(#184f6f), to(rgba(255, 101, 0, 0.99)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#184f6f),
+    to(rgba(255, 101, 0, 0.99))
+  );
   background: linear-gradient(90deg, #184f6f 0%, rgba(255, 101, 0, 0.99) 100%);
   background-clip: text;
   color: transparent;
@@ -454,41 +513,49 @@ button:hover {
 .GridCreation {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr) [2];
+  grid-template-rows: repeat(2, 1fr);
   gap: 24px;
   margin: 70px 180px;
 }
 
 .GridCreation div {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   height: 372px;
   background: #1e7ee2;
   background: #1e7ee2;
   border: 3px solid rgba(255, 255, 255, 0.47);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
 
 /* Footer */
 .Footer {
-  background: #D9D9D9;
+  background: #d9d9d9;
 }
 
 .Footer_H3 {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 39px;
   line-height: 53px;
   text-align: justify;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left top, right top, from(#184F6F), color-stop(101.58%, rgba(255, 101, 0, 0.99)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90deg, #184F6F 0%, rgba(255, 101, 0, 0.99) 101.58%);
+  background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 0.2)),
+      to(rgba(0, 0, 0, 0.2))
+    ),
+    -webkit-gradient(linear, left top, right top, from(#184f6f), color-stop(101.58%, rgba(255, 101, 0, 0.99)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(90deg, #184f6f 0%, rgba(255, 101, 0, 0.99) 101.58%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -500,8 +567,8 @@ button:hover {
   display: flex;
   margin: auto;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .Footer_presta {
@@ -520,7 +587,7 @@ button:hover {
   object-fit: cover;
   background-image: url("../Images/fondFooter.jpg");
   background-repeat: round;
-  width: 80%;
+  width: 60%;
   border-radius: 0.66667rem;
   margin: auto;
   top: -75px;
@@ -567,7 +634,7 @@ button:hover {
 
 .Footer_Button_devis:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   background-color: #485fc7;
   color: #ffd977;
 }
@@ -576,17 +643,17 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #1E1E1E;
+  background: #1e1e1e;
   color: white;
   margin: auto;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .Footer_Bloc_Footer_p {
   -webkit-margin-end: 10%;
-          margin-inline-end: 10%;
+  margin-inline-end: 10%;
   text-align: center;
   margin: auto;
   margin-top: 1%;
@@ -594,7 +661,7 @@ button:hover {
 }
 
 .Footer_li {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 21px;
@@ -633,13 +700,13 @@ button:hover {
   .Footer_Bloc_presta {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin: auto;
     text-align: center;
     -webkit-box-align: left;
-        -ms-flex-align: left;
-            align-items: left;
+    -ms-flex-align: left;
+    align-items: left;
   }
   .Footer_confier {
     font-size: 14px;
@@ -682,7 +749,7 @@ button:hover {
 
 /* Nous */
 .Nous {
-  background-color: #0365D0;
+  background-color: #0365d0;
   color: white;
   min-height: 1000px;
 }
@@ -696,10 +763,10 @@ button:hover {
 .Nous_developpeur {
   margin-left: 900px;
   margin-top: 30px;
-  background: #F78D4D;
+  background: #f78d4d;
   border-radius: 17px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 150px;
 }
 
@@ -717,8 +784,8 @@ button:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   max-height: 700px;
 }
 
@@ -779,31 +846,31 @@ button:hover {
 
 .Nous_Image_1:hover {
   -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  transform: scale(1.15);
   cursor: pointer;
 }
 
 .Nous_Image_2:hover {
   -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  transform: scale(1.15);
   cursor: pointer;
 }
 
 .Nous_Image_3:hover {
   -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  transform: scale(1.15);
   cursor: pointer;
 }
 
 .Nous_Image_4:hover {
   -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  transform: scale(1.15);
   cursor: pointer;
 }
 
 .Nous_Image_5:hover {
   -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  transform: scale(1.15);
   cursor: pointer;
 }
 
@@ -834,8 +901,8 @@ button:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 25px;
@@ -856,8 +923,8 @@ button:hover {
   .Nous_colonne {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin: auto;
   }
   .Nous_developpeur {
@@ -890,20 +957,20 @@ button:hover {
   .Nous_julien {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
   .Nous_florent {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
   .Nous {
     padding-bottom: 100px;
@@ -914,8 +981,8 @@ button:hover {
   .Nous_colonne {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin: auto;
   }
   .Nous_developpeur {
@@ -956,20 +1023,20 @@ button:hover {
   .Nous_julien {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
   .Nous_florent {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
   .Nous {
     padding-bottom: 65px;

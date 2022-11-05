@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaBeer  } from "react-icons/fa";
 
 const Footer = () => {
   return <div className="Footer">
@@ -22,7 +22,7 @@ const Footer = () => {
       <div className="Footer_presta">
         <h3 className="Footer_H3">Nous contacter</h3>
         <li className="Footer_li Footer_li_Enveloppe">Contactez-nous</li>
-        <li className="Footer_li">Insta / Tweeter / Fb</li>
+        <img className="Footer_li"></img><FaBeer />
       </div>
     </div>
 

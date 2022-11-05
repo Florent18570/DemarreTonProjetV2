@@ -50,6 +50,8 @@ H2 {
   font-size: 92px;
   font-weight: 600;
   letter-spacing: 1.4px;
+  text-transform: uppercase;
+  padding-top: 60px;
 }
 
 h3 {

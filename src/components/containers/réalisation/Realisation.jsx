@@ -3,7 +3,7 @@ import React from "react";
 const Realisation = () => {
   return (
     <div className="creation">
-      <h1> Nos Récentes Créations</h1>
+      <h2> Nos Récentes Créations</h2>
       <section className="GridCreation">
         <div></div>
         <div></div>

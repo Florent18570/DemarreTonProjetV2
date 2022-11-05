@@ -5,9 +5,9 @@ import Bg from "../../../Images/Bg_realisation.png"
 
 const Nous = () => {
   return <div className="Nous">
-    <div className="Nous_titre">
+    <h2 className="Nous_titre">
       A PROPOS DE NOUS
-    </div>
+    </h2>
     <div className="Nous_developpeur">
       Développeur
     </div>

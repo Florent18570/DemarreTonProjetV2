@@ -3,7 +3,6 @@ import grid1 from "../../../Images/grid.png";
 import grid2 from "../../../Images/grid2.png";
 import grid3 from "../../../Images/grid3.png";
 import grid4 from "../../../Images/grid4.png";
-import Refonte from "../../../Images/refonte.png";
 
 const Prestation = () => {
   return (

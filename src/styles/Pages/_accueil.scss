@@ -37,9 +37,9 @@
   flex-direction: column;
   width: 600px;
 
-  h2 {
+  h3 {
     display: block;
-    width: 266px;
+    margin: 10px 0;
   }
   &__inside {
     display: flex;
@@ -81,6 +81,7 @@
   }
   .Prestation__container__bloc {
     margin: 0px 15px 26px 15px;
+    width: auto;
     &__inside {
       img {
       }
@@ -89,7 +90,7 @@
       button {
       }
     }
-    h2 {
+    h3 {
     }
   }
 }
@@ -99,6 +100,9 @@
   }
   .Prestation__container__bloc {
     padding: 10px 12px 0px 18px;
+
+    padding: 10px 12px 0px 18px;
+    width: auto;
     &__inside {
       p {
       }

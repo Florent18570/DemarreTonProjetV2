@@ -18,23 +18,106 @@
     align-items: center;
     height: 722px;
     border-top: 2px solid white;
-    width: 100%;
-    padding: 0px 200px;
+    padding: 0px 150px;
     border: 2px solid red;
     background-image: url("../Images/dégradé.png");
-    p {
-      padding: 0 30px 0 30px;
-      width: 300px;
-      flex-grow: 1;
-      background-color: rgb(19, 113, 113);
+    width: 100%;
+    &__text {
+      width: 60%;
+      p {
+        margin-right: 5.5%;
+        background-color: rgb(19, 113, 113);
+      }
+      h1 {
+        color: #333;
+      }
+      span {
+        color: #1378bb;
+      }
     }
+
     img {
+      width: 43%;
       height: auto;
-      width: auto\9;
-      max-width: 481px;
       z-index: 2;
       flex-grow: 0;
-      background-color: rgb(193, 193, 24);
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1025px) {
+  .presentation {
+    &__degrade {
+    }
+    &__vague {
+    }
+    &__header {
+      padding: 0px 150px;
+      &__text {
+        p {
+        }
+        h1 {
+        }
+        span {
+        }
+      }
+
+      img {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .presentation {
+    &__degrade {
+    }
+    &__vague {
+    }
+    &__header {
+      flex-direction: column;
+      padding: 0px 0px;
+      &__text {
+        width: 80%;
+        p {
+        }
+        h1 {
+        }
+        span {
+        }
+      }
+
+      img {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .presentation {
+    &__degrade {
+    }
+    &__vague {
+      width: 86%;
+    }
+    &__header {
+      height: 536px;
+      flex-direction: column;
+      padding: 0px 0px;
+      &__text {
+        width: 100%;
+        p {
+        }
+        h1 {
+        }
+        span {
+        }
+      }
+
+      img {
+        margin-bottom: -68px;
+        width: 50%;
+      }
     }
   }
 }

@@ -79,7 +79,7 @@ p {
     font-size: 50px;
   }
   h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .sectionbox {
     max-width: 1140px;
@@ -899,6 +899,23 @@ button:hover {
 .Prestation {
   padding: 50px 5%;
   background: #f5f7fc;
+}
+
+.Prestation h2 {
+  max-width: 664px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 .Prestation__grid {

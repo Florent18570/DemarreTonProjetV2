@@ -1,6 +1,17 @@
 .Prestation {
   padding: 50px 5%;
   background: #f5f7fc;
+  h2 {
+    max-width: 664px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 35px;
+  }
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

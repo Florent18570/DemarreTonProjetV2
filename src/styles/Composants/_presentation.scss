@@ -25,6 +25,7 @@
     &__text {
       width: 60%;
       p {
+        margin-top: 40px;
         margin-right: 5.5%;
         background-color: rgb(19, 113, 113);
       }
@@ -45,18 +46,19 @@
   }
 }
 
-@media screen and (max-width: 1300px) and (min-width: 1025px) {
+@media screen and (max-width: 1476px) and (min-width: 1025px) {
   .presentation {
     &__degrade {
     }
     &__vague {
     }
     &__header {
-      padding: 0px 150px;
+      padding: 0px 103px;
       &__text {
         p {
         }
         h1 {
+          font-size: 59px;
         }
         span {
         }
@@ -68,11 +70,13 @@
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1023px) and (min-width: 768px) {
   .presentation {
     &__degrade {
     }
     &__vague {
+      width: 800px;
+      z-index: 1;
     }
     &__header {
       flex-direction: column;
@@ -80,6 +84,7 @@
       &__text {
         width: 80%;
         p {
+          z-index: 2;
         }
         h1 {
         }
@@ -88,6 +93,7 @@
       }
 
       img {
+        width: 39%;
       }
     }
   }

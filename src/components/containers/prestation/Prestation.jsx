@@ -6,23 +6,19 @@ const Prestation = () => {
   return (
     <section className="Prestation">
       <div className="sectionbox">
-        <h1 className="Prestation__titlePrestation">
-          Confiez-nous votre projet
-        </h1>
-        <div className="Prestation__container">
-          <div className="Prestation__container__bloc bloc1">
-            <h3 className="colorsaumongris bold800">
-              Création de votre site Internet
-            </h3>
-            <div className="Prestation__container__bloc__inside">
-              <div>
-                <p className="bold400">
-                  Développez votre visibilité local et boostez votre croissance
-                  avec un site internet design, responsive et performant.
-                </p>
-                <button> En savoir plus</button>
-              </div>
-              <img src={Creation} alt="Création de votre site Internet" />
+      <h1 className="Prestation__titlePrestation">Confiez-nous votre projet</h1>
+      <div className="Prestation__container">
+        <div className="Prestation__container__bloc bloc1">
+          <h3 className="colorsaumongris bold800">
+            Création de votre site Internet
+          </h3>
+          <div className="Prestation__container__bloc__inside">
+            <div>
+              <p className="bold400">
+                Développez votre visibilité local et boostez votre croissance
+                avec un site internet design, responsive et performant.
+              </p>
+              <button> En savoir plus</button>
             </div>
           </div>
 

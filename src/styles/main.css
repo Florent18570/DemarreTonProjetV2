@@ -4,7 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Plus Jakarta Display", sans-serif;
 }
 
 body {
@@ -74,17 +73,13 @@ p {
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1025px) {
-  H2 {
-    font-size: 73px;
+  H1 {
+    font-size: 50px;
   }
   h2 {
     font-size: 40px;
   }
-  .sectionbox {
-    max-width: 1140px;
-  }
 }
-
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   H1 {
     font-size: 64px;
@@ -95,14 +90,10 @@ p {
   H3 {
     font-size: 23px;
   }
-  p {
-    font-size: 14px;
-  }
   .sectionbox {
-    max-width: 1024px;
+    max-width: 1140px;
   }
 }
-
 @media screen and (max-width: 767px) {
   H1 {
     font-size: 38px;
@@ -112,23 +103,6 @@ p {
   }
   h3 {
     font-size: 22px;
-  }
-  .sectionbox {
-    max-width: 767px;
-  }
-}
-@media screen and (max-width: 479px) {
-  H1 {
-    font-size: 35px;
-  }
-  H2 {
-    font-size: 39px;
-  }
-  H3 {
-    font-size: 23px;
-  }
-  p {
-    font-size: 14px;
   }
   .sectionbox {
     max-width: 767px;
@@ -915,7 +889,16 @@ button:hover {
   padding: 50px 5%;
   background: #f5f7fc;
 }
-
+.Prestation h2 {
+  max-width: 664px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 35px;
+}
 .Prestation__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -958,9 +941,8 @@ button:hover {
 }
 .Prestation__grid__card__content a {
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
+  margin-top: 24px;
   font-size: 18px;
   color: #14142b;
   line-height: 1.111em;
@@ -977,4 +959,89 @@ button:hover {
     margin-bottom: 25px;
   }
 }
-/*# sourceMappingURL=main.css.map */
+@media screen and (max-width: 769px) {
+  .Prestation {
+    padding: 50px 8%;
+  }
+  .Prestation__grid {
+    grid-template-columns: 1fr;
+  }
+  .Prestation__grid__card {
+    flex-direction: row;
+  }
+  .Prestation__grid__card__img img {
+    margin-right: 28px;
+  }
+}
+@media screen and (max-width: 478px) {
+  .Prestation {
+    padding: 50px 8%;
+  }
+  .Prestation__grid {
+    grid-template-columns: 1fr;
+  }
+  .Prestation__grid__card {
+    flex-direction: column;
+    padding: 37px 25px 40px;
+  }
+  .Prestation__grid__card__img img {
+    margin-bottom: 12px;
+    width: 90px;
+  }
+}
+.Header_global {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 5% 100px;
+}
+
+.Header_titre {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #FF3951;
+  justify-content: space-evenly;
+  margin-bottom: 18px;
+}
+
+.Header_creation {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.233em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1.2px;
+  margin-bottom: 24px;
+  color: #14142B;
+  justify-content: space-evenly;
+}
+
+.Header_description {
+  max-width: 500px;
+  margin: 0px auto 48px auto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.36px;
+  margin-bottom: 70px;
+  color: #6E7191;
+  justify-content: space-evenly;
+}
+
+.Header_button {
+  background: #0051B1;
+  box-shadow: 0px 8px 22px #3F80FD;
+  border-radius: 1000px;
+  justify-content: space-evenly;
+  margin: auto;
+  display: flex;
+  color: white;
+}/*# sourceMappingURL=main.css.map */

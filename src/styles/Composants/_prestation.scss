@@ -46,6 +46,7 @@
   a {
     display: flex;
     justify-content: flex-end;
+    margin-top: 24px;
 
     font-size: 18px;
     color: #14142b;
@@ -67,6 +68,31 @@
 
   .Prestation__grid__card__img img {
     margin-bottom: 25px;
+  }
+
+  .Prestation__grid__card__content {
+    h3 {
+    }
+    p {
+    }
+    a {
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .Prestation {
+    padding: 50px 8%;
+    &__grid {
+      grid-template-columns: 1fr;
+      &__card {
+        flex-direction: row;
+      }
+    }
+  }
+
+  .Prestation__grid__card__img img {
+    margin-right: 28px;
   }
 
   .Prestation__grid__card__content {

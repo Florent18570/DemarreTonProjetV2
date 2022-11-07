@@ -39,18 +39,19 @@ a {
 }
 
 //taille texte
-H1 {
-  font-size: 80px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
+h1 {
+  color: #14142b;
+  font-size: 60px;
+  line-height: 1.233em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
-H2 {
-  font-size: 92px;
-  font-weight: 600;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  padding-top: 60px;
+h2 {
+  color: #14142b;
+  font-size: 40px;
+  line-height: 1.35em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 h3 {
   font-size: 35px;
@@ -58,9 +59,10 @@ h3 {
   letter-spacing: 0.1px;
 }
 p {
-  font-size: 22px;
-  font-weight: 300;
-  letter-spacing: 0.4px;
+  color: #6e7191;
+  font-size: 18px;
+  line-height: 1.667em;
+  letter-spacing: 0.02em;
 }
 
 //section box
@@ -69,15 +71,14 @@ p {
   margin: 0 auto 0 auto;
 }
 
-@media screen and (max-width: 1300px) and (min-width: 1025px) {
+@media screen and (max-width: 991px) {
   H1 {
+    font-size: 50px;
   }
-  H2 {
-    font-size: 73px;
+  h2 {
+    font-size: 50px;
   }
-  H3 {
-    font-size: 33px;
-  }
+
   p {
   }
   .sectionbox {
@@ -85,37 +86,17 @@ p {
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-  H1 {
-    font-size: 64px;
-  }
-  H2 {
-    font-size: 65px;
-  }
-  H3 {
-    font-size: 23px;
-  }
-  p {
-    font-size: 14px;
-  }
-  .sectionbox {
-    max-width: 1024px;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  H1 {
-    font-size: 38px;
+  h1 {
+    font-size: 42px;
   }
-  H2 {
-    font-size: 39px;
+  h2 {
+    font-size: 33px;
   }
-  H3 {
-    font-size: 23px;
+  h3 {
+    font-size: 22px;
   }
-  p {
-    font-size: 14px;
-  }
+
   .sectionbox {
     max-width: 767px;
   }

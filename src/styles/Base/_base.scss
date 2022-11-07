@@ -2,14 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
-  
-  
+  font-family: "Open Sans";
 }
 
 body {
   margin: 0;
-  
 }
 
 a {
@@ -41,97 +38,85 @@ a {
   font-weight: bold;
 }
 
-
-
 //taille texte
-H1{
-  font-size: 100px;
+H1 {
+  font-size: 80px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.8px;
 }
-H2{
-  font-size: 70px;
+H2 {
+  font-size: 92px;
   font-weight: 600;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  padding-top:60px;
-  
+  padding-top: 60px;
 }
-h3{
-  font-size: 40px;
+h3 {
+  font-size: 35px;
   font-weight: 700;
   letter-spacing: 0.1px;
 }
-p{
+p {
   font-size: 22px;
   font-weight: 300;
   letter-spacing: 0.4px;
 }
 
 //section box
-.sectionbox{
+.sectionbox {
   max-width: 1937px;
-  margin : 0 auto 0 auto;
-
+  margin: 0 auto 0 auto;
 }
 
-
-@media screen and (max-width:1300px) and (min-width:1025px){
-
-  H1{
-    
+@media screen and (max-width: 1300px) and (min-width: 1025px) {
+  H1 {
   }
-  H2{
+  H2 {
     font-size: 73px;
   }
-  H3{
+  H3 {
     font-size: 33px;
   }
-  p{
-
+  p {
   }
-  .sectionbox{
+  .sectionbox {
     max-width: 1140px;
   }
 }
 
-@media screen and (max-width:1024px) and (min-width:768px){
-
-  H1{
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  H1 {
     font-size: 64px;
   }
-  H2{
+  H2 {
     font-size: 65px;
   }
-  H3{
+  H3 {
     font-size: 23px;
   }
-  p{
+  p {
     font-size: 14px;
   }
-  .sectionbox{
+  .sectionbox {
     max-width: 1024px;
   }
-  
 }
 
-@media screen and (max-width:767px) {
-
-  H1{
+@media screen and (max-width: 767px) {
+  H1 {
     font-size: 38px;
   }
-  H2{
+  H2 {
     font-size: 39px;
   }
-  H3{
+  H3 {
     font-size: 23px;
   }
-  p{
+  p {
     font-size: 14px;
   }
-  .sectionbox{
+  .sectionbox {
     max-width: 767px;
   }
-  
 }

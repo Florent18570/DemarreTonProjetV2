@@ -115,3 +115,30 @@
     }
   }
 }
+
+@media screen and (max-width: 478px) {
+  .Prestation {
+    padding: 50px 8%;
+    &__grid {
+      grid-template-columns: 1fr;
+      &__card {
+        flex-direction: column;
+        padding: 37px 25px 40px;
+      }
+    }
+  }
+
+  .Prestation__grid__card__img img {
+    margin-bottom: 12px;
+    width: 90px;
+  }
+
+  .Prestation__grid__card__content {
+    h3 {
+    }
+    p {
+    }
+    a {
+    }
+  }
+}

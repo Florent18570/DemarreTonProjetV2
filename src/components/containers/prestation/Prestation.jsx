@@ -6,7 +6,7 @@ const Prestation = () => {
   return (
     <section className="Prestation">
       <div className="sectionbox">
-      <h1 className="Prestation__titlePrestation">Confiez-nous votre projet</h1>
+      <h2 className="Prestation__titlePrestation">Confiez-nous votre projet</h2>
       <div className="Prestation__container">
         <div className="Prestation__container__bloc bloc1">
           <h3 className="colorsaumongris bold800">

@@ -47,7 +47,7 @@ H1 {
 }
 
 H2 {
-  font-size: 92px;
+  font-size: 70px;
   font-weight: 600;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -489,8 +489,8 @@ button:hover {
 
 .Footer_Button_devis:hover {
   transform: scale(1.1);
-  background-color: #485fc7;
-  color: rgb(255, 217, 119);
+  background-color: #0365D0;
+  color: #ECA400;
 }
 
 .Footer_Bloc_footer {
@@ -581,7 +581,7 @@ button:hover {
 }
 /* Nous */
 .Nous {
-  background-color: #0365D0;
+  background-color: #15375C;
   color: white;
   min-height: 1000px;
 }
@@ -812,4 +812,33 @@ button:hover {
   .Nous {
     padding-bottom: 65px;
   }
+}
+.devis {
+  display: flex;
+  height: 500px;
+  background-color: #0365D0;
+}
+
+.Devis_bloc {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 85%;
+  background-color: #0E3C6E;
+  transition: all 400ms;
+}
+
+.Devis_bloc_2 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 85%;
+  background-color: #0E3C6E;
+  visibility: hidden;
+  transition: all 400ms;
+}
+
+.Devis_Bloc_choix {
+  display: flex;
+  justify-content: space-around;
 }/*# sourceMappingURL=main.css.map */

@@ -8,8 +8,8 @@ const Devis = () => {
     document.getElementById("num2").style.visibility = "visible";
 
   }
-  return <div className="devis">
-    
+  return <div className="devis ">
+    <div className="sectionbox">
       <div className="Devis_bloc" id="num">
         <h3>Etape 1</h3>
         <input type="text"></input>
@@ -34,6 +34,7 @@ const Devis = () => {
       
       </div>
     
+    </div>
     </div>
 };
 

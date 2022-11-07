@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
-* {
-  font-family: "Montserrat", sans-serif;
-}
+
 
 html {
   line-height: 1.15; /* 1 */

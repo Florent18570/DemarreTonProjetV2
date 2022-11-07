@@ -6,3 +6,4 @@ export { default as Prestation } from "./prestation/Prestation";
 export { default as Realisation } from "./réalisation/Realisation";
 export { default as NotFound } from "./notfound/NotFound";
 export { default as Devis } from "./devis/Devis";
+export { default as HeaderJu } from "./headerju/Headerju";

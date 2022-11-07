@@ -1,6 +1,17 @@
 .Prestation {
   padding: 50px 5%;
   background: #f5f7fc;
+  h2 {
+    max-width: 664px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 35px;
+  }
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,6 +57,7 @@
   a {
     display: flex;
     justify-content: flex-end;
+    margin-top: 24px;
 
     font-size: 18px;
     color: #14142b;
@@ -67,6 +79,58 @@
 
   .Prestation__grid__card__img img {
     margin-bottom: 25px;
+  }
+
+  .Prestation__grid__card__content {
+    h3 {
+    }
+    p {
+    }
+    a {
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .Prestation {
+    padding: 50px 8%;
+    &__grid {
+      grid-template-columns: 1fr;
+      &__card {
+        flex-direction: row;
+      }
+    }
+  }
+
+  .Prestation__grid__card__img img {
+    margin-right: 28px;
+  }
+
+  .Prestation__grid__card__content {
+    h3 {
+    }
+    p {
+    }
+    a {
+    }
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .Prestation {
+    padding: 50px 8%;
+    &__grid {
+      grid-template-columns: 1fr;
+      &__card {
+        flex-direction: column;
+        padding: 37px 25px 40px;
+      }
+    }
+  }
+
+  .Prestation__grid__card__img img {
+    margin-bottom: 12px;
+    width: 90px;
   }
 
   .Prestation__grid__card__content {

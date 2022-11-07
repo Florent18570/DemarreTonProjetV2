@@ -1,6 +1,8 @@
 import React from "react";
 import grid1 from "../../../Images/grid.png";
-import Refonte from "../../../Images/refonte.png";
+import grid2 from "../../../Images/grid2.png";
+import grid3 from "../../../Images/grid3.png";
+import grid4 from "../../../Images/grid4.png";
 
 const Prestation = () => {
   return (
@@ -24,13 +26,13 @@ const Prestation = () => {
 
         <div className="Prestation__grid__card">
           <div className="Prestation__grid__card__img">
-            <img src={grid1} alt="grid1" />
+            <img src={grid2} alt="grid1" />
           </div>
           <div className="Prestation__grid__card__content">
-            <h3> Création de sites internet</h3>
+            <h3> UX Design</h3>
             <p>
-              Développement de votre site sur-mesure avec toutes les
-              fonctionnalit"s nécessaires.
+              Optimisation de l'expérience utilisateur pour améliorer la
+              conversation.
             </p>
             <a href=""> En savoir plus</a>
           </div>
@@ -38,13 +40,13 @@ const Prestation = () => {
 
         <div className="Prestation__grid__card">
           <div className="Prestation__grid__card__img">
-            <img src={grid1} alt="grid1" />
+            <img src={grid3} alt="grid1" />
           </div>
           <div className="Prestation__grid__card__content">
-            <h3> Création de sites internet</h3>
+            <h3> Référencement naturel</h3>
             <p>
-              Développement de votre site sur-mesure avec toutes les
-              fonctionnalit"s nécessaires.
+              Amélioration de votre position dans les moteurs de recherche avec
+              le trafic organique.
             </p>
             <a href=""> En savoir plus</a>
           </div>
@@ -52,13 +54,13 @@ const Prestation = () => {
 
         <div className="Prestation__grid__card">
           <div className="Prestation__grid__card__img">
-            <img src={grid1} alt="grid1" />
+            <img src={grid4} alt="grid1" />
           </div>
           <div className="Prestation__grid__card__content">
-            <h3> Création de sites internet</h3>
+            <h3> Maintenance technique </h3>
             <p>
-              Développement de votre site sur-mesure avec toutes les
-              fonctionnalit"s nécessaires.
+              Hébergement, cybersécurité, sauvegarde, maintenance de votre
+              application
             </p>
             <a href=""> En savoir plus</a>
           </div>

@@ -3,7 +3,8 @@ import React from "react";
 import {
   Footer,
   Header,
-  NotFound
+  NotFound,
+  HeaderJu
 } from "../components/containers";
 
 const notfound = () => {
@@ -13,6 +14,7 @@ const notfound = () => {
       
       <NotFound />
       
+      <HeaderJu />
       <Footer />
     </div>
   );

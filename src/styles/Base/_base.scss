@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans";
+  font-family: 'Plus Jakarta Display', sans-serif;
 }
 
 body {
@@ -40,7 +40,7 @@ a {
 
 //taille texte
 H1 {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -69,7 +69,7 @@ p {
   margin: 0 auto 0 auto;
 }
 
-@media screen and (max-width: 1300px) and (min-width: 1025px) {
+@media screen and (max-width: 1300px) and (min-width: 992px) {
   H1 {
   }
   H2 {
@@ -85,9 +85,9 @@ p {
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 991px) and (min-width: 768px) {
   H1 {
-    font-size: 64px;
+    font-size: 50px;
   }
   H2 {
     font-size: 65px;
@@ -103,9 +103,27 @@ p {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 480px) {
   H1 {
-    font-size: 38px;
+    font-size: 40px;
+  }
+  H2 {
+    font-size: 39px;
+  }
+  H3 {
+    font-size: 23px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .sectionbox {
+    max-width: 767px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  H1 {
+    font-size: 35px;
   }
   H2 {
     font-size: 39px;

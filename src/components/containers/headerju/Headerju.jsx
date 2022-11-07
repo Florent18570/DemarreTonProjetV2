@@ -1,12 +1,11 @@
 import React from "react";
 
 const HeaderJu = () => {
-  return <div className="eror" >
-    <a className="erordiv" href="/">
-    <h3 className="error">404</h3>
-    <p className="oups">Oups .. La page n'existe pas !</p>
-    <p className="oups">Cliquez pour retourner en lieu sur !</p>
-    </a>
+  return <div className="Header_global" >
+    <p className="Header_titre">DemarreTonProjet</p>
+    <h1 className="Header_creation">Création de sites internet</h1>
+    <p className="Header_description">Avoir un site performant n'a jamais était si facile.</p>
+    <button className="Header_button"> Me contacter </button>
     </div>
 };
 

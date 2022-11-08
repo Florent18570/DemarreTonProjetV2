@@ -25,8 +25,7 @@
     "deploy": "gh-pages -d build",
     "startju": "react-scripts --openssl-legacy-provider start",
     "buildju": "react-scripts --openssl-legacy-provider build",
-    "to": "(npm run buildju && npm npm run deploy)",
-
+    "to": "(npm run buildju && npm npm run deploy)"
   },
   "eslintConfig": {
     "extends": [

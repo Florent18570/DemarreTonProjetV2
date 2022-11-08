@@ -7,6 +7,8 @@ import {
   Presentation,
   Prestation,
   Realisation,
+  HeaderJu,
+  Processus,
 } from "../components/containers";
 
 const home = () => {

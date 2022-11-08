@@ -1,0 +1,25 @@
+.Presentation_card{
+    width: 50%;
+    height: 300px;
+}
+
+.Image_card{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.Button_card{
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 9px;
+    background-color: #14142b;
+    box-shadow: 0 8px 22px 0 rgb(0 0 0 / 28%);
+    font-size: 14px;
+    font-weight: 500;
+    color:white;
+}
+.Presentation_glob{
+    display: flex;
+    justify-content: space-around;
+}

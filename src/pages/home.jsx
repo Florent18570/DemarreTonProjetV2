@@ -7,7 +7,6 @@ import {
   Presentation,
   Prestation,
   Realisation,
-  HeaderJu,
 } from "../components/containers";
 
 const home = () => {
@@ -18,6 +17,7 @@ const home = () => {
       <HeaderJu />
 
       <Prestation />
+      <Processus />
       <Realisation />
       <Nous />
       <Footer />

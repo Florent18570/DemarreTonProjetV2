@@ -9,6 +9,7 @@ import {
   Realisation,
   HeaderJu,
   Processus,
+  PresentationJu
 } from "../components/containers";
 
 const home = () => {
@@ -20,6 +21,7 @@ const home = () => {
 
       <Prestation />
       <Processus />
+      <PresentationJu/>
       <Realisation />
       <Nous />
       <Footer />

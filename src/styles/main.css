@@ -100,7 +100,16 @@ p {
   }
 }
 .navbar {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #0f3d6e;
+  background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 0.2)),
+      to(rgba(0, 0, 0, 0.2))
+    ),
+    #0f3d6e;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    #0f3d6e;
   height: 64px;
   display: flex;
   justify-content: space-between;
@@ -317,8 +326,11 @@ button:hover {
 
 .Prestation {
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
-  background: #1681F5;
+  background: #1681f5;
   padding-bottom: 40px;
 }
 .Prestation__titlePrestation {
@@ -424,15 +436,14 @@ button:hover {
   }
 }
 .creation {
-  background-color: #0E3C6E;
+  background-color: #0e3c6e;
   padding-bottom: 50px;
   margin: -20px auto auto auto;
 }
 .creation h1 {
   /* linear */
   background: linear-gradient(90deg, #184f6f 0%, rgba(255, 101, 0, 0.99) 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -456,12 +467,21 @@ button:hover {
 
 /* Footer */
 .Footer {
-  background: #D9D9D9;
+  background: #d9d9d9;
 }
 
 .Footer_H3 {
   text-align: justify;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90deg, #184F6F 0%, rgba(255, 101, 0, 0.99) 101.58%);
+  background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 0.2)),
+      to(rgba(0, 0, 0, 0.2))
+    ),
+    -webkit-gradient(linear, left top, right top, from(#184f6f), color-stop(101.58%, rgba(255, 101, 0, 0.99)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(90deg, #184f6f 0%, rgba(255, 101, 0, 0.99) 101.58%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -521,14 +541,15 @@ button:hover {
 }
 
 .Footer_Button_devis:hover {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  background-color: #0365D0;
-  color: #ECA400;
+  background-color: #0365d0;
+  color: #eca400;
 }
 
 .Footer_Bloc_footer {
   display: flex;
-  background: #1E1E1E;
+  background: #1e1e1e;
   color: white;
   margin: auto;
   justify-content: center;
@@ -536,7 +557,7 @@ button:hover {
 
 .Footer_Bloc_Footer_p {
   -webkit-margin-end: 10%;
-          margin-inline-end: 10%;
+  margin-inline-end: 10%;
   text-align: center;
   margin: auto;
   margin-top: 1%;
@@ -613,6 +634,29 @@ button:hover {
   }
 }
 .Nous {
+  background-color: #15375c;
+  color: white;
+  min-height: 1000px;
+}
+
+.Nous_titre {
+  margin: auto;
+  text-align: center;
+}
+
+.Nous_developpeur {
+  margin-left: 900px;
+  margin-top: 30px;
+  background: #f78d4d;
+  border-radius: 17px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 150px;
+}
+
+.Nous_colonne {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-right: 5%;
   padding-left: 5%;
@@ -700,7 +744,7 @@ button:hover {
 .devis {
   display: flex;
   height: 500px;
-  background-color: #0365D0;
+  background-color: #0365d0;
 }
 
 .Devis_bloc {
@@ -708,7 +752,8 @@ button:hover {
   flex-direction: column;
   margin: auto;
   width: 85%;
-  background-color: #0E3C6E;
+  background-color: #0e3c6e;
+  -webkit-transition: all 400ms;
   transition: all 400ms;
 }
 
@@ -717,7 +762,7 @@ button:hover {
   flex-direction: column;
   margin: auto;
   width: 85%;
-  background-color: #0E3C6E;
+  background-color: #0e3c6e;
   visibility: hidden;
   transition: all 400ms;
 }
@@ -831,13 +876,24 @@ button:hover {
     width: 90px;
   }
 }
+
 .Processus {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 50px 4%;
 }
+
 .Processus__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
@@ -845,11 +901,14 @@ button:hover {
   max-width: 39%;
   margin-right: 30px;
 }
+
 .Processus__left p {
   margin-top: 15px;
 }
+
 .Processus__left button {
   background: #0051b1;
+  -webkit-box-shadow: 0px 8px 22px #3f80fd;
   box-shadow: 0px 8px 22px #3f80fd;
   border-radius: 1000px;
   padding: 28px 50px;
@@ -861,45 +920,72 @@ button:hover {
   max-width: 250px;
   margin-top: 30px;
 }
+
 .Processus__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 35px;
 }
 
 .Processus__right__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0 20px 0 0;
   background: #ffffff;
   border: 1px solid #eff0f6;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 49px 40px 40px 49px;
   max-width: 600px;
 }
+
 .Processus__right__card img {
   margin-right: 34px;
   border-radius: 49px 0 0 49px;
 }
+
 .Processus__right__card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 20px;
 }
+
 .Processus__right__card__content h3 {
   font-size: 26px;
   margin-bottom: 10px;
 }
+
 .Processus__right__card__content p {
   margin-bottom: 5px;
 }
 
 @media screen and (max-width: 991px) {
   .Processus {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .Processus__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     text-align: center;
@@ -913,18 +999,22 @@ button:hover {
     font-weight: 500;
   }
 }
+
 @media screen and (max-width: 767px) {
   .Processus__left button {
     margin: 59px auto 65px auto;
   }
   .Processus__right__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 0 0 0 0;
   }
   .Processus__right__card img {
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 49px 39px 0 0;
   }
   .Processus__right__card__content {
@@ -934,6 +1024,7 @@ button:hover {
     font-size: 20px;
   }
 }
+
 .Header_global {
   position: relative;
   overflow: hidden;
@@ -948,7 +1039,9 @@ button:hover {
   align-items: center;
   text-align: center;
   letter-spacing: 0.36px;
-  color: #FF3951;
+  color: #ff3951;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   margin-bottom: 18px;
 }
@@ -962,7 +1055,9 @@ button:hover {
   text-align: center;
   letter-spacing: 1.2px;
   margin-bottom: 24px;
-  color: #14142B;
+  color: #14142b;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
@@ -977,13 +1072,16 @@ button:hover {
   text-align: center;
   letter-spacing: 0.36px;
   margin-bottom: 70px;
-  color: #6E7191;
+  color: #6e7191;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
 .Header_button {
-  background: #0051B1;
-  box-shadow: 0px 8px 22px #3F80FD;
+  background: #0051b1;
+  -webkit-box-shadow: 0px 8px 22px #3f80fd;
+  box-shadow: 0px 8px 22px #3f80fd;
   border-radius: 1000px;
   justify-content: space-evenly;
   margin: auto;
@@ -1022,4 +1120,5 @@ button:hover {
     text-align: center;
     font-size: 35px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

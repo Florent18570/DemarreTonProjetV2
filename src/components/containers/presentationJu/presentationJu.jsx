@@ -52,13 +52,14 @@ const PresentationJu = () => {
               <div key={key} className="Presentation_card">
                 <div className="Image_card">
                     {data.src}
+                    
                 </div>
                 <div>
                     <button className="Button_card"> {data.Date} </button>
                     <p className="">{data.description}</p>
                     <p className="">{data.titre}</p>  
                 </div>
-                
+                <p></p>
                 
               </div>
             );

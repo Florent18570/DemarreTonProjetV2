@@ -12,6 +12,7 @@ const Menu = () => {
             //menu désactivé
             document.getElementsByClassName("Menu_mobile")[0].style.visibility = "hidden"; 
             document.getElementsByClassName("Menu_mobile")[0].style.opacity = "0"; 
+            
         }else{
             //menu activé
             document.getElementsByClassName("Menu_mobile")[0].style.visibility = "visible"; 

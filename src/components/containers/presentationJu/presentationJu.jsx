@@ -39,6 +39,9 @@ const stockData = [
   },
 ];
 
+var deplacement = [100,200,300];
+var dep=0;
+
 const PresentationJu = () => {
 
     function moveUp(){

@@ -1,15 +1,14 @@
-.Presentation_card{
-    width: 50%;
-    height: 300px;
-}
-
-.Image_card{
+.Presentation_card {
+  background-color: #1313b6;
+  width: 50%;
+  height: 300px;
+  margin-right: 40px;
+  &__img {
     height: 50%;
     display: flex;
     justify-content: center;
-}
-
-.Button_card{
+  }
+  &__button {
     display: inline-block;
     margin-bottom: 12px;
     padding: 9px;
@@ -17,9 +16,11 @@
     box-shadow: 0 8px 22px 0 rgb(0 0 0 / 28%);
     font-size: 14px;
     font-weight: 500;
-    color:white;
+    color: white;
+  }
 }
-.Presentation_glob{
-    display: flex;
-    justify-content: space-around;
+
+.Presentation_glob {
+  display: flex;
+  justify-content: space-around;
 }

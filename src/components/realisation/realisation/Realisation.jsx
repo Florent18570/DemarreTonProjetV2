@@ -1,37 +1,51 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Image from "../../../Images/dégradé.png";
 import { useParams } from "react-router-dom";
 
 const Realisation = () => {
   const params = useParams();
 
+  const myRef = useRef();
+  const [myElemenIsVisible, setMyElemenIsVisible] = useState();
+  console.log("entry", myElemenIsVisible);
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setMyElemenIsVisible(entry.isIntersecting);
+    });
+    observer.observe(myRef.current);
+  }, []);
+
   return (
     <div className="RealisationPage">
       <header>
         <h1>Compagnie </h1>
         <p> Introdution du projet</p>
+        <div className="barre_vertical"></div>
       </header>
 
       <div className="RealisationPage__projetDetail">
-        <div className="Realisation__projetDetail__container">
+        <div className="Realisation__projetDetail__container delay1">
           <h3> Service</h3>
           <p> Développement Web </p>
         </div>
-        <div className="Realisation__projetDetail__container">
+        <div className="Realisation__projetDetail__container delay2">
           <h3> Technologie</h3>
           <p> Webflow </p>
         </div>
-        <div className="Realisation__projetDetail__container">
+        <div className="Realisation__projetDetail__container delay3">
           <h3> Date </h3>
           <p> Jan 2022 </p>
         </div>
-        <div className="Realisation__projetDetail__container">
+        <div className="Realisation__projetDetail__container delay4">
           <h3> Site Internet</h3>
           <p> Koida Academy </p>
         </div>
       </div>
 
-      <img src={Image} alt="Image" />
+      <div ref={myRef} className={`${myElemenIsVisible ? "opacity" : ""}`}>
+        <img src={Image} alt="Image" />
+      </div>
 
       <div className="RealisationPage__etude">
         <h2> Etude de cas </h2>

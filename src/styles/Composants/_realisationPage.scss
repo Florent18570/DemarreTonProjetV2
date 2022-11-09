@@ -6,13 +6,77 @@
   }
 }
 
+.barre_vertical {
+  border-bottom: #14142b 2px solid;
+  animation-name: barre_vertical;
+  animation-duration: 0.7s;
+}
+
+@keyframes barre_vertical {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
 Header {
   display: flex;
   flex-direction: column;
-  border-bottom: black 2px solid;
+  h1 {
+    animation-name: textToTop;
+    animation-duration: 0.7s;
+  }
   p {
     margin-top: 20px;
     margin-bottom: 50px;
+    animation-name: textToTop;
+    animation-duration: 0.7s;
+  }
+}
+
+.opacity {
+  animation-name: opacity;
+  animation-duration: 2s;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.delay1 {
+  animation-name: textToTop;
+  animation-duration: 1s;
+}
+.delay2 {
+  animation-name: textToTop;
+  animation-duration: 1.3s;
+}
+.delay3 {
+  animation-name: textToTop;
+  animation-duration: 1.7s;
+}
+.delay4 {
+  animation-name: textToTop;
+  animation-duration: 2.1s;
+}
+@keyframes textToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 
@@ -56,6 +120,7 @@ Header {
 
 .RealisationPage__autreProjet {
   margin-top: 70px;
+  margin-bottom: 100px;
   &__top {
     display: flex;
     justify-content: space-between;
@@ -105,7 +170,7 @@ Header {
   Header {
     display: flex;
     flex-direction: column;
-    border-bottom: black 2px solid;
+
     p {
       margin-top: 20px;
       margin-bottom: 50px;

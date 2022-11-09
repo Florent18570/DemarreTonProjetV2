@@ -39,10 +39,6 @@ const stockData = [
   },
 ];
 
-const deplacement = [0,100,200,300,400,500];
-var dep = 1;
-
-
 const PresentationJu = () => {
 
     function moveUp(){
@@ -57,13 +53,13 @@ const PresentationJu = () => {
     }
 
     function moveDown(){
-        document.getElementsByClassName("Presentation_proj")[0].style.transform = "translate("+deplacement[dep]+"px,0px)";
+        document.getElementsByClassName("Presentation_proj")[0].style.transform = "translate(-"+deplacement[dep]+"px,0px)";
         dep--;
 
         if(dep > 0){
         }else{
             dep = 0;
-            document.getElementsByClassName("Presentation_proj")[0].style.transform = "translate("+deplacement[dep]+"px,0px)";
+            document.getElementsByClassName("Presentation_proj")[0].style.transform = "translate(-"+deplacement[dep]+"px,0px)";
         }
     }
 

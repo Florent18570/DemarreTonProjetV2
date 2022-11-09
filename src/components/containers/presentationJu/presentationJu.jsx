@@ -39,13 +39,39 @@ const stockData = [
   },
 ];
 
+const deplacement = [0,100,200,300,400,500];
+var dep = 1;
+
 
 const PresentationJu = () => {
-    return <div className="Presentation_glob" >
-      <div>
 
-      </div>
-      <div>
+    function moveUp(){
+        document.getElementsByClassName("Presentation_proj")[0].style.transform = "translate("+deplacement[dep]+"px,0px)";
+        dep++;
+
+        if(dep <= deplacement.length){
+        }else{
+            dep = 0;
+            document.getElementsByClassName("Presentation_proj")[0].style.transform = "translate("+deplacement[dep]+"px,0px)";
+        }
+    }
+
+    function moveDown(){
+        document.getElementsByClassName("Presentation_proj")[0].style.transform = "translate(-"+deplacement[dep]+"px,0px)";
+        dep--;
+
+        if(dep > 0){
+        }else{
+            dep = 0;
+            document.getElementsByClassName("Presentation_proj")[0].style.transform = "translate(-"+deplacement[dep]+"px,0px)";
+        }
+    }
+
+    return <div className="Presentation_glob" >
+      <div className="Presentation_text">
+
+      </div >
+      <div className="Presentation_proj">
       {stockData.map((data, key) => {
             return (
               
@@ -64,6 +90,10 @@ const PresentationJu = () => {
               </div>
             );
           })}
+          <div>
+            <button onClick={moveUp}>Avant</button>
+            <button onClick={moveDown}>Après</button>
+          </div>
       </div>
   
   

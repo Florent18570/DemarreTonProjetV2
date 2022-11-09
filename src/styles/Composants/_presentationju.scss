@@ -1,8 +1,29 @@
 .Presentation_card{
-    width: 50%;
-    height: 300px;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Plus Jakarta Display', sans-serif;
+    color: #6e7191;
+    font-size: 18px;
+    line-height: 1.667em;
+    letter-spacing: 0.02em;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    white-space: normal;
+    text-align: left;
+    box-sizing: border-box;
+    width: 100%;
 }
 
+.Presentation_text{
+    display: flex;
+    z-index: 3;
+    background-color: gray;
+    width: 60%;
+}
+.Presentation_proj{
+    display: flex;
+    flex-direction:row;
+    z-index: 2;
+    transition: all 350ms ease;
+}
 .Image_card{
     height: 50%;
     display: flex;
@@ -10,14 +31,25 @@
 }
 
 .Button_card{
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Plus Jakarta Display', sans-serif;
+    letter-spacing: 0.02em;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    white-space: normal;
+    box-sizing: border-box;
+    border-radius: 1000px;
+    transition: transform 300ms ease, box-shadow 300ms ease, -webkit-transform 300ms ease;
+    color: #fff;
+    line-height: 1.111em;
+    text-align: center;
+    transform-style: preserve-3d;
     display: inline-block;
     margin-bottom: 12px;
-    padding: 9px;
+    padding: 9px 14px;
     background-color: #14142b;
-    box-shadow: 0 8px 22px 0 rgb(0 0 0 / 28%);
+    box-shadow: 0 8px 22px 0 rgba(0, 0, 0, 0.28);
     font-size: 14px;
     font-weight: 500;
-    color:white;
 }
 .Presentation_glob{
     display: flex;

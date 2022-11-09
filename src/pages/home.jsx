@@ -9,14 +9,14 @@ import {
   Realisation,
   HeaderJu,
   Processus,
-  PresentationJu
+  PresentationJu,
+  Menu,
 } from "../components/containers";
 
 const home = () => {
   return (
     <div>
-      <Header />
-      <Presentation />
+      <Menu/>
       <HeaderJu />
 
       <Prestation />

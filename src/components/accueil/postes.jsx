@@ -31,13 +31,13 @@ const GetPost = () => {
         headers: { Authorization: arrayUser[3] },
       };
     } else {
-      window.location = "/login#connexion";
+      window.location = "./login#connexion";
       requestOptions = null;
     }
 
     try {
       const response = await fetch(
-        "http://localhost:3001/api/poste/getpost",
+        "https://projetopenclassroom.herokuapp.com/api/poste/getpost",
         requestOptions
       );
       let data = await response.json();
@@ -133,7 +133,7 @@ const GetPost = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:3001/api/poste/like/${id}`,
+        `https://projetopenclassroom.herokuapp.com/api/poste/like/${id}`,
         requestOptions
       );
 
@@ -153,6 +153,8 @@ const GetPost = () => {
   };
 
   async function updateComment(id) {
+    console.log(comment, "commentaire");
+    console.log(id, "id_commentaire");
     if (comment != null) {
       let UserName = sessionStorage.getItem("user");
       var arrayUser = UserName.split(",");
@@ -167,16 +169,16 @@ const GetPost = () => {
         body: JSON.stringify(commentUpdate),
         headers: {
           "Content-Type": "application/json",
-          Authorization: arrayUser[3],
         },
       };
       try {
         const response = await fetch(
-          `http://localhost:3001/api/poste/updateComment/${id}`,
+          `https://projetopenclassroom.herokuapp.com/api/poste/updateComment/${id}`,
           requestOptions
         );
-
         let etatCommentaire = await response.json();
+        console.log(etatCommentaire, "commentaire");
+        window.location.reload();
       } catch (error) {
         console.log("Error:", error);
       }
@@ -240,7 +242,7 @@ const GetPost = () => {
     };
     try {
       const response = await fetch(
-        `http://localhost:3001/api/poste/deleteComment/${idPost}`,
+        `https://projetopenclassroom.herokuapp.com/api/poste/deleteComment/${idPost}`,
         requestOptions
       );
 
@@ -302,14 +304,14 @@ const GetPost = () => {
                   >
                     <a
                       id={"modifier" + item._id}
-                      href={`/modifier_post/?id_postupdate=${item._id}`}
+                      href={`/P7_Openclassroom/modifier_post/?id_postupdate=${item._id}`}
                     >
                       <p className="user">Modifier</p>
                     </a>
 
                     <a
                       id={"suprimer" + item._id}
-                      href={`./delete_post/?id=${item._id}`}
+                      href={`/P7_Openclassroom/delete_post/?id=${item._id}`}
                     >
                       <p className="user">Supprimer</p>
                     </a>
@@ -331,7 +333,7 @@ const GetPost = () => {
                           id={"img" + item._id}
                           className="imgPost"
                           src={
-                            "http://localhost/projet7_final/backend/images/" +
+                            "http://localhost/projet7/backend/images/" +
                             item.image
                           }
                           alt="imagePost"

@@ -11,29 +11,32 @@ const NewPost = () => {
   const [file, setFile] = useState([]);
   const [errorInput, setErrorInput] = useState([]);
 
-  const send = () => {
+  const send = async () => {
     if (errorInput == "") {
       let UserName = sessionStorage.getItem("user");
       let arrayUser = UserName.split(",");
       const date = new Date();
 
       var formdata = new FormData();
+      formdata.append("text", inputText);
+      formdata.append("image", file);
       formdata.append("userId", arrayUser[2]);
       formdata.append("nom", arrayUser[0]);
       formdata.append("prenom", arrayUser[1]);
       formdata.append("datePost", date);
-      formdata.append("text", inputText);
-      formdata.append("image", file);
+
       const data = Object.fromEntries(formdata);
       console.log(data);
 
       var requestOptions = {
         method: "POST",
         body: formdata,
-        headers: { Authorization: arrayUser[3] },
       };
 
-      fetch("http://localhost:3001/api/poste/newpost", requestOptions)
+      fetch(
+        "https://projetopenclassroom.herokuapp.com/api/poste/newpost",
+        requestOptions
+      )
         .then((response) => response.text())
         .then((result) => console.log(result))
         .catch((error) => console.log("error", error));
@@ -48,7 +51,7 @@ const NewPost = () => {
           <div class="addPostTop">
             <div className="flex">
               <h2>Nouveau Post</h2>
-              <Link to="/accueil">
+              <Link to="/P7_Openclassroom/accueil">
                 <img src={fermer} alt="fermer nouveau post" />
               </Link>
             </div>

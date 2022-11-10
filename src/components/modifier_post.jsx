@@ -14,45 +14,40 @@ class NewPost extends React.Component {
       inputTextPost: "toto",
       image: "",
       errorinput: "",
-      idUserPost: "",
     };
     this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount() {
-    var str = window.location.href;
-    var url = new URL(str);
-    var idPostValue = url.searchParams.get("id_postupdate");
-
-    const data = {
-      idPost: idPostValue,
-    };
-
     try {
+      var str = window.location.href;
+      var url = new URL(str);
+      var idPostValue = url.searchParams.get("id_postupdate");
+
+      const data = {
+        idPost: idPostValue,
+      };
+
       const datasearch = async () => {
-        let UserName = sessionStorage.getItem("user");
-        let arrayUser = UserName.split(",");
         var requestOptions2 = {
           method: "POST",
           body: JSON.stringify(data),
           headers: {
             "Content-Type": "application/json",
-            Authorization: arrayUser[3],
           },
         };
         const response = await fetch(
-          `http://localhost:3001/api/poste/getPostSelected`,
+          `https://projetopenclassroom.herokuapp.com/api/poste/getPostSelected`,
           requestOptions2
         );
         const dataSearch = await response.json();
         var datatext = dataSearch.inputTextPost;
         var image = dataSearch.image;
-        var idUserPost = dataSearch.idUserPost;
+
         this.setState({
           inputTextPost: datatext,
           image: image,
           oldImage: image,
-          idUserPost: idUserPost,
         });
       };
 
@@ -83,8 +78,7 @@ class NewPost extends React.Component {
 
   handleChangeImage = (e) => {
     const oldImage = this.state.oldImage;
-    let UserName = sessionStorage.getItem("user");
-    let arrayUser = UserName.split(",");
+
     var imageNew = document.querySelector("#file").files[0];
     var formData = new FormData();
     formData.append("image", imageNew);
@@ -93,10 +87,12 @@ class NewPost extends React.Component {
     var requestOptions = {
       method: "POST",
       body: formData,
-      headers: { Authorization: arrayUser[3] },
     };
 
-    fetch("http://localhost:3001/api/poste/upload", requestOptions)
+    fetch(
+      "https://projetopenclassroom.herokuapp.com/api/poste/upload",
+      requestOptions
+    )
       .then((response) => {
         return response.json();
       })
@@ -122,55 +118,55 @@ class NewPost extends React.Component {
   send = () => {
     let UserName = sessionStorage.getItem("user");
     let arrayUser = UserName.split(",");
-    console.log(arrayUser);
+
     var str = window.location.href;
     var url = new URL(str);
     var idPostValue = url.searchParams.get("id_postupdate");
+    console.log(idPostValue);
 
-    const { inputTextPost, image, idUserPost } = this.state;
+    const { inputTextPost, image } = this.state;
 
     var validRegex = /^[A-Za-z\é\è\ê\-]+$/;
+    console.log("ça marcherrrrrrrrr");
+    if (!inputTextPost.match(validRegex)) {
+      console.log("ça marche");
+      const dataUpdate = {
+        userId: arrayUser[2],
+        nom: arrayUser[0],
+        prenom: arrayUser[1],
+        inputTextPost: inputTextPost,
+        image: image,
+        modifierle: true,
+      };
 
-    const dataUpdate = {
-      userId: arrayUser[2],
-      nom: arrayUser[0],
-      prenom: arrayUser[1],
-      inputTextPost: inputTextPost,
-      image: image,
-      modifierle: true,
-      idPostUser: idUserPost,
-      administrateur: arrayUser[4],
-    };
+      var requestOptions = {
+        method: "PUT",
+        body: JSON.stringify(dataUpdate),
+        // Variable récupérer dans le LocalStorage
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
 
-    console.log("dataaaaa", dataUpdate);
-
-    var requestOptions = {
-      method: "PUT",
-      body: JSON.stringify(dataUpdate),
-      // Variable récupérer dans le LocalStorage
-      headers: {
-        "Content-Type": "application/json",
-      },
-    };
-
-    try {
-      fetch(
-        `http://localhost:3001/api/poste/modifier_post/${idPostValue}`,
-        requestOptions
-      )
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          window.location = "/accueil";
-        })
-        .catch((error) => {
-          window.location = "/accueil";
-          console.log("Error:", error);
-        });
-    } catch (error) {
-      window.location = "/accueil";
-      console.log("Error:", error);
+      try {
+        fetch(
+          `https://projetopenclassroom.herokuapp.com/api/poste/modifier_post/${idPostValue}`,
+          requestOptions
+        )
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            window.location = "/P7_Openclassroom/accueil";
+          })
+          .catch((error) => {
+            window.location = "/P7_Openclassroom/accueil";
+            console.log("Error:", error);
+          });
+      } catch (error) {
+        window.location = "/P7_Openclassroom/accueil";
+        console.log("Error:", error);
+      }
     }
   };
 
@@ -183,7 +179,7 @@ class NewPost extends React.Component {
             <div class="addPostTop">
               <div className="flex">
                 <h2>Modification d'un poste</h2>
-                <Link to="/accueil">
+                <Link to="/P7_Openclassroom/accueil">
                   <img
                     src={fermer}
                     alt="fermer nouveau post"
@@ -215,7 +211,7 @@ class NewPost extends React.Component {
                   onChange={this.handleChangeImage}
                 />
                 <img
-                  src={`http://localhost/projet7_final/backend/images/${this.state.image}`}
+                  src={`http://localhost/projet7/backend/images/${this.state.image}`}
                   alt=""
                 />
               </div>

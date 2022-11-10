@@ -1,12 +1,18 @@
 import React from "react";
 
-import { Footer, Header, NotFound, HeaderJu, Menu } from "../components/containers";
+import {
+  Footer,
+  Header,
+  NotFound,
+  HeaderJu,
+  Menu,
+} from "../components/containers";
 import { RealisationPage } from "../components/realisation";
 const notfound = () => {
   return (
     <div>
       {/* <Header /> */}
-      <Menu />
+      <Header />
       <RealisationPage />
       <Footer />
     </div>

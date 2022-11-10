@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Image from "../../../Images/dégradé.png";
 import { useParams } from "react-router-dom";
 import { NotFound} from "../../containers";
@@ -6,6 +6,17 @@ import { NotFound} from "../../containers";
 
 const Realisation = () => {
   const params = useParams();
+
+  const myRef = useRef();
+  const [myElemenIsVisible, setMyElemenIsVisible] = useState();
+  console.log("entry", myElemenIsVisible);
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setMyElemenIsVisible(entry.isIntersecting);
+    });
+    observer.observe(myRef.current);
+  }, []);
 
 
   const stockData = [
@@ -116,30 +127,32 @@ if(typeof stockData[parseInt(params.userId)].id !== "undefined"){
   return (
     <div className="RealisationPage">
       <header>
-        <h1>{stockData[parseInt(params.userId)].compagnie} </h1>
-        <p> {stockData[parseInt(params.userId)].intro}</p>
+        <h1>Compagnie </h1>
+        <p> Introdution du projet</p>
       </header>
 
       <div className="RealisationPage__projetDetail">
-        <div className="Realisation__projetDetail__container">
+        <div className="Realisation__projetDetail__container delay1">
           <h3> Service</h3>
           <p> {stockData[parseInt(params.userId)].service} </p>
         </div>
-        <div className="Realisation__projetDetail__container">
+        <div className="Realisation__projetDetail__container delay2">
           <h3> Technologie</h3>
           <p> {stockData[parseInt(params.userId)].technologie} </p>
         </div>
-        <div className="Realisation__projetDetail__container">
+        <div className="Realisation__projetDetail__container delay3">
           <h3> Date </h3>
           <p> {stockData[parseInt(params.userId)].date} </p>
         </div>
-        <div className="Realisation__projetDetail__container">
+        <div className="Realisation__projetDetail__container delay4">
           <h3> Site Internet</h3>
           <p> {stockData[parseInt(params.userId)].site} </p>
         </div>
       </div>
 
-      <img src={Image} alt="Image" />
+      <div ref={myRef} className={`${myElemenIsVisible ? "opacity" : ""}`}>
+        <img src={Image} alt="Image" />
+      </div>
 
       <div className="RealisationPage__etude">
         <h2> Etude de cas </h2>

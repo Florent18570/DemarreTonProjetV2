@@ -942,16 +942,127 @@ button:hover {
   width: 100%;
 }
 
+.barre_vertical {
+  border-bottom: #14142b 2px solid;
+  -webkit-animation-name: barre_vertical;
+          animation-name: barre_vertical;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+
+@-webkit-keyframes barre_vertical {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes barre_vertical {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
 Header {
   display: flex;
   flex-direction: column;
-  border-bottom: black 2px solid;
+}
+Header h1 {
+  -webkit-animation-name: textToTop;
+          animation-name: textToTop;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
 }
 Header p {
   margin-top: 20px;
   margin-bottom: 50px;
+  -webkit-animation-name: textToTop;
+          animation-name: textToTop;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
 }
 
+.opacity {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.delay1 {
+  -webkit-animation-name: textToTop;
+          animation-name: textToTop;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.delay2 {
+  -webkit-animation-name: textToTop;
+          animation-name: textToTop;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+}
+
+.delay3 {
+  -webkit-animation-name: textToTop;
+          animation-name: textToTop;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
+}
+
+.delay4 {
+  -webkit-animation-name: textToTop;
+          animation-name: textToTop;
+  -webkit-animation-duration: 2.1s;
+          animation-duration: 2.1s;
+}
+
+@-webkit-keyframes textToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes textToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 .RealisationPage__projetDetail {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -991,6 +1102,7 @@ Header p {
 
 .RealisationPage__autreProjet {
   margin-top: 70px;
+  margin-bottom: 100px;
 }
 .RealisationPage__autreProjet__top {
   display: flex;
@@ -1035,7 +1147,6 @@ Header p {
   Header {
     display: flex;
     flex-direction: column;
-    border-bottom: black 2px solid;
   }
   Header p {
     margin-top: 20px;

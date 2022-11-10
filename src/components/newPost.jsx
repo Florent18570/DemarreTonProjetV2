@@ -30,12 +30,10 @@ const NewPost = () => {
       var requestOptions = {
         method: "POST",
         body: formdata,
+        headers: { Authorization: arrayUser[3] },
       };
 
-      fetch(
-        "https://projetopenclassroom.herokuapp.com/api/poste/newpost",
-        requestOptions
-      )
+      fetch("http://localhost:3001/api/poste/newpost", requestOptions)
         .then((response) => response.text())
         .then((result) => console.log(result))
         .catch((error) => console.log("error", error));
@@ -50,7 +48,7 @@ const NewPost = () => {
           <div class="addPostTop">
             <div className="flex">
               <h2>Nouveau Post</h2>
-              <Link to="/P7_Openclassroom/accueil">
+              <Link to="/accueil">
                 <img src={fermer} alt="fermer nouveau post" />
               </Link>
             </div>

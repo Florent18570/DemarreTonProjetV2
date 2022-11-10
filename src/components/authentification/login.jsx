@@ -66,7 +66,7 @@ class register extends React.Component {
     }
 
     try {
-      fetch("https://projetopenclassroom.herokuapp.com/api/auth/login", {
+      fetch("http://localhost:3001/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -92,9 +92,7 @@ class register extends React.Component {
 
             var loginMessage = "deconnexion";
             sessionStorage.setItem("messageLogin", loginMessage);
-            window.location = "/P7_Openclassroom/accueil";
-
-            // Envoie du token
+            window.location = "/accueil";
           } else {
             toast.error("Mauvais nom d'utilisateur ou mots de passe", {
               position: "bottom-right",
@@ -129,7 +127,7 @@ class register extends React.Component {
           <div className="enregistrer">
             <h1> Bienvenue ! </h1>
             <p>Tu es nouveau ? S’inscrire, c’est rapide et facile.</p>
-            <Link to="/P7_Openclassroom/register">
+            <Link to="/register">
               <button type="button" className="inscription">
                 S'inscrire
               </button>

@@ -2,19 +2,15 @@ import React from "react";
 
 import {
   Footer,
-  Header,
   NotFound,
-  HeaderJu
+  Menu
 } from "../components/containers";
 
 const notfound = () => {
   return (
     <div>
-      <Header />
-      
+      <Menu />
       <NotFound />
-      
-      <HeaderJu />
       <Footer />
     </div>
   );

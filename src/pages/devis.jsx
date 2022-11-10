@@ -2,7 +2,7 @@ import React from "react";
 
 import {
   Footer,
-  Header,
+  Menu,
   Devis
  
 } from "../components/containers";
@@ -10,7 +10,7 @@ import {
 const devis = () => {
   return (
     <div>
-      <Header />
+      <Menu />
       <Devis />
       <Footer />
     </div>

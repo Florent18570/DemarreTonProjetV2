@@ -2,11 +2,8 @@ import React from "react";
 
 import {
   Footer,
-  Header,
   Nous,
-  Presentation,
   Prestation,
-  Realisation,
   HeaderJu,
   Processus,
   PresentationJu,
@@ -22,7 +19,6 @@ const home = () => {
       <Prestation />
       <Processus />
       <PresentationJu/>
-      <Realisation />
       <Nous />
       <Footer />
     </div>

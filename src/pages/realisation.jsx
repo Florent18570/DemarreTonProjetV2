@@ -2,16 +2,13 @@ import React from "react";
 
 import {
   Footer,
-  Header,
-  NotFound,
-  HeaderJu,
   Menu,
+  RealisationPage
 } from "../components/containers";
-import { RealisationPage } from "../components/realisation";
-const notfound = () => {
+
+const Realisation = () => {
   return (
     <div>
-      {/* <Header /> */}
       <Menu />
       <RealisationPage />
       <Footer />
@@ -19,4 +16,4 @@ const notfound = () => {
   );
 };
 
-export default notfound;
+export default Realisation;

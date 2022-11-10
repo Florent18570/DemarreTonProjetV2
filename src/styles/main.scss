@@ -1,15 +1,15 @@
 @import "base/variables";
-
 @import "base/base";
-@import "Composants/header";
-@import "Composants/presentation";
-@import "Pages/accueil";
-@import "Composants/footer";
-@import "Composants/nous";
+
 @import "Composants/devis";
+@import "Composants/footer";
+@import "Composants/headerju";
+@import "Composants/menu";
+@import "Composants/notfound";
+@import "Composants/nous";
+@import "Composants/presentationju";
 @import "Composants/prestation";
 @import "Composants/processus";
 @import "Composants/realisationPage";
-@import "Composants/headerju";
-@import "Composants/presentationju";
-@import "Composants/menu";
+
+@import "Pages/accueil";

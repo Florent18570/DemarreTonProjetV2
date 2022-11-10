@@ -9,12 +9,12 @@ function register() {
       <header>
         <img src={logo} alt="logo Groupomania" />
         <nav>
-          <Link to="/P7_Openclassroom/login">
+          <Link to="/login">
             <button href="login.html" class="connexion login">
               Login
             </button>
           </Link>
-          <Link to="/P7_Openclassroom/register">
+          <Link to="/register">
             <button href="inscription.html" class="connexion inscription">
               S'inscrire
             </button>
@@ -37,7 +37,7 @@ function login() {
       <header>
         <img src={logo} alt="logo Groupomania" />
         <nav>
-          <Link to="/P7_Openclassroom/login">
+          <Link to="/login">
             <button class="deconnexion" onClick={deconnexion}>
               Se déconnecter
             </button>

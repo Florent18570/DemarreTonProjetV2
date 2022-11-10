@@ -9,29 +9,62 @@ if (urlData.searchParams.has("id") || urlData.searchParams.has("delete_post")) {
   console.log("id: " + id);
 }
 
-function deletePostId(id) {
+async function deletePostId(id) {
   if (sessionStorage.getItem("user") != null) {
     let UserName = sessionStorage.getItem("user");
     var arrayUser = UserName.split(",");
 
+    var str = window.location.href;
+    var url = new URL(str);
+    var idPostValue = url.searchParams.get("id");
+
+    const data = {
+      idPost: idPostValue,
+    };
+
+    var requestOptions2 = {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: arrayUser[3],
+      },
+    };
+    const response = await fetch(
+      `http://localhost:3001/api/poste/getPostSelected`,
+      requestOptions2
+    );
+    const dataSearch = await response.json();
+    var idUserPost = dataSearch.idUserPost;
+
+    const dataUpdate = {
+      userId: arrayUser[2],
+      idPostUser: idUserPost,
+      administrateur: arrayUser[4],
+    };
+
+    console.log(dataUpdate);
+
     var requestOptions = {
       method: "DELETE",
       // Variable récupérer dans le LocalStorage
-      headers: { Authorization: arrayUser[3] },
+      body: JSON.stringify(dataUpdate),
+      // Variable récupérer dans le LocalStorage
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: arrayUser[3],
+      },
     };
   } else {
-    window.location = "./login#connexion";
+    window.location = "/login#connexion";
     requestOptions = null;
   }
 
-  fetch(
-    `https://projetopenclassroom.herokuapp.com/api/poste/deletepost${id}`,
-    requestOptions
-  )
+  fetch(`http://localhost:3001/api/poste/deletepost${id}`, requestOptions)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-      window.location = "/P7_Openclassroom/accueil";
+      window.location = "/accueil";
     })
     .catch((error) => {
       console.error("Error:", error);

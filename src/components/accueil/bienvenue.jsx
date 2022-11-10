@@ -13,7 +13,7 @@ const Bienvenue = () => {
   return (
     <div className="containerBienvenue">
       <h1 className="bienvenue">Bienvenue {param.nom + " " + param.prenom}</h1>
-      <Link to="/P7_Openclassroom/new_Post">
+      <Link to="/new_Post">
         <button className="nouvellePublication">Nouvelle publication</button>
       </Link>
     </div>

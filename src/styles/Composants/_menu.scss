@@ -221,7 +221,7 @@
 
 .animation_horizontal {
   animation-name: animation_horizontal;
-  animation-duration: 0.8s;
+  animation-duration: 0.6s;
   animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
   opacity: 1;
   visibility: visible;
@@ -230,7 +230,7 @@
 .animation_horizontal_reverse {
   animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
 
-  animation-duration: 0.8s;
+  animation-duration: 0.6s;
   opacity: 1;
   visibility: visible;
   height: 0;

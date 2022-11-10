@@ -1519,8 +1519,8 @@ Header p {
 .animation_horizontal {
   -webkit-animation-name: animation_horizontal;
           animation-name: animation_horizontal;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
   -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
           animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
   opacity: 1;
@@ -1530,8 +1530,8 @@ Header p {
 .animation_horizontal_reverse {
   -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
           animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
   opacity: 1;
   visibility: visible;
   height: 0;

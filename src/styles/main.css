@@ -1483,12 +1483,11 @@ Header p {
   left: 0;
   right: 0;
   width: 100%;
-  height: 8247.81px;
+  height: 262.81px;
   display: flex;
   flex-direction: column;
   opacity: 0;
   visibility: hidden;
-  transition: all 500ms;
 }
 
 .Menu_Mobile_menu {
@@ -1501,7 +1500,6 @@ Header p {
   float: right;
   left: 0;
   right: 0;
-  background: #C8C8C8;
   text-align: center;
   overflow: visible;
   min-width: 200px;
@@ -1511,15 +1509,69 @@ Header p {
   color: #000;
   position: absolute;
   height: auto;
-  background-color: #fff;
+  background-color: #5d1e1e;
   top: 0;
-  transform: translateY(0px);
-  transition: transform 400ms ease 0s;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
+.animation_horizontal {
+  -webkit-animation-name: animation_horizontal;
+          animation-name: animation_horizontal;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+          animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+  opacity: 1;
+  visibility: visible;
+}
+
+.animation_horizontal_reverse {
+  -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+          animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  opacity: 1;
+  visibility: visible;
+  height: 0;
+  -webkit-animation-name: animation_horizontal_reverse;
+          animation-name: animation_horizontal_reverse;
+}
+
+@-webkit-keyframes animation_horizontal_reverse {
+  0% {
+    height: 262.81px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+@keyframes animation_horizontal_reverse {
+  0% {
+    height: 262.81px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+@-webkit-keyframes animation_horizontal {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 262.81px;
+  }
+}
+@keyframes animation_horizontal {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 262.81px;
+  }
+}
 @media screen and (max-width: 991px) {
   .Menu_Mobile_button {
     display: flex;

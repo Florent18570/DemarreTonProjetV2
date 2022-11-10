@@ -128,6 +128,82 @@ p {
   justify-content: space-around;
 }
 
+.Prestation__grid__form {
+  display: grid;
+  grid-template-rows: auto;
+  grid-column-gap: 32px;
+  grid-row-gap: 30px;
+}
+
+.Prestation__grid__choix {
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eff0f6;
+  border-radius: 40px;
+  background-color: #fff;
+  box-shadow: 0 6px 12px 0 rgba(53, 53, 89, 0.18);
+  display: flex;
+}
+
+.animation_choixdevis {
+  -webkit-animation-name: animation_choixdevis;
+          animation-name: animation_choixdevis;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+          animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+  opacity: 1;
+  visibility: visible;
+  padding: 44px 40px 40px 48px;
+}
+
+.animation_choixdevis_reverse {
+  -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+          animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+  padding: 44px 40px 40px 48px;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  opacity: 1;
+  visibility: visible;
+  height: 0;
+  -webkit-animation-name: animation_choixdevis_reverse;
+          animation-name: animation_choixdevis_reverse;
+}
+
+@-webkit-keyframes animation_choixdevis_reverse {
+  0% {
+    height: 262.81px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+@keyframes animation_choixdevis_reverse {
+  0% {
+    height: 262.81px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+@-webkit-keyframes animation_choixdevis {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 262.81px;
+  }
+}
+@keyframes animation_choixdevis {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 262.81px;
+  }
+}
 /* Footer */
 .Footer {
   background: #D9D9D9;
@@ -554,12 +630,11 @@ p {
   left: 0;
   right: 0;
   width: 100%;
-  height: 8247.81px;
+  height: 262.81px;
   display: flex;
   flex-direction: column;
   opacity: 0;
   visibility: hidden;
-  transition: all 500ms;
 }
 
 .Menu_Mobile_menu {
@@ -572,7 +647,6 @@ p {
   float: right;
   left: 0;
   right: 0;
-  background: #C8C8C8;
   text-align: center;
   overflow: visible;
   min-width: 200px;
@@ -582,15 +656,69 @@ p {
   color: #000;
   position: absolute;
   height: auto;
-  background-color: #fff;
+  background-color: #5d1e1e;
   top: 0;
-  transform: translateY(0px);
-  transition: transform 400ms ease 0s;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
+.animation_horizontal {
+  -webkit-animation-name: animation_horizontal;
+          animation-name: animation_horizontal;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+          animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+  opacity: 1;
+  visibility: visible;
+}
+
+.animation_horizontal_reverse {
+  -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+          animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  opacity: 1;
+  visibility: visible;
+  height: 0;
+  -webkit-animation-name: animation_horizontal_reverse;
+          animation-name: animation_horizontal_reverse;
+}
+
+@-webkit-keyframes animation_horizontal_reverse {
+  0% {
+    height: 262.81px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+@keyframes animation_horizontal_reverse {
+  0% {
+    height: 262.81px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+@-webkit-keyframes animation_horizontal {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 262.81px;
+  }
+}
+@keyframes animation_horizontal {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 262.81px;
+  }
+}
 @media screen and (max-width: 991px) {
   .Menu_Mobile_button {
     display: flex;
@@ -1212,7 +1340,6 @@ Header p {
 .Prestation {
   display: flex;
   flex-direction: column;
-  background: #1681F5;
   padding-bottom: 40px;
 }
 .Prestation__titlePrestation {
@@ -1340,261 +1467,10 @@ Header p {
 .GridCreation div {
   box-sizing: border-box;
   width: 100%;
-<<<<<<< HEAD
   height: 372px;
   background: #1e7ee2;
   background: #1e7ee2;
   border: 3px solid rgba(255, 255, 255, 0.47);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-=======
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.Menu_Ordi_partiegauche {
-  -webkit-text-size-adjust: 100%;
-  font-family: "Plus Jakarta Display", sans-serif;
-  color: #6e7191;
-  font-size: 18px;
-  line-height: 1.667em;
-  letter-spacing: 0.02em;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Menu_Ordi_Partiegauche_image {
-  -webkit-text-size-adjust: 100%;
-  font-family: "Plus Jakarta Display", sans-serif;
-  font-size: 18px;
-  line-height: 1.667em;
-  letter-spacing: 0.02em;
-  box-sizing: border-box;
-  background-color: transparent;
-  transition: color 300ms ease;
-  position: relative;
-  float: left;
-  text-decoration: none;
-  color: #333333;
-  margin-right: 60px;
-}
-
-.Menu_Ordi_Partiegauche_Image_img {
-  width: 100%;
-  max-height: 92px;
-  margin: auto;
-  display: flex;
-}
-
-.Menu_Ordi_Partiegauche_menu {
-  -webkit-text-size-adjust: 100%;
-  font-family: "Plus Jakarta Display", sans-serif;
-  font-size: 18px;
-  line-height: 1.667em;
-  letter-spacing: 0.02em;
-  box-sizing: border-box;
-  float: right;
-  position: static;
-  display: flex;
-  width: auto;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-  transform: translateY(0px) translateX(0px);
-}
-
-.Menu_Ordi_partiedroite {
-  -webkit-text-size-adjust: 100%;
-  font-family: "Plus Jakarta Display", sans-serif;
-  color: #6e7191;
-  font-size: 18px;
-  line-height: 1.667em;
-  letter-spacing: 0.02em;
-  box-sizing: border-box;
-}
-
-.Menu_Ordi_Partiegauche_Menu_element {
-  -webkit-text-size-adjust: 100%;
-  font-family: "Plus Jakarta Display", sans-serif;
-  line-height: 1.667em;
-  letter-spacing: 0.02em;
-  box-sizing: border-box;
-  background-color: transparent;
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  text-decoration: none;
-  padding: 20px;
-  text-align: left;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding-right: 16px;
-  padding-left: 16px;
-  transition: all 350ms ease;
-  font-size: 15px;
-  font-weight: 500;
-  color: black;
-  cursor: pointer;
-}
-
-.Menu_Ordi_Partiegauche_Menu_element:hover {
-  color: blue;
-}
-
-.Menu_mobile {
-  display: none;
-}
-
-.Menu_Mobile_button {
-  -webkit-text-size-adjust: 100%;
-  font-family: "Plus Jakarta Display", sans-serif;
-  color: #6e7191;
-  font-size: 18px;
-  line-height: 1.667em;
-  letter-spacing: 0.02em;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  display: none;
-}
-
-.Menu_Mobile_Button_btn {
-  -webkit-text-size-adjust: 100%;
-  font-family: "Plus Jakarta Display", sans-serif;
-  letter-spacing: 0.02em;
-  box-sizing: border-box;
-  position: relative;
-  float: right;
-  padding: 18px;
-  font-size: 24px;
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  margin-left: 14px;
-  border: 1px solid #865ddb;
-  border-radius: 10px;
-  color: #865ddb;
-  display: block;
-  -webkit-user-select: text;
-}
-
-.Menu_mobile {
-  -webkit-text-size-adjust: 100%;
-  font-family: "Plus Jakarta Display", sans-serif;
-  color: #6e7191;
-  font-size: 18px;
-  line-height: 1.667em;
-  letter-spacing: 0.02em;
-  box-sizing: border-box;
-  position: absolute;
-  overflow: hidden;
-  top: 100%;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 262.81px;
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.Menu_Mobile_menu {
-  -webkit-text-size-adjust: 100%;
-  font-family: "Plus Jakarta Display", sans-serif;
-  font-size: 18px;
-  line-height: 1.667em;
-  letter-spacing: 0.02em;
-  box-sizing: border-box;
-  float: right;
-  left: 0;
-  right: 0;
-  text-align: center;
-  overflow: visible;
-  min-width: 200px;
-  width: auto;
-  justify-content: center;
-  -webkit-box-align: center;
-  color: #000;
-  position: absolute;
-  height: auto;
-  background-color: #5d1e1e;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.animation_horizontal {
-  -webkit-animation-name: animation_horizontal;
-          animation-name: animation_horizontal;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
-          animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
-  opacity: 1;
-  visibility: visible;
-}
-
-.animation_horizontal_reverse {
-  -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
-          animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  opacity: 1;
-  visibility: visible;
-  height: 0;
-  -webkit-animation-name: animation_horizontal_reverse;
-          animation-name: animation_horizontal_reverse;
-}
-
-@-webkit-keyframes animation_horizontal_reverse {
-  0% {
-    height: 262.81px;
-  }
-  100% {
-    height: 0px;
-  }
-}
-
-@keyframes animation_horizontal_reverse {
-  0% {
-    height: 262.81px;
-  }
-  100% {
-    height: 0px;
-  }
-}
-@-webkit-keyframes animation_horizontal {
-  0% {
-    height: 0px;
-  }
-  100% {
-    height: 262.81px;
-  }
-}
-@keyframes animation_horizontal {
-  0% {
-    height: 0px;
-  }
-  100% {
-    height: 262.81px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .Menu_Mobile_button {
-    display: flex;
-  }
-  .Menu_Ordi_Partiegauche_menu {
-    display: none;
-  }
-  .Menu_Ordi_partiedroite {
-    display: none;
-  }
->>>>>>> 7ef48ef221c18056714647ea294e3ac8a4abee0c
 }/*# sourceMappingURL=main.css.map */

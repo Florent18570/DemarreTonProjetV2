@@ -29,3 +29,63 @@
     display: flex;
     justify-content: space-around
 }
+
+
+.Prestation__grid__form{
+    display: grid;
+    grid-template-rows: auto;
+    grid-column-gap: 32px;
+    grid-row-gap: 30px;
+}
+
+.Prestation__grid__choix{
+    overflow: hidden;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eff0f6;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px 0 rgb(53 53 89 / 18%);
+    display: flex;
+
+}
+
+
+.animation_choixdevis {
+    animation-name: animation_choixdevis;
+    animation-duration: 0.6s;
+    animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+    opacity: 1;
+    visibility: visible;
+    padding: 44px 40px 40px 48px;
+  }
+  
+  .animation_choixdevis_reverse {
+    animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+    padding: 44px 40px 40px 48px;
+    animation-duration: 0.6s;
+    opacity: 1;
+    visibility: visible;
+    height: 0;
+    animation-name: animation_choixdevis_reverse;
+  }
+  
+  @keyframes animation_choixdevis_reverse {
+    0% {
+      height: 262.81px;
+    }
+  
+    100% {
+      height: 0px;
+    }
+  }
+  
+  @keyframes animation_choixdevis {
+    0% {
+      height: 0px;
+    }
+  
+    100% {
+      height: 262.81px;
+    }
+  }

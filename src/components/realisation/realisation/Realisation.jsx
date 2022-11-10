@@ -129,6 +129,7 @@ if(typeof stockData[parseInt(params.userId)].id !== "undefined"){
       <header>
         <h1>Compagnie </h1>
         <p> Introdution du projet</p>
+        <div className="barre_vertical"></div>
       </header>
 
       <div className="RealisationPage__projetDetail">
@@ -204,7 +205,11 @@ if(typeof stockData[parseInt(params.userId)].id !== "undefined"){
   );
   }else{
     return (
-      <NotFound/>);
+      <div>
+      <NotFound/>
+      <div ref={myRef} className={`${myElemenIsVisible ? "opacity" : ""}`}>
+      </div>
+      </div>);
 
   }
 };

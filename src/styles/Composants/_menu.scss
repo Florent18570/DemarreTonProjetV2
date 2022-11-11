@@ -17,6 +17,18 @@
   align-items: center;
   background-color: #fff;
   box-shadow: 38px 38px 74px 0 rgba(56, 50, 124, 0.06);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: all 300ms ease-in-out;
+}
+
+.scroll-down {
+  transform: translate3d(0, -100%, 0);
+}
+.scroll-up {
+  filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
 }
 
 .Menu_ordi {

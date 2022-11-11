@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../../Images/Logo.png";
 import { FcMenu } from "react-icons/fc";
+import { useState, useEffect } from "react";
 
 const Menu = () => {
   var switchmenu = new Boolean(false);
@@ -19,8 +20,34 @@ const Menu = () => {
     }
   }
 
+  let lastSScroll = 0;
+
+  window.addEventListener("scroll", () => {
+    var menu = document.getElementsByClassName("Menu")[0];
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll <= 0 && menu.classList.contains("scroll-up")) {
+      menu.classList.remove("scroll-up");
+    }
+
+    console.log(currentScroll);
+    console.log("last", lastSScroll);
+    if (
+      currentScroll > lastSScroll &&
+      !menu.classList.contains("scroll-down")
+    ) {
+      menu.classList.remove("scroll-up");
+      menu.classList.add("scroll-down");
+    }
+    if (currentScroll < lastSScroll && menu.classList.contains("scroll-down")) {
+      menu.classList.remove("scroll-down");
+      menu.classList.add("scroll-up");
+    }
+    lastSScroll = currentScroll;
+  });
+
   return (
-    <div className="Menu">
+    <div className="Menu scroll-up">
       <div className="Menu_ordi">
         <div className="Menu_Ordi_partiegauche">
           <div className="Menu_Ordi_Partiegauche_image">

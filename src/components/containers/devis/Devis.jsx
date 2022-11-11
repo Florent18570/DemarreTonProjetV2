@@ -13,10 +13,11 @@ const Devis = () => {
 
   function devischange(choix) {
     switchdevis = choix;
-    console.log(switchdevis);
     
     var buttonoui = document.getElementsByName("ouiidee")[0];
     var buttonnon = document.getElementsByName("nonidee")[0];
+    console.log(buttonnon);
+
 
     if (switchdevis == 1) {
       //menu désactivé
@@ -26,6 +27,9 @@ const Devis = () => {
       buttonnon.classList.remove("animation_choixdevis");
       buttonnon.classList.add("animation_choixdevis_reverse");
 
+    
+
+
     } else {
       //menu activé
       buttonoui.classList.remove("animation_choixdevis");
@@ -33,6 +37,8 @@ const Devis = () => {
 
       buttonnon.classList.add("animation_choixdevis");
       buttonnon.classList.remove("animation_choixdevis_reverse");
+
+     
 
       
     }
@@ -82,11 +88,11 @@ const Devis = () => {
 
       <div name="ouiidee" className="Prestation__grid__choix">
           <div className="Prestation__grid__card__img">
-            <img src={grid2} alt="grid1" />
+            <img  src={grid2} alt="grid1" />
           </div>
           <div className="Prestation__grid__card__content">
             <h3>Jezjnzekjnezkjzeezkne n'ai aucune idée du visuel</h3>
-            <p>
+            <p >
               Le design ? Nous pouvons nous en occuper. Pour nous aider et vous donner rapidement et en ligne une fourchette de prix, nous vous laissons remplir le formulaire suivant.
             </p>
             <a href=""> En savoir plus</a>

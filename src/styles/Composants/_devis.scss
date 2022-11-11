@@ -32,60 +32,56 @@
 
 
 .Prestation__grid__form{
-    display: grid;
+    display: flex;
     grid-template-rows: auto;
     grid-column-gap: 32px;
     grid-row-gap: 30px;
 }
 
 .Prestation__grid__choix{
-    overflow: hidden;
+    overflow: clip;
     border-style: solid;
     border-width: 1px;
     border-color: #eff0f6;
     border-radius: 40px;
     background-color: #fff;
     box-shadow: 0 6px 12px 0 rgb(53 53 89 / 18%);
-    display: flex;
+    display: none;
+    padding: 44px 40px 40px 48px;
+    margin : 100px 10% 10%;
 
 }
 
 
 .animation_choixdevis {
-    animation-name: animation_choixdevis;
-    animation-duration: 0.6s;
-    animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
-    opacity: 1;
-    visibility: visible;
+    animation: animation_choixdevis 1s linear 0s 1 normal forwards;
+    
+    visibility: none;
     padding: 44px 40px 40px 48px;
+    display: flex;
+
   }
   
   .animation_choixdevis_reverse {
-    animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
-    padding: 44px 40px 40px 48px;
-    animation-duration: 0.6s;
-    opacity: 1;
-    visibility: visible;
-    height: 0;
-    animation-name: animation_choixdevis_reverse;
+    
+    display: none;
   }
   
-  @keyframes animation_choixdevis_reverse {
-    0% {
-      height: 262.81px;
-    }
   
-    100% {
-      height: 0px;
-    }
-  }
   
   @keyframes animation_choixdevis {
     0% {
-      height: 0px;
+      height: 0%;
+      padding: 0px;
+      opacity: 0;
+      display:none;
     }
   
     100% {
-      height: 262.81px;
+      height: 100%;
+      padding: 44px 40px 40px 48px;
+      opacity: 10;
+      display:flex;
+
     }
   }

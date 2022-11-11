@@ -23,13 +23,13 @@ const Realisation = () => {
     {
       
       id: "0",
-      compagnie: "compagnie",
-      intro:"Introdution du projet",
+      compagnie: "stb18",
+      intro:"Réalisation d'un site web dans le but d'avoir un impact sur internet.",
       service: "Développement Web",
-      technologie: "Webflow",
-      date: "Jan 2022",
-      site : "Koida Academy",
-      src : "../../../Images/dégradé.png",
+      technologie: "Html / Css / Js / Wordpress",
+      date: "Janvier 2022",
+      site : "https://stb18.fr",
+      src : "../../src/Images/agence.png",
       processus : [{
         etape:"1. Rédaction d'une charte graphique",
         description:"Comme tout projet, une charte graphique est au préalable développée afin que le site corresponde au mieux à l'identité visuelle de l'entreprise."
@@ -57,12 +57,12 @@ const Realisation = () => {
     },
     {
       id: "1",
-      compagnie: "Demarretonprojet",
-      intro:"Une jolie intro pour le projet en question",
-      service: "Service ? C'est le modèle",
-      technologie: "du texte a écrire",
-      date: "maintenant",
-      site : "demarretonprojet.fr",
+      compagnie: "Gem-générator",
+      intro:"Application web dans le but de prévenir des sites frauduleux",
+      service: "Développement logiciel web",
+      technologie: "Html / Css / Js / Jquery ",
+      date: "Juin 2022",
+      site : "https://gems-generator.com/",
       src : "../../../Images/dégradé.png",
       processus : [{
         etape:"1. première étape",
@@ -127,8 +127,8 @@ if(typeof stockData[parseInt(params.userId)].id !== "undefined"){
   return (
     <div className="RealisationPage">
       <header>
-        <h1>Compagnie </h1>
-        <p> Introdution du projet</p>
+        <h1>{stockData[parseInt(params.userId)].compagnie} </h1>
+        <p> {stockData[parseInt(params.userId)].intro}</p>
         <div className="barre_vertical"></div>
       </header>
 
@@ -152,7 +152,7 @@ if(typeof stockData[parseInt(params.userId)].id !== "undefined"){
       </div>
 
       <div ref={myRef} className={`${myElemenIsVisible ? "opacity" : ""}`}>
-        <img src={Image} alt="Image" />
+        <img src={stockData[parseInt(params.userId)].src} alt="Image" />
       </div>
 
       <div className="RealisationPage__etude">

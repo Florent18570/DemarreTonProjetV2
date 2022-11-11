@@ -13,12 +13,13 @@ import {
 const home = () => {
   return (
     <div>
-      <Menu/>
-      <HeaderJu />
-
+      <div className="background_image">
+        <Menu />
+        <HeaderJu />
+      </div>
       <Prestation />
       <Processus />
-      <PresentationJu/>
+      <PresentationJu />
       <Nous />
       <Footer />
     </div>

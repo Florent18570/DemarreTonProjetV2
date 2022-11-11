@@ -10,7 +10,7 @@ const Prestation = () => {
       <h2> Faites vous accompagner pour votre visibilité sur internet </h2>
 
       <div className="Prestation__grid">
-        <div className="Prestation__grid__card">
+        <div className="Prestation__grid__card delay1 ">
           <div className="Prestation__grid__card__img">
             <img src={grid1} alt="grid1" />
           </div>
@@ -24,7 +24,7 @@ const Prestation = () => {
           </div>
         </div>
 
-        <div className="Prestation__grid__card">
+        <div className="Prestation__grid__card delay2">
           <div className="Prestation__grid__card__img">
             <img src={grid2} alt="grid1" />
           </div>
@@ -38,7 +38,7 @@ const Prestation = () => {
           </div>
         </div>
 
-        <div className="Prestation__grid__card">
+        <div className="Prestation__grid__card delay3">
           <div className="Prestation__grid__card__img">
             <img src={grid3} alt="grid1" />
           </div>
@@ -52,7 +52,7 @@ const Prestation = () => {
           </div>
         </div>
 
-        <div className="Prestation__grid__card">
+        <div className="Prestation__grid__card delay4">
           <div className="Prestation__grid__card__img">
             <img src={grid4} alt="grid1" />
           </div>

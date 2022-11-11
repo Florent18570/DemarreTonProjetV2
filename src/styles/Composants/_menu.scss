@@ -1,3 +1,10 @@
+.background_image {
+  background-image: url("http://localhost/demarretonprojet/src/Images/background.jpg");
+  // background-repeat: no-repeat;
+  width: 100%;
+  z-index: 99999;
+}
+
 .Menu {
   -webkit-text-size-adjust: 100%;
   font-family: "Plus Jakarta Display", sans-serif;
@@ -7,7 +14,7 @@
   letter-spacing: 0.02em;
   box-sizing: border-box;
   position: relative;
-  background: #dddddd;
+
   z-index: 1000;
   display: flex;
   height: 100px;
@@ -15,19 +22,20 @@
   padding-left: 3%;
   -webkit-box-align: center;
   align-items: center;
-  background-color: #fff;
+
   box-shadow: 38px 38px 74px 0 rgba(56, 50, 124, 0.06);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
-  transition: all 300ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .scroll-down {
   transform: translate3d(0, -100%, 0);
 }
 .scroll-up {
+  background-color: rgb(255, 255, 255);
   filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
 }
 
@@ -135,8 +143,8 @@
   padding-right: 16px;
   padding-left: 16px;
   transition: all 350ms ease;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   color: black;
   cursor: pointer;
 }

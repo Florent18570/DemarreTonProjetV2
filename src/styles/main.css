@@ -498,7 +498,7 @@ p {
 .Header_global {
   position: relative;
   overflow: hidden;
-  padding: 60px 5% 100px;
+  padding: 130px 5% 70px 5%;
 }
 
 .Header_titre {
@@ -509,7 +509,7 @@ p {
   align-items: center;
   text-align: center;
   letter-spacing: 0.36px;
-  color: #FF3951;
+  color: #6f222b;
   justify-content: space-evenly;
   margin-bottom: 18px;
 }
@@ -523,7 +523,7 @@ p {
   text-align: center;
   letter-spacing: 1.2px;
   margin-bottom: 24px;
-  color: #14142B;
+  color: #14142b;
   justify-content: space-evenly;
 }
 
@@ -531,30 +531,31 @@ p {
   max-width: 500px;
   margin: 0px auto 48px auto;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 30px;
+  font-size: 19px;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.36px;
   margin-bottom: 70px;
-  color: #6E7191;
+  color: #ffffff;
   justify-content: space-evenly;
 }
 
 .Header_button {
-  background: #0051B1;
-  box-shadow: 0px 8px 22px #3F80FD;
+  background: #0051b1;
+  box-shadow: 0px 8px 22px #3f80fd;
   border-radius: 1000px;
   justify-content: space-evenly;
   margin: auto;
   display: flex;
   color: white;
-  padding: 28px 50px;
+  padding: 18px 25px;
   line-height: 1.111em;
   font-weight: 700;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 @media screen and (max-width: 991px) {
@@ -564,6 +565,7 @@ p {
     margin-bottom: 16px;
   }
   .Header_description {
+    color: #f9c9c9;
     margin-bottom: 22px;
   }
 }
@@ -572,6 +574,9 @@ p {
     font-size: 42px;
     padding-right: 40px;
     padding-left: 40px;
+  }
+  .Header_description {
+    color: #f9c9c9;
   }
 }
 @media screen and (max-width: 479px) {
@@ -583,7 +588,16 @@ p {
     text-align: center;
     font-size: 35px;
   }
+  .Header_description {
+    color: #f9c9c9;
+  }
 }
+.background_image {
+  background-image: url("http://localhost/demarretonprojet/src/Images/background.jpg");
+  width: 100%;
+  z-index: 99999;
+}
+
 .Menu {
   -webkit-text-size-adjust: 100%;
   font-family: "Plus Jakarta Display", sans-serif;
@@ -593,20 +607,18 @@ p {
   letter-spacing: 0.02em;
   box-sizing: border-box;
   position: relative;
-  background: #dddddd;
   z-index: 1000;
   display: flex;
   height: 100px;
   padding-right: 3%;
   padding-left: 3%;
   align-items: center;
-  background-color: #fff;
   box-shadow: 38px 38px 74px 0 rgba(56, 50, 124, 0.06);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
-  transition: all 300ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .scroll-down {
@@ -614,6 +626,7 @@ p {
 }
 
 .scroll-up {
+  background-color: rgb(255, 255, 255);
   filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
 }
 
@@ -716,8 +729,8 @@ p {
   padding-right: 16px;
   padding-left: 16px;
   transition: all 350ms ease;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   color: black;
   cursor: pointer;
 }
@@ -987,31 +1000,46 @@ p {
     font-size: 16px;
   }
 }
-.Presentation_card {
-  width: 50%;
-  height: 300px;
-}
-
-.Image_card {
-  height: 50%;
+.Presentation {
   display: flex;
-  justify-content: center;
+}
+.Presentation__card {
+  border: 2px red solid;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  border-radius: 30px;
+  max-width: 370px;
+  height: 340px;
+}
+.Presentation__card img {
+  border-radius: 30px 30px 0 0;
 }
 
-.Button_card {
-  display: inline-block;
+.Presentation__card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 40px 20px;
+}
+.Presentation__card__content__categorie {
+  max-width: 193px;
   margin-bottom: 12px;
   padding: 9px 14px;
   background-color: #14142b;
+  color: white;
   box-shadow: 0 8px 22px 0 rgba(0, 0, 0, 0.28);
   font-size: 14px;
   font-weight: 500;
-  color: white;
+  border-radius: 1000px;
 }
-
-.Presentation_glob {
-  display: flex;
-  justify-content: space-around;
+.Presentation__card__content__title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #14142b;
+  font-size: 26px;
+  line-height: 1.346em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .Prestation {
@@ -1121,7 +1149,7 @@ p {
 .Processus {
   display: flex;
   justify-content: space-between;
-  padding: 50px 4%;
+  padding: 50px 5%;
 }
 .Processus__left {
   display: flex;

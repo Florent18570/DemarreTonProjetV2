@@ -1,10 +1,25 @@
-.Presentation {
+.Presentation__glob {
   display: flex;
+  max-width: 500px;
+  text-align: left;
+}
+
+.Presentation__left {
+  margin-right: 40px;
+  width: 370px;
+}
+
+.Presentation__right {
+  display: flex;
+  background-color: #1356bc;
+  padding: 30px 20px;
+  margin-right: 20px;
   &__card {
+    overflow: hidden;
     border: 2px red solid;
     display: flex;
     flex-direction: column;
-    margin-right: 50px;
+
     border-radius: 30px;
     max-width: 370px;
     height: 340px;
@@ -14,7 +29,12 @@
   }
 }
 
-.Presentation__card__content {
+.controlebutton {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.Presentation__right__card__content {
   display: flex;
   flex-direction: column;
   padding: 15px 40px 20px;

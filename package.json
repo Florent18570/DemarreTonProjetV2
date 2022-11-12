@@ -21,6 +21,7 @@
     "react-router-sitemap": "^1.2.0",
     "react-scripts": "^2.1.8",
     "sass": "^1.55.0",
+    "tiny-slider": "^2.9.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

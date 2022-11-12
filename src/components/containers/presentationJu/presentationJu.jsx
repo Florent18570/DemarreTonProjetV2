@@ -1,5 +1,7 @@
 import React from "react";
 import test from "../../../Images/test.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faarrowright } from "@fortawesome/free-solid-svg-icons";
 
 const stockData = [
   {
@@ -90,6 +92,8 @@ const PresentationJu = () => {
           );
         })}
         <div>
+          {/* <FontAwesomeIcon icon={faCoffee} />
+          <FontAwesomeIcon icon={faarrowright} /> */}
           <button onClick={moveUp}>Avant</button>
           <button onClick={moveDown}>Après</button>
         </div>

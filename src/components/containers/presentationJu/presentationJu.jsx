@@ -1,51 +1,12 @@
 import React from "react";
 import test from "../../../Images/test.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faarrowright } from "@fortawesome/free-solid-svg-icons";
-
-const stockData = [
-  {
-    src: "src",
-    titre: "TWTR",
-    description: "description",
-    Date: "5 sec ago",
-  },
-  {
-    src: "src",
-    titre: "TWTR",
-    description: "description",
-    Date: "5 sec ago",
-  },
-  {
-    src: "src",
-    titre: "TWTR",
-    description: "description",
-    Date: "5 sec ago",
-  },
-  {
-    src: "src",
-    titre: "TWTR",
-    description: "description",
-    Date: "5 sec ago",
-  },
-  {
-    src: "src",
-    titre: "TWTR",
-    description: "description",
-    Date: "5 sec ago",
-  },
-  {
-    src: "src",
-    titre: "TWTR",
-    description: "description",
-    Date: "5 qfqsdfqsdfqsec ago",
-  },
-];
 
 var deplacement = [100, 200, 300];
 var dep = 0;
 
 const PresentationJu = () => {
+  var stockData = stockDataa();
+
   function moveUp() {
     document.getElementsByClassName("Presentation_proj")[0].style.transform =
       "translate(" + deplacement[dep] + "px,0px)";
@@ -82,10 +43,10 @@ const PresentationJu = () => {
 
               <div className="Presentation__card__content">
                 <p className="Presentation__card__content__categorie">
-                  Gestion évènementielle
+                  {data.service}
                 </p>
                 <p className="Presentation__card__content__title">
-                  La fabrique Général
+                  {data.compagnie}
                 </p>
               </div>
             </div>

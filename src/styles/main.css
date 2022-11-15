@@ -595,7 +595,7 @@ p {
   }
 }
 .background_image {
-  background-image: url("http://localhost/demarretonprojet/src/Images/background.jpg");
+  background-image: url("/Images/background.jpg");
   width: 100%;
   z-index: 99999;
 }

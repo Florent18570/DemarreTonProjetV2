@@ -68,7 +68,7 @@ const Menu = () => {
           </div>
         </div>
         <div className="Menu_Ordi_partiedroite">
-          <button className="Header_button"> Demander un devis</button>
+          <a href="/devis" className="Header_button"> Demander un devis</a>
         </div>
         <div className="Menu_Mobile_button">
           <button className="Menu_Mobile_Button_btn" onClick={menuchange}>

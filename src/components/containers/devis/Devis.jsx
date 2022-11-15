@@ -100,15 +100,17 @@ const Devis = () => {
       <div className="Prestation__grid__form">
 
       <div name="ouiidee" className="Prestation__grid__choix">
-          <div className="Prestation__grid__card__img">
-            <img  src={grid2} alt="grid1" />
-          </div>
-          <div className="Prestation__grid__card__content">
-            <h3>Jezjnzekjnezkjzeezkne n'ai aucune idée du visuel</h3>
-            <p >
-              Le design ? Nous pouvons nous en occuper. Pour nous aider et vous donner rapidement et en ligne une fourchette de prix, nous vous laissons remplir le formulaire suivant.
-            </p>
-            <a href=""> En savoir plus</a>
+          <div>
+            <div className="etape1">etape 1</div>
+            <div className="etape1">etape 2</div>
+            <div>
+              <button>
+                précédent
+              </button>
+              <button>
+                suivant
+              </button>
+            </div>
           </div>
         </div>
 

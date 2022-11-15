@@ -54,9 +54,16 @@ const Menu = () => {
             <img className="Menu_Ordi_Partiegauche_Image_img" src={logo} />
           </div>
           <div className="Menu_Ordi_Partiegauche_menu">
-            <a className="Menu_Ordi_Partiegauche_Menu_element">Acceuil</a>
+            <a href="/" className="Menu_Ordi_Partiegauche_Menu_element">
+              Acceuil
+            </a>
             <a className="Menu_Ordi_Partiegauche_Menu_element">Prestation</a>
-            <a className="Menu_Ordi_Partiegauche_Menu_element">Réalisation</a>
+            <a
+              href="/allrealisation"
+              className="Menu_Ordi_Partiegauche_Menu_element"
+            >
+              Réalisation
+            </a>
             <a className="Menu_Ordi_Partiegauche_Menu_element">L'agence</a>
           </div>
         </div>

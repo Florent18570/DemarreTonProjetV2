@@ -1,0 +1,167 @@
+.allrealisation {
+  margin-top: 130px;
+  padding: 20px 8%;
+}
+
+.gridAllrealisation {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 32px;
+
+  margin-bottom: 100px;
+
+  padding: 50px 8%;
+
+  background-color: white;
+  &__container {
+    background-color: rgb(156, 213, 241);
+    box-shadow: 0 6px 12px 0 rgb(20 20 43 / 5%);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eff0f6;
+    border-radius: 40px;
+    transition: 0.3s;
+    overflow: hidden;
+    &:hover {
+      opacity: 0.9;
+      scale: 1.02;
+    }
+
+    &__image_overflow {
+      overflow: hidden;
+      img {
+        transition: 0.3s;
+        width: 100%;
+        transition: transform 0.4s ease;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 30px 30px 0 0;
+
+        &:hover {
+          overflow: hidden;
+          max-height: 300px;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+
+.gridAllrealisation__container__content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 31px;
+  padding: 15px 0 20px 0;
+  &__top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__compagnie {
+      margin-right: 20px;
+    }
+    &__techno {
+      margin-right: 12px;
+      padding: 4.5px 14px;
+      border-radius: 10px;
+      background-color: greenyellow;
+      font-size: 12px;
+      color: black;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+  }
+  &__bottom {
+    margin-top: 10px;
+    p {
+      color: rgb(71, 71, 71);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .allrealisation {
+  }
+
+  .gridAllrealisation {
+    grid-template-columns: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 32px;
+    &__container {
+      &:hover {
+        opacity: 0.9;
+        scale: 1.02;
+      }
+      &__image_overflow {
+        overflow: hidden;
+        img {
+          transition: 0.7s;
+          transition: transform 0.4s ease;
+          max-height: 208px;
+
+          &:hover {
+            max-height: 208px;
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+
+  .gridAllrealisation__container__content {
+    &__top {
+      &__compagnie {
+      }
+      &__techno {
+      }
+    }
+    &__bottom {
+      p {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .allrealisation {
+    font-size: 32px;
+  }
+
+  .gridAllrealisation {
+    grid-template-columns: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 32px;
+    &__container {
+      &:hover {
+        opacity: 0.9;
+        scale: 1.02;
+      }
+      &__image_overflow {
+        overflow: hidden;
+        img {
+          transition: 0.7s;
+          &:hover {
+            max-height: 208px;
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+
+  .gridAllrealisation__container__content {
+    &__top {
+      &__compagnie {
+      }
+      &__techno {
+      }
+    }
+    &__bottom {
+      p {
+        display: none;
+      }
+    }
+  }
+}

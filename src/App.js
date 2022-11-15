@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import NotFound from "./pages/notfound";
 import Devis from "./pages/devis";
 import Realisation from "./pages/realisation";
+import Allrealisation from "./pages/allrealisation";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/devis" element={<Devis />} />
+        <Route exact path="/allrealisation" element={<Allrealisation />} />
         <Route exact path="/realisation/:userId" element={<Realisation />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

@@ -49,7 +49,7 @@ const Devis = () => {
 
     console.log(form);
 
-    emailjs.sendForm('service_rzp3gla', 'template_y4gdhbh', form, 'AJy9gQABv4ckSwv4i')
+    emailjs.sendForm('service_3wkj3bk', 'template_y4gdhbh', form, 'AJy9gQABv4ckSwv4i')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -116,9 +116,9 @@ const Devis = () => {
         <div className="Devis_Form_titre"><h3>voici le formulaire de contact</h3></div>
 
           <form className="Devis_form" name="form" onSubmit={sendEmail}>
-          <input type="text" class="Devis_Form_text" maxlength="256" name="Nom" data-name="Nom" placeholder="Nom * " id="Nom-3" required=""/>
-          <input type="email" class="Devis_Form_email" maxlength="256" name="Email" data-name="Email" placeholder="Email *" id="Email-3" required=""></input>
-          <input type="tel" class="Devis_Form_tel" maxlength="256" name="T-l-phone" data-name="Téléphone" placeholder="Téléphone *" id="T-l-phone-3" required=""></input>
+          <input type="text" class="Devis_Form_text" maxlength="256" name="name" data-name="name" placeholder="Nom * " id="Nom-3" required=""/>
+          <input type="email" class="Devis_Form_email" maxlength="256" name="mail" data-name="mail" placeholder="Email *" id="Email-3" required=""></input>
+          <input type="tel" class="Devis_Form_tel" maxlength="256" name="message" data-name="message" placeholder="Téléphone *" id="T-l-phone-3" required=""></input>
           <input type="text" class="Devis_Form_entreprise" maxlength="256" name="Entreprise" data-name="Entreprise" placeholder="Entreprise" id="Entreprise-3"></input>
           <input type="submit" value="Send" />
           </form>

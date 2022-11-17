@@ -603,7 +603,7 @@ p {
   }
 }
 .background_image {
-  background-image: url("/Images/background.jpg");
+  background-image: url("/images/background.jpg");
   width: 100%;
   z-index: 99999;
   background-size: cover;

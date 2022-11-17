@@ -21,13 +21,13 @@ const PresentationJu = () => {
       nextButton: ".next",
       responsive: {
         1600: {
-          items: 4,
+          items: 1,
         },
         1024: {
-          items: 3,
+          items: 1,
         },
         768: {
-          items: 2,
+          items: 1,
         },
         480: {
           items: 1,
@@ -69,7 +69,7 @@ const PresentationJu = () => {
           <FontAwesomeIcon icon={faarrowright} /> */}
         </div>
       </div>
-      <div className="controlebutton">
+      <div className="sfd">
         <button className="previous">Avant</button>
         <button className="next">Après</button>
       </div>

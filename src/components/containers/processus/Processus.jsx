@@ -12,7 +12,6 @@ const Processus = () => {
           De l'étape de la recherche de solution jusqu'au processus de
           lancement, je vous propose un accompagnement 100% personnalisé.
         </p>
-        <button> En savoir plus </button>
       </div>
 
       <div className="Processus__right">

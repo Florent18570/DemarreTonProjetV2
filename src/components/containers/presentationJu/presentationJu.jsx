@@ -7,6 +7,7 @@ import stockDataa from "../../../data/card";
 const PresentationJu = () => {
   var stockData = stockDataa();
 
+
   
 
   useEffect(() => {
@@ -21,10 +22,10 @@ const PresentationJu = () => {
       nextButton: ".next",
       responsive: {
         1600: {
-          items: 1,
+          items: 3,
         },
         1024: {
-          items: 1,
+          items: 2,
         },
         768: {
           items: 1,

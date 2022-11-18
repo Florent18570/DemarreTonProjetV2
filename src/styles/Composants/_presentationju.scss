@@ -1,12 +1,10 @@
 .Presentation__glob {
   display: flex;
-  max-width: 500px;
   text-align: left;
 }
 
 .Presentation__left {
   margin-right: 40px;
-  min-width: 100%;
 }
 
 .Presentation__right {
@@ -59,4 +57,22 @@
     font-weight: 700;
     letter-spacing: 0.02em;
   }
+}
+
+
+.Presentation__glob{
+  width: 100%;
+}
+
+.Presentation__left{
+  width: 20%;
+
+}
+
+.tns-outer{
+  overflow: hidden;
+}
+
+.Presentation__right__card {
+  background-color: white;
 }

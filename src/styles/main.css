@@ -350,8 +350,21 @@ p {
 
 /* Footer */
 .Footer {
-  background-color: red;
+  background: src("/images/vague.svg");
+}
+
+.Footer_H3 {
+  text-align: justify;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90deg, #184F6F 0%, rgba(255, 101, 0, 0.99) 101.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.Footer_Bloc_presta {
   display: flex;
+  margin: auto;
+  justify-content: center;
 }
 
 .Footer_presta {
@@ -1002,13 +1015,11 @@ p {
 }
 .Presentation__glob {
   display: flex;
-  max-width: 500px;
   text-align: left;
 }
 
 .Presentation__left {
   margin-right: 40px;
-  min-width: 100%;
 }
 
 .Presentation__right {
@@ -1059,6 +1070,22 @@ p {
   line-height: 1.346em;
   font-weight: 700;
   letter-spacing: 0.02em;
+}
+
+.Presentation__glob {
+  width: 100%;
+}
+
+.Presentation__left {
+  width: 20%;
+}
+
+.tns-outer {
+  overflow: hidden;
+}
+
+.Presentation__right__card {
+  background-color: white;
 }
 
 .Prestation {

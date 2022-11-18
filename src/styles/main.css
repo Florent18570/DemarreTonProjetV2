@@ -350,21 +350,8 @@ p {
 
 /* Footer */
 .Footer {
-  background: #D9D9D9;
-}
-
-.Footer_H3 {
-  text-align: justify;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90deg, #184F6F 0%, rgba(255, 101, 0, 0.99) 101.58%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.Footer_Bloc_presta {
+  background-color: red;
   display: flex;
-  margin: auto;
-  justify-content: center;
 }
 
 .Footer_presta {
@@ -506,12 +493,6 @@ p {
     font-size: 24px;
   }
 }
-.st1 {
-  opacity: 0.6;
-  fill: #0C3157;
-  enable-background: new;
-}
-
 .Header_global {
   position: relative;
   overflow: hidden;

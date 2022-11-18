@@ -3,6 +3,9 @@ import processus1 from "../../../Images/processus1.png";
 import processus2 from "../../../Images/processus2.png";
 import processus3 from "../../../Images/processus3.png";
 
+import Union from "../../../Images/Union.png";
+import rectangle from "../../../Images/rectangle.png";
+
 const Processus = () => {
   return (
     <section className="Processus">
@@ -15,8 +18,51 @@ const Processus = () => {
       </div>
 
       <div className="Processus__right">
+        <img className="Union" src={Union} alt="Union" />
+        <div>
+          <img
+            className="rectangle animation_carré"
+            src={rectangle}
+            alt="rectangle"
+          />
+          <img
+            className="rectangle2 animation_carré"
+            src={rectangle}
+            alt="rectangle"
+          />
+          <img
+            className="rectangle3 animation_carré"
+            src={rectangle}
+            alt="rectangle"
+          />
+          <img
+            className="rectangle4 animation_carré"
+            src={rectangle}
+            alt="rectangle"
+          />
+
+          <img
+            className="rectangle5 animation_carré"
+            src={rectangle}
+            alt="rectangle"
+          />
+
+          <img
+            className="rectangle6 animation_carré"
+            src={rectangle}
+            alt="rectangle"
+          />
+
+          <img
+            className="rectangle7 animation_carré"
+            src={rectangle}
+            alt="rectangle"
+          />
+        </div>
+
         <div className="Processus__right__card ">
           <img src={processus1} alt="" />
+          <div className="horizontalBar"></div>
           <div className="Processus__right__card__content">
             <h3> 01. Plan d'analyse</h3>
             <p>
@@ -28,22 +74,24 @@ const Processus = () => {
 
         <div className="Processus__right__card ">
           <img src={processus2} alt="" />
+          <div className="horizontalBar"></div>
           <div className="Processus__right__card__content">
-            <h3> 01. Plan d'analyse</h3>
+            <h3> 02. Développement</h3>
             <p>
-              Nous analysons ensemble votre projet afin d'utiliser les meilleurs
-              outils et solutions qui permettront de mener à bien votre projet
+              Développement de la solution de A à Z et de son écosystème en
+              intégrant les outils nécessaires.{" "}
             </p>
           </div>
         </div>
 
         <div className="Processus__right__card ">
           <img src={processus3} alt="" />
+          <div className="horizontalBar"></div>
           <div className="Processus__right__card__content">
-            <h3> 01. Plan d'analyse</h3>
+            <h3> 03. Lancement </h3>
             <p>
-              Nous analysons ensemble votre projet afin d'utiliser les meilleurs
-              outils et solutions qui permettront de mener à bien votre projet
+              Je vous accompagne dans le lancement de votre produit et bien
+              après, afin d'assurer le fonctionnement sur le long terme.{" "}
             </p>
           </div>
         </div>

@@ -1,39 +1,43 @@
 import React from "react";
-import { FaBeer  } from "react-icons/fa";
+import { FaBeer } from "react-icons/fa";
+import card_footer from "../../../Images/card_footer.png";
 
 const Footer = () => {
-  return <div className="Footer">
-    <div className="Footer_Bloc_devis">
-      <p className="Footer_confier">Confiez-nous vos besoins, laissez-vous guider par nos experts et travaillons ensemble sur la réussite de vos projets </p>
-      <button className="Footer_Button_devis">Demander un devis</button>
-    </div>
-
-    <div className="Footer_Bloc_presta">
-      <div className="Footer_presta">
-        <h3 className="Footer_H3">Prestations</h3>
-        <li className="Footer_li Footer_li_SiteInternet ">Refonte de site</li>
-        <li className="Footer_li Footer_li_Refonte">Site Internet</li>
+  return (
+    <div className="Footer">
+      <div className="Footer__left">
+        <img src={card_footer} alt="card_footer" />
       </div>
-      <div className="Footer_presta">
-        <h3 className="Footer_H3">Informations</h3>
-        <li className="Footer_li Footer_li_Agence">L'agence</li>
-        <li className="Footer_li Footer_li_Devis  ">Devis</li>
+      <div className="Footer__right"></div>
+      <div className="Footer__right__devis">
+        <p> Estimons le cout de votre projet </p>
+        <button> Demander un devis </button>
       </div>
-      <div className="Footer_presta">
-        <h3 className="Footer_H3">Nous contacter</h3>
-        <li className="Footer_li Footer_li_Enveloppe">Contactez-nous</li>
-        <img className="Footer_li"></img><FaBeer />
+      <div className="Footer__right__link">
+        <div className="Footer__right__link__container">
+          <h3> Prestation </h3>
+          <p> Site Internet </p>
+          <p> Refonte de site</p>
+        </div>
+        <div className="Footer__right__link__container">
+          <h3> Information </h3>
+          <p> L'agence </p>
+          <p> devis</p>
+        </div>
+        <div className="Footer__right__link__container">
+          <h3> Prestation </h3>
+          <p> Site Internet </p>
+          <p> Refonte de site</p>
+        </div>
+      </div>
+      <div className="Footer__right__link__horizontalBarre"></div>
+      <div className="Footer__right__link__mentionLegal">
+        <p> @2022 - DemarreTonProjet </p>
+        <p> Mention légales </p>
+        <p> Politique de Confidentialité </p>
       </div>
     </div>
-
-    <div className="Footer_Bloc_footer">
-      <p className="Footer_Bloc_Footer_p">Mentions légales</p>
-      <p className="Footer_Bloc_Footer_p">@ 2022 - DemarreTonProjet</p>
-      <p className="Footer_Bloc_Footer_p">Politique de confidientialité</p>
-    </div>
-
-
-  </div>;
+  );
 };
 
 export default Footer;

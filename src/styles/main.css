@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
 * {
   box-sizing: border-box;
@@ -1208,34 +1209,123 @@ p {
 }
 .Processus__right {
   display: flex;
-  gap: 35px;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  position: relative;
 }
 
+.horizontalBar {
+  border: solid 0.5px;
+  opacity: 40%;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #d9dbe9;
+}
+
+.Union {
+  position: absolute;
+  width: 68px;
+  height: 34px;
+  left: 55px;
+  top: 254px;
+}
+
+.rectangle {
+  position: absolute;
+  left: 610px;
+}
+
+.rectangle2 {
+  position: absolute;
+  left: 620px;
+}
+
+.rectangle3 {
+  position: absolute;
+  left: 630px;
+}
+
+.rectangle4 {
+  position: absolute;
+  left: 640px;
+}
+
+.rectangle5 {
+  position: absolute;
+  left: 650px;
+}
+
+.rectangle6 {
+  position: absolute;
+  left: 660px;
+}
+
+.rectangle7 {
+  position: absolute;
+  left: 670px;
+}
+
+.animation_carré {
+  z-index: -1;
+  top: 269px;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: carré;
+          animation-name: carré;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes carré {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(22px);
+  }
+}
+
+@keyframes carré {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(22px);
+  }
+}
 .Processus__right__card {
   display: flex;
+  flex-direction: column;
   padding: 0 20px 0 0;
   background: #ffffff;
   border: 1px solid #eff0f6;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 49px 40px 40px 49px;
-  max-width: 699px;
+  max-width: 500px;
 }
 .Processus__right__card img {
   margin-right: 24px;
   max-width: 170px;
+  height: 200px;
   border-radius: 49px 0 0 49px;
 }
 .Processus__right__card__content {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  padding: 20px 30px 40px 60px;
 }
 .Processus__right__card__content h3 {
   font-size: 26px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .Processus__right__card__content p {
-  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 30px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 991px) {

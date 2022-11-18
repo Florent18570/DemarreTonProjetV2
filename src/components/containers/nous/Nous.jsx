@@ -1,7 +1,7 @@
 import React from "react";
 import Julien from "../../../Images/julien.png";
 import Florent from "../../../Images/florent.png";
-import Bg from "../../../Images/Bg_realisation.png";
+import Bg from "../../../Images/undraw_programming_re_kg9v.svg";
 
 const Nous = () => {
   return (

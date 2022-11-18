@@ -505,6 +505,12 @@ p {
     font-size: 24px;
   }
 }
+.st1 {
+  opacity: 0.6;
+  fill: #0C3157;
+  enable-background: new;
+}
+
 .Header_global {
   position: relative;
   overflow: hidden;
@@ -603,7 +609,7 @@ p {
   }
 }
 .background_image {
-  background-image: url("/images/background.jpg");
+  background-image: url("/public_html/images/background.jpg");
   width: 100%;
   z-index: 99999;
   background-size: cover;

@@ -14,6 +14,7 @@ const Allrealisationn = () => {
       <div className="gridAllrealisation">
       {stockData.map((data, key) => {
             return (<div className="gridAllrealisation__container">
+              <a href={"/realisation/"+data.id}>
                         <div className="gridAllrealisation__container__image_overflow">
                           <img src={processus3} alt="" />
                         </div>
@@ -31,6 +32,7 @@ const Allrealisationn = () => {
                             <p> {data.intro}</p>
                           </div>
                         </div>
+                        </a>
                       </div>
 
 

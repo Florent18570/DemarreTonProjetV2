@@ -48,6 +48,7 @@ const PresentationJu = () => {
           {stockData.map((data, key) => {
             return (
               <div className="slide">
+                <a href={"/realisation/"+data.id}>
                 <div key={key} className="Presentation__right__card ">
                   <img src={test} alt="test" />
 
@@ -60,6 +61,7 @@ const PresentationJu = () => {
                     </p>
                   </div>
                 </div>{" "}
+                </a>
               </div>
             );
           })}

@@ -4,6 +4,7 @@ import card_footer from "../../../Images/card_footer.png";
 
 const Footer = () => {
   return (
+    <>
     <div className="Footer">
       <div className="Footer__left">
         <img src={card_footer} alt="card_footer" />
@@ -103,7 +104,7 @@ const Footer = () => {
 
 
 
-  </div>;
+  </>);
 };
 
 export default Footer;

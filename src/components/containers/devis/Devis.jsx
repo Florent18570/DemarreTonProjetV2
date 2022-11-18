@@ -1,10 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import grid1 from "../../../Images/grid.png";
 import grid2 from "../../../Images/grid2.png";
 import emailjs from '@emailjs/browser';
+import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
+
 
 
 const Devis = () => {
+
+  useEffect(() => {
+    tns({
+      container: ".my-slider",
+      slideBy: 1,
+      speed: 400,
+      nav: false,
+      rewind: true,
+      // swipeAngle: false,
+      prevButton: ".precedent",
+      nextButton: ".suivant",
+      responsive: {
+        1600: {
+          items: 4,
+        },
+        1024: {
+          items: 3,
+        },
+        768: {
+          items: 2,
+        },
+        480: {
+          items: 1,
+        },
+      },
+    });
+  }, []);
 
  
 
@@ -41,6 +70,14 @@ const Devis = () => {
 
       
     }
+  }
+
+  function etapechange(etape) {
+    var buttonetape1 = document.getElementsByName("etape1")[0];
+    var buttonetape2 = document.getElementsByName("etape2")[0];
+
+    buttonetape1.style.display = "none";
+    buttonetape2.style.display = "flex";
   }
 
   const sendEmail = (e) => {
@@ -100,20 +137,17 @@ const Devis = () => {
       <div className="Prestation__grid__form">
 
       <div name="ouiidee" className="Prestation__grid__choix">
-          <div>
-            <div className="etape1">etape 1</div>
-            <div className="etape1">etape 2</div>
-            <div>
-              <button>
-                précédent
-              </button>
-              <button>
-                suivant
-              </button>
-            </div>
+          <div className="etape my-slider">
+            <div name="etape1 " className="etape1 slide">etape 1</div>
+            <div name="etape2" className="etape2 slide">etape 2</div>
+            
+            
+            
           </div>
+          <button className="precedent">Avant</button>
+            <button className="suivant">Après</button>
         </div>
-
+        
         <div name="nonidee" className="Prestation__grid__choix">
         <div className="Devis_Form_titre"><h3>voici le formulaire de contact</h3></div>
 

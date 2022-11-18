@@ -9,7 +9,7 @@ export default function stockDataa() {
       technologie: "Html / Css / Js / Wordpress",
       date: "Janvier 2022",
       site: "https://stb18.fr",
-      src: "../../src/Images/agence.png",
+      src: "/images/agence.png",
       processus: [
         {
           etape: "1. Rédaction d'une charte graphique",

@@ -350,149 +350,88 @@ p {
 
 /* Footer */
 .Footer {
-  background-color: red;
+  background: #072d65;
   display: flex;
+  width: 100%;
 }
-
-.Footer_presta {
-  padding: 5%;
-  padding-top: 0%;
+.Footer__left {
+  margin-left: 30px;
+  margin-top: -180px;
 }
-
-.Footer_Bloc_devis {
-  position: relative;
-  z-index: 1;
-  margin-top: 30px;
-  display: flex;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background-image: url("../Images/fondFooter.jpg");
-  background-repeat: round;
-  width: 60%;
-  border-radius: 0.66667rem;
-  margin: auto;
-  top: -75px;
-  align-items: center;
-  padding-right: 44px;
-}
-
-.Footer_confier {
-  font-style: normal;
-  font-weight: 800;
-  padding: 20px;
-  color: white;
-  letter-spacing: -1px;
-}
-
-.Footer_Button_devis {
+.Footer__left img {
   width: 400px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3.33333rem;
-  border-radius: 1.66667rem;
-  font-weight: 700;
-  background: #fff;
-  transition: all 400ms;
-  overflow: hidden;
-  color: #485fc7;
-  cursor: pointer;
-  text-decoration: none;
+  height: auto;
 }
-
-.Footer_Button_devis:hover {
-  transform: scale(1.1);
-  background-color: #0365D0;
-  color: #ECA400;
-}
-
-.Footer_Bloc_footer {
+.Footer__right {
   display: flex;
-  background: #1E1E1E;
+  flex-direction: column;
+  padding: 50px 0% 50px 3%;
+}
+.Footer__right {
+  margin: 10px 30px;
+  width: 100%;
+}
+.Footer__right__devis {
+  border: 3px white solid;
+  border-radius: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+.Footer__right__devis p {
   color: white;
-  margin: auto;
-  justify-content: center;
+  padding: 10px 0 10px 10px;
+  margin-left: 20px;
+}
+.Footer__right__devis button {
+  background-color: white;
+  color: #3471cb;
+  border-radius: 1000px;
+  padding: 10px 10px 10px 10px;
+}
+.Footer__right__link {
+  display: flex;
+  gap: 60px;
+  margin-top: 40px;
+  margin-right: 30px;
+}
+.Footer__right__link__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Footer__right__link__container h3 {
+  font-size: 26px;
+  color: white;
+  margin-bottom: 30px;
+}
+.Footer__right__link__container p {
+  color: #97b6e7;
+  margin-bottom: 7px;
 }
 
-.Footer_Bloc_Footer_p {
-  -webkit-margin-end: 10%;
-          margin-inline-end: 10%;
-  text-align: center;
-  margin: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
+.Footer__right__link__horizontalBarre {
+  border-top: 2px solid #d9dbe9;
+  opacity: 52%;
+  margin-top: 30px;
 }
 
-.Footer_li {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 29px;
-  /* identical to box height */
-  text-align: justify;
-  color: #362828;
-  cursor: pointer;
+.Footer__right__link__mentionLegal {
+  display: flex;
+  justify-content: space-between;
+}
+.Footer__right__link__mentionLegal div {
+  display: flex;
+}
+.Footer__right__link__mentionLegal div p {
+  margin-right: 30px;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+.Footer__right__link__mentionLegal div :hover {
+  color: white;
 }
 
-.Footer_li:hover {
-  color: #485fc7;
-}
-
-.Footer_li_SiteInternet {
-  list-style-image: url("../Images/logoSiteInternet.png");
-}
-
-.Footer_li_Refonte {
-  list-style-image: url("../Images/refontesite.png");
-}
-
-.Footer_li_Agence {
-  list-style-image: url("../Images/agence.png");
-}
-
-.Footer_li_Devis {
-  list-style-image: url("../Images/devi.png");
-}
-
-.Footer_li_Enveloppe {
-  list-style-image: url("../Images/enveloppe.png");
-}
-
-@media only screen and (max-width: 600px) {
-  .Footer_Bloc_presta {
-    flex-direction: column;
-    margin: auto;
-    text-align: center;
-    align-items: left;
-  }
-  .Footer_confier {
-    font-size: 14px;
-  }
-  .Footer_Button_devis {
-    font-size: 10px;
-    width: 200px;
-  }
-  .Footer_li {
-    font-size: 18px;
-  }
-}
-@media only screen and (max-width: 770px) and (min-width: 601px) {
-  .Footer_li {
-    font-size: 12px;
-  }
-  .Footer_confier {
-    font-size: 16px;
-  }
-}
-@media only screen and (max-width: 1025px) and (min-width: 771px) {
-  .Footer_li {
-    font-size: 17px;
-  }
-  .Footer_confier {
-    font-size: 24px;
-  }
-}
 .Header_global {
   position: relative;
   overflow: hidden;

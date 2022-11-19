@@ -5,6 +5,8 @@
   background: src("/images/vague.svg");
   display: flex;
   width: 100%;
+  padding-top: 100px;
+  background-size: cover;
   &__left {
     margin-left: 30px;
     margin-top: -200px;

@@ -42,18 +42,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-    <div className="Footer_Bloc_footer">
-      <p className="Footer_Bloc_Footer_p">Mentions légales</p>
-      <p className="Footer_Bloc_Footer_p">@ 2022 - DemarreTonProjet</p>
-      <p className="Footer_Bloc_Footer_p">Politique de confidientialité</p>
-    </div>
-
-    
-
-
-
-  </>);
+    </>
+  );
 };
 
 export default Footer;

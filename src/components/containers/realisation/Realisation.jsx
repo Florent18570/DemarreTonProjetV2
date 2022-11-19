@@ -21,6 +21,12 @@ const Realisation = () => {
 
   var stockData = stockDataa();
 
+  var random1 = Math.floor(Math.random() * (stockData.length - 1 + 1)) + 0;
+  var random2 = Math.floor(Math.random() * (stockData.length - 1 + 1)) + 0;
+
+  var suite1 = stockData[random1];
+  var suite2 = stockData[random2];
+
 
 if(typeof stockData[parseInt(params.userId)].id !== "undefined"){
   return (
@@ -80,10 +86,9 @@ if(typeof stockData[parseInt(params.userId)].id !== "undefined"){
           <div className="RealisationPage__autreProjet__grid__card">
             <img src={Image} alt="Image" />
             <div className="RealisationPage__autreProjet__grid__card__content">
-              <h3> Carlili</h3>
+              <h3> {suite1.compagnie}</h3>
               <p>
-                Pour la campagne marketing de l'entreprise carlili, j'ai
-                développé la langing page de leur nouveau lancement
+              {suite1.intro}
               </p>
             </div>
           </div>
@@ -91,10 +96,10 @@ if(typeof stockData[parseInt(params.userId)].id !== "undefined"){
           <div className="RealisationPage__autreProjet__grid__card">
             <img src={Image} alt="Image" />
             <div className="RealisationPage__autreProjet__grid__card__content">
-              <h3> Carlili</h3>
+              <h3> {suite2.compagnie}</h3>
               <p>
-                Pour la campagne marketing de l'entreprise carlili, j'ai
-                développé la langing page de leur nouveau lancement
+              {suite2.intro}
+
               </p>
             </div>
           </div>

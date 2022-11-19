@@ -1,10 +1,12 @@
 /* Footer */
 
 .Footer {
-  background: #072d65;
-  background : src("/images/vague.svg");    
+  
+  background : url("/images/vague.svg");    
   display: flex;
   width: 100%;
+  padding-top:100px;
+  background-size: cover;
   &__left {
     margin-left: 30px;
     margin-top: -180px;

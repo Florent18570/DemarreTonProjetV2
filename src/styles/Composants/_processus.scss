@@ -1,6 +1,11 @@
 .Processus {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10% 10% 0% 0% / 20% 20% 0% 0% ;  
 
   padding: 63px 3% 110px 2%;
   &__left {

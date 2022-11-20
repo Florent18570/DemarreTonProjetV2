@@ -1,10 +1,14 @@
 .background_image {
-  background-image: url("/public_html/images/background.jpg");
+  background-color : #3F80FD;
   // background-repeat: no-repeat;
   width: 100%;
   z-index: 99999;
   background-size: cover;
   margin-top: -50px;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
 }
 
 .Menu {

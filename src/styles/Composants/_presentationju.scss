@@ -1,6 +1,9 @@
 .Presentation__glob {
   display: flex;
-  text-align: left;
+  padding: 63px 0% 110px 2%;
+  background-color: white;
+  border-radius: 0% 0% 10% 10%/0% 0% 20% 20%;
+
 }
 
 .Presentation__left {
@@ -63,7 +66,25 @@
 }
 
 .Presentation__left{
-  width: 20%;
+  width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__text{
+      display: flex;
+      flex-direction: column;
+      &__p{
+        margin-bottom: 10%;
+        margin-left: 20%;
+      }
+      &__button{
+        width: 50%;
+        display: flex;
+        margin: 0px auto 10% 34%;
+        justify-content: center;
+      }
+    }
 
 }
 
@@ -78,4 +99,72 @@
 .Presentation_card_bg{
   background:url("/images/point.svg");
   overflow: hidden;
+  width: 70%;
+  border-radius: 30px 0px 0 30px;
+}
+
+
+.previous {
+	background: #0051b1;
+    border-radius: 1000px;
+    color: white;
+    padding: 10px 35px;
+    line-height: 1.111em;
+    font-weight: 700;
+    text-align: center;
+    font-size: 17px;
+    border:#0051b1 ;
+    margin : 0 10px 10px 10px;
+    cursor:pointer;
+}
+.previous:hover {
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+}
+.previous:active {
+	position:relative;
+	top:1px;
+}
+
+.next {
+	background: #0051b1;
+    border-radius: 1000px;
+    color: white;
+    padding: 10px 35px;
+    line-height: 1.111em;
+    font-weight: 700;
+    text-align: center;
+    font-size: 17px;
+    border:#0051b1 ;
+    margin : 0 10px 10px 10px;
+    cursor:pointer;
+}
+.next:hover {
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+}
+.next:active {
+	position:relative;
+	top:1px;
+}
+
+.Presentation__left__text__button {
+	background: #d05f1e;
+    border-radius: 1000px;
+    color: white;
+    padding: 10px 35px;
+    line-height: 1.111em;
+    font-weight: 700;
+    text-align: center;
+    font-size: 17px;
+    border:#0051b1 ;
+    cursor:pointer;
+}
+.Presentation__left__text__button:hover {
+	background:linear-gradient(to bottom, #d05f1e 5%, #99410e 100%);
+	background-color:#1e62d0;
+}
+.Presentation__left__text__button:active {
+	position:relative;
+	top:1px;
 }

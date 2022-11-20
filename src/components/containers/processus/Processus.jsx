@@ -5,6 +5,7 @@ import processus3 from "../../../Images/processus3.png";
 
 import Union from "../../../Images/Union.png";
 import rectangle from "../../../Images/rectangle.png";
+import fleche from "../../../Images/flechedroite.png";
 
 const Processus = () => {
   return (
@@ -72,6 +73,8 @@ const Processus = () => {
           </div>
         </div>
 
+        
+
         <div className="Processus__right__card ">
           <img src={processus2} alt="" />
           <div className="horizontalBar"></div>
@@ -83,6 +86,8 @@ const Processus = () => {
             </p>
           </div>
         </div>
+
+        
 
         <div className="Processus__right__card ">
           <img src={processus3} alt="" />

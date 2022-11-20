@@ -41,9 +41,11 @@ const PresentationJu = () => {
     <>
       <div className="Presentation__glob">
         <div className="Presentation__left">
-          <h3> Les derniers sites</h3>
-          <p> Toujours pas convaincu ? Regarder mes réalisations.</p>
-          <button> Voir toutes mes réalisations</button>
+          <h2> Les derniers sites</h2>
+          <div className="Presentation__left__text">
+          <p className="Presentation__left__text__p"> Toujours pas convaincu ? Vous pouvez regarder nos créations publics sur la partie d'à côté. Des boutons sont disponibles pour vous permettre de naviguer entre eux. Regarder mes réalisations.</p>
+          <button className="Presentation__left__text__button" onClick="location.href='/allrealisation'"> Voir toutes mes réalisations</button>
+          </div>
         </div>
         <div className="Presentation_card_bg">
         <div className="Presentation__right my-slider">
@@ -68,16 +70,17 @@ const PresentationJu = () => {
             );
           })}
         </div>
+        <div className="sfd">
+        <button className="previous"> &#8249; &#8249; </button>
+        <button className="next"> &#8250; &#8250; </button>
+      </div>
         </div>
         <div>
           {/* <FontAwesomeIcon icon={faCoffee} />
           <FontAwesomeIcon icon={faarrowright} /> */}
         </div>
       </div>
-      <div className="sfd">
-        <button className="previous">Avant</button>
-        <button className="next">Après</button>
-      </div>
+      
     </>
   );
 };

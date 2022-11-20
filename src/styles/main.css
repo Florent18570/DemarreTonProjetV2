@@ -11,6 +11,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   margin: 0;
+  background-color: #F5F7FC;
 }
 
 a {
@@ -490,9 +491,11 @@ p {
   align-items: center;
   text-align: center;
   letter-spacing: 0.36px;
-  color: #6f222b;
+  color: #ffffff;
   justify-content: space-evenly;
   margin-bottom: 18px;
+  padding: 50px 0 0 0;
+  font-size: 30px;
 }
 
 .Header_creation {
@@ -575,15 +578,14 @@ p {
 }
 .background_image {
   background-color: #3F80FD;
-  color: #25268f;
-  background-size: cover;
-	background-attachment: fixed;
-	position: relative;
-	overflow: hidden;
-	border-radius: 0 0 85% 85% / 30%;
   width: 100%;
   z-index: 99999;
-    margin-top: -50px;
+  background-size: cover;
+  margin-top: -50px;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 85% 85%/30%;
 }
 
 .Menu {
@@ -990,7 +992,9 @@ p {
 }
 .Presentation__glob {
   display: flex;
-  text-align: left;
+  padding: 63px 0% 110px 2%;
+  background-color: white;
+  border-radius: 0% 0% 10% 10%/0% 0% 20% 20%;
 }
 
 .Presentation__left {
@@ -1050,7 +1054,25 @@ p {
 }
 
 .Presentation__left {
-  width: 20%;
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Presentation__left__text {
+  display: flex;
+  flex-direction: column;
+}
+.Presentation__left__text__p {
+  margin-bottom: 10%;
+  margin-left: 20%;
+}
+.Presentation__left__text__button {
+  width: 50%;
+  display: flex;
+  margin: 0px auto 10% 34%;
+  justify-content: center;
 }
 
 .tns-outer {
@@ -1064,6 +1086,79 @@ p {
 .Presentation_card_bg {
   background: url("/images/point.svg");
   overflow: hidden;
+  width: 70%;
+  border-radius: 30px 0px 0 30px;
+}
+
+.previous {
+  background: #0051b1;
+  border-radius: 1000px;
+  color: white;
+  padding: 10px 35px;
+  line-height: 1.111em;
+  font-weight: 700;
+  text-align: center;
+  font-size: 17px;
+  border: #0051b1;
+  margin: 0 10px 10px 10px;
+  cursor: pointer;
+}
+
+.previous:hover {
+  background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+  background-color: #1e62d0;
+}
+
+.previous:active {
+  position: relative;
+  top: 1px;
+}
+
+.next {
+  background: #0051b1;
+  border-radius: 1000px;
+  color: white;
+  padding: 10px 35px;
+  line-height: 1.111em;
+  font-weight: 700;
+  text-align: center;
+  font-size: 17px;
+  border: #0051b1;
+  margin: 0 10px 10px 10px;
+  cursor: pointer;
+}
+
+.next:hover {
+  background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+  background-color: #1e62d0;
+}
+
+.next:active {
+  position: relative;
+  top: 1px;
+}
+
+.Presentation__left__text__button {
+  background: #d05f1e;
+  border-radius: 1000px;
+  color: white;
+  padding: 10px 35px;
+  line-height: 1.111em;
+  font-weight: 700;
+  text-align: center;
+  font-size: 17px;
+  border: #0051b1;
+  cursor: pointer;
+}
+
+.Presentation__left__text__button:hover {
+  background: linear-gradient(to bottom, #d05f1e 5%, #99410e 100%);
+  background-color: #1e62d0;
+}
+
+.Presentation__left__text__button:active {
+  position: relative;
+  top: 1px;
 }
 
 .Prestation {
@@ -1173,6 +1268,11 @@ p {
 .Processus {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10% 10% 0% 0%/20% 20% 0% 0%;
   padding: 63px 3% 110px 2%;
 }
 .Processus__left {

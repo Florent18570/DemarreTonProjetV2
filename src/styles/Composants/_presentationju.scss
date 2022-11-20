@@ -9,12 +9,10 @@
 
 .Presentation__right {
   display: flex;
-  background-color: #1356bc;
   padding: 30px 20px;
   margin-right: 20px;
   &__card {
     overflow: hidden;
-    border: 2px red solid;
     display: flex;
     flex-direction: column;
 
@@ -75,4 +73,9 @@
 
 .Presentation__right__card {
   background-color: white;
+}
+
+.Presentation_card_bg{
+  background:url("/images/point.svg");
+  overflow: hidden;
 }

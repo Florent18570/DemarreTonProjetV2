@@ -45,6 +45,7 @@ const PresentationJu = () => {
           <p> Toujours pas convaincu ? Regarder mes réalisations.</p>
           <button> Voir toutes mes réalisations</button>
         </div>
+        <div className="Presentation_card_bg">
         <div className="Presentation__right my-slider">
           {stockData.map((data, key) => {
             return (
@@ -66,6 +67,7 @@ const PresentationJu = () => {
               </div>
             );
           })}
+        </div>
         </div>
         <div>
           {/* <FontAwesomeIcon icon={faCoffee} />

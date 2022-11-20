@@ -350,8 +350,7 @@ p {
 
 /* Footer */
 .Footer {
-  background: #072d65;
-  background: src("/images/vague.svg");
+  background: url("/images/vague.svg");
   display: flex;
   width: 100%;
   padding-top: 100px;
@@ -913,7 +912,7 @@ p {
   margin-right: 30px;
 }
 .Nous__content {
-  max-width: 527px;
+  max-width: 727px;
 }
 .Nous__content p {
   margin-top: 15px;
@@ -995,13 +994,11 @@ p {
 
 .Presentation__right {
   display: flex;
-  background-color: #1356bc;
   padding: 30px 20px;
   margin-right: 20px;
 }
 .Presentation__right__card {
   overflow: hidden;
-  border: 2px red solid;
   display: flex;
   flex-direction: column;
   border-radius: 30px;
@@ -1057,6 +1054,11 @@ p {
 
 .Presentation__right__card {
   background-color: white;
+}
+
+.Presentation_card_bg {
+  background: url("/images/point.svg");
+  overflow: hidden;
 }
 
 .Prestation {

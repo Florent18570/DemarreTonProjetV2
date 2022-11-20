@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import Image from "../../../Images/dégradé.png";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { NotFound} from "..";
 import stockDataa from "../../../data/card"
 
@@ -23,6 +23,11 @@ const Realisation = () => {
 
   var random1 = Math.floor(Math.random() * (stockData.length - 1 + 1)) + 0;
   var random2 = Math.floor(Math.random() * (stockData.length - 1 + 1)) + 0;
+
+  while(random1 == random2){
+    random2 = Math.floor(Math.random() * (stockData.length - 1 + 1)) + 0;
+  }
+  
 
   var suite1 = stockData[random1];
   var suite2 = stockData[random2];
@@ -79,12 +84,15 @@ if(typeof stockData[parseInt(params.userId)].id !== "undefined"){
       <div className="RealisationPage__autreProjet">
         <div className="RealisationPage__autreProjet__top">
           <h2> Plus d'études de cas </h2>
-          <button> Tout voir </button>
+          <Link to="/allrealisation">
+            <button> Tout voir </button>
+          </Link>
         </div>
 
         <div className="RealisationPage__autreProjet__grid">
+          <a href={"/realisation/"+suite1.id}>
           <div className="RealisationPage__autreProjet__grid__card">
-            <img src={Image} alt="Image" />
+            <img src={suite1.src} alt="Image" />
             <div className="RealisationPage__autreProjet__grid__card__content">
               <h3> {suite1.compagnie}</h3>
               <p>
@@ -92,9 +100,11 @@ if(typeof stockData[parseInt(params.userId)].id !== "undefined"){
               </p>
             </div>
           </div>
+          </a>
 
+          <a href={"/realisation/"+suite2.id}>
           <div className="RealisationPage__autreProjet__grid__card">
-            <img src={Image} alt="Image" />
+            <img src={suite2.src} alt="Image" />
             <div className="RealisationPage__autreProjet__grid__card__content">
               <h3> {suite2.compagnie}</h3>
               <p>
@@ -103,6 +113,7 @@ if(typeof stockData[parseInt(params.userId)].id !== "undefined"){
               </p>
             </div>
           </div>
+          </a>
         </div>
       </div>
     </div>

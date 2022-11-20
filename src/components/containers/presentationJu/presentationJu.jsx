@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, {  useEffect } from "react";
+import {  Link } from "react-router-dom";
 import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 import test from "../../../Images/test.png";
 import stockDataa from "../../../data/card";
@@ -44,7 +45,10 @@ const PresentationJu = () => {
           <h2> Les derniers sites</h2>
           <div className="Presentation__left__text">
           <p className="Presentation__left__text__p"> Toujours pas convaincu ? Vous pouvez regarder nos créations publics sur la partie d'à côté. Des boutons sont disponibles pour vous permettre de naviguer entre eux. Regarder mes réalisations.</p>
-          <button className="Presentation__left__text__button" onClick="location.href='/allrealisation'"> Voir toutes mes réalisations</button>
+          <Link to="/allrealisation">
+          <button className="Presentation__left__text__button"> Voir toutes mes réalisations</button>
+          </Link>
+          
           </div>
         </div>
         <div className="Presentation_card_bg">
@@ -54,7 +58,7 @@ const PresentationJu = () => {
               <div className="slide">
                 <a href={"/realisation/"+data.id}>
                 <div key={key} className="Presentation__right__card ">
-                  <img src={test} alt="test" />
+                  <img src={data.src} alt="test" />
 
                   <div className="Presentation__right__card__content">
                     <p className="Presentation__right__card__content__categorie">

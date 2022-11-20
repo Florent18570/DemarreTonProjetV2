@@ -16,7 +16,7 @@ const Allrealisationn = () => {
             return (<div className="gridAllrealisation__container">
               <a href={"/realisation/"+data.id}>
                         <div className="gridAllrealisation__container__image_overflow">
-                          <img src={processus3} alt="" />
+                          <img src={data.src} alt="" />
                         </div>
 
                         <div className="gridAllrealisation__container__content">

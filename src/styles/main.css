@@ -1384,11 +1384,16 @@ p {
 
 .animation_load {
   display: flex;
-  position: absolute;
-  z-index: 8000;
-  left: 0;
+  margin-left: -83px;
+  margin-right: -80px;
+  margin-top: 241px;
   width: 100px;
   height: 100px;
+}
+
+.anidelay {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .animation_carré {
@@ -1402,10 +1407,6 @@ p {
   background-color: rgb(26, 59, 126);
   -webkit-animation: carré 3s steps(5, start) infinite;
           animation: carré 3s steps(5, start) infinite;
-}
-
-.relative {
-  position: relative;
 }
 
 @-webkit-keyframes carré {
@@ -1430,7 +1431,7 @@ p {
   width: 68px;
   height: 34px;
   left: -68px;
-  top: 254px;
+  top: 229px;
 }
 
 .Processus__right__card {

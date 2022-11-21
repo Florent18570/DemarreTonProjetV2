@@ -19,7 +19,7 @@ const Processus = () => {
       </div>
 
       <div className="Processus__right">
-        <div className="Processus__right__card relative ">
+        <div className="Processus__right__card">
           <img className="Union" src={Union} alt="Union" />
           <img src={processus1} alt="" />
           <div className="horizontalBar"></div>
@@ -31,9 +31,8 @@ const Processus = () => {
             </p>
           </div>
         </div>
-
-        <div className="animation_load">
-          <div className="animation_carré rectanglebleu"></div>
+        <div className="animation_load ">
+          <div className="animation_carré rectanglebleu "></div>
           <div className="animation_carré "></div>
           <div className="animation_carré "></div>
           <div className="animation_carré "></div>
@@ -51,6 +50,14 @@ const Processus = () => {
               intégrant les outils nécessaires.{" "}
             </p>
           </div>
+        </div>
+        <div className="animation_load ">
+          <div className="animation_carré rectanglebleu anidelay"></div>
+          <div className="animation_carré "></div>
+          <div className="animation_carré "></div>
+          <div className="animation_carré "></div>
+          <div className="animation_carré "></div>
+          <div className="animation_carré "></div>
         </div>
 
         <div className="Processus__right__card ">

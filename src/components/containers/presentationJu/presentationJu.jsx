@@ -25,14 +25,14 @@ const PresentationJu = () => {
         1600: {
           items: 3,
         },
-        1024: {
+        1180: {
           items: 2,
         },
         768: {
           items: 1,
         },
-        480: {
-          items: 1,
+        640: {
+          items: 2,
         },
       },
     });

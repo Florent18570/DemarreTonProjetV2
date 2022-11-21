@@ -1061,7 +1061,7 @@ p {
   display: flex;
   padding: 63px 0% 110px 2%;
   background-color: white;
-  border-radius: 10% 0% 10% 0%/25%;
+  border-radius: 50px 0% 50px 0%/50px;
 }
 
 .Presentation__H2 {
@@ -1136,8 +1136,7 @@ p {
   flex-direction: column;
 }
 .Presentation__left__text__p {
-  margin-bottom: 10%;
-  margin-left: 20%;
+  margin: 0% 0% 10% 20%;
 }
 .Presentation__left__text__button {
   width: 50%;
@@ -1238,6 +1237,28 @@ p {
   }
   .Presentation_card_bg {
     width: 50%;
+  }
+  .Presentation__right__card {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Presentation__left {
+    width: 100%;
+  }
+  .Presentation_card_bg {
+    width: 100%;
+  }
+  .Presentation__right__card {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .Presentation__glob {
+    flex-direction: column;
+  }
+  .Presentation__left__text__p {
+    margin: 5% 0% 10% 20%;
   }
 }
 .Prestation {
@@ -1396,11 +1417,16 @@ p {
 
 .animation_load {
   display: flex;
-  position: absolute;
-  z-index: 8000;
-  left: 0;
+  margin-left: -83px;
+  margin-right: -80px;
+  margin-top: 241px;
   width: 100px;
   height: 100px;
+}
+
+.anidelay {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .animation_carré {
@@ -1414,10 +1440,6 @@ p {
   background-color: rgb(26, 59, 126);
   -webkit-animation: carré 3s steps(5, start) infinite;
           animation: carré 3s steps(5, start) infinite;
-}
-
-.relative {
-  position: relative;
 }
 
 @-webkit-keyframes carré {
@@ -1442,7 +1464,7 @@ p {
   width: 68px;
   height: 34px;
   left: -68px;
-  top: 254px;
+  top: 229px;
 }
 
 .Processus__right__card {

@@ -19,49 +19,8 @@ const Processus = () => {
       </div>
 
       <div className="Processus__right">
-        <img className="Union" src={Union} alt="Union" />
-        <div>
-          <img
-            className="rectangle animation_carré"
-            src={rectangle}
-            alt="rectangle"
-          />
-          <img
-            className="rectangle2 animation_carré"
-            src={rectangle}
-            alt="rectangle"
-          />
-          <img
-            className="rectangle3 animation_carré"
-            src={rectangle}
-            alt="rectangle"
-          />
-          <img
-            className="rectangle4 animation_carré"
-            src={rectangle}
-            alt="rectangle"
-          />
-
-          <img
-            className="rectangle5 animation_carré"
-            src={rectangle}
-            alt="rectangle"
-          />
-
-          <img
-            className="rectangle6 animation_carré"
-            src={rectangle}
-            alt="rectangle"
-          />
-
-          <img
-            className="rectangle7 animation_carré"
-            src={rectangle}
-            alt="rectangle"
-          />
-        </div>
-
-        <div className="Processus__right__card ">
+        <div className="Processus__right__card relative ">
+          <img className="Union" src={Union} alt="Union" />
           <img src={processus1} alt="" />
           <div className="horizontalBar"></div>
           <div className="Processus__right__card__content">
@@ -73,7 +32,14 @@ const Processus = () => {
           </div>
         </div>
 
-        
+        <div className="animation_load">
+          <div className="animation_carré rectanglebleu"></div>
+          <div className="animation_carré "></div>
+          <div className="animation_carré "></div>
+          <div className="animation_carré "></div>
+          <div className="animation_carré "></div>
+          <div className="animation_carré "></div>
+        </div>
 
         <div className="Processus__right__card ">
           <img src={processus2} alt="" />
@@ -86,8 +52,6 @@ const Processus = () => {
             </p>
           </div>
         </div>
-
-        
 
         <div className="Processus__right__card ">
           <img src={processus3} alt="" />

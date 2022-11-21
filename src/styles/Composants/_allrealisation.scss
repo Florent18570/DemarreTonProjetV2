@@ -1,6 +1,13 @@
 .allrealisation {
-  margin-top: 130px;
+  margin-top: 90px;
   padding: 20px 8%;
+  animation-name: textToTop;
+  animation-duration: 0.7s;
+  margin-bottom: 25px;
+}
+
+.padding {
+  padding: 50px 7%;
 }
 
 .gridAllrealisation {
@@ -9,12 +16,7 @@
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 32px;
-
-  margin-bottom: 100px;
-
-  padding: 50px 8%;
-
-  background-color: white;
+  padding: 50px 8% 233px 8%;
   &__container {
     background-color: rgb(156, 213, 241);
     box-shadow: 0 6px 12px 0 rgb(20 20 43 / 5%);

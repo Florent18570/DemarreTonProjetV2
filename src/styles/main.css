@@ -1230,6 +1230,7 @@ p {
 
 .Prestation {
   padding: 50px 5%;
+  margin-bottom: 70px;
   background: #f5f7fc;
 }
 .Prestation h2 {
@@ -1337,10 +1338,9 @@ p {
   flex-direction: column;
   background-color: white;
   background-attachment: fixed;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10% 10% 0% 0%/20% 20% 0% 0%;
-  padding: 63px 3% 110px 2%;
+  border-radius: 80px;
+  margin: 0 4% 50px 4%;
+  padding: 90px 3% 70px 4%;
 }
 .Processus__left {
   display: flex;
@@ -1368,9 +1368,8 @@ p {
 }
 .Processus__right {
   display: flex;
-  align-items: center;
+  gap: 68px;
   justify-content: center;
-  gap: 60px;
   position: relative;
 }
 
@@ -1383,58 +1382,30 @@ p {
   background: #d9dbe9;
 }
 
-.Union {
+.animation_load {
+  display: flex;
   position: absolute;
-  width: 68px;
-  height: 34px;
-  left: 55px;
-  top: 254px;
-}
-
-.rectangle {
-  position: absolute;
-  left: 610px;
-}
-
-.rectangle2 {
-  position: absolute;
-  left: 620px;
-}
-
-.rectangle3 {
-  position: absolute;
-  left: 630px;
-}
-
-.rectangle4 {
-  position: absolute;
-  left: 640px;
-}
-
-.rectangle5 {
-  position: absolute;
-  left: 650px;
-}
-
-.rectangle6 {
-  position: absolute;
-  left: 660px;
-}
-
-.rectangle7 {
-  position: absolute;
-  left: 670px;
+  z-index: 8000;
+  left: 0;
+  width: 100px;
+  height: 100px;
 }
 
 .animation_carré {
-  z-index: -1;
-  top: 269px;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: carré;
-          animation-name: carré;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  width: 9px;
+  height: 9px;
+  margin-left: 5px;
+  background-color: rgb(227, 18, 18);
+}
+
+.rectanglebleu {
+  background-color: rgb(26, 59, 126);
+  -webkit-animation: carré 3s steps(5, start) infinite;
+          animation: carré 3s steps(5, start) infinite;
+}
+
+.relative {
+  position: relative;
 }
 
 @-webkit-keyframes carré {
@@ -1442,7 +1413,7 @@ p {
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(22px);
+    transform: translateX(70px);
   }
 }
 
@@ -1451,10 +1422,19 @@ p {
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(22px);
+    transform: translateX(70px);
   }
 }
+.Union {
+  position: absolute;
+  width: 68px;
+  height: 34px;
+  left: -68px;
+  top: 254px;
+}
+
 .Processus__right__card {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 0 20px 0 0;
@@ -1462,12 +1442,11 @@ p {
   border: 1px solid #eff0f6;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 49px 40px 40px 49px;
-  max-width: 500px;
+  max-width: 450px;
 }
 .Processus__right__card img {
   margin-right: 24px;
   max-width: 170px;
-  height: 200px;
   border-radius: 49px 0 0 49px;
 }
 .Processus__right__card__content {
@@ -1533,6 +1512,7 @@ p {
 }
 .RealisationPage {
   padding: 50px 7%;
+  margin-top: 70px;
 }
 .RealisationPage img {
   border-radius: 60px;
@@ -1786,8 +1766,17 @@ Header p {
   }
 }
 .allrealisation {
-  margin-top: 130px;
+  margin-top: 90px;
   padding: 20px 8%;
+  -webkit-animation-name: textToTop;
+          animation-name: textToTop;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  margin-bottom: 25px;
+}
+
+.padding {
+  padding: 50px 7%;
 }
 
 .gridAllrealisation {
@@ -1796,9 +1785,7 @@ Header p {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 32px;
-  margin-bottom: 100px;
-  padding: 50px 8%;
-  background-color: white;
+  padding: 50px 8% 233px 8%;
 }
 .gridAllrealisation__container {
   background-color: rgb(156, 213, 241);

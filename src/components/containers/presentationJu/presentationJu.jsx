@@ -42,7 +42,7 @@ const PresentationJu = () => {
     <>
       <div className="Presentation__glob">
         <div className="Presentation__left">
-          <h2> Les derniers sites</h2>
+          <h2 className="Presentation__H2"> Les derniers sites</h2>
           <div className="Presentation__left__text">
           <p className="Presentation__left__text__p"> Toujours pas convaincu ? Vous pouvez regarder nos créations publics sur la partie d'à côté. Des boutons sont disponibles pour vous permettre de naviguer entre eux. Regarder mes réalisations.</p>
           <Link to="/allrealisation">

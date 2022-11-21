@@ -2,8 +2,12 @@
   display: flex;
   padding: 63px 0% 110px 2%;
   background-color: white;
-  border-radius: 0% 0% 10% 10%/0% 0% 20% 20%;
+  border-radius: 10% 0% 10% 0%/25%; 
 
+}
+
+.Presentation__H2{
+  margin-left: 30px;
 }
 
 .Presentation__left {
@@ -167,4 +171,14 @@
 .Presentation__left__text__button:active {
 	position:relative;
 	top:1px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .Presentation__left{
+    width: 50%;
+  }
+  .Presentation_card_bg {
+    width: 50%;
+  }
 }

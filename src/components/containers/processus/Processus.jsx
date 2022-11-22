@@ -4,6 +4,7 @@ import processus2 from "../../../Images/processus2.png";
 import processus3 from "../../../Images/processus3.png";
 
 import Union from "../../../Images/Union.png";
+
 import rectangle from "../../../Images/rectangle.png";
 import fleche from "../../../Images/flechedroite.png";
 
@@ -31,13 +32,13 @@ const Processus = () => {
             </p>
           </div>
         </div>
-        <div className="animation_load ">
-          <div className="animation_carré rectanglebleu "></div>
-          <div className="animation_carré "></div>
-          <div className="animation_carré "></div>
-          <div className="animation_carré "></div>
-          <div className="animation_carré "></div>
-          <div className="animation_carré "></div>
+        <div className="animation_load">
+          <div className="animation_carré rectanglebleu anidelay"></div>
+          <div className="animation_carré red "></div>
+          <div className="animation_carré red"></div>
+          <div className="animation_carré red"></div>
+          <div className="animation_carré red"></div>
+          <div className="animation_carré red"></div>
         </div>
 
         <div className="Processus__right__card ">
@@ -51,13 +52,13 @@ const Processus = () => {
             </p>
           </div>
         </div>
-        <div className="animation_load ">
+        <div className="animation_load">
           <div className="animation_carré rectanglebleu anidelay"></div>
-          <div className="animation_carré "></div>
-          <div className="animation_carré "></div>
-          <div className="animation_carré "></div>
-          <div className="animation_carré "></div>
-          <div className="animation_carré "></div>
+          <div className="animation_carré red "></div>
+          <div className="animation_carré red"></div>
+          <div className="animation_carré red"></div>
+          <div className="animation_carré red"></div>
+          <div className="animation_carré red"></div>
         </div>
 
         <div className="Processus__right__card ">

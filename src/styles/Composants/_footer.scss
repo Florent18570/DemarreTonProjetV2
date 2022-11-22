@@ -159,7 +159,33 @@
 }
 
 @media screen and (max-width: 767px) {
-}
+  .Footer {
+    &__left {
+      img {
+      }
+    }
+    &__right {
+      &__devis {
+      }
+    }
+  }
 
-@media screen and (max-width: 479px) {
+  .Footer__right {
+    &__devis {
+      p {
+      }
+      button {
+      }
+    }
+    &__link {
+      flex-direction: column;
+      gap: 21px;
+      &__container {
+        h3 {
+        }
+        p {
+        }
+      }
+    }
+  }
 }

@@ -477,6 +477,12 @@ p {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 767px) {
+  .Footer__right__link {
+    flex-direction: column;
+    gap: 21px;
+  }
+}
 .Header_global {
   position: relative;
   overflow: hidden;
@@ -644,7 +650,7 @@ p {
   }
 }
 .background_image {
-  background-color: #3F80FD;
+  background-color: #3f80fd;
   width: 100%;
   z-index: 99999;
   background-size: cover;
@@ -656,13 +662,8 @@ p {
 }
 
 .Menu {
-  -webkit-text-size-adjust: 100%;
   font-family: "Plus Jakarta Display", sans-serif;
   color: #6e7191;
-  font-size: 18px;
-  line-height: 1.667em;
-  letter-spacing: 0.02em;
-  box-sizing: border-box;
   position: relative;
   z-index: 1000;
   display: flex;
@@ -670,6 +671,10 @@ p {
   padding-right: 3%;
   padding-left: 3%;
   align-items: center;
+  font-size: 18px;
+  line-height: 1.667em;
+  letter-spacing: 0.02em;
+  box-sizing: border-box;
   box-shadow: 38px 38px 74px 0 rgba(56, 50, 124, 0.06);
   position: fixed;
   top: 0;
@@ -911,14 +916,31 @@ p {
   overflow: hidden;
   flex-direction: column;
   display: flex;
-  -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
-          animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+  -webkit-animation-direction: cubic-bezier(0.22, 0.68, 0, 1.71);
+          animation-direction: cubic-bezier(0.22, 0.68, 0, 1.71);
   -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
-  -webkit-animation-name: animation_horizontal;
-          animation-name: animation_horizontal;
+  -webkit-animation-name: animation_horizontal2;
+          animation-name: animation_horizontal2;
 }
 
+@-webkit-keyframes animation_horizontal2 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 280px;
+  }
+}
+
+@keyframes animation_horizontal2 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 280px;
+  }
+}
 .sousmenuphone {
   flex-direction: column;
   display: flex;

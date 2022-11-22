@@ -5,6 +5,7 @@ import processus3 from "../../../Images/processus3.png";
 
 import Union from "../../../Images/Union.png";
 import rectangle from "../../../Images/rectangle.png";
+import fleche from "../../../Images/flechedroite.png";
 
 const Processus = () => {
   return (
@@ -19,19 +20,7 @@ const Processus = () => {
 
       <div className="Processus__right">
         <img className="Union" src={Union} alt="Union" />
-
-        <div className="Processus__right__card ">
-          <img src={processus1} alt="" />
-          <div className="horizontalBar"></div>
-          <div className="Processus__right__card__content">
-            <h3> 01. Plan d'analyse</h3>
-            <p>
-              Nous analysons ensemble votre projet afin d'utiliser les meilleurs
-              outils et solutions qui permettront de mener à bien votre projet
-            </p>
-          </div>
-        </div>
-        <div className="Z-index-1">
+        <div>
           <img
             className="rectangle animation_carré"
             src={rectangle}
@@ -71,6 +60,19 @@ const Processus = () => {
             alt="rectangle"
           />
         </div>
+
+        <div className="Processus__right__card ">
+          <img src={processus1} alt="" />
+          <div className="horizontalBar"></div>
+          <div className="Processus__right__card__content">
+            <h3> 01. Plan d'analyse</h3>
+            <p>
+              Nous analysons ensemble votre projet afin d'utiliser les meilleurs
+              outils et solutions qui permettront de mener à bien votre projet
+            </p>
+          </div>
+        </div>
+
         <div className="Processus__right__card ">
           <img src={processus2} alt="" />
           <div className="horizontalBar"></div>
@@ -82,39 +84,6 @@ const Processus = () => {
             </p>
           </div>
         </div>
-        <div>
-          <img
-            className="rectangle animation_carré"
-            src={rectangle}
-            alt="rectangle"
-          />
-          <img
-            className="rectangle2 animation_carré"
-            src={rectangle}
-            alt="rectangle"
-          />
-          <img
-            className="rectangle3 animation_carré"
-            src={rectangle}
-            alt="rectangle"
-          />
-          <img
-            className="rectangle4 animation_carré"
-            src={rectangle}
-            alt="rectangle"
-          />
-
-          <img
-            className="rectangle5 animation_carré"
-            src={rectangle}
-            alt="rectangle"
-          />
-
-          <img
-            className="rectangle6 animation_carré"
-            src={rectangle}
-            alt="rectangle"
-          />
 
           <img
             className="rectangle7 animation_carré"

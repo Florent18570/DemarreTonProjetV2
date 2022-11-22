@@ -10,6 +10,12 @@ const HeaderJu = () => {
         optimisé, votre site répondra à toutes vos attentes.
       </p>
       <button className="Header_button"> Me contacter </button>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
     </div>
   );
 };

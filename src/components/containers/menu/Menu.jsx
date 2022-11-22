@@ -80,16 +80,16 @@ const Menu = () => {
           </div>
           {isShown && (
               <div className="sousmenu">
-                <a className="Menu_Ordi_Partiegauche_Menu_element">
+                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/creation">
                   Création de sites internet
                 </a>
-                <a className="Menu_Ordi_Partiegauche_Menu_element">
+                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/uxdesign">
                   UX Design
                 </a>
-                <a className="Menu_Ordi_Partiegauche_Menu_element">
+                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/referencement">
                   Référencement naturel
                 </a>
-                <a className="Menu_Ordi_Partiegauche_Menu_element">
+                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/maintenance">
                   Maintenance technique
                 </a>
               </div>
@@ -116,16 +116,16 @@ const Menu = () => {
 
           {isShown && (
               <div className="sousmenuphone">
-                <a className="Menu_Ordi_Partiegauche_Menu_element">
+                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/creation">
                   Création de sites internet
                 </a>
-                <a className="Menu_Ordi_Partiegauche_Menu_element">
+                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/uxdesign">
                   UX Design
                 </a>
-                <a className="Menu_Ordi_Partiegauche_Menu_element">
+                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/referencement">
                   Référencement naturel
                 </a>
-                <a className="Menu_Ordi_Partiegauche_Menu_element">
+                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/maintenance">
                   Maintenance technique
                 </a>
               </div>

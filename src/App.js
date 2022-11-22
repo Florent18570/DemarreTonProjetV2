@@ -7,6 +7,7 @@ import NotFound from "./pages/notfound";
 import Devis from "./pages/devis";
 import Realisation from "./pages/realisation";
 import Allrealisation from "./pages/allrealisation";
+import PrestationSpe from "./pages/prestationspe";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route exact path="/devis" element={<Devis />} />
         <Route exact path="/allrealisation" element={<Allrealisation />} />
         <Route exact path="/realisation/:userId" element={<Realisation />} />
+        <Route exact path="/prestation/:prestation" element={<PrestationSpe />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

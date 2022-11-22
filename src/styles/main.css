@@ -1460,67 +1460,52 @@ p {
   top: 254px;
 }
 
-.rectangle {
-  position: absolute;
-  left: 610px;
-}
-
-.rectangle2 {
-  position: absolute;
-  left: 620px;
-}
-
-.rectangle3 {
-  position: absolute;
-  left: 630px;
-}
-
-.rectangle4 {
-  position: absolute;
-  left: 640px;
-}
-
-.rectangle5 {
-  position: absolute;
-  left: 650px;
-}
-
-.rectangle6 {
-  position: absolute;
-  left: 660px;
-}
-
-.rectangle7 {
-  position: absolute;
-  left: 670px;
+.animation_load {
+  margin-left: -55px;
+  margin-right: -60px;
+  margin-top: 240px;
+  display: flex;
 }
 
 .animation_carré {
-  z-index: -1;
-  top: 269px;
+  width: 10px;
+  height: 10px;
+}
+
+.red {
+  background-color: red;
+  margin-right: 5px;
+}
+
+.rectanglebleu {
+  z-index: 9999;
+  margin-right: -10px;
+  background-color: #0051b1;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-name: carré;
-          animation-name: carré;
+  -webkit-animation-name: rectanglebleu;
+          animation-name: rectanglebleu;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
+  -webkit-animation-timing-function: steps(5, end);
+          animation-timing-function: steps(5, end);
 }
 
-@-webkit-keyframes carré {
+@-webkit-keyframes rectanglebleu {
   0% {
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(70px);
+    transform: translateX(75px);
   }
 }
 
-@keyframes carré {
+@keyframes rectanglebleu {
   0% {
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(70px);
+    transform: translateX(75px);
   }
 }
 .Union {
@@ -1541,7 +1526,7 @@ p {
   border: 1px solid #eff0f6;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 49px 40px 40px 49px;
-  max-width: 500px;
+  max-width: 400px;
 }
 .Processus__right__card img {
   margin-right: 24px;
@@ -1574,6 +1559,7 @@ p {
   .Processus__left {
     display: flex;
     position: relative;
+    margin-bottom: 116px;
     text-align: center;
     max-width: 100%;
   }
@@ -1587,6 +1573,63 @@ p {
     font-size: 17px;
     font-weight: 500;
   }
+  .Union {
+    position: absolute;
+    width: 68px;
+    height: 34px;
+    left: 164px;
+    top: -40px;
+    transform: rotate(90deg);
+    z-index: 0;
+  }
+  .animation_load {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -50px;
+    margin-bottom: -60px;
+  }
+  .animation_carré {
+    width: 10px;
+    height: 10px;
+  }
+  .red {
+    background-color: red;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+  .rectanglebleu {
+    z-index: 9999;
+    margin-right: 0px;
+    margin-bottom: -10px;
+    background-color: #0051b1;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: rectanglebleu;
+            animation-name: rectanglebleu;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: steps(5, end);
+            animation-timing-function: steps(5, end);
+  }
+  @-webkit-keyframes rectanglebleu {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(75px);
+    }
+  }
+  @keyframes rectanglebleu {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(75px);
+    }
+  }
 }
 @media screen and (max-width: 767px) {
   .Processus__left button {
@@ -1597,10 +1640,9 @@ p {
     padding: 0 0 0 0;
   }
   .Processus__right__card img {
-    width: 100%;
+    width: auto;
     -o-object-fit: cover;
        object-fit: cover;
-    border-radius: 49px 39px 0 0;
   }
   .Processus__right__card__content {
     padding: 15px 31px 30px 31px;

@@ -11,7 +11,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   margin: 0;
-  background-color: #f5f7fc;
+  background-color: #F5F7FC;
 }
 
 a {
@@ -105,7 +105,7 @@ p {
 .devis {
   display: flex;
   height: 500px;
-  background-color: #0365d0;
+  background-color: #0365D0;
 }
 
 .Devis_bloc {
@@ -113,7 +113,7 @@ p {
   flex-direction: column;
   margin: auto;
   width: 85%;
-  background-color: #0e3c6e;
+  background-color: #0E3C6E;
   transition: all 400ms;
 }
 
@@ -122,7 +122,7 @@ p {
   flex-direction: column;
   margin: auto;
   width: 85%;
-  background-color: #0e3c6e;
+  background-color: #0E3C6E;
   visibility: hidden;
   transition: all 400ms;
 }
@@ -152,7 +152,7 @@ p {
 
 .animation_choixdevis {
   -webkit-animation: animation_choixdevis 1s linear 0s 1 normal forwards;
-  animation: animation_choixdevis 1s linear 0s 1 normal forwards;
+          animation: animation_choixdevis 1s linear 0s 1 normal forwards;
   visibility: none;
   padding: 44px 40px 40px 48px;
   display: flex;
@@ -230,7 +230,7 @@ p {
   border-radius: 1000px;
   box-shadow: 0 2px 6px 0 rgba(19, 18, 66, 0.07);
   transition: box-shadow 300ms ease, color 300ms ease, border-color 300ms ease;
-  color: #0e3c6e;
+  color: #0E3C6E;
   font-size: 18px;
   line-height: 1.111em;
   letter-spacing: 0.02em;
@@ -586,38 +586,38 @@ p {
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
   -webkit-animation: cube 12s ease-in forwards infinite;
-  animation: cube 12s ease-in forwards infinite;
+          animation: cube 12s ease-in forwards infinite;
 }
 .cube:nth-child(2n) {
   border-color: #0051f4;
 }
 .cube:nth-child(2) {
   -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+          animation-delay: 2s;
   left: 25vw;
   top: 40vh;
 }
 .cube:nth-child(3) {
   -webkit-animation-delay: 4s;
-  animation-delay: 4s;
+          animation-delay: 4s;
   left: 75vw;
   top: 50vh;
 }
 .cube:nth-child(4) {
   -webkit-animation-delay: 6s;
-  animation-delay: 6s;
+          animation-delay: 6s;
   left: 90vw;
   top: 10vh;
 }
 .cube:nth-child(5) {
   -webkit-animation-delay: 8s;
-  animation-delay: 8s;
+          animation-delay: 8s;
   left: 10vw;
   top: 47vh;
 }
 .cube:nth-child(6) {
   -webkit-animation-delay: 10s;
-  animation-delay: 10s;
+          animation-delay: 10s;
   left: 50vw;
   top: 13vh;
 }
@@ -644,7 +644,7 @@ p {
   }
 }
 .background_image {
-  background-color: #3f80fd;
+  background-color: #3F80FD;
   width: 100%;
   z-index: 99999;
   background-size: cover;
@@ -880,25 +880,26 @@ p {
 
 .animation_horizontal {
   -webkit-animation-name: animation_horizontal;
-  animation-name: animation_horizontal;
+          animation-name: animation_horizontal;
   -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
+          animation-duration: 0.6s;
   -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
-  animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+          animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
   opacity: 1;
   visibility: visible;
+  height: 480px;
 }
 
 .animation_horizontal_reverse {
   -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
-  animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+          animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
   -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
+          animation-duration: 0.6s;
   opacity: 1;
   visibility: visible;
   height: 0;
   -webkit-animation-name: animation_horizontal_reverse;
-  animation-name: animation_horizontal_reverse;
+          animation-name: animation_horizontal_reverse;
 }
 
 .sousmenu {
@@ -911,11 +912,11 @@ p {
   flex-direction: column;
   display: flex;
   -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
-  animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+          animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
   -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
+          animation-duration: 0.6s;
   -webkit-animation-name: animation_horizontal;
-  animation-name: animation_horizontal;
+          animation-name: animation_horizontal;
 }
 
 .sousmenuphone {
@@ -925,11 +926,11 @@ p {
   right: 0;
   background-color: white;
   -webkit-animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
-  animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
+          animation-direction: cubic-bezier(0.37, 1.05, 0.78, 0.99);
   -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
+          animation-duration: 0.6s;
   -webkit-animation-name: animation_horizontal;
-  animation-name: animation_horizontal;
+          animation-name: animation_horizontal;
 }
 
 .smenu {
@@ -982,13 +983,13 @@ p {
   }
 }
 .eror {
-  background-color: #0365d0;
+  background-color: #0365D0;
   padding-bottom: 100px;
   transition: all 500ms;
 }
 
 .eror:hover {
-  background-color: #0e3c6e;
+  background-color: #0E3C6E;
 }
 
 .error {
@@ -1498,11 +1499,11 @@ p {
   z-index: -1;
   top: 269px;
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   -webkit-animation-name: carré;
-  animation-name: carré;
+          animation-name: carré;
   -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 @-webkit-keyframes carré {
@@ -1598,7 +1599,7 @@ p {
   .Processus__right__card img {
     width: 100%;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     border-radius: 49px 39px 0 0;
   }
   .Processus__right__card__content {
@@ -1620,9 +1621,9 @@ p {
 .barre_vertical {
   border-bottom: #14142b 2px solid;
   -webkit-animation-name: barre_vertical;
-  animation-name: barre_vertical;
+          animation-name: barre_vertical;
   -webkit-animation-duration: 0.7s;
-  animation-duration: 0.7s;
+          animation-duration: 0.7s;
 }
 
 @-webkit-keyframes barre_vertical {
@@ -1648,24 +1649,24 @@ Header {
 }
 Header h1 {
   -webkit-animation-name: textToTop;
-  animation-name: textToTop;
+          animation-name: textToTop;
   -webkit-animation-duration: 0.7s;
-  animation-duration: 0.7s;
+          animation-duration: 0.7s;
 }
 Header p {
   margin-top: 20px;
   margin-bottom: 50px;
   -webkit-animation-name: textToTop;
-  animation-name: textToTop;
+          animation-name: textToTop;
   -webkit-animation-duration: 0.7s;
-  animation-duration: 0.7s;
+          animation-duration: 0.7s;
 }
 
 .opacity {
   -webkit-animation-name: opacity;
-  animation-name: opacity;
+          animation-name: opacity;
   -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 @-webkit-keyframes opacity {
@@ -1687,30 +1688,30 @@ Header p {
 }
 .delay1 {
   -webkit-animation-name: textToTop;
-  animation-name: textToTop;
+          animation-name: textToTop;
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .delay2 {
   -webkit-animation-name: textToTop;
-  animation-name: textToTop;
+          animation-name: textToTop;
   -webkit-animation-duration: 1.3s;
-  animation-duration: 1.3s;
+          animation-duration: 1.3s;
 }
 
 .delay3 {
   -webkit-animation-name: textToTop;
-  animation-name: textToTop;
+          animation-name: textToTop;
   -webkit-animation-duration: 1.7s;
-  animation-duration: 1.7s;
+          animation-duration: 1.7s;
 }
 
 .delay4 {
   -webkit-animation-name: textToTop;
-  animation-name: textToTop;
+          animation-name: textToTop;
   -webkit-animation-duration: 2.1s;
-  animation-duration: 2.1s;
+          animation-duration: 2.1s;
 }
 
 @-webkit-keyframes textToTop {
@@ -1867,9 +1868,9 @@ Header p {
   margin-top: 90px;
   padding: 20px 8%;
   -webkit-animation-name: textToTop;
-  animation-name: textToTop;
+          animation-name: textToTop;
   -webkit-animation-duration: 0.7s;
-  animation-duration: 0.7s;
+          animation-duration: 0.7s;
   margin-bottom: 25px;
 }
 
@@ -1908,7 +1909,7 @@ Header p {
   transition: transform 0.4s ease;
   height: 300px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 30px 30px 0 0;
 }
 .gridAllrealisation__container__image_overflow img:hover {
@@ -2114,7 +2115,7 @@ Header p {
   }
 }
 .creation {
-  background-color: #0e3c6e;
+  background-color: #0E3C6E;
   padding-bottom: 50px;
   margin: -20px auto auto auto;
 }
@@ -2122,7 +2123,7 @@ Header p {
   /* linear */
   background: linear-gradient(90deg, #184f6f 0%, rgba(255, 101, 0, 0.99) 100%);
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }
 
@@ -2142,4 +2143,8 @@ Header p {
   border: 3px solid rgba(255, 255, 255, 0.47);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+}
+
+.Prestationspe_titre {
+  margin-top: 70px;
 }/*# sourceMappingURL=main.css.map */

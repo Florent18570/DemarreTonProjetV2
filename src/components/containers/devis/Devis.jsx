@@ -32,11 +32,6 @@ const Devis = () => {
     });
 
     setSlider(sliderdefault);
-    // var button = document.getElementsByClassName("Etape3_slide3")[0];
-    // console.log(button);
-    // button.addEventListener("click", function () {
-    //   slider.goTo(Number(3));
-    // });
   }, []);
 
   function goTo(slidenb, event) {
@@ -187,8 +182,8 @@ const Devis = () => {
               </div>
             </div>
           </div>
-          <button className="precedent">Avant</button>
-          <button className="suivant">Après</button>
+          <button className="controle precedent">Avant</button>
+          <button className="controle suivant">Après</button>
 
           <div name="nonidee" className="Prestation__grid__choix">
             <div className="Devis_Form_titre">

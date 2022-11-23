@@ -244,6 +244,20 @@
   }
 }
 
+.controle {
+  position: absolute;
+}
+
+.precedent {
+  top: 70%;
+  left: 70%;
+}
+
+.suivant {
+  top: 70%;
+  left: 75%;
+}
+
 .Prestation__grid__form {
   display: flex;
   margin-top: 50px;

@@ -532,7 +532,7 @@ p {
     margin-bottom: 5px;
   }
   .info__footer p {
-    font-size: 14px;
+    font-size: 8px;
   }
   .info__footer__div__border {
     border-left: #072d65 2px solid;
@@ -1584,8 +1584,7 @@ p {
 }
 
 .animation_load {
-  margin-left: -55px;
-  margin-right: -60px;
+  margin: auto;
   margin-top: 240px;
   display: flex;
 }

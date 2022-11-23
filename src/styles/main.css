@@ -2332,4 +2332,73 @@ Header p {
 
 .Prestationspe_titre {
   margin-top: 70px;
+}
+
+.Prestationspe_presentation {
+  display: flex;
+  width: 100%;
+}
+
+.Prestationspe_Presentation_text {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.Prestationspe_Presentation_text_titre {
+  display: flex;
+}
+
+.Prestationspe_Presentation_text_p {
+  display: flex;
+}
+
+.Prestationspe_Presentation_Image {
+  display: flex;
+  width: 50%;
+  background-color: white;
+}
+
+.Prestationspe_separation {
+  background-color: orange;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Prestationspe_Separation_titre {
+  display: flex;
+  margin: auto;
+}
+
+.Prestationspe_Separation_button {
+  display: flex;
+  margin: auto;
+}
+
+.Prestationspe_explication {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Prestationspe_Explication_accroche {
+  display: flex;
+  margin: auto;
+}
+
+.Prestationspe_Explication_titre {
+  display: flex;
+  margin: auto;
+}
+
+.Prestationspe_Explication_detail {
+  display: flex;
+}
+
+.Prestationspe_Explication_Detail_text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }/*# sourceMappingURL=main.css.map */

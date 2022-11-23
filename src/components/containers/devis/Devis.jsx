@@ -5,9 +5,10 @@ import emailjs from "@emailjs/browser";
 import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
 const Devis = () => {
-  var slider;
+  const [slider, setSlider] = useState("");
+
   useEffect(() => {
-    var slider = tns({
+    var sliderdefault = tns({
       container: ".my-slider",
       gutter: 20,
       mouseDrag: false,
@@ -30,47 +31,21 @@ const Devis = () => {
       },
     });
 
-    var button = document.getElementsByClassName("Etape1_slide1")[0];
-    console.log(button);
-    button.addEventListener("click", function () {
-      slider.goTo(Number(1));
-    });
-
-    var button = document.getElementsByClassName("Etape1_slide2")[0];
-    console.log(button);
-    button.addEventListener("click", function () {
-      slider.goTo(Number(1));
-    });
-
-    var button = document.getElementsByClassName("Etape2_slide1")[0];
-    console.log(button);
-    button.addEventListener("click", function () {
-      slider.goTo(Number(2));
-    });
-
-    var button = document.getElementsByClassName("Etape2_slide2")[0];
-    console.log(button);
-    button.addEventListener("click", function () {
-      slider.goTo(Number(2));
-    });
-
-    var button = document.getElementsByClassName("Etape3_slide1")[0];
-    console.log(button);
-    button.addEventListener("click", function () {
-      slider.goTo(Number(3));
-    });
-
-    var button = document.getElementsByClassName("Etape3_slide2")[0];
-    console.log(button);
-    button.addEventListener("click", function () {
-      slider.goTo(Number(3));
-    });
-    var button = document.getElementsByClassName("Etape3_slide3")[0];
-    console.log(button);
-    button.addEventListener("click", function () {
-      slider.goTo(Number(3));
-    });
+    setSlider(sliderdefault);
+    // var button = document.getElementsByClassName("Etape3_slide3")[0];
+    // console.log(button);
+    // button.addEventListener("click", function () {
+    //   slider.goTo(Number(3));
+    // });
   }, []);
+
+  function goTo(slidenb, event) {
+    console.log(event.target);
+    var target = event.target;
+    target.addEventListener("click", function () {
+      slider.goTo(Number(slidenb));
+    });
+  }
 
   var switchdevis = 0;
 
@@ -178,10 +153,10 @@ const Devis = () => {
             <div name="etape1 " className="etape1 slide ">
               <h2> Quelle prestation vous interesse ? </h2>
               <div className="etape1__flex">
-                <button className="Etape1_slide1">
+                <button onClick={(e) => goTo(1, e)} className="Etape1_slide1">
                   Création de votre site web{" "}
                 </button>
-                <button className="Etape1_slide2">
+                <button onClick={(e) => goTo(1, e)} className="Etape1_slide2">
                   Refonte (site déjà existant)
                 </button>
               </div>
@@ -189,10 +164,10 @@ const Devis = () => {
             <div name="etape1 " className="etape1 slide ">
               <h2> Objectif de votre site </h2>
               <div className="etape1__flex">
-                <button className="Etape2_slide1">
+                <button onClick={(e) => goTo(2, e)} className="Etape2_slide1">
                   Vendre / Mettre en relation
                 </button>
-                <button className="Etape2_slide2">
+                <button onClick={(e) => goTo(2, e)} className="Etape2_slide2">
                   Présenter son activité
                 </button>
               </div>
@@ -200,9 +175,15 @@ const Devis = () => {
             <div name="etape1 " className="etape1 slide ">
               <h2> Aspect graphique de votre site </h2>
               <div className="etape1__flex">
-                <button className="Etape3_slide1">J'ai mes maquette</button>
-                <button className="Etape3_slide2">Simple mais efficace</button>
-                <button className="Etape3_slide3">Sur-mesure</button>
+                <button onClick={(e) => goTo(3, e)} className="Etape3_slide1">
+                  J'ai mes maquette
+                </button>
+                <button onClick={(e) => goTo(3, e)} className="Etape3_slide2">
+                  Simple mais efficace
+                </button>
+                <button onClick={(e) => goTo(3, e)} className="Etape3_slide3">
+                  Sur-mesure
+                </button>
               </div>
             </div>
           </div>

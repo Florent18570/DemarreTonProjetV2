@@ -49,6 +49,7 @@ const Devis = () => {
 
     var buttonoui = document.getElementsByName("ouiidee")[0];
     var buttonnon = document.getElementsByName("nonidee")[0];
+    var avantnone = document.getElementsByName("precedent")[0];
     console.log(buttonnon);
 
     if (switchdevis == 1) {
@@ -58,6 +59,7 @@ const Devis = () => {
 
       buttonnon.classList.remove("animation_choixdevis");
       buttonnon.classList.add("animation_choixdevis_reverse");
+      avantnone.classList.remove("displaynone");
     } else {
       //menu activé
       buttonoui.classList.remove("animation_choixdevis");
@@ -65,15 +67,9 @@ const Devis = () => {
 
       buttonnon.classList.add("animation_choixdevis");
       buttonnon.classList.remove("animation_choixdevis_reverse");
+
+      avantnone.classList.add("displaynone");
     }
-  }
-
-  function etapechange(etape) {
-    var buttonetape1 = document.getElementsByName("etape1")[0];
-    var buttonetape2 = document.getElementsByName("etape2")[0];
-
-    buttonetape1.style.display = "none";
-    buttonetape2.style.display = "flex";
   }
 
   const sendEmail = (e) => {
@@ -149,7 +145,7 @@ const Devis = () => {
               <h2> Quelle prestation vous interesse ? </h2>
               <div className="etape1__flex">
                 <button onClick={(e) => goTo(1, e)} className="Etape1_slide1">
-                  Création de votre site web{" "}
+                  Création de votre site web
                 </button>
                 <button onClick={(e) => goTo(1, e)} className="Etape1_slide2">
                   Refonte (site déjà existant)
@@ -182,8 +178,10 @@ const Devis = () => {
               </div>
             </div>
           </div>
-          <button className="controle precedent">Avant</button>
-          <button className="controle suivant">Après</button>
+          <button name="precedent" className=" precedent displaynone">
+            Avant
+          </button>
+          <button className="controle suivant ">Après</button>
 
           <div name="nonidee" className="Prestation__grid__choix">
             <div className="Devis_Form_titre">

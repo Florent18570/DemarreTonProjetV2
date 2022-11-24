@@ -288,6 +288,23 @@
   }
 }
 
+.sousmenu::after {
+  animation-direction: cubic-bezier(0.22, 0.68, 0, 1.71);
+
+  animation-duration: 0.6s;
+  animation-name: animation_horizontal3;
+}
+
+@keyframes animation_horizontal3 {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 280px;
+  }
+}
+
 .sousmenuphone {
   flex-direction: column;
   display: flex;

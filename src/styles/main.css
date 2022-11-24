@@ -304,6 +304,14 @@ p {
 
 .precedent {
   display: block;
+  width: 93px;
+  height: 45px;
+  top: 105px;
+  right: 50px;
+  z-index: 9999;
+  border-radius: 50px;
+  position: absolute;
+  align-self: center;
 }
 
 .suivant {
@@ -330,13 +338,8 @@ p {
   margin-bottom: 50px;
 }
 
-.precedent {
-  top: 70%;
-  left: 70%;
-  position: absolute;
-}
-
 .slide h2 {
+  color: white;
   margin-top: 60px;
   margin-left: 8%;
   margin-bottom: 50px;
@@ -356,6 +359,7 @@ p {
 
 .Prestation__grid__form {
   display: flex;
+  position: relative;
   margin-top: 30px;
   margin-bottom: 190px;
   height: 600px;
@@ -368,7 +372,7 @@ p {
 
 .etape1 {
   width: 600px;
-  background-color: #948a8a;
+  background-color: #0d3269;
 }
 .etape1__flex {
   display: flex;
@@ -376,14 +380,11 @@ p {
   justify-content: center;
 }
 .etape1__flex button {
+  color: rgb(194, 227, 247);
   padding: 50px;
   border-radius: 20px;
   background-image: linear-gradient(135deg, #119cd7, #0b3177);
   border: white 2px solid;
-}
-.etape1 .precedent {
-  display: block;
-  position: absolute;
 }
 
 /* Footer */
@@ -1056,6 +1057,32 @@ p {
 }
 
 @keyframes animation_horizontal2 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 280px;
+  }
+}
+.sousmenu::after {
+  -webkit-animation-direction: cubic-bezier(0.22, 0.68, 0, 1.71);
+          animation-direction: cubic-bezier(0.22, 0.68, 0, 1.71);
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-name: animation_horizontal3;
+          animation-name: animation_horizontal3;
+}
+
+@-webkit-keyframes animation_horizontal3 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 280px;
+  }
+}
+
+@keyframes animation_horizontal3 {
   0% {
     height: 0px;
   }

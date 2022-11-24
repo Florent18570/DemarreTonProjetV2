@@ -4,7 +4,6 @@ import { FcMenu } from "react-icons/fc";
 import { useState, useEffect } from "react";
 
 const Menu = () => {
-
   const [isShown, setIsShown] = useState(false);
 
   var switchmenu = new Boolean(false);
@@ -51,7 +50,7 @@ const Menu = () => {
 
   return (
     <div className="Menu scroll-up" onMouseLeave={() => setIsShown(false)}>
-      <div className="Menu_ordi" >
+      <div className="Menu_ordi">
         <div className="Menu_Ordi_partiegauche">
           <div className="Menu_Ordi_Partiegauche_image">
             <img className="Menu_Ordi_Partiegauche_Image_img" src={logo} />
@@ -60,16 +59,14 @@ const Menu = () => {
             <a href="/" className="Menu_Ordi_Partiegauche_Menu_element">
               Acceuil
             </a>
-            <a className="Menu_Ordi_Partiegauche_Menu_element smenu" 
-            onMouseEnter={() => setIsShown(true)}
-            
-            onClick={() => setIsShown(true)}
+            <a
+              className="Menu_Ordi_Partiegauche_Menu_element smenu"
+              onMouseEnter={() => setIsShown(true)}
+              onClick={() => setIsShown(true)}
             >
               Prestation
-              
-
             </a>
-            
+
             <a
               href="/allrealisation"
               className="Menu_Ordi_Partiegauche_Menu_element"
@@ -79,24 +76,39 @@ const Menu = () => {
             <a className="Menu_Ordi_Partiegauche_Menu_element">L'agence</a>
           </div>
           {isShown && (
-              <div className="sousmenu">
-                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/creation">
-                  Création de sites internet
-                </a>
-                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/uxdesign">
-                  UX Design
-                </a>
-                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/referencement">
-                  Référencement naturel
-                </a>
-                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/maintenance">
-                  Maintenance technique
-                </a>
-              </div>
-              )}
+            <div className={`sousmenu`}>
+              <a
+                className="Menu_Ordi_Partiegauche_Menu_element"
+                href="/prestation/creation"
+              >
+                Création de sites internet
+              </a>
+              <a
+                className="Menu_Ordi_Partiegauche_Menu_element"
+                href="/prestation/uxdesign"
+              >
+                UX Design
+              </a>
+              <a
+                className="Menu_Ordi_Partiegauche_Menu_element"
+                href="/prestation/referencement"
+              >
+                Référencement naturel
+              </a>
+              <a
+                className="Menu_Ordi_Partiegauche_Menu_element"
+                href="/prestation/maintenance"
+              >
+                Maintenance technique
+              </a>
+            </div>
+          )}
         </div>
         <div className="Menu_Ordi_partiedroite">
-          <a href="/devis" className="Header_button"> Demander un devis</a>
+          <a href="/devis" className="Header_button">
+            {" "}
+            Demander un devis
+          </a>
         </div>
         <div className="Menu_Mobile_button">
           <button className="Menu_Mobile_Button_btn" onClick={menuchange}>
@@ -110,27 +122,42 @@ const Menu = () => {
           <a href="/" className="Menu_Ordi_Partiegauche_Menu_element">
             Acceuil
           </a>
-          <a className="Menu_Ordi_Partiegauche_Menu_element" onMouseEnter={() => setIsShown(true)}
-            
-            onBlur={() => setIsShown(false)}>Prestation</a>
+          <a
+            className="Menu_Ordi_Partiegauche_Menu_element"
+            onMouseEnter={() => setIsShown(true)}
+            onBlur={() => setIsShown(false)}
+          >
+            Prestation
+          </a>
 
           {isShown && (
-              <div className="sousmenuphone">
-                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/creation">
-                  Création de sites internet
-                </a>
-                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/uxdesign">
-                  UX Design
-                </a>
-                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/referencement">
-                  Référencement naturel
-                </a>
-                <a className="Menu_Ordi_Partiegauche_Menu_element" href="/prestation/maintenance">
-                  Maintenance technique
-                </a>
-              </div>
-              )}
-
+            <div className="sousmenuphone">
+              <a
+                className="Menu_Ordi_Partiegauche_Menu_element"
+                href="/prestation/creation"
+              >
+                Création de sites internet
+              </a>
+              <a
+                className="Menu_Ordi_Partiegauche_Menu_element"
+                href="/prestation/uxdesign"
+              >
+                UX Design
+              </a>
+              <a
+                className="Menu_Ordi_Partiegauche_Menu_element"
+                href="/prestation/referencement"
+              >
+                Référencement naturel
+              </a>
+              <a
+                className="Menu_Ordi_Partiegauche_Menu_element"
+                href="/prestation/maintenance"
+              >
+                Maintenance technique
+              </a>
+            </div>
+          )}
 
           <a
             href="/allrealisation"
@@ -139,8 +166,6 @@ const Menu = () => {
             Réalisation
           </a>
 
-
-          
           <a className="Menu_Ordi_Partiegauche_Menu_element">L'agence</a>
         </nav>
       </div>

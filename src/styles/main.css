@@ -387,6 +387,83 @@ p {
   border: white 2px solid;
 }
 
+@media screen and (max-width: 991px) {
+  .precedent {
+    top: 103px;
+    right: 30px;
+    font-size: 14px;
+    width: 62px;
+    height: 35px;
+  }
+  .slide h2 {
+    font-size: 30px;
+  }
+  .etape1__flex button {
+    color: rgb(194, 227, 247);
+    padding: 30px;
+    border-radius: 20px;
+    background-image: linear-gradient(135deg, #119cd7, #0b3177);
+    border: white 2px solid;
+  }
+}
+@media screen and (max-width: 556px) {
+  .Prestation__grid__form {
+    display: flex;
+    position: relative;
+    height: 305px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin-left: -29px;
+    margin-right: -27px;
+  }
+  .precedent {
+    top: 98px;
+    right: 7px;
+    font-size: 12px;
+    width: 62px;
+    height: 35px;
+  }
+  .slide h2 {
+    font-size: 20px;
+    margin-left: 28px;
+    max-width: 342px;
+  }
+  .etape1__flex button {
+    color: rgb(194, 227, 247);
+    font-size: 13px;
+    padding: 11px;
+    border-radius: 20px;
+    background-image: linear-gradient(135deg, #119cd7, #0b3177);
+    border: white 2px solid;
+  }
+  .etape1__flex {
+    gap: 3%;
+  }
+  .etape_margin {
+    margin: 0 10px 0 19px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .Prestation__grid__form {
+    display: flex;
+    position: relative;
+    height: 305px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin-left: -29px;
+    margin-right: -27px;
+  }
+  .precedent {
+    top: 96px;
+    right: 7px;
+    font-size: 12px;
+    width: 62px;
+    height: 30px;
+  }
+  .slide h2 {
+    font-size: 16px;
+  }
+}
 /* Footer */
 .Footer {
   background: url("/images/vague.svg");

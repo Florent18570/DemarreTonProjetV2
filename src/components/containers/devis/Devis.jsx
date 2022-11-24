@@ -147,7 +147,7 @@ const Devis = () => {
             <div name="etape1 " className="etape1 slide">
               <h2>Quelle prestation vous interesse ?</h2>
 
-              <div className="etape1__flex">
+              <div className="etape1__flex etape_margin">
                 <button onClick={(e) => goTo(1, e)} className="Etape1_slide1">
                   Création de votre site web
                 </button>
@@ -159,7 +159,7 @@ const Devis = () => {
             <div name="etape1 " className="etape1 slide ">
               <h2> Objectif de votre site </h2>
 
-              <div className="etape1__flex">
+              <div className="etape1__flex etape_margin">
                 <button onClick={(e) => goTo(2, e)} className="Etape2_slide1">
                   Vendre / Mettre en relation
                 </button>
@@ -171,7 +171,7 @@ const Devis = () => {
             <div name="etape1 " className="etape1 slide ">
               <h2>Aspect graphique de votre site</h2>
 
-              <div className="etape1__flex">
+              <div className="etape1__flex etape_margin">
                 <button onClick={(e) => goTo(3, e)} className="Etape3_slide1">
                   J'ai mes maquette
                 </button>

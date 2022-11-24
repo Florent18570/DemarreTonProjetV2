@@ -2,20 +2,22 @@
   display: flex;
   padding: 63px 0% 110px 2%;
   background-color: white;
-  border-radius: 50px 0% 50px 0%/50px
-}
-
-.Presentation__H2{
-  margin-left: 30px;
+  border-radius: 50px 0% 50px 0%/50px;
 }
 
 .Presentation__left {
   margin-right: 40px;
+  margin-left: 3%;
+  margin-top: 57px;
+}
+
+.Presentation__H2 {
+  margin-bottom: 30px;
 }
 
 .Presentation__right {
   display: flex;
-  padding: 30px 20px;
+  padding: 47px 20px;
   margin-right: 20px;
   &__card {
     overflow: hidden;
@@ -63,35 +65,30 @@
   }
 }
 
-
-.Presentation__glob{
+.Presentation__glob {
   width: 100%;
 }
 
-.Presentation__left{
+.Presentation__left {
   width: 30%;
-    height: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  &__text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    &__text{
-      display: flex;
-      flex-direction: column;
-      &__p{
-        
-        margin: 0% 0% 10% 20%;
-      }
-      &__button{
-        width: 50%;
-        display: flex;
-        margin: 0px auto 10% 34%;
-        justify-content: center;
-      }
+    &__p {
     }
-
+    &__button {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
-.tns-outer{
+.tns-outer {
   overflow: hidden;
 }
 
@@ -99,108 +96,143 @@
   background-color: white;
 }
 
-.Presentation_card_bg{
-  background:url("/images/point.svg");
+.Presentation_card_bg {
+  background: url("/images/point.svg");
   overflow: hidden;
   width: 70%;
   border-radius: 30px 0px 0 30px;
 }
 
-
 .previous {
-	background: #0051b1;
-    border-radius: 1000px;
-    color: white;
-    padding: 10px 35px;
-    line-height: 1.111em;
-    font-weight: 700;
-    text-align: center;
-    font-size: 17px;
-    border:#0051b1 ;
-    margin : 0 10px 10px 10px;
-    cursor:pointer;
+  background: #0051b1;
+  border-radius: 1000px;
+  color: white;
+  padding: 10px 35px;
+  line-height: 1.111em;
+  font-weight: 700;
+  text-align: center;
+  font-size: 17px;
+  border: #0051b1;
+  margin: 0 10px 10px 10px;
+  cursor: pointer;
 }
 .previous:hover {
-	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
-	background-color:#1e62d0;
+  background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+  background-color: #1e62d0;
 }
 .previous:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
 .next {
-	background: #0051b1;
-    border-radius: 1000px;
-    color: white;
-    padding: 10px 35px;
-    line-height: 1.111em;
-    font-weight: 700;
-    text-align: center;
-    font-size: 17px;
-    border:#0051b1 ;
-    margin : 0 10px 10px 10px;
-    cursor:pointer;
+  background: #0051b1;
+  border-radius: 1000px;
+  color: white;
+  padding: 10px 35px;
+  line-height: 1.111em;
+  font-weight: 700;
+  text-align: center;
+  font-size: 17px;
+  border: #0051b1;
+  margin: 0 10px 10px 10px;
+  cursor: pointer;
 }
 .next:hover {
-	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
-	background-color:#1e62d0;
+  background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+  background-color: #1e62d0;
 }
 .next:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
+}
+
+.Presentation__left__text {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 100em) {
+  #tns1 {
+    padding-bottom: 0px;
+  }
+}
+
+.slide {
+  height: 332px;
+  margin-right: 20px;
 }
 
 .Presentation__left__text__button {
-	background: #d05f1e;
-    border-radius: 1000px;
-    color: white;
-    padding: 10px 35px;
-    line-height: 1.111em;
-    font-weight: 700;
-    text-align: center;
-    font-size: 17px;
-    border:#0051b1 ;
-    cursor:pointer;
+  background: #d05f1e;
+  border-radius: 1000px;
+  color: white;
+  padding: 10px 35px;
+  line-height: 1.111em;
+  font-weight: 700;
+  text-align: center;
+  font-size: 17px;
+  border: #0051b1;
+  cursor: pointer;
+  margin-top: 50px;
 }
 .Presentation__left__text__button:hover {
-	background:linear-gradient(to bottom, #d05f1e 5%, #99410e 100%);
-	background-color:#1e62d0;
+  background: linear-gradient(to bottom, #d05f1e 5%, #99410e 100%);
+  background-color: #1e62d0;
 }
 .Presentation__left__text__button:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
-
-@media screen and (max-width: 1024px) {
-  .Presentation__left{
+@media screen and (max-width: 1200px) {
+  .Presentation__left {
     width: 50%;
   }
   .Presentation_card_bg {
     width: 50%;
   }
-  .Presentation__right__card{
+  .Presentation__right__card {
     max-width: 300px;
     max-height: 300px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .Presentation__left{
-    width: 100%;
+  .Presentation__left {
+    width: 90%;
+    margin-left: 7%;
+    &__text__p {
+      font-size: 16px;
+    }
   }
+
+  .Presentation__left__text__button {
+    margin-top: 32px;
+    margin-bottom: 50px;
+    width: 43%;
+  }
+
+  .Presentation__right {
+    padding: 47px 77px;
+  }
+
   .Presentation_card_bg {
     width: 100%;
   }
-  .Presentation__right__card{
+  .Presentation__right__card {
     max-width: 300px;
     max-height: 300px;
   }
-  .Presentation__glob{
+  .Presentation__glob {
     flex-direction: column;
+    padding: 0px 0% 0px 0%;
+    border-radius: 50px 50px 0px 0%/50px;
   }
-  .Presentation__left__text__p{
-    margin: 5% 0% 10% 20%;
+}
+
+@media screen and (max-width: 531px) {
+  .Presentation__left__text__button {
+    width: 200px;
   }
 }

@@ -72,13 +72,22 @@
 
 @media screen and (max-width: 767px) {
   .Nous {
+    padding-top: 61px;
+    padding-bottom: 92px;
     &__image_gauche {
+      width: 80%;
+      align-items: center;
+      margin-top: 50px;
     }
     &__content {
       text-align: start;
-      p {
+      h2 {
+        font-size: 30px;
       }
-      h3 {
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 21px 0px;
       }
     }
   }

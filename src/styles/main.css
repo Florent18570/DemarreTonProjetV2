@@ -1216,8 +1216,25 @@ p {
   }
 }
 @media screen and (max-width: 767px) {
+  .Nous {
+    padding-top: 61px;
+    padding-bottom: 92px;
+  }
+  .Nous__image_gauche {
+    width: 80%;
+    align-items: center;
+    margin-top: 50px;
+  }
   .Nous__content {
     text-align: start;
+  }
+  .Nous__content h2 {
+    font-size: 30px;
+  }
+  .Nous__content p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 21px 0px;
   }
   .Nous_content__bottom {
     display: flex;
@@ -1244,17 +1261,19 @@ p {
   border-radius: 50px 0% 50px 0%/50px;
 }
 
-.Presentation__H2 {
-  margin-left: 30px;
-}
-
 .Presentation__left {
   margin-right: 40px;
+  margin-left: 3%;
+  margin-top: 57px;
+}
+
+.Presentation__H2 {
+  margin-bottom: 30px;
 }
 
 .Presentation__right {
   display: flex;
-  padding: 30px 20px;
+  padding: 47px 20px;
   margin-right: 20px;
 }
 .Presentation__right__card {
@@ -1309,19 +1328,14 @@ p {
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .Presentation__left__text {
   display: flex;
   flex-direction: column;
 }
-.Presentation__left__text__p {
-  margin: 0% 0% 10% 20%;
-}
 .Presentation__left__text__button {
   width: 50%;
   display: flex;
-  margin: 0px auto 10% 34%;
   justify-content: center;
 }
 
@@ -1388,6 +1402,21 @@ p {
   top: 1px;
 }
 
+.Presentation__left__text {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 100em) {
+  #tns1 {
+    padding-bottom: 0px;
+  }
+}
+.slide {
+  height: 332px;
+  margin-right: 20px;
+}
+
 .Presentation__left__text__button {
   background: #d05f1e;
   border-radius: 1000px;
@@ -1399,6 +1428,7 @@ p {
   font-size: 17px;
   border: #0051b1;
   cursor: pointer;
+  margin-top: 50px;
 }
 
 .Presentation__left__text__button:hover {
@@ -1411,7 +1441,7 @@ p {
   top: 1px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .Presentation__left {
     width: 50%;
   }
@@ -1425,7 +1455,19 @@ p {
 }
 @media screen and (max-width: 768px) {
   .Presentation__left {
-    width: 100%;
+    width: 90%;
+    margin-left: 7%;
+  }
+  .Presentation__left__text__p {
+    font-size: 16px;
+  }
+  .Presentation__left__text__button {
+    margin-top: 32px;
+    margin-bottom: 50px;
+    width: 43%;
+  }
+  .Presentation__right {
+    padding: 47px 77px;
   }
   .Presentation_card_bg {
     width: 100%;
@@ -1436,9 +1478,13 @@ p {
   }
   .Presentation__glob {
     flex-direction: column;
+    padding: 0px 0% 0px 0%;
+    border-radius: 50px 50px 0px 0%/50px;
   }
-  .Presentation__left__text__p {
-    margin: 5% 0% 10% 20%;
+}
+@media screen and (max-width: 531px) {
+  .Presentation__left__text__button {
+    width: 200px;
   }
 }
 .Prestation {
@@ -1581,9 +1627,7 @@ p {
 }
 .Processus__right {
   display: flex;
-  gap: 68px;
   justify-content: center;
-  gap: 60px;
   position: relative;
 }
 
@@ -1605,7 +1649,7 @@ p {
 }
 
 .animation_load {
-  margin: auto;
+  margin-left: 5px;
   margin-top: 240px;
   display: flex;
 }
@@ -1721,7 +1765,7 @@ p {
     width: 68px;
     height: 34px;
     left: 164px;
-    top: -40px;
+    top: -50px;
     transform: rotate(90deg);
     z-index: 0;
   }
@@ -1731,8 +1775,8 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: -50px;
-    margin-bottom: -60px;
+    margin-top: 10px;
+    margin-bottom: 0px;
   }
   .animation_carré {
     width: 10px;
@@ -1775,6 +1819,16 @@ p {
   }
 }
 @media screen and (max-width: 767px) {
+  .Processus {
+    padding: 40px 3% 38px 4%;
+  }
+  .Processus__left h2 {
+    font-size: 29px;
+    margin-bottom: 15px;
+  }
+  .Processus__left p {
+    font-size: 15px;
+  }
   .Processus__left button {
     margin: 59px auto 65px auto;
   }
@@ -1791,7 +1845,11 @@ p {
     padding: 15px 31px 30px 31px;
   }
   .Processus__right__card__content h3 {
-    font-size: 20px;
+    font-size: 21px;
+  }
+  .Processus__right__card__content p {
+    font-size: 15px;
+    font-weight: 400;
   }
 }
 .RealisationPage {

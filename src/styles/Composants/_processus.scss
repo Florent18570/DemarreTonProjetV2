@@ -36,9 +36,7 @@
   }
   &__right {
     display: flex;
-    gap: 68px;
     justify-content: center;
-    gap: 60px;
     position: relative;
   }
 }
@@ -62,7 +60,7 @@
 }
 
 .animation_load {
-  margin:auto;
+  margin-left: 5px;
   margin-top: 240px;
   display: flex;
 }
@@ -181,7 +179,7 @@
     width: 68px;
     height: 34px;
     left: 164px;
-    top: -40px;
+    top: -50px;
     transform: rotate(90deg);
     z-index: 0;
   }
@@ -192,8 +190,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: -50px;
-    margin-bottom: -60px;
+    margin-top: 10px;
+    margin-bottom: 0px;
   }
 
   .animation_carré {
@@ -228,10 +226,15 @@
 
 @media screen and (max-width: 767px) {
   .Processus {
+    padding: 40px 3% 38px 4%;
+
     &__left {
       h2 {
+        font-size: 29px;
+        margin-bottom: 15px;
       }
       p {
+        font-size: 15px;
       }
       button {
         margin: 59px auto 65px auto;
@@ -251,9 +254,11 @@
     &__content {
       padding: 15px 31px 30px 31px;
       h3 {
-        font-size: 20px;
+        font-size: 21px;
       }
       p {
+        font-size: 15px;
+        font-weight: 400;
       }
     }
   }

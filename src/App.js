@@ -17,7 +17,11 @@ export default function App() {
         <Route exact path="/devis" element={<Devis />} />
         <Route exact path="/allrealisation" element={<Allrealisation />} />
         <Route exact path="/realisation/:userId" element={<Realisation />} />
-        <Route exact path="/prestation/:prestation" element={<PrestationSpe />} />
+        <Route
+          exact
+          path="/prestation/:prestation"
+          element={<PrestationSpe />}
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

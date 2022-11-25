@@ -9,8 +9,7 @@ import { NotFound} from "..";
 
 
 const PrestationSpe = () => {
-
-    const params = useParams();
+  const params = useParams();
 
     if(params.prestation == "creation"){
         return (
@@ -24,7 +23,7 @@ const PrestationSpe = () => {
                         <p className="Prestationspe_Presentation_text_titre">bla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blab </p>
                     </div>
                     <div className="Prestationspe_Presentation_Image">
-                        <img src={grid4} className="Prestationspe_Presentation_Image_img"></img>
+                        <img src={grid4}></img>
                     </div>
                     
 

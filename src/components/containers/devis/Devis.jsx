@@ -148,10 +148,10 @@ const Devis = () => {
               <h2>Est-ce pour une création ou une refonte de site ?</h2>
 
               <div className="etape1__flex etape_margin">
-                <button onClick={(e) => goTo(1, e)} className="Etape1_slide1">
+                <button onClick={(e) => goTo(10, e)} className="Etape1_slide1">
                   Création
                 </button>
-                <button onClick={(e) => goTo(1, e)} className="Etape1_slide2">
+                <button onClick={(e) => goTo(10, e)} className="Etape1_slide2">
                   Refonte (site déjà existant)
                 </button>
               </div>
@@ -161,7 +161,7 @@ const Devis = () => {
 
               <div className="etape1__flex etape_margin">
                 <button onClick={(e) => goTo(2, e)} className="Etape2_slide1">
-                  Présenter son activité
+                  Présenter mon activité
                 </button>
                 <button onClick={(e) => goTo(2, e)} className="Etape2_slide2">
                   Vendre / Mettre en relation
@@ -284,6 +284,38 @@ const Devis = () => {
                 </button>
                 <button onClick={(e) => goTo(10, e)} className="Etape2_slide2">
                   Je ne suis pas particulièrement pressé
+                </button>
+              </div>
+            </div>
+
+            <div name="etape1 " className="etape1 slide ">
+              <h2>
+                Encore une dernière étape pour obtenir une estimation du prix :
+              </h2>
+              <div className="etape1__flex etape_margin formulaire">
+                <label htmlFor="id"> Nom et Prénom * </label>
+                <input
+                  type="text"
+                  name="id"
+                  placeholder="Votre nom et prénom"
+                />
+                <div className="flexrow">
+                  <div className="tel">
+                    <label htmlFor="tel"> Téléphone </label>
+                    <input type="text" name="tel" placeholder="Téléphone" />
+                  </div>
+                  <div className="mail">
+                    <label htmlFor="mail"> Adresse e-mail *</label>
+                    <input
+                      type="text"
+                      name="mail"
+                      placeholder="Adresse e-mail"
+                    />
+                  </div>
+                </div>
+
+                <button onClick={(e) => goTo(11, e)} className="Etape2_slide2">
+                  Obtenir une estimation du prix
                 </button>
               </div>
             </div>

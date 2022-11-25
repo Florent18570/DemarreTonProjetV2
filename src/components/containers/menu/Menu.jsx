@@ -28,7 +28,7 @@ const Menu = () => {
     var menu = document.getElementsByClassName("Menu")[0];
     const currentScroll = window.pageYOffset;
 
-    if (currentScroll <= 0 && menu.classList.contains("scroll-up")) {
+    if (currentScroll <= 1 && menu.classList.contains("scroll-up")) {
       menu.classList.remove("scroll-up");
     }
 
@@ -49,7 +49,7 @@ const Menu = () => {
   });
 
   return (
-    <div className="Menu scroll-up" onMouseLeave={() => setIsShown(false)}>
+    <div className="Menu" onMouseLeave={() => setIsShown(false)}>
       <div className="Menu_ordi">
         <div className="Menu_Ordi_partiegauche">
           <div className="Menu_Ordi_Partiegauche_image">

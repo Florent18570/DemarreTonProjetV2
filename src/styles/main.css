@@ -387,6 +387,20 @@ p {
   border: white 2px solid;
 }
 
+.formulaire {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: white;
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+}
+
 @media screen and (max-width: 991px) {
   .precedent {
     top: 103px;

@@ -15,6 +15,7 @@ const Devis = () => {
       loop: false,
       prevButton: ".precedent",
       nextButton: ".suivant",
+      nav: false,
       responsive: {
         1600: {
           items: 1,
@@ -136,7 +137,7 @@ const Devis = () => {
           </button>
         </div>
 
-        <div className="Prestation__grid__form">
+        <div className="Prestation__grid__form displaynone">
           <button name="precedent" className=" precedent displaynone">
             Retour
           </button>
@@ -323,52 +324,57 @@ const Devis = () => {
 
           <button className="controle suivant ">Après</button>
 
-          <div name="nonidee" className="Prestation__grid__choix">
+          <div name="nonidee" className="Prestation__grid__choix contact">
             <div className="Devis_Form_titre">
-              <h3>voici le formulaire de contact</h3>
+              <h3>Contact</h3>
             </div>
 
             <form className="Devis_form" name="form" onSubmit={sendEmail}>
+              <label htmlFor="name"> Nom et Prénom</label>
               <input
                 type="text"
-                class="Devis_Form_text"
+                className="Devis_Form_text Devis_form_template"
                 maxlength="256"
                 name="name"
                 data-name="name"
                 placeholder="Nom * "
-                id="Nom-3"
-                required=""
+                id="name"
+                required
               />
+              <label htmlFor="Email"> Email</label>
               <input
                 type="email"
-                class="Devis_Form_email"
+                className="Devis_Form_email Devis_form_template"
                 maxlength="256"
                 name="mail"
                 data-name="mail"
                 placeholder="Email *"
-                id="Email-3"
-                required=""
-              ></input>
+                id="Email"
+                required
+              />
+              <label htmlFor="phone"> Téléphone</label>
               <input
                 type="tel"
-                class="Devis_Form_tel"
+                className="Devis_Form_tel Devis_form_template"
                 maxlength="256"
                 name="message"
                 data-name="message"
                 placeholder="Téléphone *"
-                id="T-l-phone-3"
-                required=""
-              ></input>
+                id="phone"
+                required
+              />
+              <label htmlFor="Entreprise"> Entreprise</label>
               <input
                 type="text"
-                class="Devis_Form_entreprise"
+                className="Devis_Form_entreprise Devis_form_template"
                 maxlength="256"
                 name="Entreprise"
                 data-name="Entreprise"
                 placeholder="Entreprise"
-                id="Entreprise-3"
-              ></input>
-              <input type="submit" value="Send" />
+                id="Entreprise"
+              />
+
+              <input className="sendForm" type="submit" value="Send" />
             </form>
           </div>
         </div>

@@ -69,157 +69,72 @@
 // }
 
 .Devis_form {
-  -webkit-text-size-adjust: 100%;
-  font-family: "Plus Jakarta Display", sans-serif;
   color: #6e7191;
   font-size: 18px;
   line-height: 1.667em;
   letter-spacing: 0.02em;
-  -webkit-box-direction: normal;
-  box-sizing: border-box;
   display: grid;
-  align-self: stretch;
   grid-auto-columns: 1fr;
   grid-column-gap: 22px;
   grid-row-gap: 24px;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  label {
+    color: black;
+  }
+}
+
+.sendForm {
+  width: 73px;
+  height: 18px;
+  padding: 10px 30px;
+  font-size: 1.6rem;
+  background: #cd9251;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.Devis_form_template {
+  min-height: 66px;
+  padding: 8px 12px 8px 21px;
+  background-color: #ffffff;
+
+  border: 1px solid #cccccc;
+  border-color: #eff0f6;
+  border-radius: 1000px;
+  box-shadow: 0 2px 6px 0 rgba(19, 18, 66, 0.07);
+
+  font-size: 18px;
+  line-height: 1.111em;
+  letter-spacing: 0.02em;
+
+  background-position: 90% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  width: 500px;
 }
 
 .Devis_Form_text {
-  -webkit-text-size-adjust: 100%;
-  -webkit-box-direction: normal;
-  box-sizing: border-box;
-  font: inherit;
-  margin: 0;
-  display: block;
-  width: 100%;
-  height: 38px;
-  padding: 8px 12px;
-  vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  min-height: 66px;
-  margin-bottom: 0px;
-  padding-left: 21px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eff0f6;
-  border-radius: 1000px;
-  box-shadow: 0 2px 6px 0 rgba(19, 18, 66, 0.07);
-  transition: box-shadow 300ms ease, color 300ms ease, border-color 300ms ease;
-  color: $bleumifonce;
-  font-size: 18px;
-  line-height: 1.111em;
-  letter-spacing: 0.02em;
-  padding-right: 55px;
   background-image: url("https://uploads-ssl.webflow.com/611d12c5506e6465d1a6a980/611d12c5506e64017aa6a9ec_icon-1-input-marketing-template.svg");
-  background-position: 90% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .Devis_Form_email {
-  -webkit-text-size-adjust: 100%;
-  -webkit-box-direction: normal;
-  box-sizing: border-box;
-  font: inherit;
-  margin: 0;
-  display: block;
-  width: 100%;
-  height: 38px;
-  padding: 8px 12px;
-  vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  min-height: 66px;
-  margin-bottom: 0px;
-  padding-left: 21px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eff0f6;
-  border-radius: 1000px;
-  box-shadow: 0 2px 6px 0 rgba(19, 18, 66, 0.07);
-  transition: box-shadow 300ms ease, color 300ms ease, border-color 300ms ease;
-  color: #ff3951;
-  font-size: 18px;
-  line-height: 1.111em;
-  letter-spacing: 0.02em;
-  padding-right: 55px;
   background-image: url("https://uploads-ssl.webflow.com/611d12c5506e6465d1a6a980/611d12c5506e643abfa6a9e7_icon-2-input-marketing-template.svg");
-  background-position: 90% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .Devis_Form_tel {
-  -webkit-text-size-adjust: 100%;
-  -webkit-box-direction: normal;
-  box-sizing: border-box;
-  font: inherit;
-  margin: 0;
-  display: block;
-  width: 100%;
-  height: 38px;
-  padding: 8px 12px;
-  vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  min-height: 66px;
-  margin-bottom: 0px;
-  padding-left: 21px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eff0f6;
-  border-radius: 1000px;
-  box-shadow: 0 2px 6px 0 rgba(19, 18, 66, 0.07);
-  transition: box-shadow 300ms ease, color 300ms ease, border-color 300ms ease;
-  color: #ff3951;
-  font-size: 18px;
-  line-height: 1.111em;
-  letter-spacing: 0.02em;
-  padding-right: 55px;
   background-image: url("https://uploads-ssl.webflow.com/611d12c5506e6465d1a6a980/611d12c5506e64637ba6a9ea_icon-3-input-marketing-template.svg");
-  background-position: 90% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .Devis_Form_entreprise {
-  -webkit-text-size-adjust: 100%;
-  -webkit-box-direction: normal;
-  box-sizing: border-box;
-  font: inherit;
-  margin: 0;
-  display: block;
-  width: 100%;
-  height: 38px;
-  padding: 8px 12px;
-  vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  min-height: 66px;
-  margin-bottom: 0px;
-  padding-left: 21px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eff0f6;
-  border-radius: 1000px;
-  box-shadow: 0 2px 6px 0 rgba(19, 18, 66, 0.07);
-  transition: box-shadow 300ms ease, color 300ms ease, border-color 300ms ease;
-  color: #ff3951;
-  font-size: 18px;
-  line-height: 1.111em;
-  letter-spacing: 0.02em;
-  padding-right: 55px;
   background-image: url("https://uploads-ssl.webflow.com/611d12c5506e6465d1a6a980/611d12c5506e6405daa6a9e8_icon-4-input-marketing-template.svg");
-  background-position: 90% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .Devis_Form_titre {
-  width: 100%;
+  width: 66%;
+  margin-bottom: 30px;
 }
 
 .precedent {
@@ -287,7 +202,7 @@
   position: relative;
   margin-top: 30px;
   margin-bottom: 190px;
-  height: 600px;
+  height: 700px;
 }
 
 .tns-outer {
@@ -297,6 +212,7 @@
 
 .etape1 {
   width: 600px;
+
   background-color: #0d3269;
   &__flex {
     display: flex;
@@ -326,6 +242,18 @@ label {
   flex-direction: row;
 }
 
+//  Formulaire de contact
+.tns-outer {
+  width: auto;
+  height: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+/////////////////////////////////////////
 @media screen and (max-width: 991px) {
   .precedent {
     top: 103px;

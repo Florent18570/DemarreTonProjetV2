@@ -4,7 +4,7 @@ import { useParams, Link } from "react-router-dom";
 import grid1 from "../../../Images/grid.png";
 import grid2 from "../../../Images/grid2.png";
 import grid3 from "../../../Images/grid3.png";
-import grid4 from "../../../Images/grid4.png";
+import grid4 from "../../../Images/application-web-industrie-batail_log.png";
 import { NotFound} from "..";
 
 
@@ -24,7 +24,7 @@ const PrestationSpe = () => {
                         <p className="Prestationspe_Presentation_text_titre">bla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla blbla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blab </p>
                     </div>
                     <div className="Prestationspe_Presentation_Image">
-                        <img src={grid4}></img>
+                        <img src={grid4} className="Prestationspe_Presentation_Image_img"></img>
                     </div>
                     
 

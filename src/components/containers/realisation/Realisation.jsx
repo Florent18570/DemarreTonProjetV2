@@ -79,9 +79,9 @@ const Realisation = () => {
         <div className="RealisationPage__autreProjet">
           <div className="RealisationPage__autreProjet__top">
             <h2> Plus d'études de cas </h2>
-            <Link to="/allrealisation">
-              <button> Tout voir </button>
-            </Link>
+            <button>
+              <a href="/allrealisation">Tout voir</a>
+            </button>
           </div>
 
           <div className="RealisationPage__autreProjet__grid">

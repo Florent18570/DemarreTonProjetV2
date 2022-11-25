@@ -145,11 +145,11 @@ const Devis = () => {
             className="Prestation__grid__choix etape my-slider"
           >
             <div name="etape1 " className="etape1 slide">
-              <h2>Quelle prestation vous interesse ?</h2>
+              <h2>Est-ce pour une création ou une refonte de site ?</h2>
 
               <div className="etape1__flex etape_margin">
                 <button onClick={(e) => goTo(1, e)} className="Etape1_slide1">
-                  Création de votre site web
+                  Création
                 </button>
                 <button onClick={(e) => goTo(1, e)} className="Etape1_slide2">
                   Refonte (site déjà existant)
@@ -157,29 +157,133 @@ const Devis = () => {
               </div>
             </div>
             <div name="etape1 " className="etape1 slide ">
-              <h2> Objectif de votre site </h2>
+              <h2> Quel est l'objectif du site ? </h2>
 
               <div className="etape1__flex etape_margin">
                 <button onClick={(e) => goTo(2, e)} className="Etape2_slide1">
-                  Vendre / Mettre en relation
+                  Présenter son activité
                 </button>
                 <button onClick={(e) => goTo(2, e)} className="Etape2_slide2">
-                  Présenter son activité
+                  Vendre / Mettre en relation
                 </button>
               </div>
             </div>
             <div name="etape1 " className="etape1 slide ">
               <h2>Aspect graphique de votre site</h2>
-
               <div className="etape1__flex etape_margin">
                 <button onClick={(e) => goTo(3, e)} className="Etape3_slide1">
-                  J'ai mes maquette
+                  J'ai déjà mes propres maquettes
                 </button>
                 <button onClick={(e) => goTo(3, e)} className="Etape3_slide2">
-                  Simple mais efficace
+                  Un design simple mais efficace
                 </button>
                 <button onClick={(e) => goTo(3, e)} className="Etape3_slide3">
-                  Sur-mesure
+                  Un design recherché sur mesure
+                </button>
+              </div>
+            </div>
+
+            <div name="etape1 " className="etape1 slide ">
+              <h2>
+                Souhaitez-vous que votre site s’adapte aux mobiles et tablettes
+                ?
+              </h2>
+              <div className="etape1__flex etape_margin">
+                <button onClick={(e) => goTo(4, e)} className="Etape3_slide1">
+                  Oui
+                </button>
+                <button onClick={(e) => goTo(4, e)} className="Etape3_slide2">
+                  Non
+                </button>
+              </div>
+            </div>
+
+            <div name="etape1 " className="etape1 slide ">
+              <h2>
+                Combien de pages doit contenir mon site ? (approximativement) *
+              </h2>
+
+              <div className="etape1__flex etape_margin">
+                <input type="range" min="1" max="100" />
+              </div>
+
+              <button onClick={(e) => goTo(5, e)} className="Etape2_slide1">
+                Valider
+              </button>
+            </div>
+
+            <div name="etape1 " className="etape1 slide ">
+              <h2> Fournissez vous les images pour le contenu du site ? </h2>
+
+              <div className="etape1__flex etape_margin">
+                <button onClick={(e) => goTo(6, e)} className="Etape2_slide1">
+                  Oui
+                </button>
+                <button onClick={(e) => goTo(6, e)} className="Etape2_slide2">
+                  Non, j'ai besoin de création de contenu
+                </button>
+              </div>
+            </div>
+
+            <div name="etape1 " className="etape1 slide ">
+              <h2>
+                Quelles fonctionnalités je souhaite pour mon site internet ?
+              </h2>
+
+              <div className="etape1__flex etape_margin">
+                <button onClick={(e) => goTo(7, e)} className="Etape2_slide1">
+                  Oui
+                </button>
+                <button onClick={(e) => goTo(7, e)} className="Etape2_slide2">
+                  Non, j'ai besoin de création de contenu
+                </button>
+              </div>
+            </div>
+
+            <div name="etape1 " className="etape1 slide ">
+              <h2>
+                Qui doit gérer l'hébergement et la gestion des noms de domaines
+                ?
+              </h2>
+
+              <div className="etape1__flex etape_margin">
+                <button onClick={(e) => goTo(8, e)} className="Etape2_slide1">
+                  Vous
+                </button>
+                <button onClick={(e) => goTo(8, e)} className="Etape2_slide1">
+                  Nous
+                </button>
+              </div>
+            </div>
+
+            <div name="etape1 " className="etape1 slide ">
+              <h2>
+                Souhaitez-vous profiter de mise à jour de sécurité et
+                d'ergonomie ?
+              </h2>
+
+              <div className="etape1__flex etape_margin">
+                <button onClick={(e) => goTo(9, e)} className="Etape2_slide1">
+                  Oui
+                </button>
+                <button onClick={(e) => goTo(9, e)} className="Etape2_slide1">
+                  Non
+                </button>
+              </div>
+            </div>
+
+            <div name="etape1 " className="etape1 slide ">
+              <h2>Je souhaite mon site internet</h2>
+
+              <div className="etape1__flex etape_margin">
+                <button onClick={(e) => goTo(10, e)} className="Etape2_slide1">
+                  Dès que possible
+                </button>
+                <button onClick={(e) => goTo(10, e)} className="Etape2_slide1">
+                  Dans les 3 prochains mois
+                </button>
+                <button onClick={(e) => goTo(10, e)} className="Etape2_slide2">
+                  Je ne suis pas particulièrement pressé
                 </button>
               </div>
             </div>

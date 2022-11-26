@@ -78,6 +78,7 @@ const Devis = () => {
 
       buttonnon.classList.remove("animation_choixdevis");
       buttonnon.classList.add("animation_choixdevis_reverse");
+      buttonnon.classList.remove("contact");
       avantnone.classList.remove("displaynone");
     } else {
       //menu activé

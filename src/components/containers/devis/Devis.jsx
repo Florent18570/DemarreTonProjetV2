@@ -14,12 +14,14 @@ const Devis = () => {
       img: grid1,
       h3: " J'ai une idée de site",
       p: "Afin de concevoir un site au plus proche de votre souhait,nous vous laissons remplir le formulaire de contact afin quenous puissions répondre à votre demande au plus vite.",
+      href: "#etape",
     },
     {
       id: 2,
       img: grid2,
       h3: "Je n'ai aucune idée du visuel",
       p: "Le design ? Nous pouvons nous en occuper. Pour nous aider et vous donner rapidement et en ligne une fourchette de prix,nous vous laissons remplir le formulaire suivant.",
+      href: "#devis",
     },
   ]);
 
@@ -112,30 +114,32 @@ const Devis = () => {
       );
   };
 
-  const NavLink = ({ id, img, h3, p, isActive, onClick }) => {
+  const NavLink = ({ id, img, h3, p, isActive, href, onClick }) => {
     return (
-      <button
-        key={id}
-        className={isActive ? "active" : ""}
-        onClick={() => {
-          devischange(id);
-          navigate(id);
-        }}
-      >
-        <div
-          className={`Prestation__grid__card marge_prestation ${
-            isActive ? "active" : ""
-          }`}
+      <a href={href}>
+        <button
+          key={id}
+          className={isActive ? "active" : ""}
+          onClick={() => {
+            devischange(id);
+            navigate(id);
+          }}
         >
-          <div className="Prestation__grid__card__img">
-            <img src={img} alt="grid1" />
+          <div
+            className={`Prestation__grid__card marge_prestation ${
+              isActive ? "active" : ""
+            }`}
+          >
+            <div className="Prestation__grid__card__img">
+              <img src={img} alt="grid1" />
+            </div>
+            <div className="Prestation__grid__card__content">
+              <h3 className={` ${isActive ? "activeH3" : ""}`}> {h3}</h3>
+              <p className={` ${isActive ? "activep" : ""}`}>{p}</p>
+            </div>
           </div>
-          <div className="Prestation__grid__card__content">
-            <h3 className={` ${isActive ? "activeH3" : ""}`}> {h3}</h3>
-            <p className={` ${isActive ? "activep" : ""}`}>{p}</p>
-          </div>
-        </div>
-      </button>
+        </button>
+      </a>
     );
   };
 
@@ -167,7 +171,7 @@ const Devis = () => {
             name="ouiidee"
             className="Prestation__grid__choix etape my-slider"
           >
-            <div name="etape1 " className="etape1 slide">
+            <div name="etape1 " id="etape" className="etape1 slide">
               <h2>Est-ce pour une création ou une refonte de site ?</h2>
 
               <div className="etape1__flex etape_margin">
@@ -351,7 +355,12 @@ const Devis = () => {
               <h3>Contact</h3>
             </div>
 
-            <form className="Devis_form" name="form" onSubmit={sendEmail}>
+            <form
+              className="Devis_form"
+              id="devis"
+              name="form"
+              onSubmit={sendEmail}
+            >
               <label htmlFor="name"> Nom et Prénom</label>
               <input
                 type="text"

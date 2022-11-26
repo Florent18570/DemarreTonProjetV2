@@ -20,7 +20,7 @@ const Prestation = () => {
               Développement de votre site sur-mesure avec toutes les
               fonctionnalit"s nécessaires.
             </p>
-            <a href=""> En savoir plus</a>
+            <a href="/creation"> En savoir plus</a>
           </div>
         </div>
 
@@ -34,7 +34,7 @@ const Prestation = () => {
               Optimisation de l'expérience utilisateur pour améliorer la
               conversation.
             </p>
-            <a href=""> En savoir plus</a>
+            <a href="/uxdesign"> En savoir plus</a>
           </div>
         </div>
 
@@ -48,7 +48,7 @@ const Prestation = () => {
               Amélioration de votre position dans les moteurs de recherche avec
               le trafic organique.
             </p>
-            <a href=""> En savoir plus</a>
+            <a href="/referencement"> En savoir plus</a>
           </div>
         </div>
 
@@ -62,7 +62,7 @@ const Prestation = () => {
               Hébergement, cybersécurité, sauvegarde, maintenance de votre
               application
             </p>
-            <a href=""> En savoir plus</a>
+            <a href="/maintenance"> En savoir plus</a>
           </div>
         </div>
       </div>

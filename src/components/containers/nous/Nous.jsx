@@ -1,6 +1,6 @@
 import React from "react";
-import Julien from "../../../Images/julien.png";
-import Florent from "../../../Images/florent.png";
+import Julien from "../../../Images/julien.webp";
+import Florent from "../../../Images/florent.webp";
 import Bg from "../../../Images/undraw_programming_re_kg9v.svg";
 
 const Nous = () => {
@@ -18,14 +18,14 @@ const Nous = () => {
         <div className="qsd"></div>
         <div className="Nous_content__bottom">
           <div className="Nous_content__bottom__container">
-            <img src={Florent} alt="Image Florent" />
+            <img src={Florent} alt="Florent" />
             <div className=" Nous_content__bottom__container__text">
               <h2> Florent Escots</h2>
               <h3> Développeur Frontend</h3>
             </div>
           </div>
           <div className="Nous_content__bottom__container">
-            <img src={Julien} alt="Image Julien" />
+            <img src={Julien} alt="Julien" />
             <div className=" Nous_content__bottom__container__text">
               <h2> Julien Escots</h2>
               <h3> Développeur Backend</h3>

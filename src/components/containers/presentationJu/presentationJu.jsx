@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
-import test from "../../../Images/test.png";
+
 import stockDataa from "../../../data/card";
 
 const PresentationJu = () => {

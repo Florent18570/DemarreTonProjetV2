@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "../../../Images/Logo.png";
+import logo from "../../../Images/Logo.webp";
 import { FcMenu } from "react-icons/fc";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Menu = () => {
   const [isShown, setIsShown] = useState(false);
@@ -53,7 +53,11 @@ const Menu = () => {
       <div className="Menu_ordi">
         <div className="Menu_Ordi_partiegauche">
           <div className="Menu_Ordi_Partiegauche_image">
-            <img className="Menu_Ordi_Partiegauche_Image_img" src={logo} />
+            <img
+              className="Menu_Ordi_Partiegauche_Image_img"
+              src={logo}
+              alt="logo demarreTonProjet"
+            />
           </div>
           <div className="Menu_Ordi_Partiegauche_menu">
             <a href="/" className="Menu_Ordi_Partiegauche_Menu_element">

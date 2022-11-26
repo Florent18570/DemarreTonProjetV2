@@ -1,10 +1,9 @@
 import React from "react";
-import { FaBeer } from "react-icons/fa";
-import card_footer from "../../../Images/card_footer.png";
+import card_footer from "../../../Images/card_footer.webp";
 
-import instagram from "../../../Images/instagram.png";
-import twitter from "../../../Images/twitter.png";
-import facebook from "../../../Images/facebook.png";
+import instagram from "../../../Images/instagram.webp";
+import twitter from "../../../Images/twitter.webp";
+import facebook from "../../../Images/facebook.webp";
 
 const Footer = () => {
   return (

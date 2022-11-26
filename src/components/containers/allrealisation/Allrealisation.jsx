@@ -1,6 +1,4 @@
 import React from "react";
-import { FaBeer } from "react-icons/fa";
-import processus3 from "../../../Images/processus3.png";
 import stockDataa from "../../../data/card";
 
 const Allrealisationn = () => {

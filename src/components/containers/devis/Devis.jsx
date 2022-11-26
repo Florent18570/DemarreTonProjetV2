@@ -8,7 +8,7 @@ const Devis = () => {
   const [slider, setSlider] = useState("");
   const [active, setActive] = useState(null);
 
-  const [dataTabs, setDataTabs] = useState([
+  const [dataTabs] = useState([
     {
       id: 1,
       img: grid1,
@@ -71,7 +71,7 @@ const Devis = () => {
     var avantnone = document.getElementsByName("precedent")[0];
     console.log(buttonnon);
 
-    if (switchdevis == 1) {
+    if (switchdevis === 1) {
       //menu désactivé
       buttonoui.classList.add("animation_choixdevis");
       buttonoui.classList.remove("animation_choixdevis_reverse");

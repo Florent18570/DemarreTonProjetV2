@@ -30,6 +30,28 @@
   justify-content: space-around;
 }
 
+.marge_prestation {
+  padding: 35px 35px 35px 35px !important;
+}
+
+.active {
+  color: white !important;
+  background-color: #0d3269 !important;
+}
+
+.activeH3 {
+  color: white !important;
+}
+
+.activep {
+  color: #94d9ff !important;
+}
+
+.Prestation__grid button {
+  border: transparent !important;
+  background-color: transparent !important;
+}
+
 .Prestation__grid__choix {
   border-style: solid;
   border-width: 1px;

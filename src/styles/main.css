@@ -132,6 +132,28 @@ p {
   justify-content: space-around;
 }
 
+.marge_prestation {
+  padding: 35px 35px 35px 35px !important;
+}
+
+.active {
+  color: white !important;
+  background-color: #0d3269 !important;
+}
+
+.activeH3 {
+  color: white !important;
+}
+
+.activep {
+  color: #94d9ff !important;
+}
+
+.Prestation__grid button {
+  border: transparent !important;
+  background-color: transparent !important;
+}
+
 .Prestation__grid__choix {
   border-style: solid;
   border-width: 1px;
@@ -1558,7 +1580,6 @@ label {
   grid-row-gap: 30px;
 }
 .Prestation__grid__card {
-  background-color: red;
   padding: 44px 40px 40px 48px;
   overflow: hidden;
   border-style: solid;

@@ -85,6 +85,7 @@ const Devis = () => {
       buttonoui.classList.remove("animation_choixdevis");
       buttonoui.classList.add("animation_choixdevis_reverse");
 
+      buttonnon.classList.add("contact");
       buttonnon.classList.add("animation_choixdevis");
       buttonnon.classList.remove("animation_choixdevis_reverse");
 
@@ -351,7 +352,7 @@ const Devis = () => {
 
           <button className="controle suivant ">Après</button>
 
-          <div name="nonidee" className="Prestation__grid__choix contact">
+          <div name="nonidee" className="Prestation__grid__choix contact ">
             <div className="Devis_Form_titre">
               <h3>Contact</h3>
             </div>
@@ -362,49 +363,72 @@ const Devis = () => {
               name="form"
               onSubmit={sendEmail}
             >
-              <label htmlFor="name"> Nom et Prénom</label>
-              <input
-                type="text"
-                className="Devis_Form_text Devis_form_template"
-                maxlength="256"
-                name="name"
-                data-name="name"
-                placeholder="Nom * "
-                id="name"
-                required
-              />
-              <label htmlFor="Email"> Email</label>
-              <input
-                type="email"
-                className="Devis_Form_email Devis_form_template"
-                maxlength="256"
-                name="mail"
-                data-name="mail"
-                placeholder="Email *"
-                id="Email"
-                required
-              />
-              <label htmlFor="phone"> Téléphone</label>
-              <input
-                type="tel"
-                className="Devis_Form_tel Devis_form_template"
-                maxlength="256"
-                name="message"
-                data-name="message"
-                placeholder="Téléphone *"
-                id="phone"
-                required
-              />
-              <label htmlFor="Entreprise"> Entreprise</label>
-              <input
-                type="text"
-                className="Devis_Form_entreprise Devis_form_template"
-                maxlength="256"
-                name="Entreprise"
-                data-name="Entreprise"
-                placeholder="Entreprise"
-                id="Entreprise"
-              />
+              <div className="contact__grid">
+                <div>
+                  <label htmlFor="name">Nom *</label>
+                  <input
+                    type="text"
+                    className="Devis_Form_text Devis_form_template"
+                    maxlength="256"
+                    name="First_name"
+                    data-name="First_name"
+                    placeholder="John"
+                    id="First_name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="name">Prénom *</label>
+                  <input
+                    type="text"
+                    className="Devis_Form_text Devis_form_template"
+                    maxlength="256"
+                    name="Last_name"
+                    data-name="Last_name"
+                    placeholder="Doe"
+                    id="Last_name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="Email"> Email * </label>
+                  <input
+                    type="email"
+                    className="Devis_Form_email Devis_form_template"
+                    maxlength="256"
+                    name="mail"
+                    data-name="mail"
+                    placeholder="exemple@gmail.com"
+                    id="Email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="phone"> Téléphone</label>
+                  <input
+                    type="tel"
+                    className="Devis_Form_tel Devis_form_template"
+                    maxlength="256"
+                    name="message"
+                    data-name="message"
+                    placeholder="Téléphone *"
+                    id="phone"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="Entreprise"> Entreprise</label>
+                  <input
+                    type="text"
+                    className="Devis_Form_entreprise Devis_form_template"
+                    maxlength="256"
+                    name="Entreprise"
+                    data-name="Entreprise"
+                    placeholder="Entreprise"
+                    id="Entreprise"
+                  />
+                </div>
+              </div>
 
               <input className="sendForm" type="submit" value="Send" />
             </form>

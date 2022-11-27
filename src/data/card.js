@@ -9,7 +9,7 @@ export default function stockDataa() {
       technologie: "Html / Css / Js / Wordpress",
       date: "Janvier 2022",
       site: "https://stb18.fr",
-      src: "/images/stb18.png",
+      src: "/images/stb18.webp",
       processus: [
         {
           etape: "1. Rédaction d'une charte graphique",
@@ -46,7 +46,7 @@ export default function stockDataa() {
       technologie: "Html / Css / Js / Jquery ",
       date: "Juin 2022",
       site: "https://gems-generator.com/",
-      src: "/images/gemsgenerator.png",
+      src: "/images/gemsgenerator.webp",
       processus: [
         {
           etape: "1. première étape",
@@ -92,7 +92,7 @@ export default function stockDataa() {
       technologie: "Html / Css / Js / Jquery ",
       date: "Juin 2022",
       site: "https://gems-generator.com/",
-      src: "/images/gemsgenerator.png",
+      src: "/images/gemsgenerator.webp",
       processus: [
         {
           etape: "1. première étape",
@@ -139,7 +139,7 @@ export default function stockDataa() {
       technologie: "Html / Css / Js / Wordpress",
       date: "Janvier 2022",
       site: "https://stb18.fr",
-      src: "/images/stb18.png",
+      src: "/images/stb18.webp",
       processus: [
         {
           etape: "1. Rédaction d'une charte graphique",
@@ -168,8 +168,6 @@ export default function stockDataa() {
         },
       ],
     },
-    
-     
   ];
 
   return stockData;

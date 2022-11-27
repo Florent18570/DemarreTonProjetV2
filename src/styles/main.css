@@ -132,12 +132,29 @@ p {
   justify-content: space-around;
 }
 
+.marge_prestation {
+  padding: 35px 35px 35px 35px !important;
+}
+
+.active {
+  color: white !important;
+  background-color: #0d3269 !important;
+}
+
+.activeH3 {
+  color: white !important;
+}
+
+.activep {
+  color: #94d9ff !important;
+}
+
+.Prestation__grid button {
+  border: transparent !important;
+  background-color: transparent !important;
+}
+
 .Prestation__grid__choix {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eff0f6;
-  border-radius: 40px;
-  box-shadow: 0 6px 12px 0 rgba(53, 53, 89, 0.18);
   display: none;
   width: 100%;
 }
@@ -154,152 +171,68 @@ p {
 }
 
 .Devis_form {
-  -webkit-text-size-adjust: 100%;
-  font-family: "Plus Jakarta Display", sans-serif;
   color: #6e7191;
   font-size: 18px;
   line-height: 1.667em;
   letter-spacing: 0.02em;
-  box-sizing: border-box;
   display: grid;
-  align-self: stretch;
   grid-auto-columns: 1fr;
   grid-column-gap: 22px;
   grid-row-gap: 24px;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+}
+.Devis_form label {
+  color: black;
+}
+
+.sendForm {
+  width: 73px;
+  height: 18px;
+  padding: 10px 30px;
+  font-size: 1.6rem;
+  background: #cd9251;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.Devis_form_template {
+  min-height: 50px;
+  width: 100%;
+  padding: 8px 12px 8px 21px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-color: #eff0f6;
+  border-radius: 1000px;
+  box-shadow: 0 2px 6px 0 rgba(19, 18, 66, 0.07);
+  font-size: 18px;
+  line-height: 1.111em;
+  letter-spacing: 0.02em;
+  background-position: 90% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .Devis_Form_text {
-  -webkit-text-size-adjust: 100%;
-  box-sizing: border-box;
-  font: inherit;
-  margin: 0;
-  display: block;
-  width: 100%;
-  height: 38px;
-  padding: 8px 12px;
-  vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  min-height: 66px;
-  margin-bottom: 0px;
-  padding-left: 21px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eff0f6;
-  border-radius: 1000px;
-  box-shadow: 0 2px 6px 0 rgba(19, 18, 66, 0.07);
-  transition: box-shadow 300ms ease, color 300ms ease, border-color 300ms ease;
-  color: #0E3C6E;
-  font-size: 18px;
-  line-height: 1.111em;
-  letter-spacing: 0.02em;
-  padding-right: 55px;
   background-image: url("https://uploads-ssl.webflow.com/611d12c5506e6465d1a6a980/611d12c5506e64017aa6a9ec_icon-1-input-marketing-template.svg");
-  background-position: 90% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .Devis_Form_email {
-  -webkit-text-size-adjust: 100%;
-  box-sizing: border-box;
-  font: inherit;
-  margin: 0;
-  display: block;
-  width: 100%;
-  height: 38px;
-  padding: 8px 12px;
-  vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  min-height: 66px;
-  margin-bottom: 0px;
-  padding-left: 21px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eff0f6;
-  border-radius: 1000px;
-  box-shadow: 0 2px 6px 0 rgba(19, 18, 66, 0.07);
-  transition: box-shadow 300ms ease, color 300ms ease, border-color 300ms ease;
-  color: #ff3951;
-  font-size: 18px;
-  line-height: 1.111em;
-  letter-spacing: 0.02em;
-  padding-right: 55px;
   background-image: url("https://uploads-ssl.webflow.com/611d12c5506e6465d1a6a980/611d12c5506e643abfa6a9e7_icon-2-input-marketing-template.svg");
-  background-position: 90% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .Devis_Form_tel {
-  -webkit-text-size-adjust: 100%;
-  box-sizing: border-box;
-  font: inherit;
-  margin: 0;
-  display: block;
-  width: 100%;
-  height: 38px;
-  padding: 8px 12px;
-  vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  min-height: 66px;
-  margin-bottom: 0px;
-  padding-left: 21px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eff0f6;
-  border-radius: 1000px;
-  box-shadow: 0 2px 6px 0 rgba(19, 18, 66, 0.07);
-  transition: box-shadow 300ms ease, color 300ms ease, border-color 300ms ease;
-  color: #ff3951;
-  font-size: 18px;
-  line-height: 1.111em;
-  letter-spacing: 0.02em;
-  padding-right: 55px;
   background-image: url("https://uploads-ssl.webflow.com/611d12c5506e6465d1a6a980/611d12c5506e64637ba6a9ea_icon-3-input-marketing-template.svg");
-  background-position: 90% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .Devis_Form_entreprise {
-  -webkit-text-size-adjust: 100%;
-  box-sizing: border-box;
-  font: inherit;
-  margin: 0;
-  display: block;
-  width: 100%;
-  height: 38px;
-  padding: 8px 12px;
-  vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  min-height: 66px;
-  margin-bottom: 0px;
-  padding-left: 21px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eff0f6;
-  border-radius: 1000px;
-  box-shadow: 0 2px 6px 0 rgba(19, 18, 66, 0.07);
-  transition: box-shadow 300ms ease, color 300ms ease, border-color 300ms ease;
-  color: #ff3951;
-  font-size: 18px;
-  line-height: 1.111em;
-  letter-spacing: 0.02em;
-  padding-right: 55px;
   background-image: url("https://uploads-ssl.webflow.com/611d12c5506e6465d1a6a980/611d12c5506e6405daa6a9e8_icon-4-input-marketing-template.svg");
-  background-position: 90% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .Devis_Form_titre {
-  width: 100%;
+  width: 66%;
+  margin-bottom: 30px;
 }
 
 .precedent {
@@ -362,7 +295,7 @@ p {
   position: relative;
   margin-top: 30px;
   margin-bottom: 190px;
-  height: 600px;
+  height: auto;
 }
 
 .tns-outer {
@@ -401,6 +334,130 @@ label {
   flex-direction: row;
 }
 
+.formulaire {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid #0d3269;
+  border-radius: 30px;
+  box-shadow: 0 6px 12px 0 rgba(53, 53, 89, 0.18);
+}
+.formulaire__left {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 24px 0 0 24px;
+  background-color: #0d3269;
+}
+.formulaire__left h3,
+.formulaire__left p {
+  color: white;
+}
+.formulaire__left h3 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.formulaire__left_4 {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.tns-outer {
+  width: auto;
+  height: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 32px;
+  grid-gap: 12px 16px;
+  gap: 12px 16px;
+}
+.contact__grid div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact__grid div label {
+  margin-bottom: 10px;
+}
+
+.ligne {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.ligne input {
+  width: 100%;
+}
+.ligne textarea {
+  padding: 30px;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+  .formulaire__left_all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contact {
+    margin-bottom: 100px;
+  }
+  .formulaire {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #0d3269;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px 0 rgba(53, 53, 89, 0.18);
+  }
+  .formulaire__left {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 24px 24px 0 0;
+    background-color: #0d3269;
+  }
+  .formulaire__left p {
+    color: rgb(215, 199, 199);
+  }
+  .formulaire__left h3 {
+    margin-top: -7px;
+    margin-bottom: 20px;
+  }
+  .formulaire__left_4 {
+    display: none;
+  }
+  .contact__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 32px 23px;
+    grid-gap: 12px 16px;
+    gap: 12px 16px;
+  }
+  .contact__grid div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .contact__grid div label {
+    margin-bottom: 10px;
+  }
+  .Prestation__grid__form {
+    margin-bottom: 0px;
+  }
+}
 @media screen and (max-width: 991px) {
   .precedent {
     top: 103px;
@@ -1125,8 +1182,8 @@ label {
   box-shadow: 0px 1px 2px #ccc;
   background-color: white;
   position: absolute;
-  top: 100px;
-  left: 28%;
+  top: 85px;
+  left: 23%;
   overflow: hidden;
   flex-direction: column;
   display: flex;
@@ -1136,6 +1193,10 @@ label {
           animation-duration: 0.6s;
   -webkit-animation-name: animation_horizontal2;
           animation-name: animation_horizontal2;
+}
+
+.relatif {
+  position: relative;
 }
 
 @-webkit-keyframes animation_horizontal2 {
@@ -1628,7 +1689,6 @@ label {
   grid-row-gap: 30px;
 }
 .Prestation__grid__card {
-  background-color: red;
   padding: 44px 40px 40px 48px;
   overflow: hidden;
   border-style: solid;
@@ -2244,7 +2304,7 @@ Header p {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 32px;
-  padding: 50px 8% 233px 8%;
+  padding: 5px 8% 233px 8%;
 }
 .gridAllrealisation__container {
   background-color: rgb(156, 213, 241);

@@ -6,6 +6,24 @@ import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
 const Devis = () => {
   const [slider, setSlider] = useState("");
+  const [active, setActive] = useState(null);
+
+  const [dataTabs] = useState([
+    {
+      id: 1,
+      img: grid1,
+      h3: " J'ai une idée de site",
+      p: "Afin de concevoir un site au plus proche de votre souhait,nous vous laissons remplir le formulaire de contact afin quenous puissions répondre à votre demande au plus vite.",
+      href: "#etape",
+    },
+    {
+      id: 2,
+      img: grid2,
+      h3: "Je n'ai aucune idée du visuel",
+      p: "Le design ? Nous pouvons nous en occuper. Pour nous aider et vous donner rapidement et en ligne une fourchette de prix,nous vous laissons remplir le formulaire suivant.",
+      href: "#devis",
+    },
+  ]);
 
   useEffect(() => {
     var sliderdefault = tns({
@@ -15,6 +33,7 @@ const Devis = () => {
       loop: false,
       prevButton: ".precedent",
       nextButton: ".suivant",
+      nav: false,
       responsive: {
         1600: {
           items: 1,
@@ -52,19 +71,21 @@ const Devis = () => {
     var avantnone = document.getElementsByName("precedent")[0];
     console.log(buttonnon);
 
-    if (switchdevis == 1) {
+    if (switchdevis === 1) {
       //menu désactivé
       buttonoui.classList.add("animation_choixdevis");
       buttonoui.classList.remove("animation_choixdevis_reverse");
 
       buttonnon.classList.remove("animation_choixdevis");
       buttonnon.classList.add("animation_choixdevis_reverse");
+      buttonnon.classList.remove("contact");
       avantnone.classList.remove("displaynone");
     } else {
       //menu activé
       buttonoui.classList.remove("animation_choixdevis");
       buttonoui.classList.add("animation_choixdevis_reverse");
 
+      buttonnon.classList.add("contact");
       buttonnon.classList.add("animation_choixdevis");
       buttonnon.classList.remove("animation_choixdevis_reverse");
 
@@ -95,48 +116,56 @@ const Devis = () => {
       );
   };
 
+  const NavLink = ({ id, img, h3, p, isActive, href, onClick }) => {
+    return (
+      <a href={href}>
+        <button
+          key={id}
+          className={isActive ? "active" : ""}
+          onClick={() => {
+            devischange(id);
+            navigate(id);
+          }}
+        >
+          <div
+            className={`Prestation__grid__card marge_prestation ${
+              isActive ? "active" : ""
+            }`}
+          >
+            <div className="Prestation__grid__card__img">
+              <img src={img} alt="grid1" />
+            </div>
+            <div className="Prestation__grid__card__content">
+              <h3 className={` ${isActive ? "activeH3" : ""}`}> {h3}</h3>
+              <p className={` ${isActive ? "activep" : ""}`}>{p}</p>
+            </div>
+          </div>
+        </button>
+      </a>
+    );
+  };
+
+  const navigate = (id) => {
+    setActive(id);
+  };
+
   return (
     <div>
       <section className="Prestationdevis">
         <h2> Faites vous accompagner pour votre visibilité sur internet </h2>
 
         <div className="Prestation__grid">
-          <button onClick={() => devischange(1)}>
-            <div className="Prestation__grid__card">
-              <div className="Prestation__grid__card__img">
-                <img src={grid1} alt="grid1" />
-              </div>
-              <div className="Prestation__grid__card__content">
-                <h3> J'ai une idée de site</h3>
-                <p>
-                  Afin de concevoir un site au plus proche de votre souhait,
-                  nous vous laissons remplir le formulaire de contact afin que
-                  nous puissions répondre à votre demande au plus vite.
-                </p>
-                <a href=""> En savoir plus</a>
-              </div>
-            </div>
-          </button>
-
-          <button onClick={() => devischange(2)}>
-            <div className="Prestation__grid__card">
-              <div className="Prestation__grid__card__img">
-                <img src={grid2} alt="grid1" />
-              </div>
-              <div className="Prestation__grid__card__content">
-                <h3>Je n'ai aucune idée du visuel</h3>
-                <p>
-                  Le design ? Nous pouvons nous en occuper. Pour nous aider et
-                  vous donner rapidement et en ligne une fourchette de prix,
-                  nous vous laissons remplir le formulaire suivant.
-                </p>
-                <a href=""> En savoir plus</a>
-              </div>
-            </div>
-          </button>
+          {dataTabs.map((item) => (
+            <NavLink
+              key={item.id}
+              {...item}
+              isActive={active === item.id}
+              onClick={navigate}
+            />
+          ))}
         </div>
 
-        <div className="Prestation__grid__form">
+        <div className="Prestation__grid__form displaynone">
           <button name="precedent" className=" precedent displaynone">
             Retour
           </button>
@@ -144,7 +173,7 @@ const Devis = () => {
             name="ouiidee"
             className="Prestation__grid__choix etape my-slider"
           >
-            <div name="etape1 " className="etape1 slide">
+            <div name="etape1 " id="etape" className="etape1 slide">
               <h2>Est-ce pour une création ou une refonte de site ?</h2>
 
               <div className="etape1__flex etape_margin">
@@ -323,53 +352,164 @@ const Devis = () => {
 
           <button className="controle suivant ">Après</button>
 
-          <div name="nonidee" className="Prestation__grid__choix">
-            <div className="Devis_Form_titre">
-              <h3>voici le formulaire de contact</h3>
-            </div>
+          <div name="nonidee" className="Prestation__grid__choix contact ">
+            <form
+              className="Devis_form formulaire"
+              id="devis"
+              name="form"
+              onSubmit={sendEmail}
+            >
+              <div className="formulaire__left">
+                <h3> Contact Information</h3>
+                <p>
+                  Fill up the form and our team will get back to you within 24
+                  Hours
+                </p>
+                <div className="formulaire__left_all">
+                  <div className="formulaire__left_1">
+                    <img src="" alt="" />
+                    <p> 07 62 06 88 30</p>
+                  </div>
+                  <div className="formulaire__left_2">
+                    <img src="" alt="" />
+                    <p> demarreTonProjet@gmail.com</p>
+                  </div>
+                  <div className="formulaire__left_3">
+                    <img src="" alt="" />
+                    <p> 30 rue du bois joly</p>
+                  </div>
+                  <div className="formulaire__left_4">
+                    <img src="" alt="instagram" />
+                    <img src="" alt="Twitter" />
+                    <img src="" alt="facebook" />
+                  </div>
+                </div>
+              </div>
 
-            <form className="Devis_form" name="form" onSubmit={sendEmail}>
-              <input
-                type="text"
-                class="Devis_Form_text"
-                maxlength="256"
-                name="name"
-                data-name="name"
-                placeholder="Nom * "
-                id="Nom-3"
-                required=""
-              />
-              <input
-                type="email"
-                class="Devis_Form_email"
-                maxlength="256"
-                name="mail"
-                data-name="mail"
-                placeholder="Email *"
-                id="Email-3"
-                required=""
-              ></input>
-              <input
-                type="tel"
-                class="Devis_Form_tel"
-                maxlength="256"
-                name="message"
-                data-name="message"
-                placeholder="Téléphone *"
-                id="T-l-phone-3"
-                required=""
-              ></input>
-              <input
-                type="text"
-                class="Devis_Form_entreprise"
-                maxlength="256"
-                name="Entreprise"
-                data-name="Entreprise"
-                placeholder="Entreprise"
-                id="Entreprise-3"
-              ></input>
-              <input type="submit" value="Send" />
+              <div className="contact__grid">
+                <div>
+                  <label htmlFor="name">Nom *</label>
+                  <input
+                    type="text"
+                    className="Devis_Form_text Devis_form_template"
+                    maxlength="256"
+                    name="First_name"
+                    data-name="First_name"
+                    placeholder="John"
+                    id="First_name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="name">Prénom *</label>
+                  <input
+                    type="text"
+                    className="Devis_Form_text Devis_form_template"
+                    maxlength="256"
+                    name="Last_name"
+                    data-name="Last_name"
+                    placeholder="Doe"
+                    id="Last_name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="Email"> Email * </label>
+                  <input
+                    type="email"
+                    className="Devis_Form_email Devis_form_template"
+                    maxlength="256"
+                    name="mail"
+                    data-name="mail"
+                    placeholder="exemple@gmail.com"
+                    id="Email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="phone"> Téléphone</label>
+                  <input
+                    type="tel"
+                    className="Devis_Form_tel Devis_form_template"
+                    maxlength="256"
+                    name="message"
+                    data-name="message"
+                    placeholder="Téléphone"
+                    id="phone"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="Entreprise"> Nature des travaux *</label>
+                  <select
+                    type="select"
+                    className="Devis_Form_entreprise Devis_form_template"
+                    name="Entreprise"
+                  >
+                    <option value="">--Please choose an option--</option>
+                    <option value="creation">Création d'un site web</option>
+                    <option value="refonte">Refonte d'un site web</option>
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="Entreprise"> Type de site *</label>
+                  <select
+                    type="select"
+                    className="Devis_Form_entreprise Devis_form_template"
+                    name="Entreprise"
+                  >
+                    <option value="">--Please choose an option--</option>
+                    <option value="creation">Site « carte de visite »</option>
+                    <option value="e-commerce">Site e-commerce</option>
+                    <option value="Application">Application web</option>
+                    <option value="refonte">Site spécifique, sur mesure</option>
+                  </select>
+                </div>
+
+                <div className="ligne">
+                  <label htmlFor="siteExistant">
+                    Si vous avez déjà un site, indiquez son URL
+                  </label>
+
+                  <input
+                    type="text"
+                    className="Devis_Form_tel Devis_form_template"
+                    maxlength="256"
+                    name="message"
+                    data-name="message"
+                    placeholder="URL"
+                    id="siteExistant"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="Budget">Budget *</label>
+
+                  <input
+                    type="text"
+                    className="Devis_Form_tel Devis_form_template"
+                    maxlength="256"
+                    name="message"
+                    data-name="message"
+                    placeholder="URL"
+                    id="Budget"
+                  />
+                </div>
+                <div></div>
+
+                <div className="ligne">
+                  <label htmlFor="projet">Expliquez nous votre projet</label>
+
+                  <textarea
+                    type="siteExistant"
+                    className="Devis_Form_tel Devis_form_template"
+                    name="message"
+                    data-name="message"
+                    id="projet"
+                  />
+                </div>
+              </div>
             </form>
+            <input className="sendForm" type="submit" value="Send" />
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
-import Image from "../../../Images/dégradé.png";
-import { useParams, Link } from "react-router-dom";
+
+import { useParams } from "react-router-dom";
 import { NotFound } from "..";
 import stockDataa from "../../../data/card";
 
@@ -23,7 +23,7 @@ const Realisation = () => {
   var random1 = Math.floor(Math.random() * (stockData.length - 1 + 1)) + 0;
   var random2 = Math.floor(Math.random() * (stockData.length - 1 + 1)) + 0;
 
-  while (random1 == random2) {
+  while (random1 === random2) {
     random2 = Math.floor(Math.random() * (stockData.length - 1 + 1)) + 0;
   }
 
@@ -59,7 +59,7 @@ const Realisation = () => {
         </div>
 
         <div ref={myRef} className={`${myElemenIsVisible ? "opacity" : ""}`}>
-          <img src={stockData[parseInt(params.userId)].src} alt="Image" />
+          <img src={stockData[parseInt(params.userId)].src} alt="décoration" />
         </div>
 
         <div className="RealisationPage__etude">
@@ -87,7 +87,7 @@ const Realisation = () => {
           <div className="RealisationPage__autreProjet__grid">
             <a href={"/realisation/" + suite1.id}>
               <div className="RealisationPage__autreProjet__grid__card">
-                <img src={suite1.src} alt="Image" />
+                <img src={suite1.src} alt="realisation1" />
                 <div className="RealisationPage__autreProjet__grid__card__content">
                   <h3> {suite1.compagnie}</h3>
                   <p>{suite1.intro}</p>
@@ -97,7 +97,7 @@ const Realisation = () => {
 
             <a href={"/realisation/" + suite2.id}>
               <div className="RealisationPage__autreProjet__grid__card">
-                <img src={suite2.src} alt="Image" />
+                <img src={suite2.src} alt="realisation2" />
                 <div className="RealisationPage__autreProjet__grid__card__content">
                   <h3> {suite2.compagnie}</h3>
                   <p>{suite2.intro}</p>

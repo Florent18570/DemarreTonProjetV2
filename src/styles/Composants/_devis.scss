@@ -118,7 +118,7 @@
 }
 
 .Devis_form_template {
-  min-height: 66px;
+  min-height: 54px;
   padding: 8px 12px 8px 21px;
   background-color: #ffffff;
 
@@ -265,6 +265,36 @@ label {
 }
 
 //  Formulaire de contact
+
+.formulaire {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid #0d3269;
+  border-radius: 30px;
+  box-shadow: 0 6px 12px 0 rgb(53 53 89 / 18%);
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 24px 0 0 24px;
+    background-color: #0d3269;
+    h3,
+    p {
+      color: white;
+    }
+    h3 {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+    &_4 {
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+    }
+  }
+}
+
 .tns-outer {
   width: auto;
   height: 100%;
@@ -278,7 +308,7 @@ label {
 .contact__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 10px 230px;
+  padding: 40px 32px;
   grid-gap: 12px 16px;
   gap: 12px 16px;
   div {
@@ -290,6 +320,21 @@ label {
       margin-bottom: 10px;
     }
   }
+}
+
+.ligne {
+  input {
+    width: 100%;
+  }
+  textarea {
+    padding: 30px;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 /////////////////////////////////////////

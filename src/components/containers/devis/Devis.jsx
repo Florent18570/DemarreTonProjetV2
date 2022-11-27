@@ -353,16 +353,37 @@ const Devis = () => {
           <button className="controle suivant ">Après</button>
 
           <div name="nonidee" className="Prestation__grid__choix contact ">
-            <div className="Devis_Form_titre">
-              <h3>Contact</h3>
-            </div>
-
             <form
-              className="Devis_form"
+              className="Devis_form formulaire"
               id="devis"
               name="form"
               onSubmit={sendEmail}
             >
+              <div className="formulaire__left">
+                <h3> Contact Information</h3>
+                <p>
+                  Fill up the form and our team will get back to you within 24
+                  Hours
+                </p>
+                <div className="formulaire__left_1">
+                  <img src="" alt="" />
+                  <p> 07 62 06 88 30</p>
+                </div>
+                <div className="formulaire__left_2">
+                  <img src="" alt="" />
+                  <p> demarreTonProjet@gmail.com</p>
+                </div>
+                <div className="formulaire__left_3">
+                  <img src="" alt="" />
+                  <p> 30 rue du bois joly</p>
+                </div>
+                <div className="formulaire__left_4">
+                  <img src="" alt="instagram" />
+                  <img src="" alt="Twitter" />
+                  <img src="" alt="facebook" />
+                </div>
+              </div>
+
               <div className="contact__grid">
                 <div>
                   <label htmlFor="name">Nom *</label>
@@ -411,27 +432,82 @@ const Devis = () => {
                     maxlength="256"
                     name="message"
                     data-name="message"
-                    placeholder="Téléphone *"
+                    placeholder="Téléphone"
                     id="phone"
                     required
                   />
                 </div>
                 <div>
-                  <label htmlFor="Entreprise"> Entreprise</label>
+                  <label htmlFor="Entreprise"> Nature des travaux *</label>
+                  <select
+                    type="select"
+                    className="Devis_Form_entreprise Devis_form_template"
+                    name="Entreprise"
+                  >
+                    <option value="">--Please choose an option--</option>
+                    <option value="creation">Création d'un site web</option>
+                    <option value="refonte">Refonte d'un site web</option>
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="Entreprise"> Type de site *</label>
+                  <select
+                    type="select"
+                    className="Devis_Form_entreprise Devis_form_template"
+                    name="Entreprise"
+                  >
+                    <option value="">--Please choose an option--</option>
+                    <option value="creation">Site « carte de visite »</option>
+                    <option value="e-commerce">Site e-commerce</option>
+                    <option value="Application">Application web</option>
+                    <option value="refonte">Site spécifique, sur mesure</option>
+                  </select>
+                </div>
+
+                <div className="ligne">
+                  <label htmlFor="siteExistant">
+                    Si vous avez déjà un site, indiquez son URL
+                  </label>
+
                   <input
                     type="text"
-                    className="Devis_Form_entreprise Devis_form_template"
+                    className="Devis_Form_tel Devis_form_template"
                     maxlength="256"
-                    name="Entreprise"
-                    data-name="Entreprise"
-                    placeholder="Entreprise"
-                    id="Entreprise"
+                    name="message"
+                    data-name="message"
+                    placeholder="URL"
+                    id="siteExistant"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="Budget">Budget *</label>
+
+                  <input
+                    type="text"
+                    className="Devis_Form_tel Devis_form_template"
+                    maxlength="256"
+                    name="message"
+                    data-name="message"
+                    placeholder="URL"
+                    id="Budget"
+                  />
+                </div>
+                <div></div>
+
+                <div className="ligne">
+                  <label htmlFor="projet">Expliquez nous votre projet</label>
+
+                  <textarea
+                    type="siteExistant"
+                    className="Devis_Form_tel Devis_form_template"
+                    name="message"
+                    data-name="message"
+                    id="projet"
                   />
                 </div>
               </div>
-
-              <input className="sendForm" type="submit" value="Send" />
             </form>
+            <input className="sendForm" type="submit" value="Send" />
           </div>
         </div>
       </section>

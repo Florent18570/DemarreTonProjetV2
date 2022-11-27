@@ -1,7 +1,7 @@
 import React from "react";
-import processus1 from "../../../Images/processus1.png";
-import processus2 from "../../../Images/processus2.png";
-import processus3 from "../../../Images/processus3.png";
+import processus1 from "../../../Images/plan.png";
+import processus2 from "../../../Images/dev.png";
+import processus3 from "../../../Images/lancement.png";
 
 import Union from "../../../Images/Union.png";
 

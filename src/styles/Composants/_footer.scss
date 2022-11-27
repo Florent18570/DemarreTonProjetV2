@@ -106,10 +106,10 @@
 
 @media screen and (max-width: 991px) {
   .Footer {
-    background: #072d65;
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-position-x: -500px;
     justify-content: center;
 
     &__left {

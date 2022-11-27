@@ -53,11 +53,6 @@
 }
 
 .Prestation__grid__choix {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eff0f6;
-  border-radius: 40px;
-  box-shadow: 0 6px 12px 0 rgb(53 53 89 / 18%);
   display: none;
   width: 100%;
 }
@@ -118,7 +113,8 @@
 }
 
 .Devis_form_template {
-  min-height: 54px;
+  min-height: 50px;
+  width: 100%;
   padding: 8px 12px 8px 21px;
   background-color: #ffffff;
 
@@ -134,8 +130,6 @@
   background-position: 90% 50%;
   background-size: auto;
   background-repeat: no-repeat;
-
-  width: 500px;
 }
 
 .Devis_Form_text {
@@ -224,7 +218,7 @@
   position: relative;
   margin-top: 30px;
   margin-bottom: 190px;
-  height: 700px;
+  height: auto;
 }
 
 .tns-outer {
@@ -306,6 +300,7 @@ label {
 }
 
 .contact__grid {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 40px 32px;
@@ -338,6 +333,70 @@ label {
 }
 
 /////////////////////////////////////////
+///
+
+@media screen and (max-width: 1023px) {
+  .formulaire__left_all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact {
+    margin-bottom: 100px;
+  }
+
+  .formulaire {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #0d3269;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px 0 rgb(53 53 89 / 18%);
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+      border-radius: 24px 24px 0 0;
+      background-color: #0d3269;
+
+      p {
+        color: rgb(215, 199, 199);
+      }
+      h3 {
+        margin-top: -7px;
+        margin-bottom: 20px;
+      }
+      &_4 {
+        display: none;
+      }
+    }
+  }
+
+  .contact__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 32px 23px;
+    grid-gap: 12px 16px;
+    gap: 12px 16px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      label {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .Prestation__grid__form {
+    margin-bottom: 0px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .precedent {
     top: 103px;

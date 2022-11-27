@@ -365,22 +365,24 @@ const Devis = () => {
                   Fill up the form and our team will get back to you within 24
                   Hours
                 </p>
-                <div className="formulaire__left_1">
-                  <img src="" alt="" />
-                  <p> 07 62 06 88 30</p>
-                </div>
-                <div className="formulaire__left_2">
-                  <img src="" alt="" />
-                  <p> demarreTonProjet@gmail.com</p>
-                </div>
-                <div className="formulaire__left_3">
-                  <img src="" alt="" />
-                  <p> 30 rue du bois joly</p>
-                </div>
-                <div className="formulaire__left_4">
-                  <img src="" alt="instagram" />
-                  <img src="" alt="Twitter" />
-                  <img src="" alt="facebook" />
+                <div className="formulaire__left_all">
+                  <div className="formulaire__left_1">
+                    <img src="" alt="" />
+                    <p> 07 62 06 88 30</p>
+                  </div>
+                  <div className="formulaire__left_2">
+                    <img src="" alt="" />
+                    <p> demarreTonProjet@gmail.com</p>
+                  </div>
+                  <div className="formulaire__left_3">
+                    <img src="" alt="" />
+                    <p> 30 rue du bois joly</p>
+                  </div>
+                  <div className="formulaire__left_4">
+                    <img src="" alt="instagram" />
+                    <img src="" alt="Twitter" />
+                    <img src="" alt="facebook" />
+                  </div>
                 </div>
               </div>
 

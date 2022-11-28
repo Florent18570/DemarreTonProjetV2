@@ -477,7 +477,18 @@ label {
     border: white 2px solid;
   }
 }
+@media screen and (max-width: 767px) {
+  .formulaire__left_all {
+    display: none;
+  }
+}
 @media screen and (max-width: 556px) {
+  .Footer {
+    margin-top: 800px;
+  }
+  .formulaire {
+    margin: 15px;
+  }
   .Prestation__grid__form {
     display: flex;
     position: relative;

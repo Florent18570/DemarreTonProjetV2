@@ -27,12 +27,17 @@
     display: flex;
     width: 50%;
     background-color: white;
+    background-image: url("http://localhost:3000/static/media/application-web-industrie-batail_log.7f40adba.webp");
+    background-size: cover;
+    height: 600px;
 }
 
 .Prestationspe_Presentation_Image_img{
     width: 50%;
 }
-
+.Prestationspe_Presntation_Image_img{
+    max-width: 688px;
+}
 .Prestationspe_separation{
     background-color: orange;
     width: 100%;
@@ -86,7 +91,45 @@
 .Prestationspe_Explication_Detail_text{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
+    width: 45%;
+    flex: 0 0 45%;
+    max-width: 45%;
+    padding: 45px;
+
+}
+.Prestationspe_Explication_Detail_description{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    flex: 0 0 55%;
+    max-width: 55%;
+}
+
+.Prestationspe_Explication_Detail_text_titre{
+    color:orangered
+}
+.Prestationspe_Explication_Detail_text_p{
+    margin-top: 40px;
+}
+.Prestationspe_Explication_Detail_text_bouton{
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.Prestation_Explication_Detail_bloc1{
+    background-color: white;
+    border-radius: 23px;
+    padding:35px;
+    margin-bottom: 40px;
+
+}
+.Prestation_Explication_Detail_bloc1_titre{
+    color:orangered;
+    margin-top:50px;
+}
+
+
+.Prestation_Explication_Detail_bloc2{
+    background-color: white;
 }

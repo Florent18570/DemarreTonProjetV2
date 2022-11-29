@@ -443,10 +443,10 @@ const Devis = () => {
                   <label htmlFor="Entreprise"> Nature des travaux *</label>
                   <select
                     type="select"
-                    className="Devis_Form_entreprise Devis_form_template"
+                    className="select Devis_Form_entreprise Devis_form_template"
                     name="Entreprise"
                   >
-                    <option value="">--Please choose an option--</option>
+                    <option value="">-- Prestation souhaitez</option>
                     <option value="creation">Création d'un site web</option>
                     <option value="refonte">Refonte d'un site web</option>
                   </select>
@@ -455,10 +455,10 @@ const Devis = () => {
                   <label htmlFor="Entreprise"> Type de site *</label>
                   <select
                     type="select"
-                    className="Devis_Form_entreprise Devis_form_template"
+                    className="select Devis_Form_entreprise Devis_form_template"
                     name="Entreprise"
                   >
-                    <option value="">--Please choose an option--</option>
+                    <option value="">-- Type de site </option>
                     <option value="creation">Site « carte de visite »</option>
                     <option value="e-commerce">Site e-commerce</option>
                     <option value="Application">Application web</option>
@@ -490,7 +490,7 @@ const Devis = () => {
                     maxlength="256"
                     name="message"
                     data-name="message"
-                    placeholder="URL"
+                    placeholder=""
                     id="Budget"
                   />
                 </div>

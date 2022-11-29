@@ -421,6 +421,32 @@ label {
   .formulaire__left_all {
     display: none;
   }
+  label {
+    font-size: 14px;
+  }
+
+  .contact__grid div label {
+    margin-bottom: 1px;
+  }
+  input::placeholder,
+  .select {
+    font-size: 12px;
+  }
+
+  .Devis_form_template {
+    min-height: 42px;
+  }
+
+  .contact__grid {
+    padding: 0px 19px 23px;
+  }
+
+  .Devis_Form_entreprise,
+  .Devis_Form_tel,
+  .Devis_Form_email,
+  .Devis_Form_text {
+    background-image: none;
+  }
 }
 
 @media screen and (max-width: 556px) {

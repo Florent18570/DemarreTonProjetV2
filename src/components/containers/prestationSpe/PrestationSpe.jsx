@@ -36,8 +36,7 @@ const PrestationSpe = () => {
             </p>
           </div>
           <div className="Prestationspe_Presentation_Image">
-            <img src={grid4} alt="grid4"></img>
-          </div>
+              </div>
         </div>
         <div className="Prestationspe_separation">
           <h2 className="Prestationspe_Separation_titre">
@@ -56,15 +55,40 @@ const PrestationSpe = () => {
           </h2>
           <div className="Prestationspe_Explication_detail">
             <div className="Prestationspe_Explication_Detail_text">
-              <h3>
+              <h4 className="Prestationspe_Explication_Detail_text_titre">
                 Mettez toutes les chances de votre côtés pour convertir un
                 client
-              </h3>
-              <p>
-                bla bla bla bla faudra que je réflechisse à mettre un texte
-                intéressant
+              </h4>
+              <p className="Prestationspe_Explication_Detail_text_p">
+                DemarreTonProjet est une agence de création web idéal pour votre structure. Que votre souhait soit un site vitrine, une application ou un site e-commerce. Nous saurons répondre à toutes vos demandes pour vous proposer un prix en adéquation avec votre envie.
               </p>
-              <button>Demander un avis d'expert</button>
+              <button className="Prestationspe_Explication_Detail_text_bouton">Demander un avis d'expert</button>
+            </div>
+            <div className="Prestationspe_Explication_Detail_description">
+                <div className="Prestation_Explication_Detail_bloc1">
+                    <h4 className="Prestation_Explication_Detail_bloc1_titre">
+                        Création site vitrine
+                    </h4>
+                    <p className="Prestationspe_Explication_Detail_text_p">
+                        La création de votre site vitrine peut avoir un impact important sur le placement de votre entreprise. Gain en visibilité, en future client mais également en prestance grace à votre site internet. Tous ces avantages vous seront offert en créant votre site web.
+                    </p>
+                </div>
+                <div className="Prestation_Explication_Detail_bloc1">
+                    <h4 className="Prestation_Explication_Detail_bloc1_titre">
+                        Création application web
+                    </h4>
+                    <p className="Prestationspe_Explication_Detail_text_p">
+                        Le besoin d'un logiciel web se fait de plus en plus ressentir. Simplicité d'utilisation, de gestion ou encore de réalisation, votre logiciel sera en mesure de remplir vos besoins.
+                    </p>
+                </div>
+                <div className="Prestation_Explication_Detail_bloc1">
+                    <h4 className="Prestation_Explication_Detail_bloc1_titre">
+                        Création site e-commerce
+                    </h4>
+                    <p className="Prestationspe_Explication_Detail_text_p">
+                        Avec l'augmentation du trafic internet et des achats en ligne, disposer de sont propre site de vente en ligne devient une condition essentiel dans l'air du temps. Nos outils et technologies peuvent répondre à vos exigences pour augmenter votre chiffre d'affaire.
+                    </p>
+                </div>
             </div>
           </div>
         </div>

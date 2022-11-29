@@ -1,7 +1,7 @@
 import React from "react";
-import processus1 from "../../../Images/processus1.webp";
-import processus2 from "../../../Images/processus2.webp";
-import processus3 from "../../../Images/processus3.webp";
+import processus1 from "../../../Images/plan.webp";
+import processus2 from "../../../Images/dev.webp";
+import processus3 from "../../../Images/lancement.webp";
 
 import Union from "../../../Images/Union.webp";
 

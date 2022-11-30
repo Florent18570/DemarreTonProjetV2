@@ -173,6 +173,25 @@
 ///  Ajout flo
 ///
 
+.range {
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  background-image: linear-gradient(135deg, #119cd7, #0b3177);
+  border: white 2px solid;
+}
+
+input[type="range"] {
+  margin-right: 15px;
+  width: 200px;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-image: linear-gradient(#ff4500, #ff4500);
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 100em) {
   #tns1 {
     width: calc(100%);
@@ -239,9 +258,10 @@
     display: flex;
     gap: 5%;
     justify-content: center;
+    align-items: center;
     button {
       color: rgb(194, 227, 247);
-      padding: 50px;
+      padding: 36px;
       border-radius: 20px;
       background-image: linear-gradient(135deg, #119cd7, #0b3177);
       border: white 2px solid;

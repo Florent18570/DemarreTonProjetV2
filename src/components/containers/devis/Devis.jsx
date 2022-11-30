@@ -7,6 +7,7 @@ import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 const Devis = () => {
   const [slider, setSlider] = useState("");
   const [active, setActive] = useState(null);
+  const [range, setRange] = useState(0);
 
   const [dataTabs] = useState([
     {
@@ -29,7 +30,7 @@ const Devis = () => {
     var sliderdefault = tns({
       container: ".my-slider",
       gutter: 20,
-      mouseDrag: false,
+      swipeAngle: false,
       loop: false,
       prevButton: ".precedent",
       nextButton: ".suivant",
@@ -59,6 +60,10 @@ const Devis = () => {
     target.addEventListener("click", function () {
       slider.goTo(Number(slidenb));
     });
+  }
+
+  function valueRange(e) {
+    setRange(e.target.value);
   }
 
   var switchdevis = 0;
@@ -233,7 +238,16 @@ const Devis = () => {
               </h2>
 
               <div className="etape1__flex etape_margin">
-                <input type="range" min="1" max="100" />
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value={range}
+                  onChange={(e) => valueRange(e)}
+                />
+                <output id="rangevalue" className="range">
+                  {range}
+                </output>
               </div>
 
               <button onClick={(e) => goTo(5, e)} className="Etape2_slide1">

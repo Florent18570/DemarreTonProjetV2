@@ -181,6 +181,11 @@
   }
 }
 
+.tns-ovh {
+  overflow: hidden;
+  border-radius: 30px;
+}
+
 .displaynone {
   display: none;
 }
@@ -228,7 +233,7 @@
 
 .etape1 {
   width: 600px;
-
+  border-radius: 30px;
   background-color: #0d3269;
   &__flex {
     display: flex;

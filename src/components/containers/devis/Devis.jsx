@@ -123,8 +123,8 @@ const Devis = () => {
           key={id}
           className={isActive ? "active" : ""}
           onClick={() => {
-            devischange(id);
             navigate(id);
+            devischange(id);
           }}
         >
           <div
@@ -177,10 +177,10 @@ const Devis = () => {
               <h2>Est-ce pour une création ou une refonte de site ?</h2>
 
               <div className="etape1__flex etape_margin">
-                <button onClick={(e) => goTo(10, e)} className="Etape1_slide1">
+                <button onClick={(e) => goTo(1, e)} className="Etape1_slide1">
                   Création
                 </button>
-                <button onClick={(e) => goTo(10, e)} className="Etape1_slide2">
+                <button onClick={(e) => goTo(1, e)} className="Etape1_slide2">
                   Refonte (site déjà existant)
                 </button>
               </div>

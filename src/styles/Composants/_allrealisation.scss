@@ -18,7 +18,7 @@
   grid-row-gap: 32px;
   padding: 5px 8% 233px 8%;
   &__container {
-    background-color: rgb(156, 213, 241);
+    background-color: rgb(0 81 177);
     box-shadow: 0 6px 12px 0 rgb(20 20 43 / 5%);
     border-style: solid;
     border-width: 1px;
@@ -26,6 +26,7 @@
     border-radius: 40px;
     transition: 0.3s;
     overflow: hidden;
+    color:white;
     &:hover {
       opacity: 0.9;
       scale: 1.02;
@@ -78,7 +79,7 @@
   &__bottom {
     margin-top: 10px;
     p {
-      color: rgb(71, 71, 71);
+      color:white;
     }
   }
 }

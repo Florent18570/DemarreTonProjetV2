@@ -17,6 +17,7 @@
 }
 .Prestationspe_Presentation_text_titre{
     display: flex;
+    margin-top: 25px;
 
 }
 .Prestationspe_Presentation_text_p{
@@ -39,7 +40,7 @@
     max-width: 688px;
 }
 .Prestationspe_separation{
-    background-color: orange;
+    background-color: $bleumifonce;
     width: 100%;
     min-height: 300px;
     background-size: cover;
@@ -53,10 +54,22 @@
 .Prestationspe_Separation_titre{
     display: flex;
     margin: auto;
+    color: white;
+    margin-bottom: 30px;
 }
 .Prestationspe_Separation_button{
+    background: white;
+    border-radius: 1000px;
+    justify-content: space-evenly;
+    margin: 26px auto;
     display: flex;
-    margin: auto;
+    color: #0051b1;
+    padding: 18px 25px;
+    line-height: 1.111em;
+    font-weight: 700;
+    text-align: center;
+    font-size: 17px;
+
 }
 
 .Prestationspe_explication{
@@ -106,7 +119,7 @@
 }
 
 .Prestationspe_Explication_Detail_text_titre{
-    color:orangered
+    color:#F97261;
 }
 .Prestationspe_Explication_Detail_text_p{
     margin-top: 40px;
@@ -125,8 +138,13 @@
 
 }
 .Prestation_Explication_Detail_bloc1_titre{
-    color:orangered;
-    margin-top:50px;
+    color:#f1503a;
+}
+.Prestation_Explication_Detail_bloc2_titre{
+    color:#3a83f1;
+}
+.Prestation_Explication_Detail_bloc3_titre{
+    color:#15ac22;
 }
 
 

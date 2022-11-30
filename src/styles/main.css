@@ -2792,4 +2792,33 @@ Header p {
 
 .Prestation_Explication_Detail_bloc2 {
   background-color: white;
+}
+
+@media screen and (max-width: 980px) {
+  .Prestationspe_presentation {
+    flex-direction: column;
+  }
+  .Prestationspe_Presentation_text {
+    width: 100%;
+  }
+  .Prestationspe_Presentation_Image {
+    height: 300px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .Prestationspe_Explication_detail {
+    flex-direction: column;
+  }
+  .Prestationspe_Explication_Detail_text {
+    width: 100%;
+    max-width: 100%;
+  }
+  .Prestationspe_Explication_Detail_description {
+    width: 100%;
+    max-width: 100%;
+  }
+  .Prestation_Explication_Detail_bloc1 {
+    margin: 0 40px 40px;
+  }
 }/*# sourceMappingURL=main.css.map */

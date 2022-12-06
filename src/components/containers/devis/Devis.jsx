@@ -4,6 +4,14 @@ import grid2 from "../../../Images/grid2.png";
 import emailjs from "@emailjs/browser";
 import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
+import tel from "../../../Images/tel.webp";
+import mail from "../../../Images/mail.webp";
+import localisation from "../../../Images/localisation.webp";
+
+import facebook from "../../../Images/facebook.webp";
+import instagram from "../../../Images/instagram.webp";
+import twitter from "../../../Images/twitter.webp";
+
 const Devis = () => {
   const [slider, setSlider] = useState("");
   const [active, setActive] = useState(null);
@@ -381,21 +389,25 @@ const Devis = () => {
                 </p>
                 <div className="formulaire__left_all">
                   <div className="formulaire__left_1">
-                    <img src="" alt="" />
+                    <img src={tel} alt="" />
                     <p> 07 62 06 88 30</p>
                   </div>
+                  <div className="formulaire__left_1">
+                    <img src={tel} alt="" />
+                    <p> 06 67 63 25 87</p>
+                  </div>
                   <div className="formulaire__left_2">
-                    <img src="" alt="" />
+                    <img src={mail} alt="" />
                     <p> demarreTonProjet@gmail.com</p>
                   </div>
-                  <div className="formulaire__left_3">
-                    <img src="" alt="" />
+                  <div className="formulaire__left_3 ">
+                    <img src={localisation} alt="" />
                     <p> 30 rue du bois joly</p>
                   </div>
                   <div className="formulaire__left_4">
-                    <img src="" alt="instagram" />
-                    <img src="" alt="Twitter" />
-                    <img src="" alt="facebook" />
+                    <img src={instagram} alt="instagram" />
+                    <img src={twitter} alt="Twitter" />
+                    <img src={facebook} alt="facebook" />
                   </div>
                 </div>
               </div>
@@ -521,9 +533,12 @@ const Devis = () => {
                     id="projet"
                   />
                 </div>
+                <div></div>
+                <div className="div_sendForm">
+                  <input className="sendForm" type="submit" value="Envoyer" />
+                </div>
               </div>
             </form>
-            <input className="sendForm" type="submit" value="Send" />
           </div>
         </div>
       </section>

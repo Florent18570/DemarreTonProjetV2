@@ -85,6 +85,26 @@
 //   }
 // }
 
+// Icone left ********************************
+.formulaire__left_1,
+.formulaire__left_2,
+.formulaire__left_3,
+.formulaire__left_4 {
+  display: flex;
+  margin-top: 10px;
+  p {
+    font-size: 15px;
+  }
+  img {
+    margin-right: 20px;
+    width: 30px;
+  }
+}
+
+.formulaire__left_all {
+  margin-top: 30px;
+}
+
 .Devis_form {
   color: #6e7191;
   font-size: 18px;
@@ -100,11 +120,19 @@
   }
 }
 
+.div_sendForm {
+  display: flex;
+  align-items: flex-end !important;
+
+  margin-right: 20%;
+  margin-top: 20px;
+  justify-content: center;
+}
+
 .sendForm {
-  width: 73px;
-  height: 18px;
+  border-radius: 50px;
   padding: 10px 30px;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   background: #cd9251;
   font-weight: 700;
   color: #fff;
@@ -423,6 +451,18 @@ label {
 }
 
 @media screen and (max-width: 991px) {
+  .div_sendForm {
+    display: flex;
+    align-items: center !important;
+
+    margin-right: 0%;
+    margin-top: 20px;
+    justify-content: center;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
   .precedent {
     top: 103px;
     right: 30px;

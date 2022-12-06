@@ -600,225 +600,6 @@ label {
     font-size: 16px;
   }
 }
-/* Footer */
-.Footer {
-  background: url("/images/vague.svg");
-  display: flex;
-  width: 100%;
-  padding-top: 100px;
-  background-size: cover;
-}
-.Footer__left {
-  margin-left: 30px;
-  margin-top: -200px;
-}
-.Footer__left img {
-  width: 370px;
-  height: auto;
-}
-.Footer__right {
-  display: flex;
-  flex-direction: column;
-  padding: 50px 0% 50px 3%;
-}
-.info__footer {
-  display: none;
-}
-
-.reseau {
-  display: none;
-}
-
-.Footer__right {
-  padding: 50px 3%;
-  width: 100%;
-}
-.Footer__right__devis {
-  border: 3px white solid;
-  border-radius: 1000px;
-  display: flex;
-  justify-content: space-between;
-}
-.Footer__right__devis p {
-  color: white;
-  padding: 10px 0 10px 10px;
-  margin-left: 20px;
-}
-.Footer__right__devis button {
-  background-color: white;
-  color: #3471cb;
-  border-radius: 1000px;
-  padding: 10px 10px 10px 10px;
-}
-.Footer__right__link {
-  display: flex;
-  gap: 60px;
-  margin-top: 40px;
-  margin-right: 30px;
-  margin-left: 7%;
-}
-.Footer__right__link__container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.Footer__right__link__container h3 {
-  font-size: 24px;
-  color: white;
-  margin-bottom: 18px;
-}
-.Footer__right__link__container p {
-  color: #97b6e7;
-  font-size: 15px;
-  margin-bottom: 7px;
-}
-
-.Footer__right__link__horizontalBarre {
-  border-top: 2px solid #d9dbe9;
-  opacity: 52%;
-  margin-top: 30px;
-}
-
-.Footer__right__link__mentionLegal {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.Footer__right__link__mentionLegal p {
-  font-size: 14px;
-}
-.Footer__right__link__mentionLegal div {
-  display: flex;
-  align-items: center;
-}
-.Footer__right__link__mentionLegal div p {
-  margin-right: 30px;
-  transition: all 0.5s;
-  font-size: 14px;
-}
-.Footer__right__link__mentionLegal div :hover {
-  color: white;
-}
-
-@media screen and (max-width: 991px) {
-  .Footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-position-x: -500px;
-    justify-content: center;
-  }
-  .Footer__left {
-    margin-left: 30px;
-    margin-top: -180px;
-    display: flex;
-    justify-content: center;
-  }
-  .Footer__left img {
-    width: 250px;
-    height: auto;
-  }
-  .Footer__right {
-    padding: 50px 7% 50px 7%;
-  }
-  .Footer__right {
-    margin: 0 0;
-    width: auto;
-  }
-  .Footer__right__link {
-    margin-left: 7%;
-  }
-  .Footer__right__link__mentionLegal p {
-    font-size: 12px;
-  }
-  .Footer__right__link__mentionLegal div p {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .Footer__left img {
-    display: none;
-  }
-  .Footer__left {
-    margin-left: 0px;
-    margin-top: -100px;
-  }
-  .Footer__right {
-    padding: 50px 3% 50px 3%;
-  }
-  .Footer__right__link {
-    margin-left: 9%;
-    flex-direction: column;
-    gap: 21px;
-  }
-  .info__footer {
-    display: flex;
-    margin-top: 115px;
-    padding: 12px 20px 10px 40px;
-    background: #d3e0ed;
-    border-radius: 42px;
-    text-align: center;
-    gap: 20px;
-    color: #072d65;
-  }
-  .info__footer h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  .info__footer p {
-    font-size: 8px;
-  }
-  .info__footer__div__border {
-    border-left: #072d65 2px solid;
-  }
-  .p3 {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  .p3 img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    display: block;
-    height: 30px;
-    width: 30px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .Footer__right__link__mentionLegal {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .Footer__right__link__mentionLegal div p {
-    margin-right: 15px;
-  }
-  .reseau {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 10px;
-  }
-  .reseau img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    display: block;
-    height: 27px;
-    width: 27px;
-  }
-  .p3 {
-    display: none;
-  }
-  .Footer__right__devis {
-    margin: 0px 2%;
-  }
-  .Footer__right__devis p {
-    font-size: 14px;
-  }
-  .Footer__right__devis button {
-    font-size: 16px;
-  }
-}
 .Header_global {
   position: relative;
   overflow: hidden;
@@ -2820,5 +2601,227 @@ Header p {
   }
   .Prestation_Explication_Detail_bloc1 {
     margin: 0 40px 40px;
+  }
+}
+/* Footer */
+.Footer {
+  background: url("/images/vague.svg");
+  display: flex;
+  width: 100%;
+  padding-top: 100px;
+  background-size: cover;
+}
+.Footer__left {
+  margin-left: 30px;
+  margin-top: -200px;
+}
+.Footer__left img {
+  width: 370px;
+  height: auto;
+}
+.Footer__right {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0% 50px 3%;
+}
+.info__footer {
+  display: none;
+}
+
+.reseau {
+  display: none;
+}
+
+.Footer__right {
+  padding: 50px 3%;
+  width: 100%;
+}
+.Footer__right__devis {
+  border: 3px white solid;
+  border-radius: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+.Footer__right__devis p {
+  color: white;
+  padding: 10px 0 10px 10px;
+  margin-left: 20px;
+}
+.Footer__right__devis button {
+  background-color: white;
+  color: #3471cb;
+  border-radius: 1000px;
+  padding: 10px 10px 10px 10px;
+}
+.Footer__right__link {
+  display: flex;
+  gap: 60px;
+  margin-top: 40px;
+  margin-right: 30px;
+  margin-left: 7%;
+}
+.Footer__right__link__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Footer__right__link__container h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 18px;
+}
+.Footer__right__link__container p {
+  color: #97b6e7;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+.Footer__right__link__horizontalBarre {
+  border-top: 2px solid #d9dbe9;
+  opacity: 52%;
+  margin-top: 30px;
+}
+
+.Footer__right__link__mentionLegal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Footer__right__link__mentionLegal p {
+  font-size: 14px;
+}
+.Footer__right__link__mentionLegal div {
+  display: flex;
+  align-items: center;
+}
+.Footer__right__link__mentionLegal div p {
+  margin-right: 30px;
+  transition: all 0.5s;
+  font-size: 14px;
+}
+.Footer__right__link__mentionLegal div a {
+  margin-right: 60px;
+}
+.Footer__right__link__mentionLegal div :hover {
+  color: white;
+}
+
+@media screen and (max-width: 991px) {
+  .Footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-position-x: -500px;
+    justify-content: center;
+  }
+  .Footer__left {
+    margin-left: 30px;
+    margin-top: -180px;
+    display: flex;
+    justify-content: center;
+  }
+  .Footer__left img {
+    width: 250px;
+    height: auto;
+  }
+  .Footer__right {
+    padding: 50px 7% 50px 7%;
+  }
+  .Footer__right {
+    margin: 0 0;
+    width: auto;
+  }
+  .Footer__right__link {
+    margin-left: 7%;
+  }
+  .Footer__right__link__mentionLegal p {
+    font-size: 12px;
+  }
+  .Footer__right__link__mentionLegal div p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Footer__left img {
+    display: none;
+  }
+  .Footer__left {
+    margin-left: 0px;
+    margin-top: -100px;
+  }
+  .Footer__right {
+    padding: 50px 3% 50px 3%;
+  }
+  .Footer__right__link {
+    margin-left: 9%;
+    flex-direction: column;
+    gap: 21px;
+  }
+  .info__footer {
+    display: flex;
+    margin-top: 115px;
+    padding: 12px 20px 10px 40px;
+    background: #d3e0ed;
+    border-radius: 42px;
+    text-align: center;
+    gap: 20px;
+    color: #072d65;
+  }
+  .info__footer h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .info__footer p {
+    font-size: 8px;
+  }
+  .info__footer__div__border {
+    border-left: #072d65 2px solid;
+  }
+  .p3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .p3 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Footer__right__link__mentionLegal {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Footer__right__link__mentionLegal div p {
+    margin-right: 15px;
+  }
+  .reseau {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+  }
+  .reseau img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+    height: 27px;
+    width: 27px;
+  }
+  .p3 {
+    display: none;
+  }
+  .Footer__right__devis {
+    margin: 0px 2%;
+  }
+  .Footer__right__devis p {
+    font-size: 14px;
+  }
+  .Footer__right__devis button {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=main.css.map */

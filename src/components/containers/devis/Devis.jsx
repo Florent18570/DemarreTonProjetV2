@@ -366,7 +366,7 @@ const Devis = () => {
 
           <button className="controle suivant ">Après</button>
 
-          <div name="nonidee" className="Prestation__grid__choix contact ">
+          <div name="nonidee" className="Prestation__grid__choix   ">
             <form
               className="Devis_form formulaire"
               id="devis"

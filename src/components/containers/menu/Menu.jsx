@@ -61,7 +61,7 @@ const Menu = () => {
           </div>
           <div className="Menu_Ordi_Partiegauche_menu">
             <a href="/" className="Menu_Ordi_Partiegauche_Menu_element">
-              Acceuil
+              Accueil
             </a>
             <a
               className="Menu_Ordi_Partiegauche_Menu_element smenu relatif"
@@ -105,7 +105,7 @@ const Menu = () => {
             >
               Réalisation
             </a>
-            <a className="Menu_Ordi_Partiegauche_Menu_element">L'agence</a>
+            {/* <a className="Menu_Ordi_Partiegauche_Menu_element">L'agence</a> */}
           </div>
         </div>
         <div className="Menu_Ordi_partiedroite">
@@ -170,7 +170,7 @@ const Menu = () => {
             Réalisation
           </a>
 
-          <a className="Menu_Ordi_Partiegauche_Menu_element">L'agence</a>
+          {/* <a className="Menu_Ordi_Partiegauche_Menu_element">L'agence</a> */}
         </nav>
       </div>
     </div>

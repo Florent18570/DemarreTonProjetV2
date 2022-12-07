@@ -388,6 +388,40 @@ label {
 /////////////////////////////////////////
 ///
 
+@media screen and (max-width: 1624px) {
+  .marge_prestation {
+    padding: 26px 26px 26px 26px !important;
+  }
+  .devisp {
+    font-size: 15px !important;
+  }
+  .devish3 {
+    font-size: 25px !important;
+  }
+  .devisImage {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 1232px) {
+  .Prestation__grid {
+    display: grid;
+    grid-template-columns: 48% 48% !important;
+  }
+  .marge_prestation {
+    padding: 26px 26px 17px 26px !important;
+  }
+  .devisp {
+    font-size: 15px !important;
+  }
+  .devish3 {
+    font-size: 20px !important;
+  }
+  .devisImage {
+    width: 85px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .formulaire__left_all {
     display: flex;
@@ -451,6 +485,25 @@ label {
 }
 
 @media screen and (max-width: 991px) {
+  .Prestation__grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+  .marge_prestation {
+    padding: 26px 26px 17px 26px !important;
+  }
+  .devisp {
+    font-size: 15px !important;
+  }
+  .devish3 {
+    font-size: 21px !important;
+  }
+  .devisImage {
+    width: 100px;
+  }
+
+  //////////////////////////
+
   .div_sendForm {
     display: flex;
     align-items: center !important;
@@ -563,6 +616,15 @@ label {
   }
 }
 
+@media screen and (max-width: 478px) {
+  .devisImage {
+    width: 100px;
+    margin-right: 0px;
+  }
+  .Prestation__grid__card__img img {
+    margin-right: 0px !important;
+  }
+}
 @media screen and (max-width: 375px) {
   .Prestation__grid__form {
     display: flex;

@@ -146,11 +146,13 @@ const Devis = () => {
             }`}
           >
             <div className="Prestation__grid__card__img">
-              <img src={img} alt="grid1" />
+              <img className="devisImage" src={img} alt="grid1" />
             </div>
             <div className="Prestation__grid__card__content">
-              <h3 className={` ${isActive ? "activeH3" : ""}`}> {h3}</h3>
-              <p className={` ${isActive ? "activep" : ""}`}>{p}</p>
+              <h3 className={`${isActive ? "activeH3 devish3" : "devish3"}`}>
+                {h3}
+              </h3>
+              <p className={`${isActive ? "activep devisp" : "devisp"}`}>{p}</p>
             </div>
           </div>
         </button>
@@ -404,11 +406,11 @@ const Devis = () => {
                     <img src={localisation} alt="" />
                     <p> 30 rue du bois joly</p>
                   </div>
-                  <div className="formulaire__left_4">
-                    <img src={instagram} alt="instagram" />
-                    <img src={twitter} alt="Twitter" />
-                    <img src={facebook} alt="facebook" />
-                  </div>
+                </div>
+                <div className="formulaire__left_4">
+                  <img src={instagram} alt="instagram" />
+                  <img src={twitter} alt="Twitter" />
+                  <img src={facebook} alt="facebook" />
                 </div>
               </div>
 

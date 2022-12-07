@@ -87,16 +87,15 @@
   align-items: center;
   justify-content: space-between;
   p {
-    font-size: 14px;
+    font-size: 15px;
   }
   div {
     display: flex;
     align-items: center;
     p {
       margin-right: 30px;
-
       transition: all 0.5s;
-      font-size: 14px;
+      font-size: 12px;
     }
     a {
       margin-right: 60px;
@@ -240,13 +239,16 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 686px) {
   .Footer__right__link__mentionLegal {
     flex-direction: column;
     justify-content: center;
     div {
       p {
         margin-right: 15px;
+      }
+      a {
+        margin-right: 0px;
       }
     }
   }

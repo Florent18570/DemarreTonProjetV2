@@ -64,7 +64,9 @@ const Footer = () => {
             <div>
               <p> Mention légales </p>
               <p> Politique de Confidentialité </p>
-              <a href="/images/Conditions-Generales.pdf"> Condition générale </a>
+              <a href="/images/Conditions-Generales.pdf">
+                <p>CGV </p>
+              </a>
             </div>
           </div>
         </div>

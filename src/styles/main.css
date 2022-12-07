@@ -1973,6 +1973,10 @@ label {
     width: 100%;
   }
 }
+.tru {
+  border: 1px;
+}
+
 Header {
   display: flex;
   flex-direction: column;
@@ -2755,7 +2759,7 @@ Header p {
   justify-content: space-between;
 }
 .Footer__right__link__mentionLegal p {
-  font-size: 14px;
+  font-size: 15px;
 }
 .Footer__right__link__mentionLegal div {
   display: flex;
@@ -2764,7 +2768,7 @@ Header p {
 .Footer__right__link__mentionLegal div p {
   margin-right: 30px;
   transition: all 0.5s;
-  font-size: 14px;
+  font-size: 12px;
 }
 .Footer__right__link__mentionLegal div a {
   margin-right: 60px;
@@ -2857,13 +2861,16 @@ Header p {
     width: 30px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 686px) {
   .Footer__right__link__mentionLegal {
     flex-direction: column;
     justify-content: center;
   }
   .Footer__right__link__mentionLegal div p {
     margin-right: 15px;
+  }
+  .Footer__right__link__mentionLegal div a {
+    margin-right: 0px;
   }
   .reseau {
     display: flex;

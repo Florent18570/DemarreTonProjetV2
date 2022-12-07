@@ -49,7 +49,7 @@ const PresentationJu = () => {
               href="/allrealisation"
               className="Presentation__left__text__button"
             >
-              Voir toutes mes réalisations
+              Voir toutes nos réalisations
             </button>
           </div>
         </div>
@@ -80,10 +80,6 @@ const PresentationJu = () => {
             <button className="previous"> &#8249; &#8249; </button>
             <button className="next"> &#8250; &#8250; </button>
           </div>
-        </div>
-        <div>
-          {/* <FontAwesomeIcon icon={faCoffee} />
-          <FontAwesomeIcon icon={faarrowright} /> */}
         </div>
       </div>
     </>

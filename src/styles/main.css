@@ -1364,8 +1364,7 @@ label {
 
 .Presentation__right {
   display: flex;
-  padding: 47px 20px;
-  margin-right: 20px;
+  margin: 45px 3.5%;
 }
 .Presentation__right__card {
   overflow: hidden;
@@ -1373,7 +1372,6 @@ label {
   flex-direction: column;
   border-radius: 30px;
   max-width: 370px;
-  height: 340px;
 }
 .Presentation__right__card img {
   border-radius: 30px 30px 0 0;
@@ -1390,9 +1388,10 @@ label {
   padding: 15px 40px 20px;
 }
 .Presentation__right__card__content__categorie {
-  max-width: 193px;
+  text-align: center;
+  max-width: 200px;
   margin-bottom: 12px;
-  padding: 9px 14px;
+  padding: 9px 0px;
   background-color: #14142b;
   color: white;
   box-shadow: 0 8px 22px 0 rgba(0, 0, 0, 0.28);
@@ -1425,7 +1424,7 @@ label {
   flex-direction: column;
 }
 .Presentation__left__text__button {
-  width: 50%;
+  width: 216px;
   display: flex;
   justify-content: center;
 }
@@ -1544,7 +1543,7 @@ label {
     max-height: 300px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .Presentation__left {
     width: 90%;
     margin-left: 7%;
@@ -1555,17 +1554,21 @@ label {
   .Presentation__left__text__button {
     margin-top: 32px;
     margin-bottom: 50px;
-    width: 43%;
+    width: 31%;
   }
   .Presentation__right {
-    padding: 47px 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Presentation__right__card {
+    width: auto;
+    height: 100%;
+    max-width: 366px;
+    max-height: 375px;
   }
   .Presentation_card_bg {
     width: 100%;
-  }
-  .Presentation__right__card {
-    max-width: 300px;
-    max-height: 300px;
   }
   .Presentation__glob {
     flex-direction: column;
@@ -1573,9 +1576,46 @@ label {
     border-radius: 50px 50px 0px 0%/50px;
   }
 }
+@media screen and (max-width: 862px) {
+  .Presentation__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Presentation__right__card {
+    width: 100%;
+    height: 100%;
+    max-width: 337px;
+    max-height: 320px;
+  }
+}
 @media screen and (max-width: 531px) {
   .Presentation__left__text__button {
     width: 200px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .Presentation__right__card {
+    margin-left: 17%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .Presentation__right__card {
+    margin-left: 7%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .Presentation__right__card {
+    margin-left: 3%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .Presentation__right__card {
+    width: 100%;
+    height: 100%;
+    max-width: 280px;
+    max-height: 280px;
+    margin-left: 7%;
   }
 }
 .Prestation {

@@ -1617,6 +1617,9 @@ label {
     max-height: 280px;
     margin-left: 7%;
   }
+  .Presentation__right__card__content__title {
+    font-size: 24px;
+  }
 }
 .Prestation {
   padding: 50px 5%;

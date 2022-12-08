@@ -86,13 +86,13 @@ export default function stockDataa() {
     },
     {
       id: "2",
-      compagnie: "Gem-générator",
-      intro: "Application web dans le but de prévenir des sites frauduleux",
-      service: "Développement logiciel",
-      technologie: "Html / Css / Js / Jquery ",
-      date: "Juin 2022",
-      site: "https://gems-generator.com/",
-      src: "/images/gemsgenerator.webp",
+      compagnie: "Technienergie",
+      intro: "Création site web vitrine",
+      service: "Création web",
+      technologie: "WordPress",
+      date: "Decembre 2022",
+      site: "https://technienergie.com/",
+      src: "/images/technienergie.webp",
       processus: [
         {
           etape: "1. première étape",
@@ -131,7 +131,7 @@ export default function stockDataa() {
       ],
     },
     {
-      id: "0",
+      id: "3",
       compagnie: "stb18",
       intro:
         "Réalisation d'un site web dans le but d'avoir un impact sur internet.",
@@ -167,6 +167,46 @@ export default function stockDataa() {
             "Tous mes sites sont optimisés afin d'être le plus performant possible.",
         },
       ],
+      
+    },
+    {
+      id: "4",
+      compagnie: "stb18",
+      intro:
+        "Réalisation d'un site web dans le but d'avoir un impact sur internet.",
+      service: "Développement Web",
+      technologie: "Html / Css / Js / Wordpress",
+      date: "Janvier 2022",
+      site: "https://stb18.fr",
+      src: "/images/stb18.webp",
+      processus: [
+        {
+          etape: "1. Rédaction d'une charte graphique",
+          description:
+            "Comme tout projet, une charte graphique est au préalable développée afin que le site corresponde au mieux à l'identité visuelle de l'entreprise.",
+        },
+        {
+          etape: "2. Design des wireframes et de la maquette",
+          description:
+            "En reprenant la charte graphique, la totalité des pages a d'abord été wireframée, puis, sur Figma, le design a été fait. Après validation du client, nous avons pu passer à la suite.",
+        },
+        {
+          etape: "3. Choix de la solution",
+          description:
+            "La solution devait s'intégrer dans l'écosystème déjà existant, j'ai décidé d'utiliser Webflow pour ensuite exporter le code en HTML/CSS/JS et l'intégrer à la solution.",
+        },
+        {
+          etape: "4. Développement du site",
+          description:
+            " Une fois la maquette validée et la solution choisie, j'ai pu passer au développement du site.",
+        },
+        {
+          etape: "5. Test de performance PageSpeed Insights de Google",
+          description:
+            "Tous mes sites sont optimisés afin d'être le plus performant possible.",
+        },
+      ],
+      
     },
   ];
 

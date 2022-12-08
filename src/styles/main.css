@@ -823,6 +823,7 @@ label {
   }
 }
 .cube {
+  z-index: -1;
   position: absolute;
   top: 34vh;
   left: 78vw;

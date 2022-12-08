@@ -91,7 +91,7 @@ export default function stockDataa() {
       service: "Création web",
       technologie: "WordPress",
       date: "Decembre 2022",
-      site: "https://technienergie.com/",
+      site: "https://technienergie.fr/",
       src: "/images/technienergie.webp",
       processus: [
         {

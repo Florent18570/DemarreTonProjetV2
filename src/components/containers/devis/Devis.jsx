@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import grid1 from "../../../Images/grid.png";
 import grid2 from "../../../Images/grid2.png";
 import emailjs from "@emailjs/browser";
@@ -16,23 +16,37 @@ const Devis = () => {
   const [slider, setSlider] = useState("");
   const [active, setActive] = useState(null);
   const [range, setRange] = useState(0);
-
+  const ref_buttonleft = useRef(null);
+  const ref_buttonright = useRef(null);
   const [dataTabs] = useState([
     {
       id: 1,
       img: grid1,
       h3: " J'ai une idée de site",
       p: "Afin de concevoir un site au plus proche de votre souhait,nous vous laissons remplir le formulaire de contact afin quenous puissions répondre à votre demande au plus vite.",
-      href: "#etape",
     },
     {
       id: 2,
       img: grid2,
       h3: "Je n'ai aucune idée du visuel",
       p: "Le design ? Nous pouvons nous en occuper. Pour nous aider et vous donner rapidement et en ligne une fourchette de prix,nous vous laissons remplir le formulaire suivant.",
-      href: "#devis",
     },
   ]);
+
+  const executeScroll1 = (ref) => {
+    ref_buttonright.current.scrollIntoView({
+      inline: "end",
+      behavior: "smooth",
+    });
+    // console.log(ref);
+  };
+  const executeScroll2 = (ref) => {
+    // ref.current.scrollIntoView({ inline: "center", behavior: "smooth" });
+    // console.log(ref);
+  };
+  const navigate = (id) => {
+    setActive(id);
+  };
 
   useEffect(() => {
     var sliderdefault = tns({
@@ -129,7 +143,17 @@ const Devis = () => {
       );
   };
 
-  const NavLink = ({ id, img, h3, p, isActive, href, onClick }) => {
+  const NavLink = ({
+    id,
+    img,
+    h3,
+    p,
+    isActive,
+    href,
+    ref,
+    onClick,
+    functionn,
+  }) => {
     return (
       <a href={href}>
         <button
@@ -138,8 +162,10 @@ const Devis = () => {
           onClick={() => {
             navigate(id);
             devischange(id);
+            executeScroll1();
           }}
         >
+          {console.log(functionn)}
           <div
             className={`Prestation__grid__card marge_prestation ${
               isActive ? "active" : ""
@@ -160,23 +186,14 @@ const Devis = () => {
     );
   };
 
-  const navigate = (id) => {
-    setActive(id);
-  };
-
   return (
-    <div>
+    <div ref={ref_buttonleft}>
       <section className="Prestationdevis">
         <h2> Faites vous accompagner pour votre visibilité sur internet </h2>
 
         <div className="Prestation__grid">
           {dataTabs.map((item) => (
-            <NavLink
-              key={item.id}
-              {...item}
-              isActive={active === item.id}
-              onClick={navigate}
-            />
+            <NavLink key={item.id} {...item} isActive={active === item.id} />
           ))}
         </div>
 
@@ -376,10 +393,13 @@ const Devis = () => {
 
           <button className="controle suivant ">Après</button>
 
-          <div name="nonidee" className="Prestation__grid__choix   ">
+          <div
+            ref={ref_buttonright}
+            name="nonidee"
+            className="Prestation__grid__choix   "
+          >
             <form
               className="Devis_form formulaire"
-              id="devis"
               name="form"
               onSubmit={sendEmail}
             >

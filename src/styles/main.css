@@ -493,12 +493,16 @@ label {
   .devisImage {
     width: 85px;
   }
+  .Devis_form_template {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 1023px) {
+  .Devis_form_template {
+    font-size: 15px;
+  }
   .formulaire__left_all {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: none;
   }
   .contact {
     margin-bottom: 100px;
@@ -677,7 +681,41 @@ label {
     margin-right: 0px !important;
   }
 }
+@media screen and (max-width: 478px) {
+  .formulaire__left {
+    padding: 40px 32px;
+  }
+  .formulaire__left p {
+    font-size: 14px;
+  }
+  input::-moz-placeholder {
+    font-size: 10px;
+  }
+  input:-ms-input-placeholder {
+    font-size: 10px;
+  }
+  input::placeholder,
+.select {
+    font-size: 10px;
+  }
+  .contact__grid {
+    padding: 0px 9px 19px;
+  }
+}
 @media screen and (max-width: 375px) {
+  .Devis_form_template {
+    padding: 8px 12px 8px 10px;
+  }
+  input::-moz-placeholder {
+    font-size: 9.5px;
+  }
+  input:-ms-input-placeholder {
+    font-size: 9.5px;
+  }
+  input::placeholder,
+.select {
+    font-size: 9.5px;
+  }
   .Prestation__grid__form {
     display: flex;
     position: relative;

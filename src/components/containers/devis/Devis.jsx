@@ -400,7 +400,7 @@ const Devis = () => {
                   </div>
                   <div className="formulaire__left_2">
                     <img src={mail} alt="" />
-                    <p> demarreTonProjet@gmail.com</p>
+                    <p> demarreTonProjet18@gmail.com</p>
                   </div>
                   <div className="formulaire__left_3 ">
                     <img src={localisation} alt="" />
@@ -490,7 +490,7 @@ const Devis = () => {
                     <option value="creation">Site « carte de visite »</option>
                     <option value="e-commerce">Site e-commerce</option>
                     <option value="Application">Application web</option>
-                    <option value="refonte">Site spécifique, sur mesure</option>
+                    <option value="refonte">Sur-mesure</option>
                   </select>
                 </div>
 

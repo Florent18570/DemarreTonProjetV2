@@ -11,6 +11,7 @@ import localisation from "../../../Images/localisation.webp";
 import facebook from "../../../Images/facebook.webp";
 import instagram from "../../../Images/instagram.webp";
 import twitter from "../../../Images/twitter.webp";
+import interrogation from "../../../Images/interrogation.png";
 
 const Devis = () => {
   const [slider, setSlider] = useState("");
@@ -217,7 +218,7 @@ const Devis = () => {
                 </button>
               </div>
               <div className="aide">
-                <img src="" alt="Point d'interogation" />
+                <img src={interrogation} alt="Point d'interogation" />
                 <p>
                   Vous ne disposez pas encore d'un site web et souhaitez y
                   remédier choisissez une création de site web. Au contaire, si
@@ -242,7 +243,7 @@ const Devis = () => {
                 </button>
               </div>
               <div className="aide">
-                <img src="" alt="Point d'interogation" />
+                <img src={interrogation} alt="Point d'interogation" />
                 <p>
                   Un site web destiné à présenter une activité peut être utilisé
                   pour donner des informations sur l'entreprise ou
@@ -273,7 +274,7 @@ const Devis = () => {
                 </button>
               </div>
               <div className="aide">
-                <img src="" alt="Point d'interogation" />
+                <img src={interrogation} alt="Point d'interogation" />
                 <p>
                   Si vous souhaitez attirer les clients grâce à une
                   communication digitale efficace, ne négligez pas l'importance
@@ -308,7 +309,7 @@ const Devis = () => {
                 </button>
               </div>
               <div className="aide">
-                <img src="" alt="Point d'interogation" />
+                <img src={interrogation} alt="Point d'interogation" />
                 <p>
                   Avoir un site responsive est crucial pour la réussite de votre
                   entreprise en ligne. Un site responsive est un site qui
@@ -351,7 +352,7 @@ const Devis = () => {
                 Valider
               </button>
               <div className="aide">
-                <img src="" alt="Point d'interogation" />
+                <img src={interrogation} alt="Point d'interogation" />
                 <p>
                   Il est important de noter que le nombre de pages d'un site web
                   peut avoir un impact significatif sur son prix. Plus un site
@@ -373,7 +374,7 @@ const Devis = () => {
                 </button>
               </div>
               <div className="aide">
-                <img src="" alt="Point d'interogation" />
+                <img src={interrogation} alt="Point d'interogation" />
                 <p>
                   Les images sont un élément crucial pour un site web, car elles
                   permettent d'illustrer le contenu et de le rendre plus
@@ -410,7 +411,7 @@ const Devis = () => {
                 </button>
               </div>
               <div className="aide">
-                <img src="" alt="Point d'interogation" />
+                <img src={interrogation} alt="Point d'interogation" />
                 <p>
                   Les possibilités de création pour un site web sont presque
                   illimitées grâce aux nombreux outils et technologies
@@ -447,7 +448,7 @@ const Devis = () => {
                 </button>
               </div>
               <div className="aide">
-                <img src="" alt="Point d'interogation" />
+                <img src={interrogation} alt="Point d'interogation" />
                 <p>
                   Il y a plusieurs avantages à laisser au développeur la gestion
                   de l'hébergement du site web. Tout d'abord, cela peut être
@@ -476,7 +477,7 @@ const Devis = () => {
                 </button>
               </div>
               <div className="aide">
-                <img src="" alt="Point d'interogation" />
+                <img src={interrogation} alt="Point d'interogation" />
                 <p>
                   Il y a plusieurs avantages à choisir une offre de maintenance
                   pour un site web. Tout d'abord, cela permet de s'assurer que
@@ -505,7 +506,7 @@ const Devis = () => {
                 </button>
               </div>
               <div className="aide">
-                <img src="" alt="Point d'interogation" />
+                <img src={interrogation} alt="Point d'interogation" />
                 <p>
                   Il est important de prendre en compte la rapidité de création
                   d'un site lors de la détermination de son prix, car plus le

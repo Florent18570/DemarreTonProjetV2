@@ -185,7 +185,7 @@
   display: block;
   width: 93px;
   height: 45px;
-  top: 105px;
+  top: 57px;
   right: 50px;
   z-index: 9999;
   border-radius: 50px;
@@ -206,14 +206,19 @@
   width: 65%;
   margin: 88px auto 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 50px;
+  padding: 20px 50px 30px;
   border-radius: 30px;
   p {
     color: #656673;
     font-size: 16px;
     font-weight: 400;
+  }
+  img {
+    width: 50px;
+    margin-bottom: 10px;
   }
 }
 
@@ -423,6 +428,16 @@ label {
   }
 }
 
+@media screen and (max-width: 1356px) {
+  .precedent {
+    display: block;
+    width: 75px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
+  }
+}
+
 @media screen and (max-width: 1232px) {
   .Prestation__grid {
     display: grid;
@@ -448,6 +463,10 @@ label {
 @media screen and (max-width: 1025px) {
   .aide {
     width: 75%;
+  }
+
+  .etape1__flex button {
+    padding: 26px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -563,14 +582,14 @@ label {
   }
 
   .precedent {
-    top: 103px;
-    right: 30px;
-    font-size: 14px;
-    width: 62px;
-    height: 35px;
+    display: block;
+    width: 75px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
   }
   .slide h2 {
-    font-size: 30px;
+    font-size: 23px;
   }
   .etape1__flex button {
     color: rgb(194, 227, 247);
@@ -613,19 +632,23 @@ label {
   }
 }
 
-@media screen and (max-width: 556px) {
-  .Footer {
-    margin-top: 800px;
+@media screen and (max-width: 736px) {
+  .aide {
+    display: none;
   }
-
   .formulaire {
     margin: 15px;
+  }
+
+  #tns1 > .tns-item {
+    width: 100%;
+    padding-right: 0px !important;
   }
 
   .Prestation__grid__form {
     display: flex;
     position: relative;
-    height: 305px;
+    height: auto !important;
     margin-top: 30px;
     margin-bottom: 0px;
     margin-left: -29px;
@@ -639,10 +662,12 @@ label {
     width: 62px;
     height: 35px;
   }
+
+  .slide {
+  }
   .slide h2 {
     font-size: 20px;
     margin-left: 28px;
-    max-width: 342px;
   }
   .etape1__flex button {
     color: rgb(194, 227, 247);

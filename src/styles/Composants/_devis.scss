@@ -208,11 +208,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 100px;
+  padding: 50px 50px;
   border-radius: 30px;
   p {
     color: #656673;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
   }
 }
@@ -260,12 +260,12 @@ input[type="range"] {
 .Prestationdevis h2 {
   margin-top: 140px;
   margin-bottom: 50px;
+  font-size: 27px;
 }
 
 .slide h2 {
   color: white;
   margin-top: 60px;
-
   margin-bottom: 63px;
   display: flex;
   justify-content: center;
@@ -278,7 +278,7 @@ input[type="range"] {
 
 .slide {
   height: 440px !important;
-  margin-bottom: 200px;
+  margin-bottom: 350px;
 }
 
 .suivant {
@@ -445,6 +445,11 @@ label {
   }
 }
 
+@media screen and (max-width: 1025px) {
+  .aide {
+    width: 75%;
+  }
+}
 @media screen and (max-width: 1023px) {
   .Devis_form_template {
     font-size: 15px;
@@ -510,6 +515,22 @@ label {
 }
 
 @media screen and (max-width: 991px) {
+  .aide {
+    background-color: rgb(250, 159, 0);
+    width: 85%;
+    margin: 88px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+    border-radius: 30px;
+    p {
+      color: #656673;
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+
   .Prestation__grid {
     display: grid;
     grid-template-columns: 1fr !important;

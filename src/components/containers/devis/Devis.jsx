@@ -314,17 +314,13 @@ const Devis = () => {
                   entreprise en ligne. Un site responsive est un site qui
                   s'adapte automatiquement à la taille de l'écran de
                   l'utilisateur, qu'il utilise un ordinateur de bureau, une
-                  tablette ou un smartphone. Cela signifie que vos clients
-                  pourront naviguer facilement sur votre site, quel que soit le
-                  dispositif qu'ils utilisent pour y accéder. En outre, un site
-                  responsive vous permet d'améliorer votre référencement sur les
-                  moteurs de recherche. Les moteurs de recherche tels que Google
-                  accordent une plus grande importance aux sites qui offrent une
+                  tablette ou un smartphone. En outre, un site responsive vous
+                  permet d'améliorer votre référencement sur les moteurs de
+                  recherche. Les moteurs de recherche tels que Google accordent
+                  une plus grande importance aux sites qui offrent une
                   expérience utilisateur optimale sur tous les dispositifs, ce
                   qui peut vous aider à améliorer votre classement dans les
-                  résultats de recherche. De plus, avoir un site responsive vous
-                  permet de vous démarquer de vos concurrents qui n'ont pas
-                  encore adopté cette technologie. Cela vous permet de vous
+                  résultats de recherche. Cela vous permet de plus de vous
                   positionner comme une entreprise innovante et à la pointe de
                   la technologie, ce qui peut vous aider à attirer de nouveaux
                   clients.Ne manquez pas l'occasion d'adopter cette technologie
@@ -386,8 +382,7 @@ const Devis = () => {
                   l'entreprise ou de l'organisation et à renforcer l'impact
                   émotionnel des messages présentés sur le site. Les images
                   peuvent être utilisées pour montrer des produits ou des
-                  services, pour illustrer des histoires ou des témoignages de
-                  clients, pour mettre en valeur des événements ou des
+                  services, pour mettre en valeur des événements ou des
                   activités, etc.
                   <br></br>
                   Il est important de choisir des images de qualité pour le site

@@ -283,6 +283,22 @@ p {
   display: block;
 }
 
+.aide {
+  background-color: rgb(250, 159, 0);
+  width: 65%;
+  margin: 88px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+  border-radius: 30px;
+}
+.aide p {
+  color: #656673;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .range {
   color: white;
   padding: 20px;
@@ -330,8 +346,10 @@ input[type=range] {
 .slide h2 {
   color: white;
   margin-top: 60px;
-  margin-left: 8%;
-  margin-bottom: 50px;
+  margin-bottom: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide h2 div button {
@@ -339,7 +357,8 @@ input[type=range] {
 }
 
 .slide {
-  height: 500px;
+  height: 440px !important;
+  margin-bottom: 200px;
 }
 
 .suivant {

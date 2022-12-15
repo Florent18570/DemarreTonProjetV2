@@ -49,6 +49,19 @@ const Devis = () => {
     setActive(id);
   };
 
+  const [aideButtonClass, setAideButtonClass] = useState("");
+  const [aideButtonClass_div, setAideButtonClass_div] = useState("");
+
+  const aide_button = () => {
+    setAideButtonClass("aide_button_active ");
+    setAideButtonClass_div("aideButtonClass_div");
+  };
+
+  const aide_button_fermer = () => {
+    setAideButtonClass("aide_button_reverse");
+    setAideButtonClass_div("aideButtonClass_div_reverse");
+  };
+
   useEffect(() => {
     var sliderdefault = tns({
       container: ".my-slider",
@@ -57,6 +70,8 @@ const Devis = () => {
       loop: false,
       prevButton: ".precedent",
       nextButton: ".suivant",
+
+      touch: false,
       nav: false,
       responsive: {
         1600: {
@@ -78,11 +93,7 @@ const Devis = () => {
   }, []);
 
   function goTo(slidenb, event) {
-    console.log(event.target);
-    var target = event.target;
-    target.addEventListener("click", function () {
-      slider.goTo(Number(slidenb));
-    });
+    slider.goTo(Number(slidenb));
   }
 
   function valueRange(e) {
@@ -220,15 +231,41 @@ const Devis = () => {
               <div className="aide">
                 <img src={interrogation} alt="Point d'interogation" />
                 <p>
-                  Vous ne disposez pas encore d'un site web et souhaitez y
-                  remédier choisissez une création de site web. Au contaire, si
-                  vous avez déjà un site web mais souhaitez améliorer ses
-                  performances, optez pour une refonte. Notez qu'il est
-                  important d'avoir une connaissance approfondie des
-                  performances du site existant avant de réaliser une refonte.
-                  Pour cela, il est recommandé de faire réaliser un audit du
-                  site en amont.
+                  Vous ne <b>disposez pas encore d'un site web</b> et souhaitez
+                  y remédier choisissez une création de site web. Au contaire,
+                  si vous avez déjà un site web mais souhaitez améliorer ses
+                  performances,<b> optez pour une refonte</b>. <br></br>
+                  <br></br>Notez qu'il est important d'avoir{" "}
+                  <u>
+                    une connaissance approfondie des performances du site
+                    existant
+                  </u>
+                  avant de réaliser une refonte. Pour cela, il est recommandé de
+                  faire réaliser un audit du site en amont.
                 </p>
+              </div>
+              <button
+                className={`aide_button ${aideButtonClass}`}
+                onClick={aide_button}
+                aideButtonClass
+              >
+                <img src={interrogation} alt="Point d'interogation" />
+              </button>
+              <div className={`aide_button_div ${aideButtonClass_div}`}>
+                <p>
+                  Vous ne <b>disposez pas encore d'un site web</b> et souhaitez
+                  y remédier choisissez une création de site web. Au contaire,
+                  si vous avez déjà un site web mais souhaitez améliorer ses
+                  performances,<b> optez pour une refonte</b>. <br></br> Notez
+                  qu'il est important d'avoir{" "}
+                  <u>
+                    une connaissance approfondie des performances du site
+                    existant
+                  </u>
+                  avant de réaliser une refonte. Pour cela, il est recommandé de
+                  faire réaliser un audit du site en amont.
+                </p>
+                <button onClick={aide_button_fermer}>x</button>
               </div>
             </div>
             <div name="etape1 " className="etape1 slide ">
@@ -245,19 +282,47 @@ const Devis = () => {
               <div className="aide">
                 <img src={interrogation} alt="Point d'interogation" />
                 <p>
-                  Un site web destiné à présenter une activité peut être utilisé
-                  pour donner des informations sur l'entreprise ou
+                  Un site web destiné à <b>présenter une activité</b> peut être
+                  utilisé pour donner des informations sur l'entreprise ou
                   l'organisation, ses produits ou services, son histoire, ses
-                  valeurs, etc. Il peut également fournir des informations de
-                  contact et permettre aux visiteurs de s'inscrire à une
-                  newsletter ou de suivre l'entreprise sur les réseaux sociaux.
-                  Un site web de vente, en revanche, a pour but principal de
-                  permettre aux clients d'acheter des produits ou des services
-                  en ligne. Il peut comporter des fonctionnalités telles qu'un
-                  panier d'achat, un système de paiement en ligne sécurisé, des
-                  avis de clients, etc. Le site peut également offrir des
-                  options de livraison et de retour pour les produits achetés.
+                  valeurs, etc. Il peut également
+                  <b> fournir des informations</b> de contact et permettre aux
+                  visiteurs de s'inscrire à une newsletter ou de suivre
+                  l'entreprise sur les réseaux sociaux. <br></br> <br></br> Un
+                  site web de vente, en revanche, a pour but principal de
+                  permettre aux clients
+                  <b> d'acheter des produits ou des services en ligne</b>. Il
+                  peut comporter des fonctionnalités telles qu'un panier
+                  d'achat, un système de paiement en ligne sécurisé, des avis de
+                  clients, etc. Le site peut également offrir des options de
+                  livraison et de retour pour les produits achetés.
                 </p>
+              </div>
+              <button
+                className={`aide_button ${aideButtonClass}`}
+                onClick={aide_button}
+                aideButtonClass
+              >
+                <img src={interrogation} alt="Point d'interogation" />
+              </button>
+              <div className={`aide_button_div ${aideButtonClass_div}`}>
+                <p>
+                  Un site web destiné à <b>présenter une activité</b> peut être
+                  utilisé pour donner des informations sur l'entreprise ou
+                  l'organisation, ses produits ou services, son histoire, ses
+                  valeurs, etc. Il peut également
+                  <b> fournir des informations</b> de contact et permettre aux
+                  visiteurs de s'inscrire à une newsletter ou de suivre
+                  l'entreprise sur les réseaux sociaux. <br></br> <br></br> Un
+                  site web de vente, en revanche, a pour but principal de
+                  permettre aux clients
+                  <b> d'acheter des produits ou des services en ligne</b>. Il
+                  peut comporter des fonctionnalités telles qu'un panier
+                  d'achat, un système de paiement en ligne sécurisé, des avis de
+                  clients, etc. Le site peut également offrir des options de
+                  livraison et de retour pour les produits achetés.
+                </p>
+                <button onClick={aide_button_fermer}>x</button>
               </div>
             </div>
             <div name="etape1 " className="etape1 slide ">
@@ -276,22 +341,57 @@ const Devis = () => {
               <div className="aide">
                 <img src={interrogation} alt="Point d'interogation" />
                 <p>
-                  Si vous souhaitez attirer les clients grâce à une
+                  Si vous souhaitez <b> attirer les clients</b> grâce à une
                   communication digitale efficace, ne négligez pas l'importance
-                  de la forme ! Un site web bien conçu, agréable à utiliser et
-                  pensé pour l'utilisateur vous aidera à susciter la confiance
-                  de vos prospects. De plus, une identité visuelle immédiatement
-                  reconnaissable vous permettra d'avoir plus d'impact et
-                  d'accroître votre notoriété. Pour bénéficier de tous ces
-                  avantages, il est indispensable d'inclure une prestation de
-                  webdesign dans la création de votre site internet. Nous
-                  proposons 3 offres adaptées à vos besoins : un design simple
-                  et efficace, un design sur mesure pour correspondre à votre
-                  identité visuelle, ou encore la possibilité de discuter de
-                  votre maquette pour obtenir le meilleur design et la meilleure
-                  expérience utilisateur possible. Faites le choix de la qualité
-                  pour votre communication digitale !
+                  de la <b>forme</b> ! Un site web bien conçu, agréable à
+                  utiliser et pensé pour l'utilisateur vous aidera à susciter la
+                  confiance de vos prospects. De plus, une identité visuelle
+                  immédiatement reconnaissable vous permettra d'avoir plus
+                  d'impact et d'accroître votre notoriété. <br></br>
+                  <br></br>Nous proposons 3 offres adaptées à vos besoins : un
+                  design simple et efficace, un design sur mesure pour
+                  correspondre à votre identité visuelle, ou encore la
+                  possibilité de discuter de votre maquette pour obtenir le
+                  meilleur design et la meilleure expérience utilisateur
+                  possible. <br></br>
+                  <br></br>
+                  <u>
+                    {" "}
+                    Faites le choix de la qualité pour votre communication
+                    digitale !
+                  </u>
                 </p>
+              </div>
+              <button
+                className={`aide_button ${aideButtonClass}`}
+                onClick={aide_button}
+                aideButtonClass
+              >
+                <img src={interrogation} alt="Point d'interogation" />
+              </button>
+              <div className={`aide_button_div ${aideButtonClass_div}`}>
+                <p>
+                  Si vous souhaitez <b> attirer les clients</b> grâce à une
+                  communication digitale efficace, ne négligez pas l'importance
+                  de la <b>forme</b> ! Un site web bien conçu, agréable à
+                  utiliser et pensé pour l'utilisateur vous aidera à susciter la
+                  confiance de vos prospects. De plus, une identité visuelle
+                  immédiatement reconnaissable vous permettra d'avoir plus
+                  d'impact et d'accroître votre notoriété. <br></br>
+                  <br></br>Nous proposons 3 offres adaptées à vos besoins : un
+                  design simple et efficace, un design sur mesure pour
+                  correspondre à votre identité visuelle, ou encore la
+                  possibilité de discuter de votre maquette pour obtenir le
+                  meilleur design et la meilleure expérience utilisateur
+                  possible. <br></br>
+                  <br></br>
+                  <u>
+                    {" "}
+                    Faites le choix de la qualité pour votre communication
+                    digitale !
+                  </u>
+                </p>
+                <button onClick={aide_button_fermer}>x</button>
               </div>
             </div>
 
@@ -315,18 +415,53 @@ const Devis = () => {
                   entreprise en ligne. Un site responsive est un site qui
                   s'adapte automatiquement à la taille de l'écran de
                   l'utilisateur, qu'il utilise un ordinateur de bureau, une
-                  tablette ou un smartphone. En outre, un site responsive vous
-                  permet d'améliorer votre référencement sur les moteurs de
-                  recherche. Les moteurs de recherche tels que Google accordent
-                  une plus grande importance aux sites qui offrent une
+                  tablette ou un smartphone. <br></br>En outre, un site
+                  responsive vous permet d'améliorer votre référencement sur les
+                  moteurs de recherche. Les moteurs de recherche tels que Google
+                  accordent une plus grande importance aux sites qui offrent une
                   expérience utilisateur optimale sur tous les dispositifs, ce
                   qui peut vous aider à améliorer votre classement dans les
                   résultats de recherche. Cela vous permet de plus de vous
                   positionner comme une entreprise innovante et à la pointe de
                   la technologie, ce qui peut vous aider à attirer de nouveaux
-                  clients.Ne manquez pas l'occasion d'adopter cette technologie
-                  pour votre entreprise en ligne.
+                  clients. <br></br> <br></br>{" "}
+                  <u>
+                    {" "}
+                    Ne manquez pas l'occasion d'adopter cette technologie pour
+                    votre entreprise en ligne.
+                  </u>
                 </p>
+              </div>
+              <button
+                className={`aide_button ${aideButtonClass}`}
+                onClick={aide_button}
+                aideButtonClass
+              >
+                <img src={interrogation} alt="Point d'interogation" />
+              </button>
+              <div className={`aide_button_div ${aideButtonClass_div}`}>
+                <p>
+                  Avoir un site responsive est crucial pour la réussite de votre
+                  entreprise en ligne. Un site responsive est un site qui
+                  s'adapte automatiquement à la taille de l'écran de
+                  l'utilisateur, qu'il utilise un ordinateur de bureau, une
+                  tablette ou un smartphone. <br></br>En outre, un site
+                  responsive vous permet d'améliorer votre référencement sur les
+                  moteurs de recherche. Les moteurs de recherche tels que Google
+                  accordent une plus grande importance aux sites qui offrent une
+                  expérience utilisateur optimale sur tous les dispositifs, ce
+                  qui peut vous aider à améliorer votre classement dans les
+                  résultats de recherche. Cela vous permet de plus de vous
+                  positionner comme une entreprise innovante et à la pointe de
+                  la technologie, ce qui peut vous aider à attirer de nouveaux
+                  clients. <br></br> <br></br>{" "}
+                  <u>
+                    {" "}
+                    Ne manquez pas l'occasion d'adopter cette technologie pour
+                    votre entreprise en ligne.
+                  </u>
+                </p>
+                <button onClick={aide_button_fermer}>x</button>
               </div>
             </div>
 
@@ -357,8 +492,25 @@ const Devis = () => {
                   Il est important de noter que le nombre de pages d'un site web
                   peut avoir un impact significatif sur son prix. Plus un site
                   web comporte de pages, plus il sera coûteux à développer et à
-                  maintenir.{" "}
+                  maintenir.
                 </p>
+              </div>
+
+              <button
+                className={`aide_button ${aideButtonClass}`}
+                onClick={aide_button}
+                aideButtonClass
+              >
+                <img src={interrogation} alt="Point d'interogation" />
+              </button>
+              <div className={`aide_button_div ${aideButtonClass_div}`}>
+                <p>
+                  Il est important de noter que le nombre de pages d'un site web
+                  peut avoir un impact significatif sur son prix. Plus un site
+                  web comporte de pages, plus il sera coûteux à développer et à
+                  maintenir.
+                </p>
+                <button onClick={aide_button_fermer}>x</button>
               </div>
             </div>
 
@@ -394,6 +546,35 @@ const Devis = () => {
                   il est important de respecter les droits d'auteur et de ne pas
                   utiliser des images protégées sans autorisation.
                 </p>
+              </div>
+              <button
+                className={`aide_button ${aideButtonClass}`}
+                onClick={aide_button}
+                aideButtonClass
+              >
+                <img src={interrogation} alt="Point d'interogation" />
+              </button>
+              <div className={`aide_button_div ${aideButtonClass_div}`}>
+                <p>
+                  Les images sont un élément crucial pour un site web, car elles
+                  permettent d'illustrer le contenu et de le rendre plus
+                  attractif et facile à comprendre pour les visiteurs. Elles
+                  peuvent également aider à renforcer l'identité visuelle de
+                  l'entreprise ou de l'organisation et à renforcer l'impact
+                  émotionnel des messages présentés sur le site. Les images
+                  peuvent être utilisées pour montrer des produits ou des
+                  services, pour mettre en valeur des événements ou des
+                  activités, etc.
+                  <br></br>
+                  Il est important de choisir des images de qualité pour le site
+                  web, car des images de mauvaise qualité peuvent nuire à
+                  l'expérience utilisateur et à l'image de l'entreprise. Les
+                  images doivent également être pertinentes et correspondre au
+                  contenu du site pour renforcer l'efficacité du message. Enfin,
+                  il est important de respecter les droits d'auteur et de ne pas
+                  utiliser des images protégées sans autorisation.
+                </p>
+                <button onClick={aide_button_fermer}>x</button>
               </div>
             </div>
 
@@ -431,6 +612,34 @@ const Devis = () => {
                   répondre à de nombreux besoins et objectifs différents.
                 </p>
               </div>
+              <button
+                className={`aide_button ${aideButtonClass}`}
+                onClick={aide_button}
+                aideButtonClass
+              >
+                <img src={interrogation} alt="Point d'interogation" />
+              </button>
+              <div className={`aide_button_div ${aideButtonClass_div}`}>
+                <p>
+                  Les possibilités de création pour un site web sont presque
+                  illimitées grâce aux nombreux outils et technologies
+                  disponibles. Un site web peut être conçu pour présenter une
+                  entreprise ou une organisation, pour vendre des produits ou
+                  des services en ligne, pour permettre aux utilisateurs de
+                  s'inscrire à un service ou de créer un compte personnel, pour
+                  partager des informations ou des contenus, etc. Un site web
+                  peut également comporter des fonctionnalités interactives
+                  telles que des formulaires en ligne, des forums de discussion,
+                  des sondages, des outils de géolocalisation, des interfaces de
+                  réseaux sociaux, etc. De plus, les sites web peuvent être
+                  optimisés pour les appareils mobiles pour permettre aux
+                  utilisateurs de naviguer facilement sur les sites depuis leur
+                  smartphone ou leur tablette. En somme, les possibilités de
+                  création pour un site web sont vastes et permettent de
+                  répondre à de nombreux besoins et objectifs différents.
+                </p>
+                <button onClick={aide_button_fermer}>x</button>
+              </div>
             </div>
 
             <div name="etape1 " className="etape1 slide ">
@@ -459,6 +668,26 @@ const Devis = () => {
                   du site en fonction de ses besoins spécifiques, ce qui peut
                   améliorer l'expérience utilisateur.
                 </p>
+              </div>
+              <button
+                className={`aide_button ${aideButtonClass}`}
+                onClick={aide_button}
+                aideButtonClass
+              >
+                <img src={interrogation} alt="Point d'interogation" />
+              </button>
+              <div className={`aide_button_div ${aideButtonClass_div}`}>
+                <p>
+                  Il y a plusieurs avantages à laisser au développeur la gestion
+                  de l'hébergement du site web. Tout d'abord, cela peut être
+                  plus rentable à long terme, car le développeur sera en mesure
+                  de choisir l'hébergement qui offre le meilleur rapport
+                  qualité-prix pour le site en question. En outre, le
+                  développeur sera mieux placé pour optimiser les performances
+                  du site en fonction de ses besoins spécifiques, ce qui peut
+                  améliorer l'expérience utilisateur.
+                </p>
+                <button onClick={aide_button_fermer}>x</button>
               </div>
             </div>
 
@@ -489,6 +718,27 @@ const Devis = () => {
                   site.
                 </p>
               </div>
+
+              <button
+                className={`aide_button ${aideButtonClass}`}
+                onClick={aide_button}
+                aideButtonClass
+              >
+                <img src={interrogation} alt="Point d'interogation" />
+              </button>
+              <div className={`aide_button_div ${aideButtonClass_div}`}>
+                <p>
+                  Il y a plusieurs avantages à choisir une offre de maintenance
+                  pour un site web. Tout d'abord, cela permet de s'assurer que
+                  le site fonctionne correctement et est en bonne santé. De
+                  plus, une offre de maintenance permet de faire évoluer votre
+                  site en fonction de vos besoins et de votre entreprise. Enfin,
+                  cela peut vous aider à économiser de l'argent à long terme en
+                  vous offrant une assistance professionnelle pour gérer votre
+                  site.
+                </p>
+                <button onClick={aide_button_fermer}>x</button>
+              </div>
             </div>
 
             <div name="etape1 " className="etape1 slide ">
@@ -518,6 +768,27 @@ const Devis = () => {
                   délais et des attentes en matière de rapidité de création avec
                   le client avant de déterminer le prix du projet.
                 </p>
+              </div>
+              <button
+                className={`aide_button ${aideButtonClass}`}
+                onClick={aide_button}
+                aideButtonClass
+              >
+                <img src={interrogation} alt="Point d'interogation" />
+              </button>
+              <div className={`aide_button_div ${aideButtonClass_div}`}>
+                <p>
+                  Il est important de prendre en compte la rapidité de création
+                  d'un site lors de la détermination de son prix, car plus le
+                  site doit être créé rapidement, plus il y aura de travail à
+                  accomplir pour le créer dans les délais impartis. Cela peut
+                  entraîner des coûts supplémentaires pour le développeur ou
+                  l'agence en charge de la création du site, ce qui se reflétera
+                  dans le prix final. Il est donc important de discuter des
+                  délais et des attentes en matière de rapidité de création avec
+                  le client avant de déterminer le prix du projet.
+                </p>
+                <button onClick={aide_button_fermer}>x</button>
               </div>
             </div>
 

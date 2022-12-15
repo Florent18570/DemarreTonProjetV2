@@ -170,6 +170,14 @@ p {
   display: none;
 }
 
+.aideButtonClass_div {
+  display: none;
+}
+
+.aideButtonClass_div_reverse {
+  display: none;
+}
+
 .formulaire__left_1,
 .formulaire__left_2,
 .formulaire__left_3,
@@ -281,6 +289,10 @@ p {
 
 .suivant {
   display: block;
+}
+
+.aide_button {
+  display: none;
 }
 
 .aide {
@@ -690,6 +702,158 @@ label {
   .aide {
     display: none;
   }
+  .aide_button_div {
+    display: none;
+  }
+  .aide_button {
+    display: block;
+    position: relative;
+    margin: 50px auto;
+    background-color: rgb(255, 255, 255);
+    z-index: 9999;
+  }
+  .aide_button img {
+    margin: auto;
+    width: 50px;
+    z-index: 9999;
+  }
+  .aide_button p {
+    display: none !important;
+  }
+  .aideButtonClass_div {
+    display: flex !important;
+    background-color: rgb(250, 159, 0);
+    position: absolute;
+    height: auto;
+    min-height: 450px;
+    top: 0px;
+    z-index: 1;
+    padding: 50px 30px;
+    border-radius: 30px;
+    -webkit-animation: button_help_div 0.7s;
+            animation: button_help_div 0.7s;
+  }
+  .aideButtonClass_div p {
+    color: #0d3269;
+    margin-top: 70px;
+  }
+  .aideButtonClass_div button {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    border-radius: 30px;
+    padding: 1px 5px;
+  }
+  .aideButtonClass_div_reverse {
+    display: block;
+    background-color: rgb(250, 159, 0);
+    opacity: 0;
+    position: absolute;
+    height: 500px;
+    top: 0px;
+    z-index: -1;
+    padding: 50px 30px;
+    border-radius: 30px;
+    -webkit-animation: button_help_div_reverse 0.4s;
+            animation: button_help_div_reverse 0.4s;
+  }
+  .aideButtonClass_div_reverse p {
+    margin-top: 70px;
+  }
+  .aideButtonClass_div_reverse button {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    border-radius: 30px;
+    padding: 1px 5px;
+  }
+  .aide_button_active {
+    -webkit-animation: button_help 0.7s;
+            animation: button_help 0.7s;
+    transform: translateY(-230px);
+    border-radius: 50px;
+  }
+  .aide_button_reverse {
+    -webkit-animation: button_help_reverse 0.7s;
+            animation: button_help_reverse 0.7s;
+    transform: translateY(0px);
+  }
+  @-webkit-keyframes button_help_div {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes button_help_div {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes button_help_div_reverse {
+    0% {
+      opacity: 1;
+      z-index: 999;
+    }
+    100% {
+      z-index: -1;
+      opacity: 0;
+    }
+  }
+  @keyframes button_help_div_reverse {
+    0% {
+      opacity: 1;
+      z-index: 999;
+    }
+    100% {
+      z-index: -1;
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes button_help {
+    0% {
+      transform: translateY(0px);
+      border-radius: 0px;
+    }
+    100% {
+      transform: translateY(-230px);
+      border-radius: 50px;
+    }
+  }
+  @keyframes button_help {
+    0% {
+      transform: translateY(0px);
+      border-radius: 0px;
+    }
+    100% {
+      transform: translateY(-230px);
+      border-radius: 50px;
+    }
+  }
+  @-webkit-keyframes button_help_reverse {
+    0% {
+      transform: translateY(-230px);
+      border-radius: 50px;
+    }
+    100% {
+      transform: translateY(0px);
+      border-radius: 0px;
+    }
+  }
+  @keyframes button_help_reverse {
+    0% {
+      transform: translateY(-230px);
+      border-radius: 50px;
+    }
+    100% {
+      transform: translateY(0px);
+      border-radius: 0px;
+    }
+  }
   .formulaire {
     margin: 15px;
   }
@@ -712,6 +876,9 @@ label {
     font-size: 12px;
     width: 62px;
     height: 35px;
+  }
+  .slide {
+    position: relative;
   }
   .slide h2 {
     font-size: 20px;

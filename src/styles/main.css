@@ -413,6 +413,14 @@ input[type=range] {
   border-radius: 20px;
   background-image: linear-gradient(135deg, #119cd7, #0b3177);
   border: white 2px solid;
+  cursor: pointer;
+}
+
+.rep1:hover,
+.rep2:hover,
+.rep3:hover {
+  background-image: linear-gradient(135deg, #389fcb, #244075);
+  color: white;
 }
 
 .formulaire {
@@ -497,6 +505,10 @@ label {
   width: 100%;
   height: 200px;
   border-radius: 20px;
+}
+
+.aide_button_div {
+  display: none;
 }
 
 @media screen and (max-width: 1624px) {
@@ -663,6 +675,8 @@ label {
     border-radius: 20px;
     background-image: linear-gradient(135deg, #119cd7, #0b3177);
     border: white 2px solid;
+    opacity: 1;
+    transition: opacity 0.3s;
   }
 }
 @media screen and (max-width: 767px) {
@@ -702,9 +716,6 @@ label {
   .aide {
     display: none;
   }
-  .aide_button_div {
-    display: none;
-  }
   .aide_button {
     display: block;
     position: relative;
@@ -734,6 +745,7 @@ label {
             animation: button_help_div 0.7s;
   }
   .aideButtonClass_div p {
+    font-size: 15px;
     color: #0d3269;
     margin-top: 70px;
   }
@@ -927,6 +939,15 @@ label {
   }
   .contact__grid {
     padding: 0px 9px 19px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .etape1__flex {
+    gap: 15px;
+    flex-direction: column;
+  }
+  .etape1__flex button {
+    width: 90%;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1570,7 +1591,6 @@ label {
   display: flex;
   padding-right: 5%;
   padding-left: 5%;
-  padding-top: 100px;
   padding-bottom: 100px;
   justify-content: space-between;
 }
@@ -1601,7 +1621,6 @@ label {
 
 @media screen and (max-width: 991px) {
   .Nous {
-    padding-top: 102px;
     padding-bottom: 154px;
     flex-direction: column;
   }
@@ -1631,7 +1650,6 @@ label {
 }
 @media screen and (max-width: 767px) {
   .Nous {
-    padding-top: 61px;
     padding-bottom: 92px;
   }
   .Nous__image_gauche {

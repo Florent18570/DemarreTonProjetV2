@@ -155,17 +155,7 @@ const Devis = () => {
       );
   };
 
-  const NavLink = ({
-    id,
-    img,
-    h3,
-    p,
-    isActive,
-    href,
-    ref,
-    onClick,
-    functionn,
-  }) => {
+  const NavLink = ({ id, img, h3, p, isActive, href, functionn }) => {
     return (
       <a href={href}>
         <button
@@ -221,10 +211,16 @@ const Devis = () => {
               <h2>Est-ce pour une création ou une refonte de site ?</h2>
 
               <div className="etape1__flex etape_margin">
-                <button onClick={(e) => goTo(1, e)} className="Etape1_slide1">
+                <button
+                  onClick={(e) => goTo(1, e)}
+                  className="Etape1_slide1 rep1"
+                >
                   Création
                 </button>
-                <button onClick={(e) => goTo(1, e)} className="Etape1_slide2">
+                <button
+                  onClick={(e) => goTo(1, e)}
+                  className="Etape1_slide2 rep2"
+                >
                   Refonte (site déjà existant)
                 </button>
               </div>
@@ -272,10 +268,16 @@ const Devis = () => {
               <h2> Quel est l'objectif du site ? </h2>
 
               <div className="etape1__flex etape_margin">
-                <button onClick={(e) => goTo(2, e)} className="Etape2_slide1">
+                <button
+                  onClick={(e) => goTo(2, e)}
+                  className="Etape2_slide1 rep1"
+                >
                   Présenter mon activité
                 </button>
-                <button onClick={(e) => goTo(2, e)} className="Etape2_slide2">
+                <button
+                  onClick={(e) => goTo(2, e)}
+                  className="Etape2_slide2 rep2"
+                >
                   Vendre / Mettre en relation
                 </button>
               </div>
@@ -328,13 +330,22 @@ const Devis = () => {
             <div name="etape1 " className="etape1 slide ">
               <h2>Aspect graphique de votre site</h2>
               <div className="etape1__flex etape_margin">
-                <button onClick={(e) => goTo(3, e)} className="Etape3_slide1">
+                <button
+                  onClick={(e) => goTo(3, e)}
+                  className="Etape3_slide1 rep1"
+                >
                   J'ai déjà mes propres maquettes
                 </button>
-                <button onClick={(e) => goTo(3, e)} className="Etape3_slide2">
+                <button
+                  onClick={(e) => goTo(3, e)}
+                  className="Etape3_slide2 rep2"
+                >
                   Un design simple mais efficace
                 </button>
-                <button onClick={(e) => goTo(3, e)} className="Etape3_slide3">
+                <button
+                  onClick={(e) => goTo(3, e)}
+                  className="Etape3_slide3 rep3"
+                >
                   Un design recherché sur mesure
                 </button>
               </div>
@@ -401,10 +412,16 @@ const Devis = () => {
                 ?
               </h2>
               <div className="etape1__flex etape_margin">
-                <button onClick={(e) => goTo(4, e)} className="Etape3_slide1">
+                <button
+                  onClick={(e) => goTo(4, e)}
+                  className="Etape3_slide1 rep1"
+                >
                   Oui
                 </button>
-                <button onClick={(e) => goTo(4, e)} className="Etape3_slide2">
+                <button
+                  onClick={(e) => goTo(4, e)}
+                  className="Etape3_slide2 rep2"
+                >
                   Non
                 </button>
               </div>
@@ -518,10 +535,16 @@ const Devis = () => {
               <h2> Fournissez vous les images pour le contenu du site ? </h2>
 
               <div className="etape1__flex etape_margin">
-                <button onClick={(e) => goTo(6, e)} className="Etape2_slide1">
+                <button
+                  onClick={(e) => goTo(6, e)}
+                  className="Etape2_slide1 rep1"
+                >
                   Oui
                 </button>
-                <button onClick={(e) => goTo(6, e)} className="Etape2_slide2">
+                <button
+                  onClick={(e) => goTo(6, e)}
+                  className="Etape2_slide2 rep2"
+                >
                   Non, j'ai besoin de création de contenu
                 </button>
               </div>
@@ -584,10 +607,16 @@ const Devis = () => {
               </h2>
 
               <div className="etape1__flex etape_margin">
-                <button onClick={(e) => goTo(7, e)} className="Etape2_slide1">
+                <button
+                  onClick={(e) => goTo(7, e)}
+                  className="Etape2_slide1 rep1"
+                >
                   Oui
                 </button>
-                <button onClick={(e) => goTo(7, e)} className="Etape2_slide2">
+                <button
+                  onClick={(e) => goTo(7, e)}
+                  className="Etape2_slide2 rep2"
+                >
                   Non, j'ai besoin de création de contenu
                 </button>
               </div>
@@ -649,10 +678,16 @@ const Devis = () => {
               </h2>
 
               <div className="etape1__flex etape_margin">
-                <button onClick={(e) => goTo(8, e)} className="Etape2_slide1">
+                <button
+                  onClick={(e) => goTo(8, e)}
+                  className="Etape2_slide1 rep1"
+                >
                   Vous
                 </button>
-                <button onClick={(e) => goTo(8, e)} className="Etape2_slide1">
+                <button
+                  onClick={(e) => goTo(8, e)}
+                  className="Etape2_slide1 rep2"
+                >
                   Nous
                 </button>
               </div>
@@ -698,10 +733,16 @@ const Devis = () => {
               </h2>
 
               <div className="etape1__flex etape_margin">
-                <button onClick={(e) => goTo(9, e)} className="Etape2_slide1">
+                <button
+                  onClick={(e) => goTo(9, e)}
+                  className="Etape2_slide1 rep1"
+                >
                   Oui
                 </button>
-                <button onClick={(e) => goTo(9, e)} className="Etape2_slide1">
+                <button
+                  onClick={(e) => goTo(9, e)}
+                  className="Etape2_slide1 rep2"
+                >
                   Non
                 </button>
               </div>
@@ -745,13 +786,22 @@ const Devis = () => {
               <h2>Je souhaite mon site internet</h2>
 
               <div className="etape1__flex etape_margin">
-                <button onClick={(e) => goTo(10, e)} className="Etape2_slide1">
+                <button
+                  onClick={(e) => goTo(10, e)}
+                  className="Etape2_slide1 rep1"
+                >
                   Dès que possible
                 </button>
-                <button onClick={(e) => goTo(10, e)} className="Etape2_slide1">
+                <button
+                  onClick={(e) => goTo(10, e)}
+                  className="Etape2_slide1 rep2"
+                >
                   Dans les 3 prochains mois
                 </button>
-                <button onClick={(e) => goTo(10, e)} className="Etape2_slide2">
+                <button
+                  onClick={(e) => goTo(10, e)}
+                  className="Etape2_slide2 rep3"
+                >
                   Je ne suis pas particulièrement pressé
                 </button>
               </div>

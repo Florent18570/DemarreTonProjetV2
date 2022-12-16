@@ -330,8 +330,16 @@ input[type="range"] {
       border-radius: 20px;
       background-image: linear-gradient(135deg, #119cd7, #0b3177);
       border: white 2px solid;
+      cursor: pointer;
     }
   }
+}
+
+.rep1:hover,
+.rep2:hover,
+.rep3:hover {
+  background-image: linear-gradient(135deg, #389fcb, #244075);
+  color: white;
 }
 
 .formulaire {
@@ -420,6 +428,10 @@ label {
 
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.aide_button_div {
+  display: none;
 }
 
 /////////////////////////////////////////
@@ -609,6 +621,8 @@ label {
     border-radius: 20px;
     background-image: linear-gradient(135deg, #119cd7, #0b3177);
     border: white 2px solid;
+    opacity: 1;
+    transition: opacity 0.3s;
   }
 }
 
@@ -649,10 +663,6 @@ label {
     display: none;
   }
 
-  .aide_button_div {
-    display: none;
-  }
-
   // Emplacement Original button aide
   .aide_button {
     display: block;
@@ -685,6 +695,7 @@ label {
     animation: button_help_div 0.7s;
 
     p {
+      font-size: 15px;
       color: #0d3269;
       margin-top: 70px;
     }
@@ -852,6 +863,16 @@ label {
   }
   .contact__grid {
     padding: 0px 9px 19px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .etape1__flex {
+    gap: 15px;
+    flex-direction: column;
+    button {
+      width: 90%;
+    }
   }
 }
 

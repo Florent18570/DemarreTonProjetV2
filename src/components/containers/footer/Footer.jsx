@@ -13,7 +13,7 @@ const Footer = () => {
           <img src={card_footer} alt="card_footer" />
           <div className="info__footer">
             <div className="info__footer__div p1">
-              <h3> Téléphone </h3>
+              <a href="tel:0667632587" ><h3> Téléphone </h3></a>
               <p> 07 62 06 88 30</p>
             </div>
             <div className="info__footer__div__border"></div>

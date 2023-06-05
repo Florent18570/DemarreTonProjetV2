@@ -37,25 +37,25 @@ const Footer = () => {
 
         <div className="Footer__right">
           <div className="Footer__right__devis">
-            <p> Estimons le cout de votre projet </p>
-            <button> Demander un devis </button>
+          <a href="../devis"><p> Estimons le cout de votre projet  </p></a>  
+          <a href="../devis"><button> Demander un devis </button></a>
           </div>
 
           <div className="Footer__right__link">
             <div className="Footer__right__link__container">
               <h3> Prestation </h3>
-              <p> Site Internet </p>
-              <p> Refonte de site</p>
+              <a href="../prestation/creation"><p>  Site Internet </p></a>
+              <a href="../prestation/uxdesign"><p> UX Design </p></a>
             </div>
             <div className="Footer__right__link__container ">
               <h3> Information </h3>
               <p> L'agence </p>
-              <p> devis</p>
+              <a href="../devis"><p> Devis </p></a>  
             </div>
             <div className="Footer__right__link__container">
               <h3> Prestation </h3>
-              <p> Site Internet </p>
-              <p> Refonte de site</p>
+              <a href="../prestation/referencement"><p> Référencement </p></a>
+              <a href="../prestation/maintenance"><p> Maintenance </p></a>   
             </div>
           </div>
           <div className="Footer__right__link__horizontalBarre"></div>

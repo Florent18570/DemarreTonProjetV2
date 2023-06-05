@@ -6,13 +6,13 @@ const HeaderJu = () => {
       <p className="Header_titre">DemarreTonProjet</p>
       <h1 className="Header_creation">Création de sites internet</h1>
       <p className="Header_description">
-        Avoir un site performant n'a jamais était si facile. Rapide, adapté et
-        optimisé, votre site répondra à toutes vos attentes.
+      Un site performant en toute simplicité : rapide, adapté et optimisé pour répondre à toutes vos exigences.
+      Faites le choix d'un site qui vous ressemble, pour une expérience en ligne optimale.
       </p>
       <p className="Header_description">
-       Votre devis automatique en quelques secondes !
+       Votre devis en quelques minutes !
       </p>
-      <button className="Header_button"> Me contacter </button>
+      <a href="../devis"><button className="Header_button"> Me contacter </button></a>
       <div className="cube"></div>
       <div className="cube"></div>
       <div className="cube"></div>

@@ -40,10 +40,12 @@ const PresentationJu = () => {
           <h2 className="Presentation__H2"> Les derniers sites</h2>
           <div className="Presentation__left__text">
             <p className="Presentation__left__text__p">
-              Toujours pas convaincu ? Vous pouvez regarder nos créations
-              publics sur la partie d'à côté. Des boutons sont disponibles pour
-              vous permettre de naviguer entre eux. Regarder mes réalisations.
+            <strong>Vous hésitez encore ?</strong> Jetez un œil à nos créations publiques directement depuis notre site web.
+            Vous y trouverez une sélection de nos meilleures réalisations.
+            Nous vous invitons à cliquer et naviguer au fil des pages pour découvrir l'étendue de nos compétences et notre créativité sans limites.
+            <strong>Vous allez être bluffé !</strong>
             </p>
+            
 
             <button
               href="/allrealisation"

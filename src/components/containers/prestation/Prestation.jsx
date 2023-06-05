@@ -7,7 +7,7 @@ import grid4 from "../../../Images/grid4.png";
 const Prestation = () => {
   return (
     <section className="Prestation">
-      <h2> Faites vous accompagner pour votre visibilité sur internet </h2>
+      <h2> Soyez visible sur internet avec un accompagnement sur mesure. </h2>
 
       <div className="Prestation__grid">
         <div className="Prestation__grid__card delay1 ">

@@ -8,12 +8,11 @@ const Nous = () => {
     <div className="Nous">
       <img className="Nous__image_gauche" src={Bg} alt="Bg" />
       <div className="Nous__content">
-        <h2> Pourquoi travailler avec moi ? </h2>
+        <h2> Pourquoi travailler avec nous ? </h2>
         <p>
-          Étudiant ingénieur en développement web, applications, et UX Design,
-          je suis mon cursus à l'ECE Paris. J'ai commencé mon activité de
-          freelance durant ma scolarité, ce qui a permis de développer mes
-          compétences à la fois théoriques et pratiques.
+        Notre passion pour l'informatique a donné naissance à DémarreTonProjet.
+        Nous sommes une équipe de professionnels diplômés des meilleures formations en la matière, 
+        et mettons à votre disposition toutes nos compétences pour élaborer le site web qui répondra le mieux à vos besoins.
         </p>
         <div className="qsd"></div>
         <div className="Nous_content__bottom">
@@ -21,14 +20,14 @@ const Nous = () => {
             <img src={Florent} alt="Florent" />
             <div className=" Nous_content__bottom__container__text">
               <h2> Florent Escots</h2>
-              <h3> Développeur Frontend</h3>
+              <h3> Développeur Fullstack</h3>
             </div>
           </div>
           <div className="Nous_content__bottom__container">
             <img src={Julien} alt="Julien" />
             <div className=" Nous_content__bottom__container__text">
               <h2> Julien Escots</h2>
-              <h3> Développeur Backend</h3>
+              <h3> Ingénieur Expert Informatique</h3>
             </div>
           </div>
         </div>

@@ -24,10 +24,11 @@ const PrestationSpe = () => {
               Notre équipe, notre expertise
             </h3>
             <p className="Prestationspe_Presentation_text_titre">
-              Etudiants ingénieurs en développement web, applications, et UX Design, nous sommes diplômé et certifié par
-              des plateformes connus. Nous avons commencé notre activité de freelance suite à l'obtention de notre diplôme.
-              Notre savoir faire et notre mise en pratique nous permettra de réaliser vos demandes précises.
-              Nous étudions et réalisons chaqu'une de vos demandes en suivant des étapes clefs pour orienter et comprendre votre besoin final.
+              Nous sommes des ingénieurs spécialisés dans le développement web, les applications, et l'UX Design. 
+              Certifiés par des plateformes renommées, nous avons choisi de devenir des freelances dès l'obtention de notre diplôme. 
+              Notre expérience pratique et notre expertise nous permettent de réaliser toutes vos demandes avec précision. 
+              Nous suivons un processus étape par étape pour comprendre et orienter efficacement vos besoins finaux. 
+              Faites-nous confiance pour des résultats optimaux.
 
             </p>
           </div>
@@ -60,7 +61,7 @@ const PrestationSpe = () => {
               <p className="Prestationspe_Explication_Detail_text_p">
                 DemarreTonProjet est une agence de création web idéal pour votre structure. Que votre souhait soit un site vitrine, une application ou un site e-commerce. Nous saurons répondre à toutes vos demandes pour vous proposer un prix en adéquation avec votre envie.
               </p>
-              <button className="Prestationspe_Separation_button">Demander un avis d'expert</button>
+              <a href="../devis"><button className="Prestationspe_Separation_button">Demander un avis d'expert</button></a>
             </div>
             <div className="Prestationspe_Explication_Detail_description">
                 <div className="Prestation_Explication_Detail_bloc1">

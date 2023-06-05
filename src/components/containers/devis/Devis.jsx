@@ -136,19 +136,19 @@ const Devis = () => {
                     type="tel"
                     className="Devis_Form_tel Devis_form_template"
                     maxlength="256"
-                    name="message"
-                    data-name="message"
+                    name="tel"
+                    data-name="tel"
                     placeholder="Téléphone"
                     id="phone"
                     required
                   />
                 </div>
                 <div>
-                  <label htmlFor="Entreprise"> Nature des travaux *</label>
+                  <label htmlFor="travaux"> Nature des travaux *</label>
                   <select
                     type="select"
                     className="select Devis_Form_entreprise Devis_form_template"
-                    name="Entreprise"
+                    name="travaux"
                   >
                     <option value="">-- Prestation souhaitez</option>
                     <option value="creation">Création d'un site web</option>
@@ -156,11 +156,11 @@ const Devis = () => {
                   </select>
                 </div>
                 <div>
-                  <label htmlFor="Entreprise"> Type de site *</label>
+                  <label htmlFor="type"> Type de site *</label>
                   <select
                     type="select"
                     className="select Devis_Form_entreprise Devis_form_template"
-                    name="Entreprise"
+                    name="type"
                   >
                     <option value="">-- Type de site </option>
                     <option value="creation">Site « carte de visite »</option>
@@ -179,8 +179,8 @@ const Devis = () => {
                     type="text"
                     className="Devis_Form_tel Devis_form_template"
                     maxlength="256"
-                    name="message"
-                    data-name="message"
+                    name="lien"
+                    data-name="lien"
                     placeholder="URL"
                     id="siteExistant"
                   />
@@ -192,8 +192,8 @@ const Devis = () => {
                     type="text"
                     className="Devis_Form_tel Devis_form_template"
                     maxlength="256"
-                    name="message"
-                    data-name="message"
+                    name="budget"
+                    data-name="budget"
                     placeholder=""
                     id="Budget"
                   />

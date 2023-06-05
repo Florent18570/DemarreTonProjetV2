@@ -9,10 +9,10 @@ const Processus = () => {
   return (
     <section className="Processus">
       <div className="Processus__left">
-        <h2> Un processus simple mais efficace en trois étape</h2>
+        <h2> Un processus simple mais efficace en trois étapes</h2>
         <p>
-          De l'étape de la recherche de solution jusqu'au processus de
-          lancement, je vous propose un accompagnement 100% personnalisé.
+        De la recherche de solutions à la mise en ligne, nous vous offrons un accompagnement personnalisé à 100%.
+        Nous sommes à vos côtés à chaque étape pour vous conseiller et vous guider vers les choix les plus adaptés à vos objectifs.
         </p>
       </div>
 

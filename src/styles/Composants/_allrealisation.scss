@@ -4,6 +4,7 @@
   animation-name: textToTop;
   animation-duration: 0.7s;
   margin-bottom: 25px;
+  color: white;
 }
 
 .padding {
@@ -26,7 +27,7 @@
     border-radius: 40px;
     transition: 0.3s;
     overflow: hidden;
-    color:white;
+    color: white;
     &:hover {
       opacity: 0.9;
       scale: 1.02;
@@ -79,7 +80,7 @@
   &__bottom {
     margin-top: 10px;
     p {
-      color:white;
+      color: white;
     }
   }
 }

@@ -11,7 +11,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   margin: 0;
-  background-color: #F5F7FC;
+  background-color: #1264b0;
 }
 
 a {
@@ -81,7 +81,7 @@ p {
     font-size: 50px;
   }
   h2 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   p {
@@ -96,7 +96,23 @@ p {
     font-size: 42px;
   }
   h2 {
-    font-size: 33px;
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+
+  .sectionbox {
+    max-width: 767px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 26px;
   }
   h3 {
     font-size: 22px;

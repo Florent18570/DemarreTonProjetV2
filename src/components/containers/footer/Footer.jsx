@@ -13,13 +13,17 @@ const Footer = () => {
           <img src={card_footer} alt="card_footer" />
           <div className="info__footer">
             <div className="info__footer__div p1">
-              <a href="tel:0667632587" ><h3> Téléphone </h3></a>
-              <p> 07 62 06 88 30</p>
+              <a href="tel:0667632587">
+                <h3> Téléphone </h3>
+                <p> 07 62 06 88 30</p>
+              </a>
             </div>
             <div className="info__footer__div__border"></div>
             <div className="info__footer__div p2">
-              <h3> Adresse mail </h3>
-              <p> DemarreTonProjet@gmail.com</p>
+              <a href="mailto:DemarreTonProjet@gmail.com">
+                <h3> Adresse mail </h3>
+                <p>DemarreTonProjet@gmail.com</p>
+              </a>
             </div>
             <div className="info__footer__div__border p3"></div>
             <div className="info__footer__div p3">
@@ -37,25 +41,39 @@ const Footer = () => {
 
         <div className="Footer__right">
           <div className="Footer__right__devis">
-          <a href="../devis"><p> Estimons le cout de votre projet  </p></a>  
-          <a href="../devis"><button> Demander un devis </button></a>
+            <a href="../devis">
+              <p> Estimons le cout de votre projet </p>
+            </a>
+            <a href="../devis">
+              <button> Demander un devis </button>
+            </a>
           </div>
 
           <div className="Footer__right__link">
             <div className="Footer__right__link__container">
               <h3> Prestation </h3>
-              <a href="../prestation/creation"><p>  Site Internet </p></a>
-              <a href="../prestation/uxdesign"><p> UX Design </p></a>
+              <a href="../prestation/creation">
+                <p> Site Internet </p>
+              </a>
+              <a href="../prestation/uxdesign">
+                <p> UX Design </p>
+              </a>
             </div>
             <div className="Footer__right__link__container ">
               <h3> Information </h3>
               <p> L'agence </p>
-              <a href="../devis"><p> Devis </p></a>  
+              <a href="../devis">
+                <p> Devis </p>
+              </a>
             </div>
             <div className="Footer__right__link__container">
               <h3> Prestation </h3>
-              <a href="../prestation/referencement"><p> Référencement </p></a>
-              <a href="../prestation/maintenance"><p> Maintenance </p></a>   
+              <a href="../prestation/referencement">
+                <p> Référencement </p>
+              </a>
+              <a href="../prestation/maintenance">
+                <p> Maintenance </p>
+              </a>
             </div>
           </div>
           <div className="Footer__right__link__horizontalBarre"></div>

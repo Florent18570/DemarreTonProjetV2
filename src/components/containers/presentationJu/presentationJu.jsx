@@ -40,19 +40,21 @@ const PresentationJu = () => {
           <h2 className="Presentation__H2"> Les derniers sites</h2>
           <div className="Presentation__left__text">
             <p className="Presentation__left__text__p">
-            <strong>Vous hésitez encore ?</strong> Jetez un œil à nos créations publiques directement depuis notre site web.
-            Vous y trouverez une sélection de nos meilleures réalisations.
-            Nous vous invitons à cliquer et naviguer au fil des pages pour découvrir l'étendue de nos compétences et notre créativité sans limites.
-            <strong>Vous allez être bluffé !</strong>
+              <strong>Vous hésitez encore ?</strong> Jetez un œil à nos
+              créations publiques directement depuis notre site web. Vous y
+              trouverez une sélection de nos meilleures réalisations. Nous vous
+              invitons à cliquer et naviguer au fil des pages pour découvrir
+              l'étendue de nos compétences et notre créativité sans
+              limites.&nbsp;
+              <strong>Vous&nbsp;allez&nbsp;être&nbsp;bluffé&nbsp;!</strong>
             </p>
-            
 
-            <button
+            <a
               href="/allrealisation"
               className="Presentation__left__text__button"
             >
               Voir toutes nos réalisations
-            </button>
+            </a>
           </div>
         </div>
         <div className="Presentation_card_bg">

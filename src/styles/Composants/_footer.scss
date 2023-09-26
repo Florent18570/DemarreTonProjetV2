@@ -1,7 +1,7 @@
 /* Footer */
 
 .Footer {
-  background: url("/images/vague.svg");
+  background: url("/public/images/vague.svg");
   display: flex;
   width: 100%;
   padding-top: 100px;
@@ -32,14 +32,12 @@
 
 .Footer__right {
   padding: 50px 3%;
-
   width: 100%;
   &__devis {
     border: 3px white solid;
     border-radius: 1000px;
     display: flex;
     justify-content: space-between;
-
     p {
       color: white;
       padding: 10px 0 10px 10px;
@@ -204,7 +202,7 @@
     }
   }
 
-  .info__footer {
+  .info__footer { 
     display: flex;
     margin-top: 115px;
     padding: 12px 20px 10px 40px;
@@ -212,7 +210,9 @@
     border-radius: 42px;
     text-align: center;
     gap: 20px;
-    color: #072d65;
+    a {
+      color: #072d65;
+    }
     h3 {
       font-size: 18px;
       margin-bottom: 5px;

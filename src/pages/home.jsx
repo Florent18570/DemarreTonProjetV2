@@ -8,6 +8,7 @@ import {
   Processus,
   PresentationJu,
   Menu,
+  Avis,
 } from "../components/containers";
 
 const home = () => {
@@ -21,7 +22,7 @@ const home = () => {
       <Nous />
       <Processus />
       <PresentationJu />
-
+      <Avis />
       <Footer />
     </div>
   );

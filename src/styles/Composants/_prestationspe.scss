@@ -18,6 +18,7 @@
 .Prestationspe_Presentation_text_titre{
     display: flex;
     margin-top: 25px;
+    color:white;
 
 }
 .Prestationspe_Presentation_text_p{
@@ -119,10 +120,11 @@
 }
 
 .Prestationspe_Explication_Detail_text_titre{
-    color:#F97261;
+    color:#ffffff;
 }
 .Prestationspe_Explication_Detail_text_p{
     margin-top: 40px;
+    color:black;
 }
 .Prestationspe_Explication_Detail_text_bouton{
     margin: 30px auto;
@@ -152,6 +154,13 @@
     background-color: white;
 }
 
+
+//bouton
+.Header_blocbutton{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
 
 @media screen and (max-width: 980px) {
     .Prestationspe_presentation{

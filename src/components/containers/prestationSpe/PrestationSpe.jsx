@@ -13,6 +13,29 @@ const PrestationSpe = () => {
   if (params.prestation === "creation") {
     return (
       <div>
+        <div className="Header_global">
+          <p className="Header_titre">DemarreTonProjet</p>
+          <h1 className="Header_creation">Création de sites internet</h1>
+          <p className="Header_description">
+          Un site performant en toute simplicité : rapide, adapté et optimisé pour répondre à toutes vos exigences.
+          Faites le choix d'un site qui vous ressemble, pour une expérience en ligne optimale.
+      </p>
+      <p className="Header_description">
+       Votre devis en quelques secondes !
+      </p>
+      <div className="Header_blocbutton">
+      <a href="../devis"><button className="Header_button"> Me contacter </button></a>
+      <a href="../devis"><button className="Header_button"> Me contacter </button></a>
+      </div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+    </div>
+
+
         <section className="Prestation">
           <h2 className="Prestationspe_titre">
             Création de votre site internet
@@ -58,7 +81,7 @@ const PrestationSpe = () => {
                 Mettez toutes les chances de votre côtés pour convertir un
                 client
               </h3>
-              <p className="Prestationspe_Explication_Detail_text_p">
+              <p className="Prestationspe_Presentation_text_titre">
                 DemarreTonProjet est une agence de création web idéal pour votre structure. Que votre souhait soit un site vitrine, une application ou un site e-commerce. Nous saurons répondre à toutes vos demandes pour vous proposer un prix en adéquation avec votre envie.
               </p>
               <a href="../devis"><button className="Prestationspe_Separation_button">Demander un avis d'expert</button></a>
@@ -96,6 +119,25 @@ const PrestationSpe = () => {
   } else if (params.prestation === "uxdesign") {
     return (
         <div>
+        <div className="Header_global">
+          <p className="Header_titre">DemarreTonProjet</p>
+          <h1 className="Header_creation">UX Design</h1>
+          <p className="Header_description">
+      Explorer le pouvoir du UX Design pour concevoir des expériences en ligne intuitives et captivantes, mettant vos utilisateurs au centre de chaque interaction.
+      </p>
+      <p className="Header_description">
+       Votre devis en quelques secondes !
+      </p>
+      <a href="../devis"><button className="Header_button"> Me contacter </button></a>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+    </div>
+
+
         <section className="Prestation">
           <h2 className="Prestationspe_titre">
             Création de votre design personnalisé

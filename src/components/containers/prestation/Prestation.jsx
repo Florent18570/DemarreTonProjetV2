@@ -1,37 +1,78 @@
 import React from "react";
-import Creation from "../../../Images/creation.png";
-import Refonte from "../../../Images/refonte.png";
+import grid1 from "../../../Images/grid.png";
+import grid2 from "../../../Images/grid2.png";
+import grid3 from "../../../Images/grid3.png";
+import grid4 from "../../../Images/grid4.png";
 
 const Prestation = () => {
   return (
     <section className="Prestation">
-      <h1 className="titlePrestation">Confiez-nous votre projet</h1>
-      <div className="bigbloc">
-        <div className="containerSectionPrestation bloc1">
-          <div>
-            <h2 className="colorsaumongris bold800">
-              Création de votre site Internet
-            </h2>
-            <p className="bold400">
-              Développez votre visibilité local et boostez votre croissance avec
-              un site internet design, responsive et performant.
-            </p>
-            <button> En savoir plus</button>
-          </div>
-          <img src={Creation} alt="Création de votre site Internet" />
-        </div>
+      <h2> Soyez visible sur internet avec un accompagnement sur mesure. </h2>
 
-        <div className="containerSectionPrestation bloc2">
-          <div>
-            <h2 className="colorsaumon">Refonte de votre site existant</h2>
-            <p>
-              Les tendances évoluent régulièrement et un site comportant des
-              aspects graphiques datés peuvent faire fuir l’utilisateur.
-            </p>
-            <button> En savoir plus</button>
+      <div className="Prestation__grid">
+        <a href="/prestation/creation">
+          <div className="Prestation__grid__card delay1 ">
+            <div className="Prestation__grid__card__img">
+              <img src={grid1} alt="Création de sites internet" />
+            </div>
+            <div className="Prestation__grid__card__content">
+              <h3>Création de sites internet</h3>
+              <p>
+                Développement de votre site sur-mesure avec toutes les
+                fonctionnalit"s nécessaires.
+              </p>
+              <p className="en-savoir-plus">En savoir plus</p>
+            </div>
           </div>
-          <img src={Refonte} alt="Refonte de votre site existant" />
-        </div>
+        </a>
+
+        <a href="/prestation/uxdesign">
+          <div className="Prestation__grid__card delay2 ">
+            <div className="Prestation__grid__card__img">
+              <img src={grid2} alt="UX Design" />
+            </div>
+            <div className="Prestation__grid__card__content">
+              <h3>UX Design</h3>
+              <p>
+                Optimisation de l'expérience utilisateur pour améliorer la
+                conversation.
+              </p>
+              <p className="en-savoir-plus">En savoir plus</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="/prestation/referencement">
+          <div className="Prestation__grid__card delay3">
+            <div className="Prestation__grid__card__img">
+              <img src={grid3} alt="Référencement naturel" />
+            </div>
+            <div className="Prestation__grid__card__content">
+              <h3>Référencement naturel</h3>
+              <p>
+                Amélioration de votre position dans les moteurs de recherche
+                avec le trafic organique.
+              </p>
+              <p className="en-savoir-plus">En savoir plus</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="/prestation/maintenance">
+          <div className="Prestation__grid__card delay4">
+            <div className="Prestation__grid__card__img">
+              <img src={grid4} alt="Maintenance technique" />
+            </div>
+            <div className="Prestation__grid__card__content">
+              <h3>Maintenance technique</h3>
+              <p>
+                Hébergement, cybersécurité, sauvegarde, maintenance de votre
+                application
+              </p>
+              <p className="en-savoir-plus">En savoir plus</p>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
   );

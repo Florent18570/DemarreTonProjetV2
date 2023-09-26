@@ -1,8 +1,8 @@
 .Presentation__glob {
   display: flex;
-  padding: 63px 0% 110px 2%;
   background-color: white;
-  border-radius: 50px 0% 50px 0%/50px;
+  border-radius: 74px 0 74px 64px;
+  margin-bottom: 140px;
 }
 
 .Presentation__left {
@@ -98,10 +98,10 @@
 }
 
 .Presentation_card_bg {
-  background: url("/images/point.svg");
+  background: url("/public/images/point.svg");
   overflow: hidden;
   width: 70%;
-  border-radius: 30px 0px 0 30px;
+  height: 470px;
 }
 
 .previous {
@@ -164,6 +164,13 @@
   margin-right: 20px;
 }
 
+@media (min-width: 100em) {
+  #tns1 {
+    width: calc(100%);
+    height: 295px;
+  }
+}
+
 .Presentation__left__text__button {
   background: #d05f1e;
   border-radius: 1000px;
@@ -222,7 +229,7 @@
       width: auto;
       height: 100%;
       max-width: 366px;
-      max-height: 375px;
+      max-height: 300px;
     }
   }
 

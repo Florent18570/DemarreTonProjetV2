@@ -2,26 +2,21 @@ import React from "react";
 
 import {
   Footer,
+  Header,
   Nous,
+  Presentation,
   Prestation,
-  HeaderJu,
-  Processus,
-  PresentationJu,
-  Menu,
+  Realisation,
 } from "../components/containers";
 
 const home = () => {
   return (
     <div>
-      <div className="background_image">
-        <Menu />
-        <HeaderJu />
-      </div>
+      <Header />
+      <Presentation />
       <Prestation />
+      <Realisation />
       <Nous />
-      <Processus />
-      <PresentationJu />
-
       <Footer />
     </div>
   );

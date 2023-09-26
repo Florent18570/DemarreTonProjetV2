@@ -1,22 +1,5 @@
-@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Plus Jakarta Display", sans-serif;
-}
-
 body {
-  width: 100%;
-  overflow-x: hidden;
   margin: 0;
-  background-color: #F5F7FC;
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
 }
 
 .bold100 {
@@ -41,68 +24,4 @@ a {
 
 .bold {
   font-weight: bold;
-}
-
-//taille texte
-h1 {
-  color: #14142b;
-  font-size: 60px;
-  line-height: 1.233em;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-h2 {
-  color: #14142b;
-  font-size: 40px;
-  line-height: 1.35em;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-h3 {
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 0.1px;
-}
-p {
-  color: #6e7191;
-  font-size: 18px;
-  line-height: 1.667em;
-  letter-spacing: 0.02em;
-}
-
-//section box
-.sectionbox {
-  max-width: 1937px;
-  margin: 0 auto 0 auto;
-}
-
-@media screen and (max-width: 991px) {
-  H1 {
-    font-size: 50px;
-  }
-  h2 {
-    font-size: 40px;
-  }
-
-  p {
-  }
-  .sectionbox {
-    max-width: 1140px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  h1 {
-    font-size: 42px;
-  }
-  h2 {
-    font-size: 33px;
-  }
-  h3 {
-    font-size: 22px;
-  }
-
-  .sectionbox {
-    max-width: 767px;
-  }
 }

@@ -951,6 +951,8 @@ label {
   position: relative;
   overflow: hidden;
   padding: 130px 5% 70px 5%;
+  border-radius: 0 0 85% 85%/30%;
+  background-color: #3F80FD;
 }
 
 .Header_titre {

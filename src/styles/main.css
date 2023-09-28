@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1598,6 +1599,7 @@ label {
   background-color: white;
   border-radius: 74px 0 74px 64px;
   margin-bottom: 140px;
+  padding-bottom: 50px;
 }
 
 .Presentation__left {
@@ -1687,7 +1689,6 @@ label {
 
 .Presentation_card_bg {
   background: url("/public/images/point.svg");
-  overflow: hidden;
   width: 70%;
   height: 470px;
 }
@@ -1826,7 +1827,7 @@ label {
   }
   .Presentation__glob {
     flex-direction: column;
-    padding: 0px 0% 0px 0%;
+    padding-bottom: 100px;
     border-radius: 50px 50px 0px 0%/50px;
   }
 }
@@ -1878,12 +1879,12 @@ label {
 .Prestation {
   padding: 50px 5%;
   margin-bottom: 70px;
-  background: #f5f7fc;
 }
 .Prestation h2 {
   max-width: 664px;
   margin: 0px auto 35px;
   text-align: center;
+  color: white;
 }
 .Prestation__grid {
   display: grid;
@@ -2739,12 +2740,20 @@ Header p {
   display: flex;
   width: 50%;
   flex-direction: column;
-  padding: 0 10.5%;
+}
+
+.Presentationspe_Presentation_text_droite {
+  padding: 0 11% 0 0;
+}
+
+.Presentationspe_Presentation_text_gauche {
+  padding: 0 0 0 11%;
 }
 
 .Prestationspe_Presentation_text_titre {
   display: flex;
   margin-top: 25px;
+  color: white;
 }
 
 .Prestationspe_Presentation_text_p {
@@ -2754,14 +2763,16 @@ Header p {
 .Prestationspe_Presentation_Image {
   display: flex;
   width: 50%;
-  background-color: white;
   background-image: url("http://localhost:3000/static/media/application-web-industrie-batail_log.7f40adba.webp");
   background-size: cover;
-  height: 600px;
+  height: 500px;
+  justify-content: center;
 }
 
 .Prestationspe_Presentation_Image_img {
-  width: 50%;
+  margin: 5%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .Prestationspe_Presntation_Image_img {
@@ -2815,6 +2826,7 @@ Header p {
   text-align: center !important;
   font-size: 1.25rem;
   margin-bottom: 15px;
+  color: white;
 }
 
 .Prestationspe_Explication_titre {
@@ -2852,11 +2864,12 @@ Header p {
 }
 
 .Prestationspe_Explication_Detail_text_titre {
-  color: #F97261;
+  color: #ffffff;
 }
 
 .Prestationspe_Explication_Detail_text_p {
   margin-top: 40px;
+  color: black;
 }
 
 .Prestationspe_Explication_Detail_text_bouton {
@@ -2888,6 +2901,12 @@ Header p {
   background-color: white;
 }
 
+.Header_blocbutton {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
 @media screen and (max-width: 980px) {
   .Prestationspe_presentation {
     flex-direction: column;
@@ -2898,6 +2917,15 @@ Header p {
   .Prestationspe_Presentation_Image {
     height: 300px;
     width: 100%;
+  }
+  .Prestationspe_Presentation_Image_img {
+    margin: 0px;
+  }
+  .Presentationspe_Presentation_text_gauche {
+    padding: 0 11%;
+  }
+  .Presentationspe_Presentation_text_droite {
+    padding: 0 11%;
   }
 }
 @media screen and (max-width: 750px) {
@@ -3142,4 +3170,102 @@ Header p {
   .Footer__right__devis button {
     font-size: 16px;
   }
+}
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid #03b5d2;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover, .accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.accordion button:hover::after, .accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded=true] {
+  color: #03b5d2;
+}
+.accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
 }/*# sourceMappingURL=main.css.map */

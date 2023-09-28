@@ -11,9 +11,9 @@ const PresentationJu = () => {
       container: ".my-slider",
       slideBy: 1,
       speed: 400,
-      nav: false,
+      nav: true,
       rewind: true,
-      // swipeAngle: false,
+      swipeAngle: false,
       prevButton: ".previous",
       nextButton: ".next",
       responsive: {
@@ -79,11 +79,14 @@ const PresentationJu = () => {
                 </div>
               );
             })}
+          
+          
           </div>
           <div className="sfd">
             <button className="previous"> &#8249; &#8249; </button>
             <button className="next"> &#8250; &#8250; </button>
           </div>
+          
         </div>
       </div>
     </>

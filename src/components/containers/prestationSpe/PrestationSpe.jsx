@@ -42,7 +42,7 @@ const PrestationSpe = () => {
           </h2>
         </section>
         <div className="Prestationspe_presentation">
-          <div className="Prestationspe_Presentation_text">
+          <div className="Prestationspe_Presentation_text Presentationspe_Presentation_text_gauche">
             <h3 className="Prestationspe_Presentation_text_titre">
               Notre équipe, notre expertise
             </h3>
@@ -56,7 +56,28 @@ const PrestationSpe = () => {
             </p>
           </div>
           <div className="Prestationspe_Presentation_Image">
+            <img src={grid4} className="Prestationspe_Presentation_Image_img"/>
               </div>
+        </div>
+        <div className="Prestationspe_presentation">
+
+        <div className="Prestationspe_Presentation_Image">
+            <img src={grid4} className="Prestationspe_Presentation_Image_img"/>
+              </div>
+          <div className="Prestationspe_Presentation_text Presentationspe_Presentation_text_droite">
+            <h3 className="Prestationspe_Presentation_text_titre">
+              Notre équipe, notre expertise
+            </h3>
+            <p className="Prestationspe_Presentation_text_titre">
+              Nous sommes des ingénieurs spécialisés dans le développement web, les applications, et l'UX Design. 
+              Certifiés par des plateformes renommées, nous avons choisi de devenir des freelances dès l'obtention de notre diplôme. 
+              Notre expérience pratique et notre expertise nous permettent de réaliser toutes vos demandes avec précision. 
+              Nous suivons un processus étape par étape pour comprendre et orienter efficacement vos besoins finaux. 
+              Faites-nous confiance pour des résultats optimaux.
+
+            </p>
+          </div>
+          
         </div>
         <div className="Prestationspe_separation">
           <h2 className="Prestationspe_Separation_titre">
@@ -70,10 +91,10 @@ const PrestationSpe = () => {
         </div>
         <div className="Prestationspe_explication">
           <h3 className="Prestationspe_Explication_accroche">
-            Une méthode simple et efficace
+            DemarreTonProjet
           </h3>
           <h2 className="Prestationspe_Explication_titre">
-            Commercialiser vos produits ou services en ligne
+            Création de sites internet sur mesure
           </h2>
           <div className="Prestationspe_Explication_detail">
             <div className="Prestationspe_Explication_Detail_text">

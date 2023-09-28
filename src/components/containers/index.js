@@ -11,3 +11,4 @@ export { default as RealisationPage } from "./realisation/Realisation";
 export { default as Allrealisation } from "./allrealisation/Allrealisation";
 export { default as PrestationSpe } from "./prestationSpe/PrestationSpe";
 export { default as Avis } from "./avis/Avis";
+export { default as Faq } from "./faq/Faq"

@@ -3,6 +3,7 @@
   background-color: white;
   border-radius: 74px 0 74px 64px;
   margin-bottom: 140px;
+  padding-bottom: 50px;
 }
 
 .Presentation__left {
@@ -99,7 +100,6 @@
 
 .Presentation_card_bg {
   background: url("/public/images/point.svg");
-  overflow: hidden;
   width: 70%;
   height: 470px;
 }
@@ -239,7 +239,7 @@
 
   .Presentation__glob {
     flex-direction: column;
-    padding: 0px 0% 0px 0%;
+    padding-bottom: 100px;
     border-radius: 50px 50px 0px 0%/50px;
   }
 }

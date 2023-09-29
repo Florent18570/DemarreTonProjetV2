@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-// import grid1 from "../../../Images/grid.png";
-// import grid2 from "../../../Images/grid2.png";
+import creation1 from "../../../Images/creationsite1.png";
+import creation2 from "../../../Images/creationsite2.png";
 // import grid3 from "../../../Images/grid3.png";
 import grid4 from "../../../Images/application-web-industrie-batail_log.webp";
 import { NotFound } from "..";
@@ -38,43 +38,45 @@ const PrestationSpe = () => {
 
         <section className="Prestation">
           <h2 className="Prestationspe_titre">
-            Création de votre site internet
+            Faites vous accompagner dans la création de votre site internet
           </h2>
         </section>
         <div className="Prestationspe_presentation">
           <div className="Prestationspe_Presentation_text Presentationspe_Presentation_text_gauche">
             <h3 className="Prestationspe_Presentation_text_titre">
-              Notre équipe, notre expertise
+              Pourquoi avoir un site internet ?
             </h3>
             <p className="Prestationspe_Presentation_text_titre">
-              Nous sommes des ingénieurs spécialisés dans le développement web, les applications, et l'UX Design. 
-              Certifiés par des plateformes renommées, nous avons choisi de devenir des freelances dès l'obtention de notre diplôme. 
-              Notre expérience pratique et notre expertise nous permettent de réaliser toutes vos demandes avec précision. 
-              Nous suivons un processus étape par étape pour comprendre et orienter efficacement vos besoins finaux. 
-              Faites-nous confiance pour des résultats optimaux.
+            Dans le monde d'aujourd'hui, où tout se passe en ligne, avoir un site internet est indispensable pour toute entreprise qui veut réussir. En effet, un site internet vous permet de :
+<ul>
+            <li>Développer votre visibilité: votre site internet est votre vitrine en ligne. Il vous permet de présenter vos produits ou services à un public plus large, 24h/24 et 7j/7.</li>
+            <li>Augmenter vos ventes: un site internet vous permet de générer des leads et de conclure des ventes en ligne.</li>
+            <li>Renforcer votre crédibilité: un site internet professionnel vous donne une image de marque positive et sérieuse.</li>
+            <li>Offrir une meilleure expérience client: un site internet bien conçu permet aux clients de trouver facilement les informations qu'ils recherchent et de passer commande rapidement et facilement.</li>
+</ul>
 
             </p>
           </div>
           <div className="Prestationspe_Presentation_Image">
-            <img src={grid4} className="Prestationspe_Presentation_Image_img"/>
+            <img src={creation1} className="Prestationspe_Presentation_Image_img"/>
               </div>
         </div>
         <div className="Prestationspe_presentation">
 
         <div className="Prestationspe_Presentation_Image">
-            <img src={grid4} className="Prestationspe_Presentation_Image_img"/>
+            <img src={creation2} className="Prestationspe_Presentation_Image_img"/>
               </div>
           <div className="Prestationspe_Presentation_text Presentationspe_Presentation_text_droite">
             <h3 className="Prestationspe_Presentation_text_titre">
-              Notre équipe, notre expertise
+            Comment augmenter vos ventes et votre chiffre d'affaires ?
+
             </h3>
             <p className="Prestationspe_Presentation_text_titre">
-              Nous sommes des ingénieurs spécialisés dans le développement web, les applications, et l'UX Design. 
-              Certifiés par des plateformes renommées, nous avons choisi de devenir des freelances dès l'obtention de notre diplôme. 
-              Notre expérience pratique et notre expertise nous permettent de réaliser toutes vos demandes avec précision. 
-              Nous suivons un processus étape par étape pour comprendre et orienter efficacement vos besoins finaux. 
-              Faites-nous confiance pour des résultats optimaux.
+            
 
+Un site internet optimisé pour le SEO est essentiel pour augmenter vos ventes et votre chiffre d'affaires. En effet, il vous permet d'être trouvé par les internautes qui recherchent des produits ou des services comme les vôtres.
+
+Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous accompagner par un professionnel. Il analysera votre site internet actuel, développera une stratégie de référencement naturel adaptée à votre activité et mettra en place les actions nécessaires pour améliorer votre classement dans les moteurs de recherche.
             </p>
           </div>
           

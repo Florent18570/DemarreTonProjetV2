@@ -1,9 +1,11 @@
 .Presentation__glob {
   display: flex;
   background-color: white;
-  border-radius: 74px 0 74px 64px;
+  border-radius: 55px 0 0 55px;
   margin-bottom: 140px;
   padding-bottom: 50px;
+  margin: 0 0 0 auto;
+
 }
 
 .Presentation__left {
@@ -68,7 +70,7 @@
 }
 
 .Presentation__glob {
-  width: 100%;
+  width: 80%;
 }
 
 .Presentation__left {
@@ -102,6 +104,7 @@
   background: url("/public/images/point.svg");
   width: 70%;
   height: 470px;
+
 }
 
 .previous {

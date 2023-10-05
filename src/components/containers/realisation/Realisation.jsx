@@ -32,7 +32,7 @@ const Realisation = () => {
 
   if (typeof stockData[parseInt(params.userId)].id !== "undefined") {
     return (
-      <div className="RealisationPage">
+      <section className="RealisationPage">
         <header>
           <h1>{stockData[parseInt(params.userId)].compagnie} </h1>
           <p> {stockData[parseInt(params.userId)].intro}</p>
@@ -106,17 +106,17 @@ const Realisation = () => {
             </a>
           </div>
         </div>
-      </div>
+      </section>
     );
   } else {
     return (
-      <div>
+      <section>
         <NotFound />
         <div
           ref={myRef}
           className={`${myElemenIsVisible ? "opacity" : ""}`}
         ></div>
-      </div>
+      </section>
     );
   }
 };

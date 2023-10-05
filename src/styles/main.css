@@ -15,6 +15,10 @@ body {
   background-color: #1264b0;
 }
 
+section {
+  margin: 80px auto;
+}
+
 a {
   color: #ffffff;
   text-decoration: none;
@@ -1488,9 +1492,6 @@ label {
   display: flex;
   justify-content: center;
   max-width: 1200px;
-  padding-bottom: 100px;
-  margin: 0 auto;
-  max-width: 1200px;
 }
 .Nous__image_gauche {
   max-width: 415px;
@@ -1601,7 +1602,6 @@ label {
   border-radius: 55px 0 0 55px;
   margin-bottom: 140px;
   padding-bottom: 50px;
-  margin: 0 0 0 auto;
 }
 
 .Presentation__left {
@@ -1878,10 +1878,6 @@ label {
     font-size: 24px;
   }
 }
-.Prestation {
-  padding: 50px 5%;
-  margin-bottom: 70px;
-}
 .Prestation h2 {
   max-width: 664px;
   margin: 0px auto 35px;
@@ -2004,7 +2000,6 @@ label {
   background-attachment: fixed;
   border-radius: 80px;
   padding: 54px 4% 54px 4%;
-  margin: 0 auto 80px auto;
   max-width: 1500px;
 }
 .Processus__left {
@@ -2836,7 +2831,7 @@ Header p {
   text-align: center !important;
   display: flex;
   margin: auto;
-  color: #2B2828;
+  color: #2b2828;
   font-size: 3rem;
   max-width: 860px;
   margin: auto;
@@ -3173,6 +3168,87 @@ Header p {
     font-size: 16px;
   }
 }
+.Avis {
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.Avis .subtitle {
+  color: white;
+  max-width: 800px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  font-size: 20x;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+.Avis__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 450px);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+.Avis__grid__container {
+  border-radius: 42px;
+  border: 1px solid #d8d0d0;
+  background-color: #093b86;
+  padding: 25px 10px 25px 30px;
+}
+.Avis__grid__container__star {
+  display: flex;
+}
+.Avis__grid__container__star img {
+  width: 25px;
+  margin-right: 3px;
+}
+.Avis__grid__container__description {
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  padding: 30px 0 80px 0;
+}
+
+.Avis__grid__container__bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Avis__grid__container__bottom .image {
+  width: 90px;
+  height: 75px;
+  border-radius: 20px;
+  background-color: white;
+}
+.Avis__grid__container__bottom__name {
+  margin-left: 20px;
+  margin-bottom: 0px;
+  text-align: left;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+}
+
+.grid2 {
+  height: 300px;
+}
+.grid2 .Avis__grid__container__description {
+  padding: 30px 0 25px 0;
+}
+
+.grid5 {
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
 .Header_description_faq {
   margin: 0px auto 48px auto;
   font-style: normal;

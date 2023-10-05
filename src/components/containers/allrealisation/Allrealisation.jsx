@@ -5,7 +5,7 @@ const Allrealisationn = () => {
   var stockData = stockDataa();
 
   return (
-    <div className="background">
+    <section className="background">
       <div className="padding">
         <h1 className="allrealisation"> Mes réalisations </h1>
         <div className="barre_vertical"></div>
@@ -38,7 +38,7 @@ const Allrealisationn = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

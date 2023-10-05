@@ -12,29 +12,33 @@ const PrestationSpe = () => {
 
   if (params.prestation === "creation") {
     return (
-      <div>
+      <section>
         <div className="Header_global">
           <p className="Header_titre">DemarreTonProjet</p>
           <h1 className="Header_creation">Création de sites internet</h1>
           <p className="Header_description">
-          Un site performant en toute simplicité : rapide, adapté et optimisé pour répondre à toutes vos exigences.
-          Faites le choix d'un site qui vous ressemble, pour une expérience en ligne optimale.
-      </p>
-      <p className="Header_description">
-       Votre devis en quelques secondes !
-      </p>
-      <div className="Header_blocbutton">
-      <a href="../devis"><button className="Header_button"> Me contacter </button></a>
-      <a href="../devis"><button className="Header_button"> Me contacter </button></a>
-      </div>
-      <div className="cube"></div>
-      <div className="cube"></div>
-      <div className="cube"></div>
-      <div className="cube"></div>
-      <div className="cube"></div>
-      <div className="cube"></div>
-    </div>
-
+            Un site performant en toute simplicité : rapide, adapté et optimisé
+            pour répondre à toutes vos exigences. Faites le choix d'un site qui
+            vous ressemble, pour une expérience en ligne optimale.
+          </p>
+          <p className="Header_description">
+            Votre devis en quelques secondes !
+          </p>
+          <div className="Header_blocbutton">
+            <a href="../devis">
+              <button className="Header_button"> Me contacter </button>
+            </a>
+            <a href="../devis">
+              <button className="Header_button"> Me contacter </button>
+            </a>
+          </div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+        </div>
 
         <section className="Prestation">
           <h2 className="Prestationspe_titre">
@@ -47,39 +51,62 @@ const PrestationSpe = () => {
               Pourquoi avoir un site internet ?
             </h3>
             <p className="Prestationspe_Presentation_text_titre">
-            Dans le monde d'aujourd'hui, où tout se passe en ligne, avoir un site internet est indispensable pour toute entreprise qui veut réussir. En effet, un site internet vous permet de :
-<ul>
-            <li>Développer votre visibilité: votre site internet est votre vitrine en ligne. Il vous permet de présenter vos produits ou services à un public plus large, 24h/24 et 7j/7.</li>
-            <li>Augmenter vos ventes: un site internet vous permet de générer des leads et de conclure des ventes en ligne.</li>
-            <li>Renforcer votre crédibilité: un site internet professionnel vous donne une image de marque positive et sérieuse.</li>
-            <li>Offrir une meilleure expérience client: un site internet bien conçu permet aux clients de trouver facilement les informations qu'ils recherchent et de passer commande rapidement et facilement.</li>
-</ul>
-
+              Dans le monde d'aujourd'hui, où tout se passe en ligne, avoir un
+              site internet est indispensable pour toute entreprise qui veut
+              réussir. En effet, un site internet vous permet de :
+              <ul>
+                <li>
+                  Développer votre visibilité: votre site internet est votre
+                  vitrine en ligne. Il vous permet de présenter vos produits ou
+                  services à un public plus large, 24h/24 et 7j/7.
+                </li>
+                <li>
+                  Augmenter vos ventes: un site internet vous permet de générer
+                  des leads et de conclure des ventes en ligne.
+                </li>
+                <li>
+                  Renforcer votre crédibilité: un site internet professionnel
+                  vous donne une image de marque positive et sérieuse.
+                </li>
+                <li>
+                  Offrir une meilleure expérience client: un site internet bien
+                  conçu permet aux clients de trouver facilement les
+                  informations qu'ils recherchent et de passer commande
+                  rapidement et facilement.
+                </li>
+              </ul>
             </p>
           </div>
           <div className="Prestationspe_Presentation_Image">
-            <img src={creation1} className="Prestationspe_Presentation_Image_img"/>
-              </div>
+            <img
+              src={creation1}
+              className="Prestationspe_Presentation_Image_img"
+            />
+          </div>
         </div>
         <div className="Prestationspe_presentation">
-
-        <div className="Prestationspe_Presentation_Image">
-            <img src={creation2} className="Prestationspe_Presentation_Image_img"/>
-              </div>
+          <div className="Prestationspe_Presentation_Image">
+            <img
+              src={creation2}
+              className="Prestationspe_Presentation_Image_img"
+            />
+          </div>
           <div className="Prestationspe_Presentation_text Presentationspe_Presentation_text_droite">
             <h3 className="Prestationspe_Presentation_text_titre">
-            Comment augmenter vos ventes et votre chiffre d'affaires ?
-
+              Comment augmenter vos ventes et votre chiffre d'affaires ?
             </h3>
             <p className="Prestationspe_Presentation_text_titre">
-            
-
-Un site internet optimisé pour le SEO est essentiel pour augmenter vos ventes et votre chiffre d'affaires. En effet, il vous permet d'être trouvé par les internautes qui recherchent des produits ou des services comme les vôtres.
-
-Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous accompagner par un professionnel. Il analysera votre site internet actuel, développera une stratégie de référencement naturel adaptée à votre activité et mettra en place les actions nécessaires pour améliorer votre classement dans les moteurs de recherche.
+              Un site internet optimisé pour le SEO est essentiel pour augmenter
+              vos ventes et votre chiffre d'affaires. En effet, il vous permet
+              d'être trouvé par les internautes qui recherchent des produits ou
+              des services comme les vôtres. Pour augmenter vos ventes et votre
+              chiffre d'affaires grâce au SEO, faites-vous accompagner par un
+              professionnel. Il analysera votre site internet actuel,
+              développera une stratégie de référencement naturel adaptée à votre
+              activité et mettra en place les actions nécessaires pour améliorer
+              votre classement dans les moteurs de recherche.
             </p>
           </div>
-          
         </div>
         <div className="Prestationspe_separation">
           <h2 className="Prestationspe_Separation_titre">
@@ -87,7 +114,7 @@ Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous
           </h2>
           <a href="/devis">
             <button className="Prestationspe_Separation_button">
-            Je réalise un devis
+              Je réalise un devis
             </button>
           </a>
         </div>
@@ -105,61 +132,82 @@ Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous
                 client
               </h3>
               <p className="Prestationspe_Presentation_text_titre">
-                DemarreTonProjet est une agence de création web idéal pour votre structure. Que votre souhait soit un site vitrine, une application ou un site e-commerce. Nous saurons répondre à toutes vos demandes pour vous proposer un prix en adéquation avec votre envie.
+                DemarreTonProjet est une agence de création web idéal pour votre
+                structure. Que votre souhait soit un site vitrine, une
+                application ou un site e-commerce. Nous saurons répondre à
+                toutes vos demandes pour vous proposer un prix en adéquation
+                avec votre envie.
               </p>
-              <a href="../devis"><button className="Prestationspe_Separation_button">Demander un avis d'expert</button></a>
+              <a href="../devis">
+                <button className="Prestationspe_Separation_button">
+                  Demander un avis d'expert
+                </button>
+              </a>
             </div>
             <div className="Prestationspe_Explication_Detail_description">
-                <div className="Prestation_Explication_Detail_bloc1">
-                    <h4 className="Prestation_Explication_Detail_bloc1_titre">
-                        Création site vitrine
-                    </h4>
-                    <p className="Prestationspe_Explication_Detail_text_p">
-                        La création de votre site vitrine peut avoir un impact important sur le placement de votre entreprise. Gain en visibilité, en future client mais également en prestance grace à votre site internet. Tous ces avantages vous seront offert en créant votre site web.
-                    </p>
-                </div>
-                <div className="Prestation_Explication_Detail_bloc1">
-                    <h4 className="Prestation_Explication_Detail_bloc2_titre">
-                        Création application web
-                    </h4>
-                    <p className="Prestationspe_Explication_Detail_text_p">
-                        Le besoin d'un logiciel web se fait de plus en plus ressentir. Simplicité d'utilisation, de gestion ou encore de réalisation, votre logiciel sera en mesure de remplir vos besoins.
-                    </p>
-                </div>
-                <div className="Prestation_Explication_Detail_bloc1">
-                    <h4 className="Prestation_Explication_Detail_bloc3_titre">
-                        Création site e-commerce
-                    </h4>
-                    <p className="Prestationspe_Explication_Detail_text_p">
-                        Avec l'augmentation du trafic internet et des achats en ligne, disposer de sont propre site de vente en ligne devient une condition essentiel dans l'air du temps. Nos outils et technologies peuvent répondre à vos exigences pour augmenter votre chiffre d'affaire.
-                    </p>
-                </div>
+              <div className="Prestation_Explication_Detail_bloc1">
+                <h4 className="Prestation_Explication_Detail_bloc1_titre">
+                  Création site vitrine
+                </h4>
+                <p className="Prestationspe_Explication_Detail_text_p">
+                  La création de votre site vitrine peut avoir un impact
+                  important sur le placement de votre entreprise. Gain en
+                  visibilité, en future client mais également en prestance grace
+                  à votre site internet. Tous ces avantages vous seront offert
+                  en créant votre site web.
+                </p>
+              </div>
+              <div className="Prestation_Explication_Detail_bloc1">
+                <h4 className="Prestation_Explication_Detail_bloc2_titre">
+                  Création application web
+                </h4>
+                <p className="Prestationspe_Explication_Detail_text_p">
+                  Le besoin d'un logiciel web se fait de plus en plus ressentir.
+                  Simplicité d'utilisation, de gestion ou encore de réalisation,
+                  votre logiciel sera en mesure de remplir vos besoins.
+                </p>
+              </div>
+              <div className="Prestation_Explication_Detail_bloc1">
+                <h4 className="Prestation_Explication_Detail_bloc3_titre">
+                  Création site e-commerce
+                </h4>
+                <p className="Prestationspe_Explication_Detail_text_p">
+                  Avec l'augmentation du trafic internet et des achats en ligne,
+                  disposer de sont propre site de vente en ligne devient une
+                  condition essentiel dans l'air du temps. Nos outils et
+                  technologies peuvent répondre à vos exigences pour augmenter
+                  votre chiffre d'affaire.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   } else if (params.prestation === "uxdesign") {
     return (
-        <div>
+      <div>
         <div className="Header_global">
           <p className="Header_titre">DemarreTonProjet</p>
           <h1 className="Header_creation">UX Design</h1>
           <p className="Header_description">
-      Explorer le pouvoir du UX Design pour concevoir des expériences en ligne intuitives et captivantes, mettant vos utilisateurs au centre de chaque interaction.
-      </p>
-      <p className="Header_description">
-       Votre devis en quelques secondes !
-      </p>
-      <a href="../devis"><button className="Header_button"> Me contacter </button></a>
-      <div className="cube"></div>
-      <div className="cube"></div>
-      <div className="cube"></div>
-      <div className="cube"></div>
-      <div className="cube"></div>
-      <div className="cube"></div>
-    </div>
-
+            Explorer le pouvoir du UX Design pour concevoir des expériences en
+            ligne intuitives et captivantes, mettant vos utilisateurs au centre
+            de chaque interaction.
+          </p>
+          <p className="Header_description">
+            Votre devis en quelques secondes !
+          </p>
+          <a href="../devis">
+            <button className="Header_button"> Me contacter </button>
+          </a>
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+        </div>
 
         <section className="Prestation">
           <h2 className="Prestationspe_titre">
@@ -172,15 +220,16 @@ Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous
               Notre équipe, notre expertise
             </h3>
             <p className="Prestationspe_Presentation_text_titre">
-              Etudiants ingénieurs en développement web, applications, et UX Design, nous sommes diplômé et certifié par
-              des plateformes connus. Nous avons commencé notre activité de freelance suite à l'obtention de notre diplôme.
-              Notre savoir faire et notre mise en pratique nous permettra de réaliser vos demandes précises.
-              Nous étudions et réalisons chaqu'une de vos demandes en suivant des étapes clefs pour orienter et comprendre votre besoin final.
-
+              Etudiants ingénieurs en développement web, applications, et UX
+              Design, nous sommes diplômé et certifié par des plateformes
+              connus. Nous avons commencé notre activité de freelance suite à
+              l'obtention de notre diplôme. Notre savoir faire et notre mise en
+              pratique nous permettra de réaliser vos demandes précises. Nous
+              étudions et réalisons chaqu'une de vos demandes en suivant des
+              étapes clefs pour orienter et comprendre votre besoin final.
             </p>
           </div>
-          <div className="Prestationspe_Presentation_Image">
-              </div>
+          <div className="Prestationspe_Presentation_Image"></div>
         </div>
         <div className="Prestationspe_separation">
           <h2 className="Prestationspe_Separation_titre">
@@ -188,7 +237,7 @@ Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous
           </h2>
           <a href="/devis">
             <button className="Prestationspe_Separation_button">
-            Je réalise un devis
+              Je réalise un devis
             </button>
           </a>
         </div>
@@ -206,35 +255,51 @@ Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous
                 client
               </h3>
               <p className="Prestationspe_Explication_Detail_text_p">
-                DemarreTonProjet est une agence de création web idéal pour votre structure. Que votre souhait soit un site vitrine, une application ou un site e-commerce. Nous saurons répondre à toutes vos demandes pour vous proposer un prix en adéquation avec votre envie.
+                DemarreTonProjet est une agence de création web idéal pour votre
+                structure. Que votre souhait soit un site vitrine, une
+                application ou un site e-commerce. Nous saurons répondre à
+                toutes vos demandes pour vous proposer un prix en adéquation
+                avec votre envie.
               </p>
-              <button className="Prestationspe_Separation_button">Demander un avis d'expert</button>
+              <button className="Prestationspe_Separation_button">
+                Demander un avis d'expert
+              </button>
             </div>
             <div className="Prestationspe_Explication_Detail_description">
-                <div className="Prestation_Explication_Detail_bloc1">
-                    <h4 className="Prestation_Explication_Detail_bloc1_titre">
-                        UI Design
-                    </h4>
-                    <p className="Prestationspe_Explication_Detail_text_p">
-                        La création de votre site vitrine peut avoir un impact important sur le placement de votre entreprise. Gain en visibilité, en future client mais également en prestance grace à votre site internet. Tous ces avantages vous seront offert en créant votre site web.
-                    </p>
-                </div>
-                <div className="Prestation_Explication_Detail_bloc1">
-                    <h4 className="Prestation_Explication_Detail_bloc2_titre">
-                        UX Design
-                    </h4>
-                    <p className="Prestationspe_Explication_Detail_text_p">
-                        Le besoin d'un logiciel web se fait de plus en plus ressentir. Simplicité d'utilisation, de gestion ou encore de réalisation, votre logiciel sera en mesure de remplir vos besoins.
-                    </p>
-                </div>
-                <div className="Prestation_Explication_Detail_bloc1">
-                    <h4 className="Prestation_Explication_Detail_bloc3_titre">
-                        Palette de couleur
-                    </h4>
-                    <p className="Prestationspe_Explication_Detail_text_p">
-                        Avec l'augmentation du trafic internet et des achats en ligne, disposer de sont propre site de vente en ligne devient une condition essentiel dans l'air du temps. Nos outils et technologies peuvent répondre à vos exigences pour augmenter votre chiffre d'affaire.
-                    </p>
-                </div>
+              <div className="Prestation_Explication_Detail_bloc1">
+                <h4 className="Prestation_Explication_Detail_bloc1_titre">
+                  UI Design
+                </h4>
+                <p className="Prestationspe_Explication_Detail_text_p">
+                  La création de votre site vitrine peut avoir un impact
+                  important sur le placement de votre entreprise. Gain en
+                  visibilité, en future client mais également en prestance grace
+                  à votre site internet. Tous ces avantages vous seront offert
+                  en créant votre site web.
+                </p>
+              </div>
+              <div className="Prestation_Explication_Detail_bloc1">
+                <h4 className="Prestation_Explication_Detail_bloc2_titre">
+                  UX Design
+                </h4>
+                <p className="Prestationspe_Explication_Detail_text_p">
+                  Le besoin d'un logiciel web se fait de plus en plus ressentir.
+                  Simplicité d'utilisation, de gestion ou encore de réalisation,
+                  votre logiciel sera en mesure de remplir vos besoins.
+                </p>
+              </div>
+              <div className="Prestation_Explication_Detail_bloc1">
+                <h4 className="Prestation_Explication_Detail_bloc3_titre">
+                  Palette de couleur
+                </h4>
+                <p className="Prestationspe_Explication_Detail_text_p">
+                  Avec l'augmentation du trafic internet et des achats en ligne,
+                  disposer de sont propre site de vente en ligne devient une
+                  condition essentiel dans l'air du temps. Nos outils et
+                  technologies peuvent répondre à vos exigences pour augmenter
+                  votre chiffre d'affaire.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -242,7 +307,7 @@ Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous
     );
   } else if (params.prestation === "referencement") {
     return (
-        <div>
+      <div>
         <section className="Prestation">
           <h2 className="Prestationspe_titre">
             Référencement de votre site internet
@@ -254,15 +319,16 @@ Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous
               Notre équipe, notre expertise
             </h3>
             <p className="Prestationspe_Presentation_text_titre">
-              Etudiants ingénieurs en développement web, applications, et UX Design, nous sommes diplômé et certifié par
-              des plateformes connus. Nous avons commencé notre activité de freelance suite à l'obtention de notre diplôme.
-              Notre savoir faire et notre mise en pratique nous permettra de réaliser vos demandes précises.
-              Nous étudions et réalisons chaqu'une de vos demandes en suivant des étapes clefs pour orienter et comprendre votre besoin final.
-
+              Etudiants ingénieurs en développement web, applications, et UX
+              Design, nous sommes diplômé et certifié par des plateformes
+              connus. Nous avons commencé notre activité de freelance suite à
+              l'obtention de notre diplôme. Notre savoir faire et notre mise en
+              pratique nous permettra de réaliser vos demandes précises. Nous
+              étudions et réalisons chaqu'une de vos demandes en suivant des
+              étapes clefs pour orienter et comprendre votre besoin final.
             </p>
           </div>
-          <div className="Prestationspe_Presentation_Image">
-              </div>
+          <div className="Prestationspe_Presentation_Image"></div>
         </div>
         <div className="Prestationspe_separation">
           <h2 className="Prestationspe_Separation_titre">
@@ -270,7 +336,7 @@ Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous
           </h2>
           <a href="/devis">
             <button className="Prestationspe_Separation_button">
-            Je réalise un devis
+              Je réalise un devis
             </button>
           </a>
         </div>
@@ -288,35 +354,51 @@ Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous
                 client
               </h3>
               <p className="Prestationspe_Explication_Detail_text_p">
-                DemarreTonProjet est une agence de création web idéal pour votre structure. Que votre souhait soit un site vitrine, une application ou un site e-commerce. Nous saurons répondre à toutes vos demandes pour vous proposer un prix en adéquation avec votre envie.
+                DemarreTonProjet est une agence de création web idéal pour votre
+                structure. Que votre souhait soit un site vitrine, une
+                application ou un site e-commerce. Nous saurons répondre à
+                toutes vos demandes pour vous proposer un prix en adéquation
+                avec votre envie.
               </p>
-              <button className="Prestationspe_Separation_button">Demander un avis d'expert</button>
+              <button className="Prestationspe_Separation_button">
+                Demander un avis d'expert
+              </button>
             </div>
             <div className="Prestationspe_Explication_Detail_description">
-                <div className="Prestation_Explication_Detail_bloc1">
-                    <h4 className="Prestation_Explication_Detail_bloc1_titre">
-                        Création site vitrine
-                    </h4>
-                    <p className="Prestationspe_Explication_Detail_text_p">
-                        La création de votre site vitrine peut avoir un impact important sur le placement de votre entreprise. Gain en visibilité, en future client mais également en prestance grace à votre site internet. Tous ces avantages vous seront offert en créant votre site web.
-                    </p>
-                </div>
-                <div className="Prestation_Explication_Detail_bloc1">
-                    <h4 className="Prestation_Explication_Detail_bloc2_titre">
-                        Création application web
-                    </h4>
-                    <p className="Prestationspe_Explication_Detail_text_p">
-                        Le besoin d'un logiciel web se fait de plus en plus ressentir. Simplicité d'utilisation, de gestion ou encore de réalisation, votre logiciel sera en mesure de remplir vos besoins.
-                    </p>
-                </div>
-                <div className="Prestation_Explication_Detail_bloc1">
-                    <h4 className="Prestation_Explication_Detail_bloc3_titre">
-                        Création site e-commerce
-                    </h4>
-                    <p className="Prestationspe_Explication_Detail_text_p">
-                        Avec l'augmentation du trafic internet et des achats en ligne, disposer de sont propre site de vente en ligne devient une condition essentiel dans l'air du temps. Nos outils et technologies peuvent répondre à vos exigences pour augmenter votre chiffre d'affaire.
-                    </p>
-                </div>
+              <div className="Prestation_Explication_Detail_bloc1">
+                <h4 className="Prestation_Explication_Detail_bloc1_titre">
+                  Création site vitrine
+                </h4>
+                <p className="Prestationspe_Explication_Detail_text_p">
+                  La création de votre site vitrine peut avoir un impact
+                  important sur le placement de votre entreprise. Gain en
+                  visibilité, en future client mais également en prestance grace
+                  à votre site internet. Tous ces avantages vous seront offert
+                  en créant votre site web.
+                </p>
+              </div>
+              <div className="Prestation_Explication_Detail_bloc1">
+                <h4 className="Prestation_Explication_Detail_bloc2_titre">
+                  Création application web
+                </h4>
+                <p className="Prestationspe_Explication_Detail_text_p">
+                  Le besoin d'un logiciel web se fait de plus en plus ressentir.
+                  Simplicité d'utilisation, de gestion ou encore de réalisation,
+                  votre logiciel sera en mesure de remplir vos besoins.
+                </p>
+              </div>
+              <div className="Prestation_Explication_Detail_bloc1">
+                <h4 className="Prestation_Explication_Detail_bloc3_titre">
+                  Création site e-commerce
+                </h4>
+                <p className="Prestationspe_Explication_Detail_text_p">
+                  Avec l'augmentation du trafic internet et des achats en ligne,
+                  disposer de sont propre site de vente en ligne devient une
+                  condition essentiel dans l'air du temps. Nos outils et
+                  technologies peuvent répondre à vos exigences pour augmenter
+                  votre chiffre d'affaire.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -324,7 +406,7 @@ Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous
     );
   } else if (params.prestation === "maintenance") {
     return (
-        <div>
+      <div>
         <section className="Prestation">
           <h2 className="Prestationspe_titre">
             Maintenance technique informatique
@@ -336,15 +418,16 @@ Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous
               Notre équipe, notre expertise
             </h3>
             <p className="Prestationspe_Presentation_text_titre">
-              Etudiants ingénieurs en développement web, applications, et UX Design, nous sommes diplômé et certifié par
-              des plateformes connus. Nous avons commencé notre activité de freelance suite à l'obtention de notre diplôme.
-              Notre savoir faire et notre mise en pratique nous permettra de réaliser vos demandes précises.
-              Nous étudions et réalisons chaqu'une de vos demandes en suivant des étapes clefs pour orienter et comprendre votre besoin final.
-
+              Etudiants ingénieurs en développement web, applications, et UX
+              Design, nous sommes diplômé et certifié par des plateformes
+              connus. Nous avons commencé notre activité de freelance suite à
+              l'obtention de notre diplôme. Notre savoir faire et notre mise en
+              pratique nous permettra de réaliser vos demandes précises. Nous
+              étudions et réalisons chaqu'une de vos demandes en suivant des
+              étapes clefs pour orienter et comprendre votre besoin final.
             </p>
           </div>
-          <div className="Prestationspe_Presentation_Image">
-              </div>
+          <div className="Prestationspe_Presentation_Image"></div>
         </div>
         <div className="Prestationspe_separation">
           <h2 className="Prestationspe_Separation_titre">
@@ -352,7 +435,7 @@ Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous
           </h2>
           <a href="/devis">
             <button className="Prestationspe_Separation_button">
-            Je réalise un devis
+              Je réalise un devis
             </button>
           </a>
         </div>
@@ -370,35 +453,51 @@ Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous
                 client
               </h3>
               <p className="Prestationspe_Explication_Detail_text_p">
-                DemarreTonProjet est une agence de création web idéal pour votre structure. Que votre souhait soit un site vitrine, une application ou un site e-commerce. Nous saurons répondre à toutes vos demandes pour vous proposer un prix en adéquation avec votre envie.
+                DemarreTonProjet est une agence de création web idéal pour votre
+                structure. Que votre souhait soit un site vitrine, une
+                application ou un site e-commerce. Nous saurons répondre à
+                toutes vos demandes pour vous proposer un prix en adéquation
+                avec votre envie.
               </p>
-              <button className="Prestationspe_Separation_button">Demander un avis d'expert</button>
+              <button className="Prestationspe_Separation_button">
+                Demander un avis d'expert
+              </button>
             </div>
             <div className="Prestationspe_Explication_Detail_description">
-                <div className="Prestation_Explication_Detail_bloc1">
-                    <h4 className="Prestation_Explication_Detail_bloc1_titre">
-                        Création site vitrine
-                    </h4>
-                    <p className="Prestationspe_Explication_Detail_text_p">
-                        La création de votre site vitrine peut avoir un impact important sur le placement de votre entreprise. Gain en visibilité, en future client mais également en prestance grace à votre site internet. Tous ces avantages vous seront offert en créant votre site web.
-                    </p>
-                </div>
-                <div className="Prestation_Explication_Detail_bloc1">
-                    <h4 className="Prestation_Explication_Detail_bloc2_titre">
-                        Création application web
-                    </h4>
-                    <p className="Prestationspe_Explication_Detail_text_p">
-                        Le besoin d'un logiciel web se fait de plus en plus ressentir. Simplicité d'utilisation, de gestion ou encore de réalisation, votre logiciel sera en mesure de remplir vos besoins.
-                    </p>
-                </div>
-                <div className="Prestation_Explication_Detail_bloc1">
-                    <h4 className="Prestation_Explication_Detail_bloc3_titre">
-                        Création site e-commerce
-                    </h4>
-                    <p className="Prestationspe_Explication_Detail_text_p">
-                        Avec l'augmentation du trafic internet et des achats en ligne, disposer de sont propre site de vente en ligne devient une condition essentiel dans l'air du temps. Nos outils et technologies peuvent répondre à vos exigences pour augmenter votre chiffre d'affaire.
-                    </p>
-                </div>
+              <div className="Prestation_Explication_Detail_bloc1">
+                <h4 className="Prestation_Explication_Detail_bloc1_titre">
+                  Création site vitrine
+                </h4>
+                <p className="Prestationspe_Explication_Detail_text_p">
+                  La création de votre site vitrine peut avoir un impact
+                  important sur le placement de votre entreprise. Gain en
+                  visibilité, en future client mais également en prestance grace
+                  à votre site internet. Tous ces avantages vous seront offert
+                  en créant votre site web.
+                </p>
+              </div>
+              <div className="Prestation_Explication_Detail_bloc1">
+                <h4 className="Prestation_Explication_Detail_bloc2_titre">
+                  Création application web
+                </h4>
+                <p className="Prestationspe_Explication_Detail_text_p">
+                  Le besoin d'un logiciel web se fait de plus en plus ressentir.
+                  Simplicité d'utilisation, de gestion ou encore de réalisation,
+                  votre logiciel sera en mesure de remplir vos besoins.
+                </p>
+              </div>
+              <div className="Prestation_Explication_Detail_bloc1">
+                <h4 className="Prestation_Explication_Detail_bloc3_titre">
+                  Création site e-commerce
+                </h4>
+                <p className="Prestationspe_Explication_Detail_text_p">
+                  Avec l'augmentation du trafic internet et des achats en ligne,
+                  disposer de sont propre site de vente en ligne devient une
+                  condition essentiel dans l'air du temps. Nos outils et
+                  technologies peuvent répondre à vos exigences pour augmenter
+                  votre chiffre d'affaire.
+                </p>
+              </div>
             </div>
           </div>
         </div>

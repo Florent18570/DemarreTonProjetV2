@@ -1,65 +1,71 @@
-const FTP = require("ftp");
+const PromiseFtp = require("promise-ftp");
 const fs = require("fs");
+const path = require("path");
 
-// Informations de connexion FTP
 const ftpConfig = {
-  host: "51.91.106.38", // Remplacez par l'adresse de votre serveur FTP
+  host: "176.9.105.115",
   user: "demarret",
-  password: "VY@W*ws8mp675F",
+  password: "VY@W*ws8mp675F", // Assurez-vous de masquer ou de sécuriser ce mot de passe dans un environnement réel
 };
 
-// Répertoire local contenant les fichiers à envoyer
-const localDirectory = "./DemarreTonProjetV2/build/";
-
-// Répertoire distant sur le serveur FTP
+const localDirectory = "./build/";
 const remoteDirectory = "/www/";
 
-const removeFtpDirectory = async (ftp, path) => {
-  try {
-    const filelist = await ftp.list(path);
-    for (const item of filelist) {
-      if (item.type === '-') {
-        await ftp.delete(item.name);
-      } else if (item.type === 'd') {
-        await removeFtpDirectory(ftp, `${path}/${item.name}`);
+const ftp = new PromiseFtp();
+
+const uploadDirectory = async (localPath, remotePath) => {
+  if (!fs.existsSync(localPath)) {
+    console.error(`Le répertoire local ${localPath} n'existe pas.`);
+    return;
+  }
+
+  const files = fs.readdirSync(localPath);
+
+  for (const file of files) {
+    const localFilePath = path.join(localPath, file);
+    const remoteFilePath = path.posix.join(remotePath, file);
+
+    if (!fs.existsSync(localFilePath)) {
+      console.error(`Le fichier ${localFilePath} n'existe pas.`);
+      continue;
+    }
+
+    if (fs.statSync(localFilePath).isDirectory()) {
+      try {
+        await ftp.mkdir(remoteFilePath, true);
+        console.log(`Répertoire créé : ${remoteFilePath}`);
+      } catch (error) {
+        console.error(
+          `Erreur lors de la création du répertoire ${remoteFilePath} : `,
+          error
+        );
+      }
+      await uploadDirectory(localFilePath, remoteFilePath);
+    } else {
+      try {
+        const stream = fs.createReadStream(localFilePath);
+        await ftp.put(stream, remoteFilePath);
+        console.log(`Fichier uploadé : ${localFilePath} à ${remoteFilePath}`);
+      } catch (error) {
+        console.error(
+          `Erreur lors de l'upload du fichier ${localFilePath} : `,
+          error
+        );
       }
     }
-    await ftp.rmdir(path);
-  } catch (error) {
-    console.error(`Erreur lors de la suppression du répertoire ${path}: ${error.message}`);
   }
 };
 
-const main = async () => {
-  const ftp = new FTP();
-
-  ftp.on("ready", async () => {
-    try {
-      // Supprimer le contenu du répertoire distant "www"
-      await removeFtpDirectory(ftp, remoteDirectory);
-
-      // Téléverser de nouveaux fichiers
-      await ftp.cwd("/");
-      await ftp.cwd(remoteDirectory);
-
-      const files = fs.readdirSync(localDirectory);
-
-      for (const file of files) {
-        const localFilePath = `${localDirectory}/${file}`;
-        if (fs.statSync(localFilePath).isFile()) {
-          await ftp.put(localFilePath, file);
-        }
-      }
-
-      console.log("Tous les fichiers ont été téléchargés avec succès.");
-    } catch (error) {
-      console.error(`Une erreur s'est produite : ${error.message}`);
-    } finally {
-      ftp.end();
-    }
+ftp
+  .connect(ftpConfig)
+  .then(() => {
+    console.log("Connecté au serveur FTP.");
+    return uploadDirectory(localDirectory, remoteDirectory);
+  })
+  .then(() => {
+    console.log("Tous les fichiers ont été uploadés.");
+    return ftp.end();
+  })
+  .catch((error) => {
+    console.error("Erreur :", error);
   });
-
-  ftp.connect(ftpConfig);
-};
-
-main();

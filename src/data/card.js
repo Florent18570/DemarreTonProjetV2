@@ -8,7 +8,8 @@ export default function stockDataa() {
       service: "Développement Web",
       technologie: "Html / Css / Js ",
       date: "Janvier 2023",
-      site: "https://www.centresante-squaremutualite.fr/",
+      site: "centresante-squaremutualite",
+      link: "https://www.centresante-squaremutualite.fr/",
       src: "/images/centresante-squaremutualite.png",
       processus: [
         {
@@ -47,6 +48,7 @@ export default function stockDataa() {
       technologie: "Html / Css / Js / Wordpress",
       date: "Janvier 2022",
       site: "https://stb18.fr",
+      link: "https://stb18.fr",
       src: "/images/stb18.webp",
       processus: [
         {
@@ -84,6 +86,7 @@ export default function stockDataa() {
       technologie: "Html / Css / Js / Jquery ",
       date: "Juin 2022",
       site: "https://gems-generator.com/",
+      link: "https://gems-generator.com/",
       src: "/images/gemsgenerator.webp",
       processus: [
         {
@@ -130,6 +133,7 @@ export default function stockDataa() {
       technologie: "WordPress",
       date: "Decembre 2022",
       site: "https://technienergie.fr/",
+      link: "https://technienergie.fr/",
       src: "/images/technienergie.webp",
       processus: [
         {

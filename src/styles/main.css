@@ -1601,7 +1601,8 @@ label {
   background-color: white;
   border-radius: 55px 0 0 55px;
   margin-bottom: 140px;
-  padding-bottom: 50px;
+  width: 93%;
+  margin-left: 167px;
 }
 
 .Presentation__left {
@@ -1661,10 +1662,6 @@ label {
   letter-spacing: 0.02em;
 }
 
-.Presentation__glob {
-  width: 80%;
-}
-
 .Presentation__left {
   width: 30%;
   height: auto;
@@ -1692,7 +1689,14 @@ label {
 .Presentation_card_bg {
   background: url("/public/images/point.svg");
   width: 70%;
-  height: 470px;
+  position: relative;
+  height: 515px;
+}
+
+.sfd {
+  position: absolute;
+  bottom: 15px;
+  left: 49px;
 }
 
 .previous {
@@ -2325,11 +2329,21 @@ Header p {
   display: flex;
   flex-direction: column;
 }
+.RealisationPage__projetDetail__container h3 {
+  margin-bottom: 10px;
+}
+.RealisationPage__projetDetail__container p {
+  color: white;
+}
+.RealisationPage__projetDetail__container a {
+  font-size: 18px;
+  line-height: 1.667em;
+}
 
 .RealisationPage__etude {
   display: flex;
   flex-direction: column;
-  max-width: 730px;
+  max-width: 72%;
   padding: 90px 40px 94px;
   margin: 50px auto 16px;
   border-style: solid;
@@ -2431,15 +2445,22 @@ Header p {
   .RealisationPage__autreProjet__grid__card {
     margin-bottom: 30px;
   }
+  .RealisationPage__etude {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 571px) {
   .RealisationPage__autreProjet__top {
     flex-direction: column;
   }
-}
-@media screen and (max-width: 458px) {
+  .RealisationPage__etude {
+    padding: 39px 40px 94px;
+  }
+  .RealisationPage img {
+    border-radius: 33px;
+  }
   .RealisationPage__projetDetail {
-    grid-template-columns: auto;
+    margin-bottom: 59px;
   }
 }
 .allrealisation {

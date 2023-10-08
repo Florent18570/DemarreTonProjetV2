@@ -3,6 +3,10 @@ import { useParams } from "react-router-dom";
 
 import creation1 from "../../../Images/creationsite1.png";
 import creation2 from "../../../Images/creationsite2.png";
+
+import ux1 from "../../../Images/ux1.png";
+import ux2 from "../../../Images/ux2.png";
+
 // import grid3 from "../../../Images/grid3.png";
 import grid4 from "../../../Images/application-web-industrie-batail_log.webp";
 import { NotFound } from "..";
@@ -165,22 +169,56 @@ Pour augmenter vos ventes et votre chiffre d'affaires grâce au SEO, faites-vous
           <h2 className="Prestationspe_titre">
             Création de votre design personnalisé
           </h2>
+          
         </section>
         <div className="Prestationspe_presentation">
-          <div className="Prestationspe_Presentation_text">
+          <div className="Prestationspe_Presentation_text Presentationspe_Presentation_text_gauche">
             <h3 className="Prestationspe_Presentation_text_titre">
-              Notre équipe, notre expertise
+              Qu'est-ce que l'UX design ?
             </h3>
             <p className="Prestationspe_Presentation_text_titre">
-              Etudiants ingénieurs en développement web, applications, et UX Design, nous sommes diplômé et certifié par
-              des plateformes connus. Nous avons commencé notre activité de freelance suite à l'obtention de notre diplôme.
-              Notre savoir faire et notre mise en pratique nous permettra de réaliser vos demandes précises.
-              Nous étudions et réalisons chaqu'une de vos demandes en suivant des étapes clefs pour orienter et comprendre votre besoin final.
-
+            L'UX design est une discipline qui vise à créer des produits et des services qui soient agréables, efficaces et utiles pour les utilisateurs.
+            </p><p className="Prestationspe_Presentation_text_titre">
+Les UX designers utilisent des techniques et des méthodes pour comprendre les besoins et les motivations des utilisateurs, afin de créer des expériences qui répondent à leurs attentes.
+</p><p className="Prestationspe_Presentation_text_titre">
+L'UX design est un processus itératif qui commence par la recherche et l'analyse des utilisateurs.
             </p>
           </div>
           <div className="Prestationspe_Presentation_Image">
+            <img src={ux1} className="Prestationspe_Presentation_Image_img"/>
               </div>
+        </div>
+        <div className="Prestationspe_presentation">
+
+        <div className="Prestationspe_Presentation_Image">
+            <img src={ux2} className="Prestationspe_Presentation_Image_img"/>
+              </div>
+          <div className="Prestationspe_Presentation_text Presentationspe_Presentation_text_droite">
+            <h3 className="Prestationspe_Presentation_text_titre">
+            Les avantages pour les utilisateurs
+
+            </h3>
+              <p className="Prestationspe_Presentation_text_titre">
+
+Les avantages de l'UX design pour les utilisateurs sont nombreux, notamment :
+</p><p className="Prestationspe_Presentation_text_titre">
+<ul>
+  <li>
+  <strong>Une expérience plus agréable et intuitive</strong>: L'UX design permet de créer des produits et des services qui sont faciles à utiliser et à comprendre.
+  </li>
+  <li>
+  <strong>Une plus grande efficacité</strong>: L'UX design peut aider les utilisateurs à atteindre leurs objectifs plus rapidement et plus facilement. 
+  </li>
+  <li>
+  <strong>Une meilleure satisfaction</strong>: Les utilisateurs sont plus satisfaits des produits et des services qui sont bien conçus.
+
+  </li>
+
+</ul>
+
+            </p>
+          </div>
+          
         </div>
         <div className="Prestationspe_separation">
           <h2 className="Prestationspe_Separation_titre">

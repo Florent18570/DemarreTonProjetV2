@@ -1,25 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 
 $text: #7288a2;
 $gray: #4d5974;
 $lightgray: #e5e5e5;
 $blue: #03b5d2;
 
-.Header_description_faq{
-  margin: 0px auto 48px auto;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-    font-size: 19px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.36px;
-    margin-bottom: 70px;
-    color: #ffffff;
-    justify-content: space-evenly;
+.Header_description_faq {
+  margin: 0 auto 48px auto;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #ffffff;
+  justify-content: space-evenly;
+  margin-bottom: 70px;
 }
-
 
 .container {
   margin: 0 auto;
@@ -30,10 +29,11 @@ $blue: #03b5d2;
 
 .accordion {
   .accordion-item {
-    button[aria-expanded='true'] {
+    button[aria-expanded="open"] {
       border-bottom: 1px solid $blue;
     }
   }
+
   button {
     position: relative;
     display: block;
@@ -42,19 +42,22 @@ $blue: #03b5d2;
     padding: 1em 0;
     font-size: 1.15rem;
     font-weight: 400;
-    background-color: #0E3C6E;
+    background-color: #0e3c6e;
     color: white;
     margin-bottom: 5px;
     border: 10px white;
     border-radius: 6px;
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
       cursor: pointer;
       color: $blue;
-      
     }
+
     .accordion-title {
       padding: 1em 1.5em 1em 10px;
     }
+
     .icon {
       display: inline-block;
       position: absolute;
@@ -64,55 +67,89 @@ $blue: #03b5d2;
       height: 22px;
       border: 1px solid;
       border-radius: 22px;
-      &::before {
-        display: block;
+
+      &::before,
+      &::after {
         position: absolute;
-        content: '';
+        content: "";
+        background: currentColor;
+      }
+
+      &::before {
         top: 9px;
         left: 5px;
         width: 10px;
         height: 2px;
-        background: currentColor;
       }
+
       &::after {
-        display: block;
-        position: absolute;
-        content: '';
         top: 5px;
         left: 9px;
         width: 2px;
         height: 10px;
-        background: currentColor;
       }
     }
-  }
-  button[aria-expanded='true'] {
-    color: $blue;
-    .icon {
-      &::after {
+
+    &[aria-expanded="open"] {
+      color: $blue;
+      .icon::after {
         width: 0;
       }
+
+      + .accordion-content {
+        animation-name: openContent;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+      }
     }
-    + .accordion-content {
-      opacity: 1;
-      max-height: 9em;
-      transition: all 200ms linear;
-      will-change: opacity, max-height;
-      background-color: #D2E0EB;
-      color:black;
-      margin-bottom: 15px;
-      padding: 10px 20px 10px 20px;
+
+    &[aria-expanded="close"] {
+      color: $lightgray;
+
+      + .accordion-content {
+        animation-name: closeContent;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+      }
     }
   }
+
   .accordion-content {
-    opacity: 0;
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
-    transition: opacity 200ms linear, max-height 200ms linear;
-    will-change: opacity, max-height;
-    p {
-      font-size: 1rem;
-      font-weight: 300;
-    }
+  }
+}
+
+.open {
+  margin-bottom: 10px;
+}
+
+@keyframes openContent {
+  0% {
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+  }
+
+  100% {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 10px 20px;
+    background-color: #d2e0eb;
+  }
+}
+
+@keyframes closeContent {
+  0% {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 10px 20px;
+  }
+
+  100% {
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
   }
 }

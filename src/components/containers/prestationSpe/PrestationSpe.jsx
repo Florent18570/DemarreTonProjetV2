@@ -437,18 +437,12 @@ Les avantages de l'UX design pour les utilisateurs sont nombreux, notamment :
                         Avec l'augmentation du trafic internet et des achats en ligne, disposer de sont propre site de vente en ligne devient une condition essentiel dans l'air du temps. Nos outils et technologies peuvent répondre à vos exigences pour augmenter votre chiffre d'affaire.
                     </p>
                 </div>
-            </div>
+           </div>
           </div>
-        </div>
-      </div>
+          </div>
+          </div>
     );
-  } else {
-    return (
-      <div>
-        <NotFound />
-      </div>
-    );
-  }
+  };
 };
 
-export default PrestationSpe;
+  export default PrestationSpe;

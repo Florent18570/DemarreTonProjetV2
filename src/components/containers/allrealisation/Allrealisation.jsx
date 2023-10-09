@@ -1,11 +1,15 @@
 import React from "react";
 import stockDataa from "../../../data/card";
+import { Helmet } from "react-helmet";
 
 const Allrealisationn = () => {
   var stockData = stockDataa();
 
   return (
-    <div className="background">
+    <section className="background">
+      <Helmet>
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <div className="padding">
         <h1 className="allrealisation"> Mes réalisations </h1>
         <div className="barre_vertical"></div>
@@ -14,7 +18,7 @@ const Allrealisationn = () => {
       <div className="gridAllrealisation">
         {stockData.map((data, key) => {
           return (
-            <div className="gridAllrealisation__container">
+            <div className="gridAllrealisation__container" key={key}>
               <a href={"/realisation/" + data.id}>
                 <div className="gridAllrealisation__container__image_overflow">
                   <img src={data.src} alt="" />
@@ -38,7 +42,7 @@ const Allrealisationn = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

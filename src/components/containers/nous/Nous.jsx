@@ -5,7 +5,7 @@ import Bg from "../../../Images/undraw_programming_re_kg9v.svg";
 
 const Nous = () => {
   return (
-    <div className="Nous">
+    <section className="Nous">
       <img className="Nous__image_gauche" src={Bg} alt="Bg" />
       <div className="Nous__content">
         <h2> Pourquoi travailler avec&nbsp;nous&nbsp;? </h2>
@@ -34,7 +34,7 @@ const Nous = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

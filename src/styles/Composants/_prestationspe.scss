@@ -1,213 +1,205 @@
-.Prestationspe_titre{
-    margin-top:70px;
+.Prestationspe_titre {
+  margin-top: 70px;
 }
 
-.Prestationspe_presentation{
-    display: flex;
-    width: 100%;
-    align-items: center !important;
+.Prestationspe_presentation {
+  display: flex;
+  width: 100%;
+  align-items: center !important;
 }
 
-.Prestationspe_Presentation_text{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    
-
+.Prestationspe_Presentation_text {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
 }
 
-.Presentationspe_Presentation_text_droite{
-    padding: 0 11% 0 0;
+.Presentationspe_Presentation_text_droite {
+  padding: 0 11% 0 0;
 }
 
-.Presentationspe_Presentation_text_gauche{
-    padding: 0 0 0 11%;
+.Presentationspe_Presentation_text_gauche {
+  padding: 0 0 0 11%;
 }
 
-.Prestationspe_Presentation_text_titre{
-    display: flex;
-    margin-top: 25px;
-    color:white;
-    flex-direction: column;
-
+.Prestationspe_Presentation_text_titre {
+  display: flex;
+  margin-top: 25px;
+  color: white;
+  flex-direction: column;
 }
-.Prestationspe_Presentation_text_p{
-    display: flex;
-}
-
-.Prestationspe_Presentation_Image{
-    display: flex;
-    width: 50%;
-    background-image: url("http://localhost:3000/static/media/application-web-industrie-batail_log.7f40adba.webp");
-    background-size: cover;
-    height: 500px;
-    justify-content:center;
+.Prestationspe_Presentation_text_p {
+  display: flex;
 }
 
-.Prestationspe_Presentation_Image_img{
-    margin: 5%;
-    object-fit: cover;
-}
-.Prestationspe_Presntation_Image_img{
-    max-width: 688px;
-}
-.Prestationspe_separation{
-    background-color: $bleumifonce;
-    width: 100%;
-    min-height: 300px;
-    background-size: cover;
-    text-align: center;
-    padding: 6.5rem 0;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-.Prestationspe_Separation_titre{
-    display: flex;
-    margin: auto;
-    color: white;
-    margin-bottom: 30px;
-}
-.Prestationspe_Separation_button{
-    background: white;
-    border-radius: 1000px;
-    justify-content: space-evenly;
-    margin: 26px auto;
-    display: flex;
-    color: #0051b1;
-    padding: 18px 25px;
-    line-height: 1.111em;
-    font-weight: 700;
-    text-align: center;
-    font-size: 17px;
-
+.Prestationspe_Presentation_Image {
+  display: flex;
+  width: 50%;
+  background-image: url("http://localhost:3000/static/media/application-web-industrie-batail_log.7f40adba.webp");
+  background-size: cover;
+  height: 500px;
+  justify-content: center;
 }
 
-.Prestationspe_explication{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 3.5rem 0.938rem;
+.Prestationspe_Presentation_Image_img {
+  margin: 5%;
+  object-fit: cover;
 }
-.Prestationspe_Explication_accroche{
-    display: flex;
-    margin: auto;
-    text-align: center !important;
-    font-size: 1.25rem;
-    margin-bottom: 15px;
-    color:white;
+.Prestationspe_Presntation_Image_img {
+  max-width: 688px;
 }
-.Prestationspe_Explication_titre{
-    text-align: center !important;
-    display: flex;
-    margin: auto;
-    color: #2B2828;
-    font-size: 3rem;
-    max-width: 860px;
-    margin: auto;
-    margin-bottom: 5rem;
-    margin-top: 1rem;
+.Prestationspe_separation {
+  background-color: $bleumifonce;
+  width: 100%;
+  min-height: 300px;
+  background-size: cover;
+  text-align: center;
+  padding: 6.5rem 0;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-
-.Prestationspe_Explication_detail{
-    display: flex;
+.Prestationspe_Separation_titre {
+  display: flex;
+  margin: auto;
+  color: white;
+  margin-bottom: 30px;
 }
-.Prestationspe_Explication_Detail_text{
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    flex: 0 0 45%;
-    max-width: 45%;
-    padding: 45px;
-
-}
-.Prestationspe_Explication_Detail_description{
-    display: flex;
-    flex-direction: column;
-    width: 55%;
-    flex: 0 0 55%;
-    max-width: 55%;
+.Prestationspe_Separation_button {
+  background: white;
+  border-radius: 1000px;
+  justify-content: space-evenly;
+  margin: 26px auto;
+  display: flex;
+  color: #0051b1;
+  padding: 18px 25px;
+  line-height: 1.111em;
+  font-weight: 700;
+  text-align: center;
+  font-size: 17px;
 }
 
-.Prestationspe_Explication_Detail_text_titre{
-    color:#ffffff;
+.Prestationspe_explication {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 3.5rem 0.938rem;
 }
-.Prestationspe_Explication_Detail_text_p{
-    margin-top: 40px;
-    color:black;
+.Prestationspe_Explication_accroche {
+  display: flex;
+  margin: auto;
+  text-align: center !important;
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: white;
 }
-.Prestationspe_Explication_Detail_text_bouton{
-    margin: 30px auto;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.Prestation_Explication_Detail_bloc1{
-    background-color: white;
-    border-radius: 23px;
-    padding:35px;
-    margin-bottom: 40px;
-
-}
-.Prestation_Explication_Detail_bloc1_titre{
-    color:#f1503a;
-}
-.Prestation_Explication_Detail_bloc2_titre{
-    color:#3a83f1;
-}
-.Prestation_Explication_Detail_bloc3_titre{
-    color:#15ac22;
+.Prestationspe_Explication_titre {
+  text-align: center !important;
+  display: flex;
+  margin: auto;
+  color: #2b2828;
+  font-size: 3rem;
+  max-width: 860px;
+  margin: auto;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
 }
 
-
-.Prestation_Explication_Detail_bloc2{
-    background-color: white;
+.Prestationspe_Explication_detail {
+  display: flex;
+}
+.Prestationspe_Explication_Detail_text {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  flex: 0 0 45%;
+  max-width: 45%;
+  padding: 45px;
+}
+.Prestationspe_Explication_Detail_description {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  flex: 0 0 55%;
+  max-width: 55%;
 }
 
+.Prestationspe_Explication_Detail_text_titre {
+  color: #ffffff;
+}
+.Prestationspe_Explication_Detail_text_p {
+  margin-top: 40px;
+  color: black;
+}
+.Prestationspe_Explication_Detail_text_bouton {
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.Prestation_Explication_Detail_bloc1 {
+  background-color: white;
+  border-radius: 23px;
+  padding: 35px;
+  margin-bottom: 40px;
+}
+.Prestation_Explication_Detail_bloc1_titre {
+  color: #f1503a;
+}
+.Prestation_Explication_Detail_bloc2_titre {
+  color: #3a83f1;
+}
+.Prestation_Explication_Detail_bloc3_titre {
+  color: #15ac22;
+}
+
+.Prestation_Explication_Detail_bloc2 {
+  background-color: white;
+}
 
 //bouton
-.Header_blocbutton{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
+.Header_blocbutton {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }
 
 @media screen and (max-width: 980px) {
-    .Prestationspe_presentation{
-        flex-direction: column;
-    }
-    .Prestationspe_Presentation_text {
-        width: 100%;
-    }
-    .Prestationspe_Presentation_Image {
-        height: 300px;
-        width: 100%;
-    }
-    .Prestationspe_Presentation_Image_img{
-        margin:0px;
-    }
-    .Presentationspe_Presentation_text_gauche{
-        padding: 0 11%;
-    }
-    .Presentationspe_Presentation_text_droite{
-        padding: 0 11%;
-    }
+  .Prestationspe_presentation {
+    flex-direction: column;
+  }
+  .Prestationspe_Presentation_text {
+    width: 100%;
+  }
+  .Prestationspe_Presentation_Image {
+    height: 300px;
+    width: 100%;
+  }
+  .Prestationspe_Presentation_Image_img {
+    margin: 0px;
+  }
+  .Presentationspe_Presentation_text_gauche {
+    padding: 0 11%;
+  }
+  .Presentationspe_Presentation_text_droite {
+    padding: 0 11%;
+  }
 }
 
 @media screen and (max-width: 750px) {
-    .Prestationspe_Explication_detail{
-        flex-direction: column;
-    }
-    .Prestationspe_Explication_Detail_text{
-        width: 100%;
-        max-width: 100%;
-    }
-    .Prestationspe_Explication_Detail_description{
-        width: 100%;
-        max-width: 100%;
-    }
-    .Prestation_Explication_Detail_bloc1{
-        margin: 0 40px 40px;
-    }
+  .Prestationspe_Explication_detail {
+    flex-direction: column;
+  }
+  .Prestationspe_Explication_Detail_text {
+    width: 100%;
+    max-width: 100%;
+  }
+  .Prestationspe_Explication_Detail_description {
+    width: 100%;
+    max-width: 100%;
+  }
+  .Prestation_Explication_Detail_bloc1 {
+    margin: 0 40px 40px;
+  }
 }

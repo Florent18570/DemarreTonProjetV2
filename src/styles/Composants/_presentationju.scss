@@ -3,9 +3,8 @@
   background-color: white;
   border-radius: 55px 0 0 55px;
   margin-bottom: 140px;
-  padding-bottom: 50px;
-  margin: 0 0 0 auto;
-
+  width: 93%;
+  margin-left: 167px;
 }
 
 .Presentation__left {
@@ -69,10 +68,6 @@
   }
 }
 
-.Presentation__glob {
-  width: 80%;
-}
-
 .Presentation__left {
   width: 30%;
   height: auto;
@@ -103,8 +98,14 @@
 .Presentation_card_bg {
   background: url("/public/images/point.svg");
   width: 70%;
-  height: 470px;
+  position: relative;
+  height: 515px;
+}
 
+.sfd {
+  position: absolute;
+  bottom: 15px;
+  left: 49px;
 }
 
 .previous {

@@ -1,0 +1,90 @@
+.Avis {
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  & .subtitle {
+    color: white;
+    max-width: 800px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-size: 20x;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-align: center;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+
+    &__container {
+      border-radius: 42px;
+      border: 1px solid #d8d0d0;
+      background-color: #093b86;
+      padding: 25px 10px 25px 30px;
+      &__star {
+        display: flex;
+        img {
+          width: 25px;
+          margin-right: 3px;
+        }
+      }
+      &__description {
+        text-align: left;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 1.2px;
+        padding: 30px 0 80px 0;
+      }
+    }
+  }
+}
+
+.Avis__grid__container__bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .image {
+    width: 90px;
+    height: 75px;
+    border-radius: 20px;
+    background-color: white;
+  }
+  &__name {
+    margin-left: 20px;
+    margin-bottom: 0px;
+
+    text-align: left;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+  }
+}
+
+.grid1 {
+}
+
+.grid2 {
+  height: 300px;
+  .Avis__grid__container__description {
+    padding: 30px 0 25px 0;
+  }
+}
+.grid3 {
+}
+.grid4 {
+}
+.grid5 {
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+.grid6 {
+}

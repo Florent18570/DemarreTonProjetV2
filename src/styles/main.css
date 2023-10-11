@@ -3363,7 +3363,6 @@ Header p {
   width: 2px;
   height: 10px;
 }
-<<<<<<< HEAD
 .accordion button[aria-expanded=false] .accordion-content {
   opacity: 0;
   max-height: 0;
@@ -3376,23 +3375,20 @@ Header p {
   font-weight: 300;
 }
 .accordion button[aria-expanded=true] {
-=======
-.accordion button[aria-expanded=open] {
->>>>>>> 5ee3a9d3b19addbd06d8cfb7d89d5141f3664dbf
   color: #03b5d2;
 }
-.accordion button[aria-expanded=open] .icon::after {
+.accordion button[aria-expanded=true] .icon::after {
   width: 0;
 }
-.accordion button[aria-expanded=open] + .accordion-content {
+.accordion button[aria-expanded=true] .icon + .accordion-content {
   animation-name: openContent;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
-.accordion button[aria-expanded=close] {
+.accordion button[aria-expanded=true][aria-expanded=close] {
   color: #e5e5e5;
 }
-.accordion button[aria-expanded=close] + .accordion-content {
+.accordion button[aria-expanded=true][aria-expanded=close] + .accordion-content {
   animation-name: closeContent;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;

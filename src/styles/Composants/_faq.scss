@@ -89,7 +89,6 @@ $blue: #03b5d2;
         height: 10px;
       }
     }
-<<<<<<< HEAD
   }
 
   button[aria-expanded='false'] {
@@ -110,12 +109,6 @@ $blue: #03b5d2;
     color: $blue;
     .icon {
       &::after {
-=======
-
-    &[aria-expanded="open"] {
-      color: $blue;
-      .icon::after {
->>>>>>> 5ee3a9d3b19addbd06d8cfb7d89d5141f3664dbf
         width: 0;
       }
 

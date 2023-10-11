@@ -86,6 +86,21 @@ $blue: #03b5d2;
       }
     }
   }
+
+  button[aria-expanded='false'] {
+
+    .accordion-content {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 700ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+    }
+  }
   button[aria-expanded='true'] {
     color: $blue;
     .icon {

@@ -6,6 +6,12 @@ import Bg from "../../../Images/undraw_programming_re_kg9v.svg";
 const Nous = () => {
   return (
     <section className="Nous">
+
+<div class="custom-shape-divider-top-1696825104">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
       <img className="Nous__image_gauche" src={Bg} alt="Bg" />
       <div className="Nous__content">
         <h2> Pourquoi travailler avec&nbsp;nous&nbsp;? </h2>

@@ -1488,6 +1488,26 @@ label {
   color: white;
 }
 
+.custom-shape-divider-top-1696825104 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1696825104 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 120px;
+}
+
+.custom-shape-divider-top-1696825104 .shape-fill {
+  fill: #FFFFFF;
+}
+
 .Nous {
   display: flex;
   justify-content: center;
@@ -3345,6 +3365,17 @@ Header p {
   width: 2px;
   height: 10px;
   background: currentColor;
+}
+.accordion button[aria-expanded=false] .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 700ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion button[aria-expanded=false] .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
 }
 .accordion button[aria-expanded=true] {
   color: #03b5d2;

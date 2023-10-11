@@ -1,113 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
 import stockDataa from "../../../data/card";
 
 const Faq = () => {
-  var choixitem1 = false;
-  var choixitem2 = false;
-  var choixitem3 = false;
-  var choixitem4 = false;
-  var choixitem5 = false;
+  const [animations, setAnimations] = useState(["", "", "", "", ""]);
 
-  function item1() {
-    if (choixitem1 == true) {
-      choixitem1 = false;
-    } else {
-      choixitem1 = true;
-      document.getElementById("item2").setAttribute("aria-expanded", false);
-      document.getElementById("item3").setAttribute("aria-expanded", false);
-      document.getElementById("item4").setAttribute("aria-expanded", false);
-      document.getElementById("item5").setAttribute("aria-expanded", false);
-      choixitem2 = false;
-      choixitem3 = false;
-      choixitem4 = false;
-      choixitem5 = false;
-    }
-    document.getElementById("item1").setAttribute("aria-expanded", choixitem1);
-
-    console.log(choixitem1);
-  }
-
-  function item2() {
-    if (choixitem2 == true) {
-      choixitem2 = false;
-    } else {
-      choixitem2 = true;
-
-      document.getElementById("item1").setAttribute("aria-expanded", false);
-      document.getElementById("item3").setAttribute("aria-expanded", false);
-      document.getElementById("item4").setAttribute("aria-expanded", false);
-      document.getElementById("item5").setAttribute("aria-expanded", false);
-      choixitem1 = false;
-      choixitem3 = false;
-      choixitem4 = false;
-      choixitem5 = false;
-    }
-    document.getElementById("item2").setAttribute("aria-expanded", choixitem2);
-
-    console.log(choixitem2);
-  }
-
-  function item3() {
-    if (choixitem3 == true) {
-      choixitem3 = false;
-    } else {
-      choixitem3 = true;
-
-      document.getElementById("item2").setAttribute("aria-expanded", false);
-      document.getElementById("item1").setAttribute("aria-expanded", false);
-      document.getElementById("item4").setAttribute("aria-expanded", false);
-      document.getElementById("item5").setAttribute("aria-expanded", false);
-      choixitem2 = false;
-      choixitem1 = false;
-      choixitem4 = false;
-      choixitem5 = false;
-    }
-    document.getElementById("item3").setAttribute("aria-expanded", choixitem3);
-
-    console.log(choixitem3);
-  }
-
-  function item4() {
-    if (choixitem4 == true) {
-      choixitem4 = false;
-    } else {
-      choixitem4 = true;
-
-      document.getElementById("item2").setAttribute("aria-expanded", false);
-      document.getElementById("item3").setAttribute("aria-expanded", false);
-      document.getElementById("item1").setAttribute("aria-expanded", false);
-      document.getElementById("item5").setAttribute("aria-expanded", false);
-      choixitem2 = false;
-      choixitem3 = false;
-      choixitem1 = false;
-      choixitem5 = false;
-    }
-    document.getElementById("item4").setAttribute("aria-expanded", choixitem4);
-
-    console.log(choixitem4);
-  }
-
-  function item5() {
-    if (choixitem5 == true) {
-      choixitem5 = false;
-    } else {
-      choixitem5 = true;
-
-      document.getElementById("item2").setAttribute("aria-expanded", false);
-      document.getElementById("item3").setAttribute("aria-expanded", false);
-      document.getElementById("item4").setAttribute("aria-expanded", false);
-      document.getElementById("item1").setAttribute("aria-expanded", false);
-      choixitem2 = false;
-      choixitem3 = false;
-      choixitem4 = false;
-      choixitem1 = false;
-    }
-    document.getElementById("item5").setAttribute("aria-expanded", choixitem5);
-
-    console.log(choixitem5);
-  }
+  const toggleAnimation = (index) => {
+    const newAnimations = [...animations];
+    newAnimations[index] = newAnimations[index] === "open" ? "close" : "open";
+    setAnimations(newAnimations);
+  };
 
   return (
     <section class="container">
@@ -121,13 +24,17 @@ const Faq = () => {
       </p>
       <div class="accordion">
         <div class="accordion-item">
-          <button id="item1" onClick={item1} aria-expanded="false">
+          <button
+            id="item1"
+            onClick={() => toggleAnimation(0)}
+            aria-expanded={animations[0]}
+          >
             <span class="accordion-title">
               Combien coûte la création d'un site web ?
             </span>
             <span class="icon" aria-hidden="true"></span>
           </button>
-          <div class="accordion-content">
+          <div className={`accordion-content ${animations[0]}`}>
             <p>
               Le prix d'un site web varie en fonction de ses fonctionnalités, de
               sa complexité et de son étendue. En général, un site web simple
@@ -137,13 +44,17 @@ const Faq = () => {
           </div>
         </div>
         <div class="accordion-item">
-          <button id="item2" onClick={item2} aria-expanded="false">
+          <button
+            id="item2"
+            onClick={() => toggleAnimation(1)}
+            aria-expanded={animations[1]}
+          >
             <span class="accordion-title">
               Quel est le délai de création d'un site web ?
             </span>
             <span class="icon" aria-hidden="true"></span>
           </button>
-          <div class="accordion-content">
+          <div className={`accordion-content ${animations[1]}`}>
             <p>
               Le délai de création d'un site web dépend de la complexité du
               projet. En général, un site web simple peut être créé en quelques
@@ -152,14 +63,18 @@ const Faq = () => {
           </div>
         </div>
         <div class="accordion-item">
-          <button id="item3" onClick={item3} aria-expanded="false">
+          <button
+            id="item3"
+            onClick={() => toggleAnimation(2)}
+            aria-expanded={animations[2]}
+          >
             <span class="accordion-title">
               Quels sont les avantages de créer un site web avec votre
               entreprise ?
             </span>
             <span class="icon" aria-hidden="true"></span>
           </button>
-          <div class="accordion-content">
+          <div className={`accordion-content ${animations[2]}`}>
             <p>
               Voici quelques avantages de créer un site web avec notre
               entreprise : Nous avons une équipe expérimentée de développeurs et
@@ -170,24 +85,32 @@ const Faq = () => {
           </div>
         </div>
         <div class="accordion-item">
-          <button id="item4" onClick={item4} aria-expanded="false">
+          <button
+            id="item4"
+            onClick={() => toggleAnimation(3)}
+            aria-expanded={animations[3]}
+          >
             <span class="accordion-title">
               Quelles sont les garanties que vous offrez ?
             </span>
             <span class="icon" aria-hidden="true"></span>
           </button>
-          <div class="accordion-content">
+          <div className={`accordion-content ${animations[3]}`}>
             <p>A revoir</p>
           </div>
         </div>
         <div class="accordion-item">
-          <button id="item5" onClick={item5} aria-expanded="false">
+          <button
+            id="item5"
+            onClick={() => toggleAnimation(4)}
+            aria-expanded={animations[4]}
+          >
             <span class="accordion-title">
               Comment puis-je obtenir un devis gratuit ?
             </span>
             <span class="icon" aria-hidden="true"></span>
           </button>
-          <div class="accordion-content">
+          <div className={`accordion-content ${animations[4]}`}>
             <p>
               Pour obtenir un devis gratuit, veuillez nous contacter en
               remplissant le formulaire de contact sur notre site web. Nous vous
